@@ -1,0 +1,237 @@
+{
+  "date": "2026-05-19",
+  "generated_at": "2026-05-19T05:09:03.354565+00:00",
+  "summary": {
+    "items_collected": 83,
+    "sources": [
+      "Hacker News",
+      "Stack Overflow"
+    ]
+  },
+  "highlights": [
+    {
+      "id": "hn-48182754",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "Elon Musk has lost his lawsuit against Sam Altman and OpenAI",
+      "url": "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/",
+      "score": 873,
+      "comments": 440,
+      "published_at": "2026-05-18T17:38:22Z",
+      "why_it_matters": "Useful because it touches model behavior, APIs, or deployment choices, with 873 points and 440 comments on Hacker News."
+    },
+    {
+      "id": "hn-48188183",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "The last six months in LLMs in five minutes",
+      "url": "https://simonwillison.net/2026/May/19/5-minute-llms/",
+      "score": 128,
+      "comments": 50,
+      "published_at": "2026-05-19T01:30:42Z",
+      "why_it_matters": "Useful because it touches model behavior, APIs, or deployment choices, with 128 points and 50 comments on Hacker News."
+    },
+    {
+      "id": "hn-48187680",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "What political censorship looks like inside an LLM's weights (Qwen 3.5)",
+      "url": "https://vas-blog.pages.dev/qwen-censorship/",
+      "score": 73,
+      "comments": 35,
+      "published_at": "2026-05-19T00:16:31Z",
+      "why_it_matters": "Useful because it touches model behavior, APIs, or deployment choices, with 73 points and 35 comments on Hacker News."
+    },
+    {
+      "id": "hn-48186326",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "Mexican government breached by solo user with Claude, 150 GB exfiltrated",
+      "url": "https://konstantintkachuk.com/writing/the-floor-doesnt-exist/",
+      "score": 44,
+      "comments": 38,
+      "published_at": "2026-05-18T21:59:34Z",
+      "why_it_matters": "Useful because it touches a public AI discussion with measurable attention, with 44 points and 38 comments on Hacker News."
+    },
+    {
+      "id": "hn-48181342",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "Show HN: InsForge – Open-source Heroku for coding agents",
+      "url": "https://github.com/InsForge/InsForge",
+      "score": 41,
+      "comments": 6,
+      "published_at": "2026-05-18T15:40:42Z",
+      "why_it_matters": "Useful because it touches agent workflows and automation, with 41 points and 6 comments on Hacker News."
+    }
+  ],
+  "top_questions": [
+    {
+      "id": "hn-48189073",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "Ask HN: Company is rapidly cutting AI tool spend how to prep team?",
+      "url": "https://news.ycombinator.com/item?id=48189073",
+      "score": 3,
+      "comments": 8,
+      "published_at": "2026-05-19T04:10:28Z",
+      "why_it_matters": "Useful because it touches a question people are actively trying to answer, with 3 points and 8 comments on Hacker News."
+    },
+    {
+      "id": "so-79942852",
+      "source": "Stack Overflow",
+      "kind": "question",
+      "title": "AI server with agents",
+      "url": "https://stackoverflow.com/questions/79942852/ai-server-with-agents",
+      "score": 1,
+      "comments": 0,
+      "published_at": "2026-05-18T09:07:51+00:00",
+      "why_it_matters": "Useful because it touches agent workflows and automation, with 1 point on Stack Overflow."
+    },
+    {
+      "id": "so-79942661",
+      "source": "Stack Overflow",
+      "kind": "question",
+      "title": "Best local LLM for reasoning over noisy Russian call center transcripts?",
+      "url": "https://stackoverflow.com/questions/79942661/best-local-llm-for-reasoning-over-noisy-russian-call-center-transcripts",
+      "score": 0,
+      "comments": 0,
+      "published_at": "2026-05-17T20:18:05+00:00",
+      "why_it_matters": "Useful because it touches model behavior, APIs, or deployment choices, with fresh public activity on Stack Overflow."
+    }
+  ],
+  "hot_discussions": [
+    {
+      "id": "hn-48182754",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "Elon Musk has lost his lawsuit against Sam Altman and OpenAI",
+      "url": "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/",
+      "score": 873,
+      "comments": 440,
+      "published_at": "2026-05-18T17:38:22Z",
+      "why_it_matters": "Useful because it touches model behavior, APIs, or deployment choices, with 873 points and 440 comments on Hacker News."
+    },
+    {
+      "id": "hn-48188183",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "The last six months in LLMs in five minutes",
+      "url": "https://simonwillison.net/2026/May/19/5-minute-llms/",
+      "score": 128,
+      "comments": 50,
+      "published_at": "2026-05-19T01:30:42Z",
+      "why_it_matters": "Useful because it touches model behavior, APIs, or deployment choices, with 128 points and 50 comments on Hacker News."
+    },
+    {
+      "id": "hn-48187680",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "What political censorship looks like inside an LLM's weights (Qwen 3.5)",
+      "url": "https://vas-blog.pages.dev/qwen-censorship/",
+      "score": 73,
+      "comments": 35,
+      "published_at": "2026-05-19T00:16:31Z",
+      "why_it_matters": "Useful because it touches model behavior, APIs, or deployment choices, with 73 points and 35 comments on Hacker News."
+    },
+    {
+      "id": "hn-48186326",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "Mexican government breached by solo user with Claude, 150 GB exfiltrated",
+      "url": "https://konstantintkachuk.com/writing/the-floor-doesnt-exist/",
+      "score": 44,
+      "comments": 38,
+      "published_at": "2026-05-18T21:59:34Z",
+      "why_it_matters": "Useful because it touches a public AI discussion with measurable attention, with 44 points and 38 comments on Hacker News."
+    },
+    {
+      "id": "hn-48181342",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "Show HN: InsForge – Open-source Heroku for coding agents",
+      "url": "https://github.com/InsForge/InsForge",
+      "score": 41,
+      "comments": 6,
+      "published_at": "2026-05-18T15:40:42Z",
+      "why_it_matters": "Useful because it touches agent workflows and automation, with 41 points and 6 comments on Hacker News."
+    },
+    {
+      "id": "hn-48189225",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "As of April 2026: Iran has destroyed 42 U.S. Military Aircraft in Op: Epic Fury",
+      "url": "https://nationalsecurityjournal.org/iran-destroyed-42-u-s-military-aircraft-in-operation-epic-fury-lessons-must-be-learned/",
+      "score": 20,
+      "comments": 1,
+      "published_at": "2026-05-19T04:38:03Z",
+      "why_it_matters": "Useful because it touches a public AI discussion with measurable attention, with 20 points and 1 comment on Hacker News."
+    },
+    {
+      "id": "hn-48182781",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "Jury Sides with OpenAI, Sam Altman in Case Brought by Elon Musk",
+      "url": "https://www.wsj.com/tech/ai/jury-sides-with-openai-sam-altman-in-case-brought-by-elon-musk-933240ff",
+      "score": 18,
+      "comments": 1,
+      "published_at": "2026-05-18T17:40:05Z",
+      "why_it_matters": "Useful because it touches model behavior, APIs, or deployment choices, with 18 points and 1 comment on Hacker News."
+    },
+    {
+      "id": "hn-48170824",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "What AI Did to My College Class",
+      "url": "https://www.nytimes.com/2026/05/17/opinion/chatgpt-ai-college-school-graduation.html",
+      "score": 17,
+      "comments": 1,
+      "published_at": "2026-05-17T17:12:00Z",
+      "why_it_matters": "Useful because it touches a public AI discussion with measurable attention, with 17 points and 1 comment on Hacker News."
+    },
+    {
+      "id": "hn-48188469",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "Data centers raise nearby temperatures by up to 4 degrees in Phoenix",
+      "url": "https://techxplore.com/news/2026-05-centers-nearby-temperatures-degrees-phoenix.html",
+      "score": 15,
+      "comments": 2,
+      "published_at": "2026-05-19T02:17:06Z",
+      "why_it_matters": "Useful because it touches a public AI discussion with measurable attention, with 15 points and 2 comments on Hacker News."
+    },
+    {
+      "id": "hn-48182871",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "Jury hands victory to Sam Altman in battle with Elon Musk over OpenAI's mission",
+      "url": "https://www.theguardian.com/technology/2026/may/18/sam-altman-trial-victory-elon-musk-openai",
+      "score": 13,
+      "comments": 0,
+      "published_at": "2026-05-18T17:44:56Z",
+      "why_it_matters": "Useful because it touches model behavior, APIs, or deployment choices, with 13 points on Hacker News."
+    },
+    {
+      "id": "hn-48171513",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "AI chatbots are giving out people's real phone numbers",
+      "url": "https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/",
+      "score": 10,
+      "comments": 3,
+      "published_at": "2026-05-17T18:09:03Z",
+      "why_it_matters": "Useful because it touches a public AI discussion with measurable attention, with 10 points and 3 comments on Hacker News."
+    },
+    {
+      "id": "hn-48182884",
+      "source": "Hacker News",
+      "kind": "discussion",
+      "title": "Elon Musk loses lawsuit against OpenAI",
+      "url": "https://www.bbc.co.uk/news/articles/cewpyv79pw1o",
+      "score": 8,
+      "comments": 1,
+      "published_at": "2026-05-18T17:46:08Z",
+      "why_it_matters": "Useful because it touches model behavior, APIs, or deployment choices, with 8 points and 1 comment on Hacker News."
+    }
+  ]
+}

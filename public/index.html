@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hot Chat with AI</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Daily Public AI Signals</p>
+        <h1>Hot Chat with AI</h1>
+      </div>
+      <a id="repo-link" class="repo-link" href="https://github.com/" aria-label="Open repository">GitHub</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p id="generated">Loading latest digest...</p>
+          <h2>每天追踪 AI 圈值得看的问题、回答和讨论。</h2>
+        </div>
+        <dl class="stats">
+          <div>
+            <dt>Items</dt>
+            <dd id="item-count">-</dd>
+          </div>
+          <div>
+            <dt>Sources</dt>
+            <dd id="source-count">-</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <h2>Highlights</h2>
+          <p>最值得先看的公共讨论。</p>
+        </div>
+        <div id="highlights" class="grid"></div>
+      </section>
+
+      <section class="split">
+        <div>
+          <div class="section-heading">
+            <h2>Good Questions</h2>
+            <p>适合沉淀成选题、产品洞察或 prompt 的好问题。</p>
+          </div>
+          <div id="questions" class="list"></div>
+        </div>
+        <div>
+          <div class="section-heading">
+            <h2>Hot Discussions</h2>
+            <p>热度较高的新闻、工具和实践讨论。</p>
+          </div>
+          <div id="discussions" class="list"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <h2>Archive</h2>
+          <p>最近 90 天的公开记录。</p>
+        </div>
+        <div id="archive" class="archive"></div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-name: Daily AI Digest
+name: Daily AI Q&A Build
 
 on:
   schedule:
@@ -27,18 +27,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Collect latest public AI signals
-        run: python scripts/collect.py
+      - name: Build curated AI Q&A site
+        run: python scripts/build_site.py
 
-      - name: Commit digest files
+      - name: Commit generated site files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data public/latest.json public/archive.json public/posts
+          git add public/qa.json public/latest.json public/archive.json public/posts
           if git diff --cached --quiet; then
-            echo "No digest changes to commit."
+            echo "No generated site changes to commit."
           else
-            git commit -m "Add daily AI digest"
+            git commit -m "Build daily AI Q&A site"
             git push
           fi
 

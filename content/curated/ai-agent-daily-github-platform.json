@@ -1,0 +1,18 @@
+{
+  "id": "ai-agent-daily-github-platform",
+  "title": "怎样做一个每天汇总优质 AI 问答并发布到 GitHub 的平台？",
+  "question": "我想让 agent 每天搜集用户向 AI 提出的优质问题和回答，提交到我的 GitHub 上，并且可以在 public network 上查看。这个东西应该怎么设计？",
+  "answer": "最小可行版本可以分成三层：内容入口、审核整理、公开展示。内容入口负责收集候选问答，可以来自手动 JSON、GitHub Issue、表单、浏览器插件或聊天导出，但必须先做授权和匿名化。审核整理层负责给每条问答补标题、摘要、标签、模型、质量理由，并过滤掉隐私、低质量和不可公开内容。公开展示层用 GitHub Pages 发布静态站点，仓库保存原始 curated 数据、每日构建出的 JSON 和 Markdown。每天的自动化任务只做两件事：把新增候选转成规范数据，再重新构建 public 目录并提交。这样它既像知乎一样能浏览和归档，又保留 GitHub 的版本历史和公共可见性。",
+  "summary": "把平台拆成内容入口、审核整理和公开展示三层，用 GitHub Pages 做可公开访问的知识库。",
+  "tags": ["产品设计", "agent", "GitHub Pages", "知识库"],
+  "model": "ChatGPT",
+  "author_alias": "klis",
+  "source_url": null,
+  "quality_signals": [
+    "问题明确提出了自动化、GitHub 留痕和公开访问三个产品约束。",
+    "回答给出可落地架构，而不是停留在概念层。",
+    "适合作为平台第一条元问题，解释这个项目本身为什么存在。"
+  ],
+  "created_at": "2026-05-19T13:00:00+08:00",
+  "curated_at": "2026-05-19T13:35:00+08:00"
+}

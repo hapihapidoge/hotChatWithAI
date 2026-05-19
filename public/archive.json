@@ -1,7 +1,14 @@
 [
   {
-    "date": "2026-05-19",
-    "path": "posts/2026-05-19.md",
-    "items": "83"
+    "id": "ai-agent-daily-github-platform",
+    "title": "怎样做一个每天汇总优质 AI 问答并发布到 GitHub 的平台？",
+    "path": "posts/ai-agent-daily-github-platform.md",
+    "curated_at": "2026-05-19T13:35:00+08:00"
+  },
+  {
+    "id": "how-to-ask-ai-better-questions",
+    "title": "怎样向 AI 提出更容易得到高质量答案的问题？",
+    "path": "posts/how-to-ask-ai-better-questions.md",
+    "curated_at": "2026-05-19T13:30:00+08:00"
   }
 ]

@@ -1,18 +1,21 @@
-# Hot Chat with AI
+# Hot Q&A with AI
 
-Daily public AI digest: collect high-signal AI questions, answers, and discussions, commit them to GitHub, and publish them as a GitHub Pages site.
+A public, GitHub-backed knowledge base for high-quality questions people ask AI and the answers worth preserving.
 
 ## What It Does
 
-- Runs every day at 08:15 Asia/Shanghai with GitHub Actions.
-- Collects public AI-related activity from Hacker News and Stack Overflow.
-- Writes a dated JSON file in `data/`, a Markdown post in `public/posts/`, and the current digest in `public/latest.json`.
-- Publishes `public/` to GitHub Pages so it can be viewed publicly.
+- Stores curated AI Q&A entries in `content/curated/*.json`.
+- Builds `public/qa.json`, `public/latest.json`, `public/archive.json`, and Markdown pages in `public/posts/`.
+- Publishes `public/` to GitHub Pages.
+- Supports search, tags, featured questions, and a public archive.
+- Keeps every change in GitHub history.
+
+This is not an AI news collector. It is closer to a lightweight Zhihu-style library for excellent human questions and useful AI answers.
 
 ## Local Run
 
 ```bash
-python scripts/collect.py
+python scripts/build_site.py
 python -m http.server 8080 --directory public
 ```
 
@@ -23,7 +26,7 @@ Open `http://localhost:8080`.
 1. Create a public GitHub repository and push this folder.
 2. In GitHub, open `Settings -> Pages`.
 3. Set `Build and deployment` to `GitHub Actions`.
-4. Run `Daily AI Digest` manually once from the Actions tab.
+4. Run `Daily AI Q&A Build` manually once from the Actions tab.
 
 After the first successful run, your public site should be available at:
 
@@ -33,13 +36,24 @@ https://<your-github-name>.github.io/<repo-name>/
 
 ## Add More Sources
 
-Add another collector function in `scripts/collect.py` that returns `Item` objects, then include it in the `collectors` list inside `main()`.
+The safest MVP workflow is:
 
-Good next sources:
+1. Put raw candidate conversations in `content/submissions/`.
+2. Remove private or identifying details.
+3. Rewrite the entry into the schema used by `content/curated/*.json`.
+4. Run `python scripts/build_site.py`.
+5. Commit and push.
 
-- Reddit AI communities, if you add API credentials.
-- Product Hunt AI launches.
-- GitHub trending repositories tagged with AI.
-- Your own saved ChatGPT/Claude/Gemini conversations, if you export them intentionally.
+You can also enable GitHub Issues using `.github/ISSUE_TEMPLATE/qa-submission.yml`, then manually review good submissions and move them into `content/curated/`.
 
-Do not collect private chats without explicit consent from the account owner.
+## Curation Standard
+
+A good entry should have:
+
+- a question that many people may also have,
+- enough context to make the answer meaningful,
+- a reusable answer, framework, checklist, example, or decision,
+- no private data,
+- a clear reason why it is worth saving.
+
+Do not publish private chats without explicit consent from the account owner.

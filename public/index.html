@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hot Chat with AI</title>
+    <title>Hot Q&A with AI</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div>
-        <p class="eyebrow">Daily Public AI Signals</p>
-        <h1>Hot Chat with AI</h1>
+        <p class="eyebrow">Curated Human Questions For AI</p>
+        <h1>Hot Q&A with AI</h1>
       </div>
       <a id="repo-link" class="repo-link" href="https://github.com/" aria-label="Open repository">GitHub</a>
     </header>
@@ -18,50 +18,46 @@
     <main>
       <section class="hero">
         <div>
-          <p id="generated">Loading latest digest...</p>
-          <h2>每天追踪 AI 圈值得看的问题、回答和讨论。</h2>
+          <p id="generated">Loading curated Q&A...</p>
+          <h2>收藏那些真正会把 AI 问出价值的好问题。</h2>
         </div>
         <dl class="stats">
           <div>
-            <dt>Items</dt>
+            <dt>Questions</dt>
             <dd id="item-count">-</dd>
           </div>
           <div>
-            <dt>Sources</dt>
+            <dt>Tags</dt>
             <dd id="source-count">-</dd>
           </div>
         </dl>
       </section>
 
+      <section class="tools" aria-label="Search and filters">
+        <input id="search" type="search" placeholder="搜索问题、回答、标签" />
+        <div id="tags" class="tagbar"></div>
+      </section>
+
       <section class="section">
         <div class="section-heading">
-          <h2>Highlights</h2>
-          <p>最值得先看的公共讨论。</p>
+          <h2>Featured</h2>
+          <p>优先展示那些问题意识清楚、回答可复用、适合沉淀的问答。</p>
         </div>
         <div id="highlights" class="grid"></div>
       </section>
 
-      <section class="split">
-        <div>
-          <div class="section-heading">
-            <h2>Good Questions</h2>
-            <p>适合沉淀成选题、产品洞察或 prompt 的好问题。</p>
-          </div>
-          <div id="questions" class="list"></div>
+      <section class="section">
+        <div class="section-heading">
+          <h2>All Q&A</h2>
+          <p>像逛知乎一样浏览别人向 AI 提出的好问题。</p>
         </div>
-        <div>
-          <div class="section-heading">
-            <h2>Hot Discussions</h2>
-            <p>热度较高的新闻、工具和实践讨论。</p>
-          </div>
-          <div id="discussions" class="list"></div>
-        </div>
+        <div id="entries" class="list"></div>
       </section>
 
       <section class="section">
         <div class="section-heading">
           <h2>Archive</h2>
-          <p>最近 90 天的公开记录。</p>
+          <p>每条公开问答都会生成 Markdown 记录，方便 GitHub 留痕。</p>
         </div>
         <div id="archive" class="archive"></div>
       </section>

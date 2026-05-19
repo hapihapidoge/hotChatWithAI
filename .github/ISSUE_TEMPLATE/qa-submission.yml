@@ -1,0 +1,64 @@
+name: Submit an AI Q&A
+description: Share a high-quality question and answer from an AI conversation.
+title: "[Q&A] "
+labels: ["submission", "qa"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing. Only submit conversations you have permission to publish.
+        Remove private names, emails, company secrets, API keys, account details, and anything that could identify someone without consent.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: A short, public-facing title for this Q&A.
+      placeholder: How should I ask AI better questions?
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: The user's original question or a lightly anonymized version.
+    validations:
+      required: true
+  - type: textarea
+    id: answer
+    attributes:
+      label: AI Answer
+      description: The useful answer to preserve. You may trim irrelevant parts.
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      placeholder: ChatGPT, Claude, Gemini, DeepSeek, etc.
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma-separated tags.
+      placeholder: prompt, agent, writing
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this good?
+      description: Explain why this question and answer deserve to be public.
+      placeholder: It solves a common problem and gives a reusable framework.
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent and privacy
+      options:
+        - label: I have permission to publish this Q&A publicly.
+          required: true
+        - label: I removed sensitive or identifying information.
+          required: true

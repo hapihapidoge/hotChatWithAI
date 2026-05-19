@@ -46,6 +46,22 @@ The safest MVP workflow is:
 
 You can also enable GitHub Issues using `.github/ISSUE_TEMPLATE/qa-submission.yml`, then manually review good submissions and move them into `content/curated/`.
 
+## Automatic Collection
+
+There are three realistic collection modes:
+
+- **Opt-in submissions:** users submit Q&A through GitHub Issues. The workflow imports issues with the `submission` label into `content/submissions/` automatically.
+- **Your own exports:** you export your own ChatGPT/Claude/Gemini conversations, then run a separate importer after removing private details.
+- **Public web sources:** collect only from pages where people intentionally made AI conversations public, and keep attribution and links.
+
+The current automation implements the first mode. It intentionally does not publish imported submissions directly. Imported files stay in `content/submissions/` with `status: needs_review`; only files moved into `content/curated/` appear on the public site.
+
+To test the importer locally:
+
+```bash
+GITHUB_REPOSITORY=<owner>/<repo> GITHUB_TOKEN=<token> python scripts/import_github_issues.py
+```
+
 ## Curation Standard
 
 A good entry should have:

@@ -1,18 +1,35 @@
 {
-  "generated_at": "2026-05-19T05:27:25.496020+00:00",
+  "generated_at": "2026-05-19T05:32:03.225881+00:00",
   "summary": {
-    "items": 2,
+    "items": 6,
     "tags": [
+      "AI Stack Exchange",
+      "GenAI Stack Exchange",
       "GitHub Pages",
       "agent",
+      "batch-size",
+      "benchmarks",
+      "deep-learning",
+      "federated-learning",
+      "genai-ecosystem",
+      "gradient",
+      "gradient-boosting",
+      "machine-learning",
+      "mean-squared-error",
       "prompt",
+      "public-q&a",
+      "python",
+      "pytorch",
+      "regression",
+      "survival",
       "产品设计",
       "提问方法",
       "效率",
       "知识库"
     ],
     "models": [
-      "ChatGPT"
+      "ChatGPT",
+      "Public Q&A"
     ]
   },
   "featured": [
@@ -62,6 +79,110 @@
       "created_at": "2026-05-19T00:00:00+08:00",
       "curated_at": "2026-05-19T13:30:00+08:00",
       "path": "posts/how-to-ask-ai-better-questions.md"
+    },
+    {
+      "id": "se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori",
+      "title": "Can Federated IID and Non-IID training for datasets with various censoring rates be simplified to a single batch size?",
+      "question": "I am working with a benchmark comparison of federated survival models. My plan is to experiment with these models on centralized, IID and non-IID settings. I have already distributed global training, validation and test data among 5 clients. Each client’s data consists of 5 folds. 3 folds are used to train the model, 1 fold is used as a validation set and another fold is used as a test fold. For global Learning, I train the survival model using this process: i) Calculate forward pass on a batch ii) Calculate loss and get gradient for that batch iii) Apply the gradients to update the network iv) Repeat For Federated Learning (FL), I am using this process: i) Use client devices/data to calcul...",
+      "answer": "Your results are actually not wrong, but the assumption that centralized > IID > Non-IID is a heuristic, not a law. Maybe these are the cases: 1. Implicit Regularization from Federated Averaging Each federated round averages gradients across 5 clients, which acts like an ensemble effect. This can reduce overfitting, especially on small datasets (3241 rows is not large for survival analysis). 2. Your Batch Size is Likely Too Large for Centralized With 3241 samples, 3 training folds ≈ ~1944 samples. A batch size of 64 means only ~30 gradient updates per epoch. In federated settings, each client trains on ~389 samples with batch 64, giving ~6 updates per client per round — but aggregated across 5 clients, the effective gradient diversity is higher. 3. Early Stopping Asymmetry Centralized: 25-epoch patience on the full model Federated: 25-epoch patience at both server and client level The federated model gets two regularization signals, which can be beneficial. 4. Censoring Rate Interaction (38.72%) The UnempDur dataset has ~38.72% censored observations. Federated splitting can accidentally create better-stratified censoring distributions per client, improving the C-Index signal. General Rules: Batch size ∝ local dataset size : aim for ~10–20 batches per epoch minimum For survival models (e.g., Cox PH loss), very small batches (<8) destabilize the risk set calculation Non-IID clie...",
+      "summary": "Your results are actually not wrong, but the assumption that centralized > IID > Non-IID is a heuristic, not a law. Maybe these are the cases: 1. Implicit Regularization from Federated Averaging Each federated round ave...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "deep-learning",
+        "batch-size",
+        "benchmarks",
+        "federated-learning",
+        "survival"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Stewie pixel",
+      "source_url": "https://ai.stackexchange.com/questions/50584/can-federated-iid-and-non-iid-training-for-datasets-with-various-censoring-rates",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 0; answer score: 2.",
+        "The answer was accepted by the question author.",
+        "Viewed 23 times on the source site."
+      ],
+      "created_at": "2026-05-10T04:27:45+00:00",
+      "curated_at": "2026-05-19T05:31:10.889954+00:00",
+      "path": "posts/se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori.md"
+    },
+    {
+      "id": "se-ai-50569-what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-ope",
+      "title": "What is the meaning of N in the description \"The mean operation still operates over all the elements, and divides by N\"?",
+      "question": "In torch.nn.MSELoss doc , it is mentioned that : where N is the batch size. Then : The mean operation still operates over all the elements, and divides by N . I am confused about the definition of N. According to my understanding, if the ground truth and predicted inputs are each of shape (B, C, H, W) (a batch of images, each of shape (C, H, W)), and MSE is used in this context as a reconstruction loss in an image reconstruction head with reduction = \"mean\", then N is defined as the total number of pixels = B × C × H × W. So here, N is the total number of pixels, not the batch size. So my question is: is my understanding of N in this use case correct?",
+      "answer": "Yes, reduction mean is equivalent of summing everything and dividing by the product of the resulting tensor",
+      "summary": "Yes, reduction mean is equivalent of summing everything and dividing by the product of the resulting tensor",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "python",
+        "pytorch",
+        "mean-squared-error"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Alberto",
+      "source_url": "https://ai.stackexchange.com/questions/50569/what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-operates-o",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 0; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 48 times on the source site."
+      ],
+      "created_at": "2026-05-05T14:55:39+00:00",
+      "curated_at": "2026-05-19T05:31:09.718912+00:00",
+      "path": "posts/se-ai-50569-what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-ope.md"
+    },
+    {
+      "id": "se-ai-50568-are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-fro",
+      "title": "Are there tail-aware strategies that keep tree-based boosting models from underpredicting extreme values at the tails of data?",
+      "question": "I’m facing a regression problem where rare extreme values dominate the real objective, and all tested models systematically underpredict them. Inputs are window statistical parameters of operational signals; the target is a pair of ordered global extremes per fixed window, later post‑processed into fatigue damage (highly nonlinear in amplitude). Histogram‑based gradient boosting, XGBoost/LightGBM, and linear AR models all fit the bulk distribution well (good RMSE/R²) but consistently shrink the upper tail, even after aggressive sample weighting (range‑based, power‑law, sequence‑aware), custom loss functions emphasizing tail errors (log‑space histogram loss, explicit underprediction penaltie...",
+      "answer": "Gradient boosting minimizes average loss across the distribution. Even with sample weights, the model's leaf values are means of samples in that leaf, so that means a leaf containing 95% normal values and 5% extremes will always predict something closer to the mean. So you may consider these Reframe as an Extreme Value Theory (EVT) problem Instead of regressing the raw target, fit the tail distribution using a Generalized Extreme Value (GEV) or Generalized Pareto Distribution (GPD). Your model predicts the distribution parameters (location, scale, shape), and you sample or compute expected maxima from that. You can use the scipy.stats.genextreme and pyextremes libraries in python. Quantile regression targeting the upper tail Drop RMSE entirely. Train separate models for q=0.90, 0.95, 0.99 quantiles using pinball loss. Your fatigue damage estimate then uses the high quantile prediction rather than the mean. LightGBM has native quantile support (objective='quantile'). Two-stage model: bulk + extreme classifier Stage 1: binary classifier \"is this window likely to contain an extreme?\" Stage 2a: standard regressor for normal windows Stage 2b: separate regressor trained only on windows with confirmed extremes Are your input features themselves extreme during peak-stress windows, or are the extremes dynamically generated? If the extreme isn't visible in the features, no model can pre...",
+      "summary": "Gradient boosting minimizes average loss across the distribution. Even with sample weights, the model's leaf values are means of samples in that leaf, so that means a leaf containing 95% normal values and 5% extremes wi...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "machine-learning",
+        "regression",
+        "gradient",
+        "gradient-boosting"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Stewie pixel",
+      "source_url": "https://ai.stackexchange.com/questions/50568/are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-from-underp",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 1; answer score: 2.",
+        "Viewed 35 times on the source site."
+      ],
+      "created_at": "2026-05-05T14:51:21+00:00",
+      "curated_at": "2026-05-19T05:31:08.641659+00:00",
+      "path": "posts/se-ai-50568-are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-fro.md"
+    },
+    {
+      "id": "se-genai-2781-how-accurate-are-modern-ai-content-detectors",
+      "title": "How accurate are modern AI content detectors?",
+      "question": "Is there a report on how accurate are modern (2024 and beyond) AI-generated content detectors?",
+      "answer": "It's an entire field of research. A few pointers: 2024 papers with many citations: MAGE. Li et al., ACL 2024. https://arxiv.org/abs/2305.13242 . 447k generations from 27 LLMs across 10 domains; foundational in-the-wild generalization benchmark. RAID. Dugan et al., ACL 2024. https://arxiv.org/abs/2405.07940 . 6.2M-generation adversarial benchmark; \"99% accurate\" detectors collapse under attacks/unseen generators. M4GT-Bench. Wang et al., ACL 2024. https://arxiv.org/abs/2402.11175 . Multilingual, multi-domain, multi-generator benchmark with span-level boundary detection (basis of SemEval-2024 Task 8). Perkins et al., 2024 (\"GenAI Detection Tools, Adversarial Techniques...\"). Int. J. Ed. Tech. in Higher Ed. https://arxiv.org/abs/2403.19148 . Six commercial detectors at 39.5% baseline accuracy, dropping 17.4% under simple adversarial manipulation. DF40. Yan et al., NeurIPS 2024 D&B. https://arxiv.org/abs/2406.13495 . 40 distinct deepfake generation techniques across face-swap/reenactment/synthesis/editing; cross-generator generalization benchmark. DetectRL. Wu et al., NeurIPS 2024 D&B. https://arxiv.org/abs/2410.23746 . Real-world adversarial benchmark in abuse-prone domains; SOTA detectors underperform under prompt attacks, paraphrasing, perturbations. More recent papers from 2025–2026: Deepfake-Eval-2024. Chandra et al., TrueMedia.org/UW, March 2025. https://arxiv.org/abs/2503.0...",
+      "summary": "It's an entire field of research. A few pointers: 2024 papers with many citations: MAGE. Li et al., ACL 2024. https://arxiv.org/abs/2305.13242 . 447k generations from 27 LLMs across 10 domains; foundational in-the-wild...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2781/how-accurate-are-modern-ai-content-detectors",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 30 times on the source site."
+      ],
+      "created_at": "2026-05-10T00:29:44+00:00",
+      "curated_at": "2026-05-19T05:31:03.594546+00:00",
+      "path": "posts/se-genai-2781-how-accurate-are-modern-ai-content-detectors.md"
     }
   ],
   "entries": [
@@ -111,6 +232,110 @@
       "created_at": "2026-05-19T00:00:00+08:00",
       "curated_at": "2026-05-19T13:30:00+08:00",
       "path": "posts/how-to-ask-ai-better-questions.md"
+    },
+    {
+      "id": "se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori",
+      "title": "Can Federated IID and Non-IID training for datasets with various censoring rates be simplified to a single batch size?",
+      "question": "I am working with a benchmark comparison of federated survival models. My plan is to experiment with these models on centralized, IID and non-IID settings. I have already distributed global training, validation and test data among 5 clients. Each client’s data consists of 5 folds. 3 folds are used to train the model, 1 fold is used as a validation set and another fold is used as a test fold. For global Learning, I train the survival model using this process: i) Calculate forward pass on a batch ii) Calculate loss and get gradient for that batch iii) Apply the gradients to update the network iv) Repeat For Federated Learning (FL), I am using this process: i) Use client devices/data to calcul...",
+      "answer": "Your results are actually not wrong, but the assumption that centralized > IID > Non-IID is a heuristic, not a law. Maybe these are the cases: 1. Implicit Regularization from Federated Averaging Each federated round averages gradients across 5 clients, which acts like an ensemble effect. This can reduce overfitting, especially on small datasets (3241 rows is not large for survival analysis). 2. Your Batch Size is Likely Too Large for Centralized With 3241 samples, 3 training folds ≈ ~1944 samples. A batch size of 64 means only ~30 gradient updates per epoch. In federated settings, each client trains on ~389 samples with batch 64, giving ~6 updates per client per round — but aggregated across 5 clients, the effective gradient diversity is higher. 3. Early Stopping Asymmetry Centralized: 25-epoch patience on the full model Federated: 25-epoch patience at both server and client level The federated model gets two regularization signals, which can be beneficial. 4. Censoring Rate Interaction (38.72%) The UnempDur dataset has ~38.72% censored observations. Federated splitting can accidentally create better-stratified censoring distributions per client, improving the C-Index signal. General Rules: Batch size ∝ local dataset size : aim for ~10–20 batches per epoch minimum For survival models (e.g., Cox PH loss), very small batches (<8) destabilize the risk set calculation Non-IID clie...",
+      "summary": "Your results are actually not wrong, but the assumption that centralized > IID > Non-IID is a heuristic, not a law. Maybe these are the cases: 1. Implicit Regularization from Federated Averaging Each federated round ave...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "deep-learning",
+        "batch-size",
+        "benchmarks",
+        "federated-learning",
+        "survival"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Stewie pixel",
+      "source_url": "https://ai.stackexchange.com/questions/50584/can-federated-iid-and-non-iid-training-for-datasets-with-various-censoring-rates",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 0; answer score: 2.",
+        "The answer was accepted by the question author.",
+        "Viewed 23 times on the source site."
+      ],
+      "created_at": "2026-05-10T04:27:45+00:00",
+      "curated_at": "2026-05-19T05:31:10.889954+00:00",
+      "path": "posts/se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori.md"
+    },
+    {
+      "id": "se-ai-50569-what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-ope",
+      "title": "What is the meaning of N in the description \"The mean operation still operates over all the elements, and divides by N\"?",
+      "question": "In torch.nn.MSELoss doc , it is mentioned that : where N is the batch size. Then : The mean operation still operates over all the elements, and divides by N . I am confused about the definition of N. According to my understanding, if the ground truth and predicted inputs are each of shape (B, C, H, W) (a batch of images, each of shape (C, H, W)), and MSE is used in this context as a reconstruction loss in an image reconstruction head with reduction = \"mean\", then N is defined as the total number of pixels = B × C × H × W. So here, N is the total number of pixels, not the batch size. So my question is: is my understanding of N in this use case correct?",
+      "answer": "Yes, reduction mean is equivalent of summing everything and dividing by the product of the resulting tensor",
+      "summary": "Yes, reduction mean is equivalent of summing everything and dividing by the product of the resulting tensor",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "python",
+        "pytorch",
+        "mean-squared-error"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Alberto",
+      "source_url": "https://ai.stackexchange.com/questions/50569/what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-operates-o",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 0; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 48 times on the source site."
+      ],
+      "created_at": "2026-05-05T14:55:39+00:00",
+      "curated_at": "2026-05-19T05:31:09.718912+00:00",
+      "path": "posts/se-ai-50569-what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-ope.md"
+    },
+    {
+      "id": "se-ai-50568-are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-fro",
+      "title": "Are there tail-aware strategies that keep tree-based boosting models from underpredicting extreme values at the tails of data?",
+      "question": "I’m facing a regression problem where rare extreme values dominate the real objective, and all tested models systematically underpredict them. Inputs are window statistical parameters of operational signals; the target is a pair of ordered global extremes per fixed window, later post‑processed into fatigue damage (highly nonlinear in amplitude). Histogram‑based gradient boosting, XGBoost/LightGBM, and linear AR models all fit the bulk distribution well (good RMSE/R²) but consistently shrink the upper tail, even after aggressive sample weighting (range‑based, power‑law, sequence‑aware), custom loss functions emphasizing tail errors (log‑space histogram loss, explicit underprediction penaltie...",
+      "answer": "Gradient boosting minimizes average loss across the distribution. Even with sample weights, the model's leaf values are means of samples in that leaf, so that means a leaf containing 95% normal values and 5% extremes will always predict something closer to the mean. So you may consider these Reframe as an Extreme Value Theory (EVT) problem Instead of regressing the raw target, fit the tail distribution using a Generalized Extreme Value (GEV) or Generalized Pareto Distribution (GPD). Your model predicts the distribution parameters (location, scale, shape), and you sample or compute expected maxima from that. You can use the scipy.stats.genextreme and pyextremes libraries in python. Quantile regression targeting the upper tail Drop RMSE entirely. Train separate models for q=0.90, 0.95, 0.99 quantiles using pinball loss. Your fatigue damage estimate then uses the high quantile prediction rather than the mean. LightGBM has native quantile support (objective='quantile'). Two-stage model: bulk + extreme classifier Stage 1: binary classifier \"is this window likely to contain an extreme?\" Stage 2a: standard regressor for normal windows Stage 2b: separate regressor trained only on windows with confirmed extremes Are your input features themselves extreme during peak-stress windows, or are the extremes dynamically generated? If the extreme isn't visible in the features, no model can pre...",
+      "summary": "Gradient boosting minimizes average loss across the distribution. Even with sample weights, the model's leaf values are means of samples in that leaf, so that means a leaf containing 95% normal values and 5% extremes wi...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "machine-learning",
+        "regression",
+        "gradient",
+        "gradient-boosting"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Stewie pixel",
+      "source_url": "https://ai.stackexchange.com/questions/50568/are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-from-underp",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 1; answer score: 2.",
+        "Viewed 35 times on the source site."
+      ],
+      "created_at": "2026-05-05T14:51:21+00:00",
+      "curated_at": "2026-05-19T05:31:08.641659+00:00",
+      "path": "posts/se-ai-50568-are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-fro.md"
+    },
+    {
+      "id": "se-genai-2781-how-accurate-are-modern-ai-content-detectors",
+      "title": "How accurate are modern AI content detectors?",
+      "question": "Is there a report on how accurate are modern (2024 and beyond) AI-generated content detectors?",
+      "answer": "It's an entire field of research. A few pointers: 2024 papers with many citations: MAGE. Li et al., ACL 2024. https://arxiv.org/abs/2305.13242 . 447k generations from 27 LLMs across 10 domains; foundational in-the-wild generalization benchmark. RAID. Dugan et al., ACL 2024. https://arxiv.org/abs/2405.07940 . 6.2M-generation adversarial benchmark; \"99% accurate\" detectors collapse under attacks/unseen generators. M4GT-Bench. Wang et al., ACL 2024. https://arxiv.org/abs/2402.11175 . Multilingual, multi-domain, multi-generator benchmark with span-level boundary detection (basis of SemEval-2024 Task 8). Perkins et al., 2024 (\"GenAI Detection Tools, Adversarial Techniques...\"). Int. J. Ed. Tech. in Higher Ed. https://arxiv.org/abs/2403.19148 . Six commercial detectors at 39.5% baseline accuracy, dropping 17.4% under simple adversarial manipulation. DF40. Yan et al., NeurIPS 2024 D&B. https://arxiv.org/abs/2406.13495 . 40 distinct deepfake generation techniques across face-swap/reenactment/synthesis/editing; cross-generator generalization benchmark. DetectRL. Wu et al., NeurIPS 2024 D&B. https://arxiv.org/abs/2410.23746 . Real-world adversarial benchmark in abuse-prone domains; SOTA detectors underperform under prompt attacks, paraphrasing, perturbations. More recent papers from 2025–2026: Deepfake-Eval-2024. Chandra et al., TrueMedia.org/UW, March 2025. https://arxiv.org/abs/2503.0...",
+      "summary": "It's an entire field of research. A few pointers: 2024 papers with many citations: MAGE. Li et al., ACL 2024. https://arxiv.org/abs/2305.13242 . 447k generations from 27 LLMs across 10 domains; foundational in-the-wild...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2781/how-accurate-are-modern-ai-content-detectors",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 30 times on the source site."
+      ],
+      "created_at": "2026-05-10T00:29:44+00:00",
+      "curated_at": "2026-05-19T05:31:03.594546+00:00",
+      "path": "posts/se-genai-2781-how-accurate-are-modern-ai-content-detectors.md"
     }
   ]
 }

@@ -1,16 +1,17 @@
 # Hot Q&A with AI
 
-A public, GitHub-backed knowledge base for high-quality questions people ask AI and the answers worth preserving.
+A public, GitHub-backed Q&A aggregation site for high-quality AI-related questions and answers.
 
 ## What It Does
 
-- Stores curated AI Q&A entries in `content/curated/*.json`.
+- Automatically collects public Q&A into `content/auto/*.json`.
+- Stores hand-curated AI Q&A entries in `content/curated/*.json`.
 - Builds `public/qa.json`, `public/latest.json`, `public/archive.json`, and Markdown pages in `public/posts/`.
 - Publishes `public/` to GitHub Pages.
 - Supports search, tags, featured questions, and a public archive.
 - Keeps every change in GitHub history.
 
-This is not an AI news collector. It is closer to a lightweight Zhihu-style library for excellent human questions and useful AI answers.
+This is not an AI news collector. It is closer to a lightweight Zhihu-style Q&A library. Automatic public aggregation is the default; user submissions can be added later as a second channel.
 
 ## Local Run
 
@@ -36,7 +37,20 @@ https://<your-github-name>.github.io/<repo-name>/
 
 ## Add More Sources
 
-The safest MVP workflow is:
+The default workflow is automatic:
+
+```bash
+python scripts/collect_public_qa.py
+python scripts/build_site.py
+```
+
+The current collector uses public Stack Exchange APIs:
+
+- GenAI Stack Exchange
+- AI Stack Exchange
+- Stack Overflow tags such as `openai-api`, `chatgpt`, `llm`, `langchain`, and `rag`
+
+Manual curation is still supported:
 
 1. Put raw candidate conversations in `content/submissions/`.
 2. Remove private or identifying details.
@@ -48,13 +62,13 @@ You can also enable GitHub Issues using `.github/ISSUE_TEMPLATE/qa-submission.ym
 
 ## Automatic Collection
 
-There are three realistic collection modes:
+There are three realistic collection modes over time:
 
-- **Opt-in submissions:** users submit Q&A through GitHub Issues. The workflow imports issues with the `submission` label into `content/submissions/` automatically.
+- **Public Q&A aggregation:** enabled now. The workflow collects public questions and accepted or high-scoring answers into `content/auto/`.
+- **Opt-in submissions:** supported. Users submit Q&A through GitHub Issues, and the workflow imports issues with the `submission` label into `content/submissions/`.
 - **Your own exports:** you export your own ChatGPT/Claude/Gemini conversations, then run a separate importer after removing private details.
-- **Public web sources:** collect only from pages where people intentionally made AI conversations public, and keep attribution and links.
 
-The current automation implements the first mode. It intentionally does not publish imported submissions directly. Imported files stay in `content/submissions/` with `status: needs_review`; only files moved into `content/curated/` appear on the public site.
+Imported GitHub Issue submissions intentionally do not publish directly. Imported files stay in `content/submissions/` with `status: needs_review`; only files moved into `content/curated/` appear on the public site.
 
 To test the importer locally:
 

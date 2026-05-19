@@ -13,6 +13,7 @@ from typing import Any, Optional
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT_DIR = ROOT / "content" / "curated"
+AUTO_DIR = ROOT / "content" / "auto"
 PUBLIC_DIR = ROOT / "public"
 POSTS_DIR = PUBLIC_DIR / "posts"
 ALL_JSON = PUBLIC_DIR / "qa.json"
@@ -43,11 +44,17 @@ def slugify(value: str) -> str:
     return value[:80] or "qa"
 
 
-def read_entries() -> list[QAEntry]:
+def read_entries_from(directory: Path) -> list[QAEntry]:
     entries: list[QAEntry] = []
-    for path in sorted(CONTENT_DIR.glob("*.json")):
+    for path in sorted(directory.glob("*.json")):
         payload = json.loads(path.read_text(encoding="utf-8"))
+        payload = {key: value for key, value in payload.items() if key in QAEntry.__annotations__}
         entries.append(QAEntry(**payload))
+    return entries
+
+
+def read_entries() -> list[QAEntry]:
+    entries = read_entries_from(CONTENT_DIR) + read_entries_from(AUTO_DIR)
     return sorted(entries, key=lambda item: item.curated_at, reverse=True)
 
 

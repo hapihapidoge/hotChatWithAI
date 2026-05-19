@@ -1,6 +1,6 @@
 # What is the meaning of N in the description "The mean operation still operates over all the elements, and divides by N"?
 
-Curated at: `2026-05-19T05:31:09.718912+00:00`
+Curated at: `2026-05-19T05:51:32.192939+00:00`
 Model: `Public Q&A`
 Author: `Alberto`
 Tags: `public-q&a, AI Stack Exchange, python, pytorch, mean-squared-error`

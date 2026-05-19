@@ -1,6 +1,6 @@
 # Are there tail-aware strategies that keep tree-based boosting models from underpredicting extreme values at the tails of data?
 
-Curated at: `2026-05-19T05:31:08.641659+00:00`
+Curated at: `2026-05-19T05:51:32.071081+00:00`
 Model: `Public Q&A`
 Author: `Stewie pixel`
 Tags: `public-q&a, AI Stack Exchange, machine-learning, regression, gradient, gradient-boosting`

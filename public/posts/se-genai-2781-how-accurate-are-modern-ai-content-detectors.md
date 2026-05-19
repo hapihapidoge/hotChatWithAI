@@ -1,6 +1,6 @@
 # How accurate are modern AI content detectors?
 
-Curated at: `2026-05-19T05:31:03.594546+00:00`
+Curated at: `2026-05-19T05:51:31.549883+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, genai-ecosystem`

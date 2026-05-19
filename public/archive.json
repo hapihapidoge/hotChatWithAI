@@ -15,24 +15,24 @@
     "id": "se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori",
     "title": "Can Federated IID and Non-IID training for datasets with various censoring rates be simplified to a single batch size?",
     "path": "posts/se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori.md",
-    "curated_at": "2026-05-19T05:31:10.889954+00:00"
+    "curated_at": "2026-05-19T05:51:32.347255+00:00"
   },
   {
     "id": "se-ai-50569-what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-ope",
     "title": "What is the meaning of N in the description \"The mean operation still operates over all the elements, and divides by N\"?",
     "path": "posts/se-ai-50569-what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-ope.md",
-    "curated_at": "2026-05-19T05:31:09.718912+00:00"
+    "curated_at": "2026-05-19T05:51:32.192939+00:00"
   },
   {
     "id": "se-ai-50568-are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-fro",
     "title": "Are there tail-aware strategies that keep tree-based boosting models from underpredicting extreme values at the tails of data?",
     "path": "posts/se-ai-50568-are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-fro.md",
-    "curated_at": "2026-05-19T05:31:08.641659+00:00"
+    "curated_at": "2026-05-19T05:51:32.071081+00:00"
   },
   {
     "id": "se-genai-2781-how-accurate-are-modern-ai-content-detectors",
     "title": "How accurate are modern AI content detectors?",
     "path": "posts/se-genai-2781-how-accurate-are-modern-ai-content-detectors.md",
-    "curated_at": "2026-05-19T05:31:03.594546+00:00"
+    "curated_at": "2026-05-19T05:51:31.549883+00:00"
   }
 ]

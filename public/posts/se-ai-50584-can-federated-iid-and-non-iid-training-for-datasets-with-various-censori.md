@@ -1,6 +1,6 @@
 # Can Federated IID and Non-IID training for datasets with various censoring rates be simplified to a single batch size?
 
-Curated at: `2026-05-19T05:31:10.889954+00:00`
+Curated at: `2026-05-19T05:51:32.347255+00:00`
 Model: `Public Q&A`
 Author: `Stewie pixel`
 Tags: `public-q&a, AI Stack Exchange, deep-learning, batch-size, benchmarks, federated-learning, survival`

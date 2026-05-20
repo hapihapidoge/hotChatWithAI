@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T05:51:33.151439+00:00",
+  "generated_at": "2026-05-20T04:36:50.290718+00:00",
   "summary": {
     "items": 6,
     "tags": [
@@ -34,6 +34,58 @@
   },
   "featured": [
     {
+      "id": "se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori",
+      "title": "Can Federated IID and Non-IID training for datasets with various censoring rates be simplified to a single batch size?",
+      "question": "I am working with a benchmark comparison of federated survival models. My plan is to experiment with these models on centralized, IID and non-IID settings. I have already distributed global training, validation and test data among 5 clients. Each client’s data consists of 5 folds. 3 folds are used to train the model, 1 fold is used as a validation set and another fold is used as a test fold. For global Learning, I train the survival model using this process: i) Calculate forward pass on a batch ii) Calculate loss and get gradient for that batch iii) Apply the gradients to update the network iv) Repeat For Federated Learning (FL), I am using this process: i) Use client devices/data to calcul...",
+      "answer": "Your results are actually not wrong, but the assumption that centralized > IID > Non-IID is a heuristic, not a law. Maybe these are the cases: 1. Implicit Regularization from Federated Averaging Each federated round averages gradients across 5 clients, which acts like an ensemble effect. This can reduce overfitting, especially on small datasets (3241 rows is not large for survival analysis). 2. Your Batch Size is Likely Too Large for Centralized With 3241 samples, 3 training folds ≈ ~1944 samples. A batch size of 64 means only ~30 gradient updates per epoch. In federated settings, each client trains on ~389 samples with batch 64, giving ~6 updates per client per round — but aggregated across 5 clients, the effective gradient diversity is higher. 3. Early Stopping Asymmetry Centralized: 25-epoch patience on the full model Federated: 25-epoch patience at both server and client level The federated model gets two regularization signals, which can be beneficial. 4. Censoring Rate Interaction (38.72%) The UnempDur dataset has ~38.72% censored observations. Federated splitting can accidentally create better-stratified censoring distributions per client, improving the C-Index signal. General Rules: Batch size ∝ local dataset size : aim for ~10–20 batches per epoch minimum For survival models (e.g., Cox PH loss), very small batches (<8) destabilize the risk set calculation Non-IID clie...",
+      "summary": "Your results are actually not wrong, but the assumption that centralized > IID > Non-IID is a heuristic, not a law. Maybe these are the cases: 1. Implicit Regularization from Federated Averaging Each federated round ave...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "deep-learning",
+        "batch-size",
+        "benchmarks",
+        "federated-learning",
+        "survival"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Stewie pixel",
+      "source_url": "https://ai.stackexchange.com/questions/50584/can-federated-iid-and-non-iid-training-for-datasets-with-various-censoring-rates",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 0; answer score: 2.",
+        "The answer was accepted by the question author.",
+        "Viewed 25 times on the source site."
+      ],
+      "created_at": "2026-05-10T04:27:45+00:00",
+      "curated_at": "2026-05-20T04:36:49.427119+00:00",
+      "path": "posts/se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori.md"
+    },
+    {
+      "id": "se-genai-2781-how-accurate-are-modern-ai-content-detectors",
+      "title": "How accurate are modern AI content detectors?",
+      "question": "Is there a report on how accurate are modern (2024 and beyond) AI-generated content detectors?",
+      "answer": "It's an entire field of research. A few pointers: 2024 papers with many citations: MAGE. Li et al., ACL 2024. https://arxiv.org/abs/2305.13242 . 447k generations from 27 LLMs across 10 domains; foundational in-the-wild generalization benchmark. RAID. Dugan et al., ACL 2024. https://arxiv.org/abs/2405.07940 . 6.2M-generation adversarial benchmark; \"99% accurate\" detectors collapse under attacks/unseen generators. M4GT-Bench. Wang et al., ACL 2024. https://arxiv.org/abs/2402.11175 . Multilingual, multi-domain, multi-generator benchmark with span-level boundary detection (basis of SemEval-2024 Task 8). Perkins et al., 2024 (\"GenAI Detection Tools, Adversarial Techniques...\"). Int. J. Ed. Tech. in Higher Ed. https://arxiv.org/abs/2403.19148 . Six commercial detectors at 39.5% baseline accuracy, dropping 17.4% under simple adversarial manipulation. DF40. Yan et al., NeurIPS 2024 D&B. https://arxiv.org/abs/2406.13495 . 40 distinct deepfake generation techniques across face-swap/reenactment/synthesis/editing; cross-generator generalization benchmark. DetectRL. Wu et al., NeurIPS 2024 D&B. https://arxiv.org/abs/2410.23746 . Real-world adversarial benchmark in abuse-prone domains; SOTA detectors underperform under prompt attacks, paraphrasing, perturbations. More recent papers from 2025–2026: Deepfake-Eval-2024. Chandra et al., TrueMedia.org/UW, March 2025. https://arxiv.org/abs/2503.0...",
+      "summary": "It's an entire field of research. A few pointers: 2024 papers with many citations: MAGE. Li et al., ACL 2024. https://arxiv.org/abs/2305.13242 . 447k generations from 27 LLMs across 10 domains; foundational in-the-wild...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2781/how-accurate-are-modern-ai-content-detectors",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 34 times on the source site."
+      ],
+      "created_at": "2026-05-10T00:29:44+00:00",
+      "curated_at": "2026-05-20T04:36:48.922330+00:00",
+      "path": "posts/se-genai-2781-how-accurate-are-modern-ai-content-detectors.md"
+    },
+    {
       "id": "ai-agent-daily-github-platform",
       "title": "怎样做一个每天汇总优质 AI 问答并发布到 GitHub 的平台？",
       "question": "我想让 agent 每天搜集用户向 AI 提出的优质问题和回答，提交到我的 GitHub 上，并且可以在 public network 上查看。这个东西应该怎么设计？",
@@ -79,34 +131,6 @@
       "created_at": "2026-05-19T00:00:00+08:00",
       "curated_at": "2026-05-19T13:30:00+08:00",
       "path": "posts/how-to-ask-ai-better-questions.md"
-    },
-    {
-      "id": "se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori",
-      "title": "Can Federated IID and Non-IID training for datasets with various censoring rates be simplified to a single batch size?",
-      "question": "I am working with a benchmark comparison of federated survival models. My plan is to experiment with these models on centralized, IID and non-IID settings. I have already distributed global training, validation and test data among 5 clients. Each client’s data consists of 5 folds. 3 folds are used to train the model, 1 fold is used as a validation set and another fold is used as a test fold. For global Learning, I train the survival model using this process: i) Calculate forward pass on a batch ii) Calculate loss and get gradient for that batch iii) Apply the gradients to update the network iv) Repeat For Federated Learning (FL), I am using this process: i) Use client devices/data to calcul...",
-      "answer": "Your results are actually not wrong, but the assumption that centralized > IID > Non-IID is a heuristic, not a law. Maybe these are the cases: 1. Implicit Regularization from Federated Averaging Each federated round averages gradients across 5 clients, which acts like an ensemble effect. This can reduce overfitting, especially on small datasets (3241 rows is not large for survival analysis). 2. Your Batch Size is Likely Too Large for Centralized With 3241 samples, 3 training folds ≈ ~1944 samples. A batch size of 64 means only ~30 gradient updates per epoch. In federated settings, each client trains on ~389 samples with batch 64, giving ~6 updates per client per round — but aggregated across 5 clients, the effective gradient diversity is higher. 3. Early Stopping Asymmetry Centralized: 25-epoch patience on the full model Federated: 25-epoch patience at both server and client level The federated model gets two regularization signals, which can be beneficial. 4. Censoring Rate Interaction (38.72%) The UnempDur dataset has ~38.72% censored observations. Federated splitting can accidentally create better-stratified censoring distributions per client, improving the C-Index signal. General Rules: Batch size ∝ local dataset size : aim for ~10–20 batches per epoch minimum For survival models (e.g., Cox PH loss), very small batches (<8) destabilize the risk set calculation Non-IID clie...",
-      "summary": "Your results are actually not wrong, but the assumption that centralized > IID > Non-IID is a heuristic, not a law. Maybe these are the cases: 1. Implicit Regularization from Federated Averaging Each federated round ave...",
-      "tags": [
-        "public-q&a",
-        "AI Stack Exchange",
-        "deep-learning",
-        "batch-size",
-        "benchmarks",
-        "federated-learning",
-        "survival"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Stewie pixel",
-      "source_url": "https://ai.stackexchange.com/questions/50584/can-federated-iid-and-non-iid-training-for-datasets-with-various-censoring-rates",
-      "quality_signals": [
-        "Public Q&A from AI Stack Exchange.",
-        "Question score: 0; answer score: 2.",
-        "The answer was accepted by the question author.",
-        "Viewed 23 times on the source site."
-      ],
-      "created_at": "2026-05-10T04:27:45+00:00",
-      "curated_at": "2026-05-19T05:51:32.347255+00:00",
-      "path": "posts/se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori.md"
     },
     {
       "id": "se-ai-50569-what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-ope",
@@ -159,34 +183,62 @@
       "created_at": "2026-05-05T14:51:21+00:00",
       "curated_at": "2026-05-19T05:51:32.071081+00:00",
       "path": "posts/se-ai-50568-are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-fro.md"
-    },
-    {
-      "id": "se-genai-2781-how-accurate-are-modern-ai-content-detectors",
-      "title": "How accurate are modern AI content detectors?",
-      "question": "Is there a report on how accurate are modern (2024 and beyond) AI-generated content detectors?",
-      "answer": "It's an entire field of research. A few pointers: 2024 papers with many citations: MAGE. Li et al., ACL 2024. https://arxiv.org/abs/2305.13242 . 447k generations from 27 LLMs across 10 domains; foundational in-the-wild generalization benchmark. RAID. Dugan et al., ACL 2024. https://arxiv.org/abs/2405.07940 . 6.2M-generation adversarial benchmark; \"99% accurate\" detectors collapse under attacks/unseen generators. M4GT-Bench. Wang et al., ACL 2024. https://arxiv.org/abs/2402.11175 . Multilingual, multi-domain, multi-generator benchmark with span-level boundary detection (basis of SemEval-2024 Task 8). Perkins et al., 2024 (\"GenAI Detection Tools, Adversarial Techniques...\"). Int. J. Ed. Tech. in Higher Ed. https://arxiv.org/abs/2403.19148 . Six commercial detectors at 39.5% baseline accuracy, dropping 17.4% under simple adversarial manipulation. DF40. Yan et al., NeurIPS 2024 D&B. https://arxiv.org/abs/2406.13495 . 40 distinct deepfake generation techniques across face-swap/reenactment/synthesis/editing; cross-generator generalization benchmark. DetectRL. Wu et al., NeurIPS 2024 D&B. https://arxiv.org/abs/2410.23746 . Real-world adversarial benchmark in abuse-prone domains; SOTA detectors underperform under prompt attacks, paraphrasing, perturbations. More recent papers from 2025–2026: Deepfake-Eval-2024. Chandra et al., TrueMedia.org/UW, March 2025. https://arxiv.org/abs/2503.0...",
-      "summary": "It's an entire field of research. A few pointers: 2024 papers with many citations: MAGE. Li et al., ACL 2024. https://arxiv.org/abs/2305.13242 . 447k generations from 27 LLMs across 10 domains; foundational in-the-wild...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "genai-ecosystem"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2781/how-accurate-are-modern-ai-content-detectors",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 1.",
-        "The answer was accepted by the question author.",
-        "Viewed 30 times on the source site."
-      ],
-      "created_at": "2026-05-10T00:29:44+00:00",
-      "curated_at": "2026-05-19T05:51:31.549883+00:00",
-      "path": "posts/se-genai-2781-how-accurate-are-modern-ai-content-detectors.md"
     }
   ],
   "entries": [
     {
+      "id": "se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori",
+      "title": "Can Federated IID and Non-IID training for datasets with various censoring rates be simplified to a single batch size?",
+      "question": "I am working with a benchmark comparison of federated survival models. My plan is to experiment with these models on centralized, IID and non-IID settings. I have already distributed global training, validation and test data among 5 clients. Each client’s data consists of 5 folds. 3 folds are used to train the model, 1 fold is used as a validation set and another fold is used as a test fold. For global Learning, I train the survival model using this process: i) Calculate forward pass on a batch ii) Calculate loss and get gradient for that batch iii) Apply the gradients to update the network iv) Repeat For Federated Learning (FL), I am using this process: i) Use client devices/data to calcul...",
+      "answer": "Your results are actually not wrong, but the assumption that centralized > IID > Non-IID is a heuristic, not a law. Maybe these are the cases: 1. Implicit Regularization from Federated Averaging Each federated round averages gradients across 5 clients, which acts like an ensemble effect. This can reduce overfitting, especially on small datasets (3241 rows is not large for survival analysis). 2. Your Batch Size is Likely Too Large for Centralized With 3241 samples, 3 training folds ≈ ~1944 samples. A batch size of 64 means only ~30 gradient updates per epoch. In federated settings, each client trains on ~389 samples with batch 64, giving ~6 updates per client per round — but aggregated across 5 clients, the effective gradient diversity is higher. 3. Early Stopping Asymmetry Centralized: 25-epoch patience on the full model Federated: 25-epoch patience at both server and client level The federated model gets two regularization signals, which can be beneficial. 4. Censoring Rate Interaction (38.72%) The UnempDur dataset has ~38.72% censored observations. Federated splitting can accidentally create better-stratified censoring distributions per client, improving the C-Index signal. General Rules: Batch size ∝ local dataset size : aim for ~10–20 batches per epoch minimum For survival models (e.g., Cox PH loss), very small batches (<8) destabilize the risk set calculation Non-IID clie...",
+      "summary": "Your results are actually not wrong, but the assumption that centralized > IID > Non-IID is a heuristic, not a law. Maybe these are the cases: 1. Implicit Regularization from Federated Averaging Each federated round ave...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "deep-learning",
+        "batch-size",
+        "benchmarks",
+        "federated-learning",
+        "survival"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Stewie pixel",
+      "source_url": "https://ai.stackexchange.com/questions/50584/can-federated-iid-and-non-iid-training-for-datasets-with-various-censoring-rates",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 0; answer score: 2.",
+        "The answer was accepted by the question author.",
+        "Viewed 25 times on the source site."
+      ],
+      "created_at": "2026-05-10T04:27:45+00:00",
+      "curated_at": "2026-05-20T04:36:49.427119+00:00",
+      "path": "posts/se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori.md"
+    },
+    {
+      "id": "se-genai-2781-how-accurate-are-modern-ai-content-detectors",
+      "title": "How accurate are modern AI content detectors?",
+      "question": "Is there a report on how accurate are modern (2024 and beyond) AI-generated content detectors?",
+      "answer": "It's an entire field of research. A few pointers: 2024 papers with many citations: MAGE. Li et al., ACL 2024. https://arxiv.org/abs/2305.13242 . 447k generations from 27 LLMs across 10 domains; foundational in-the-wild generalization benchmark. RAID. Dugan et al., ACL 2024. https://arxiv.org/abs/2405.07940 . 6.2M-generation adversarial benchmark; \"99% accurate\" detectors collapse under attacks/unseen generators. M4GT-Bench. Wang et al., ACL 2024. https://arxiv.org/abs/2402.11175 . Multilingual, multi-domain, multi-generator benchmark with span-level boundary detection (basis of SemEval-2024 Task 8). Perkins et al., 2024 (\"GenAI Detection Tools, Adversarial Techniques...\"). Int. J. Ed. Tech. in Higher Ed. https://arxiv.org/abs/2403.19148 . Six commercial detectors at 39.5% baseline accuracy, dropping 17.4% under simple adversarial manipulation. DF40. Yan et al., NeurIPS 2024 D&B. https://arxiv.org/abs/2406.13495 . 40 distinct deepfake generation techniques across face-swap/reenactment/synthesis/editing; cross-generator generalization benchmark. DetectRL. Wu et al., NeurIPS 2024 D&B. https://arxiv.org/abs/2410.23746 . Real-world adversarial benchmark in abuse-prone domains; SOTA detectors underperform under prompt attacks, paraphrasing, perturbations. More recent papers from 2025–2026: Deepfake-Eval-2024. Chandra et al., TrueMedia.org/UW, March 2025. https://arxiv.org/abs/2503.0...",
+      "summary": "It's an entire field of research. A few pointers: 2024 papers with many citations: MAGE. Li et al., ACL 2024. https://arxiv.org/abs/2305.13242 . 447k generations from 27 LLMs across 10 domains; foundational in-the-wild...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2781/how-accurate-are-modern-ai-content-detectors",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 34 times on the source site."
+      ],
+      "created_at": "2026-05-10T00:29:44+00:00",
+      "curated_at": "2026-05-20T04:36:48.922330+00:00",
+      "path": "posts/se-genai-2781-how-accurate-are-modern-ai-content-detectors.md"
+    },
+    {
       "id": "ai-agent-daily-github-platform",
       "title": "怎样做一个每天汇总优质 AI 问答并发布到 GitHub 的平台？",
       "question": "我想让 agent 每天搜集用户向 AI 提出的优质问题和回答，提交到我的 GitHub 上，并且可以在 public network 上查看。这个东西应该怎么设计？",
@@ -232,34 +284,6 @@
       "created_at": "2026-05-19T00:00:00+08:00",
       "curated_at": "2026-05-19T13:30:00+08:00",
       "path": "posts/how-to-ask-ai-better-questions.md"
-    },
-    {
-      "id": "se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori",
-      "title": "Can Federated IID and Non-IID training for datasets with various censoring rates be simplified to a single batch size?",
-      "question": "I am working with a benchmark comparison of federated survival models. My plan is to experiment with these models on centralized, IID and non-IID settings. I have already distributed global training, validation and test data among 5 clients. Each client’s data consists of 5 folds. 3 folds are used to train the model, 1 fold is used as a validation set and another fold is used as a test fold. For global Learning, I train the survival model using this process: i) Calculate forward pass on a batch ii) Calculate loss and get gradient for that batch iii) Apply the gradients to update the network iv) Repeat For Federated Learning (FL), I am using this process: i) Use client devices/data to calcul...",
-      "answer": "Your results are actually not wrong, but the assumption that centralized > IID > Non-IID is a heuristic, not a law. Maybe these are the cases: 1. Implicit Regularization from Federated Averaging Each federated round averages gradients across 5 clients, which acts like an ensemble effect. This can reduce overfitting, especially on small datasets (3241 rows is not large for survival analysis). 2. Your Batch Size is Likely Too Large for Centralized With 3241 samples, 3 training folds ≈ ~1944 samples. A batch size of 64 means only ~30 gradient updates per epoch. In federated settings, each client trains on ~389 samples with batch 64, giving ~6 updates per client per round — but aggregated across 5 clients, the effective gradient diversity is higher. 3. Early Stopping Asymmetry Centralized: 25-epoch patience on the full model Federated: 25-epoch patience at both server and client level The federated model gets two regularization signals, which can be beneficial. 4. Censoring Rate Interaction (38.72%) The UnempDur dataset has ~38.72% censored observations. Federated splitting can accidentally create better-stratified censoring distributions per client, improving the C-Index signal. General Rules: Batch size ∝ local dataset size : aim for ~10–20 batches per epoch minimum For survival models (e.g., Cox PH loss), very small batches (<8) destabilize the risk set calculation Non-IID clie...",
-      "summary": "Your results are actually not wrong, but the assumption that centralized > IID > Non-IID is a heuristic, not a law. Maybe these are the cases: 1. Implicit Regularization from Federated Averaging Each federated round ave...",
-      "tags": [
-        "public-q&a",
-        "AI Stack Exchange",
-        "deep-learning",
-        "batch-size",
-        "benchmarks",
-        "federated-learning",
-        "survival"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Stewie pixel",
-      "source_url": "https://ai.stackexchange.com/questions/50584/can-federated-iid-and-non-iid-training-for-datasets-with-various-censoring-rates",
-      "quality_signals": [
-        "Public Q&A from AI Stack Exchange.",
-        "Question score: 0; answer score: 2.",
-        "The answer was accepted by the question author.",
-        "Viewed 23 times on the source site."
-      ],
-      "created_at": "2026-05-10T04:27:45+00:00",
-      "curated_at": "2026-05-19T05:51:32.347255+00:00",
-      "path": "posts/se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori.md"
     },
     {
       "id": "se-ai-50569-what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-ope",
@@ -312,30 +336,6 @@
       "created_at": "2026-05-05T14:51:21+00:00",
       "curated_at": "2026-05-19T05:51:32.071081+00:00",
       "path": "posts/se-ai-50568-are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-fro.md"
-    },
-    {
-      "id": "se-genai-2781-how-accurate-are-modern-ai-content-detectors",
-      "title": "How accurate are modern AI content detectors?",
-      "question": "Is there a report on how accurate are modern (2024 and beyond) AI-generated content detectors?",
-      "answer": "It's an entire field of research. A few pointers: 2024 papers with many citations: MAGE. Li et al., ACL 2024. https://arxiv.org/abs/2305.13242 . 447k generations from 27 LLMs across 10 domains; foundational in-the-wild generalization benchmark. RAID. Dugan et al., ACL 2024. https://arxiv.org/abs/2405.07940 . 6.2M-generation adversarial benchmark; \"99% accurate\" detectors collapse under attacks/unseen generators. M4GT-Bench. Wang et al., ACL 2024. https://arxiv.org/abs/2402.11175 . Multilingual, multi-domain, multi-generator benchmark with span-level boundary detection (basis of SemEval-2024 Task 8). Perkins et al., 2024 (\"GenAI Detection Tools, Adversarial Techniques...\"). Int. J. Ed. Tech. in Higher Ed. https://arxiv.org/abs/2403.19148 . Six commercial detectors at 39.5% baseline accuracy, dropping 17.4% under simple adversarial manipulation. DF40. Yan et al., NeurIPS 2024 D&B. https://arxiv.org/abs/2406.13495 . 40 distinct deepfake generation techniques across face-swap/reenactment/synthesis/editing; cross-generator generalization benchmark. DetectRL. Wu et al., NeurIPS 2024 D&B. https://arxiv.org/abs/2410.23746 . Real-world adversarial benchmark in abuse-prone domains; SOTA detectors underperform under prompt attacks, paraphrasing, perturbations. More recent papers from 2025–2026: Deepfake-Eval-2024. Chandra et al., TrueMedia.org/UW, March 2025. https://arxiv.org/abs/2503.0...",
-      "summary": "It's an entire field of research. A few pointers: 2024 papers with many citations: MAGE. Li et al., ACL 2024. https://arxiv.org/abs/2305.13242 . 447k generations from 27 LLMs across 10 domains; foundational in-the-wild...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "genai-ecosystem"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2781/how-accurate-are-modern-ai-content-detectors",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 1.",
-        "The answer was accepted by the question author.",
-        "Viewed 30 times on the source site."
-      ],
-      "created_at": "2026-05-10T00:29:44+00:00",
-      "curated_at": "2026-05-19T05:51:31.549883+00:00",
-      "path": "posts/se-genai-2781-how-accurate-are-modern-ai-content-detectors.md"
     }
   ]
 }

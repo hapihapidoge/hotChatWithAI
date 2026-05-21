@@ -1,6 +1,6 @@
 # How accurate are modern AI content detectors?
 
-Curated at: `2026-05-20T04:36:48.922330+00:00`
+Curated at: `2026-05-21T04:44:39.144270+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, genai-ecosystem`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2781/how-accurate-are-modern-a
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 1; answer score: 1.
 - The answer was accepted by the question author.
-- Viewed 34 times on the source site.
+- Viewed 37 times on the source site.
 
 ## Question
 

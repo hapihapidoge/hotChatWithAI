@@ -1,15 +1,21 @@
 [
   {
+    "id": "se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model",
+    "title": "How to Evaluate my RAG System using Local / free tier API model",
+    "path": "posts/se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model.md",
+    "curated_at": "2026-05-23T04:07:54.031579+00:00"
+  },
+  {
     "id": "se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori",
     "title": "Can Federated IID and Non-IID training for datasets with various censoring rates be simplified to a single batch size?",
     "path": "posts/se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori.md",
-    "curated_at": "2026-05-22T04:35:39.251962+00:00"
+    "curated_at": "2026-05-23T04:07:53.221786+00:00"
   },
   {
     "id": "se-genai-2781-how-accurate-are-modern-ai-content-detectors",
     "title": "How accurate are modern AI content detectors?",
     "path": "posts/se-genai-2781-how-accurate-are-modern-ai-content-detectors.md",
-    "curated_at": "2026-05-22T04:35:38.912153+00:00"
+    "curated_at": "2026-05-23T04:07:53.022906+00:00"
   },
   {
     "id": "ai-agent-daily-github-platform",

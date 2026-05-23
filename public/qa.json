@@ -1,15 +1,18 @@
 {
-  "generated_at": "2026-05-22T04:35:40.172023+00:00",
+  "generated_at": "2026-05-23T04:07:54.107281+00:00",
   "summary": {
-    "items": 6,
+    "items": 7,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
       "GitHub Pages",
+      "Stack Overflow",
       "agent",
+      "artificial-intelligence",
       "batch-size",
       "benchmarks",
       "deep-learning",
+      "evaluation",
       "federated-learning",
       "genai-ecosystem",
       "gradient",
@@ -20,6 +23,7 @@
       "public-q&a",
       "python",
       "pytorch",
+      "rag",
       "regression",
       "survival",
       "产品设计",
@@ -33,6 +37,33 @@
     ]
   },
   "featured": [
+    {
+      "id": "se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model",
+      "title": "How to Evaluate my RAG System using Local / free tier API model",
+      "question": "I have build a self-evaluating RAG System now i want to evaluate it so i can know what my system performance for that i used DeeEval framework but the thing is i don’t have OpenAI API key as i’m broke so i’m using free tier API from Groq/Cerebra’s or local model but the thing is local model like llama 3.1 8b model is giving invalid json and keep failing like out of 25 question it’s failing on 15-19 question and when i use free tier api from cerebra’s in DeepEval it’s Rate limit just max out as DeevEval generate 3-4 response per question ,",
+      "answer": "you can use the Open source project vllm. https://github.com/vllm-project/vllm vLLM enables you to serve and infer from your local model and provide you an OpenAI compatible interface. once you setup vllm you can use - this will be provide you an open ai interface to your model. [code omitted] you can then call the OpenAI Completions API with vLLM : [code omitted] Since you are already using a local model, I assume you have enough resources to run it. more details on local serving : https://docs.vllm.ai/en/stable/getting_started/quickstart/",
+      "summary": "you can use the Open source project vllm. https://github.com/vllm-project/vllm vLLM enables you to serve and infer from your local model and provide you an OpenAI compatible interface. once you setup vllm you can use -...",
+      "tags": [
+        "public-q&a",
+        "Stack Overflow",
+        "machine-learning",
+        "deep-learning",
+        "artificial-intelligence",
+        "evaluation",
+        "rag"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Arnaud",
+      "source_url": "https://stackoverflow.com/questions/79939816/how-to-evaluate-my-rag-system-using-local-free-tier-api-model",
+      "quality_signals": [
+        "Public Q&A from Stack Overflow.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 116 times on the source site."
+      ],
+      "created_at": "2026-05-12T08:30:23+00:00",
+      "curated_at": "2026-05-23T04:07:54.031579+00:00",
+      "path": "posts/se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model.md"
+    },
     {
       "id": "se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori",
       "title": "Can Federated IID and Non-IID training for datasets with various censoring rates be simplified to a single batch size?",
@@ -58,7 +89,7 @@
         "Viewed 26 times on the source site."
       ],
       "created_at": "2026-05-10T04:27:45+00:00",
-      "curated_at": "2026-05-22T04:35:39.251962+00:00",
+      "curated_at": "2026-05-23T04:07:53.221786+00:00",
       "path": "posts/se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori.md"
     },
     {
@@ -79,10 +110,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 37 times on the source site."
+        "Viewed 38 times on the source site."
       ],
       "created_at": "2026-05-10T00:29:44+00:00",
-      "curated_at": "2026-05-22T04:35:38.912153+00:00",
+      "curated_at": "2026-05-23T04:07:53.022906+00:00",
       "path": "posts/se-genai-2781-how-accurate-are-modern-ai-content-detectors.md"
     },
     {
@@ -157,35 +188,36 @@
       "created_at": "2026-05-05T14:55:39+00:00",
       "curated_at": "2026-05-19T05:51:32.192939+00:00",
       "path": "posts/se-ai-50569-what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-ope.md"
-    },
-    {
-      "id": "se-ai-50568-are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-fro",
-      "title": "Are there tail-aware strategies that keep tree-based boosting models from underpredicting extreme values at the tails of data?",
-      "question": "I’m facing a regression problem where rare extreme values dominate the real objective, and all tested models systematically underpredict them. Inputs are window statistical parameters of operational signals; the target is a pair of ordered global extremes per fixed window, later post‑processed into fatigue damage (highly nonlinear in amplitude). Histogram‑based gradient boosting, XGBoost/LightGBM, and linear AR models all fit the bulk distribution well (good RMSE/R²) but consistently shrink the upper tail, even after aggressive sample weighting (range‑based, power‑law, sequence‑aware), custom loss functions emphasizing tail errors (log‑space histogram loss, explicit underprediction penaltie...",
-      "answer": "Gradient boosting minimizes average loss across the distribution. Even with sample weights, the model's leaf values are means of samples in that leaf, so that means a leaf containing 95% normal values and 5% extremes will always predict something closer to the mean. So you may consider these Reframe as an Extreme Value Theory (EVT) problem Instead of regressing the raw target, fit the tail distribution using a Generalized Extreme Value (GEV) or Generalized Pareto Distribution (GPD). Your model predicts the distribution parameters (location, scale, shape), and you sample or compute expected maxima from that. You can use the scipy.stats.genextreme and pyextremes libraries in python. Quantile regression targeting the upper tail Drop RMSE entirely. Train separate models for q=0.90, 0.95, 0.99 quantiles using pinball loss. Your fatigue damage estimate then uses the high quantile prediction rather than the mean. LightGBM has native quantile support (objective='quantile'). Two-stage model: bulk + extreme classifier Stage 1: binary classifier \"is this window likely to contain an extreme?\" Stage 2a: standard regressor for normal windows Stage 2b: separate regressor trained only on windows with confirmed extremes Are your input features themselves extreme during peak-stress windows, or are the extremes dynamically generated? If the extreme isn't visible in the features, no model can pre...",
-      "summary": "Gradient boosting minimizes average loss across the distribution. Even with sample weights, the model's leaf values are means of samples in that leaf, so that means a leaf containing 95% normal values and 5% extremes wi...",
-      "tags": [
-        "public-q&a",
-        "AI Stack Exchange",
-        "machine-learning",
-        "regression",
-        "gradient",
-        "gradient-boosting"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Stewie pixel",
-      "source_url": "https://ai.stackexchange.com/questions/50568/are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-from-underp",
-      "quality_signals": [
-        "Public Q&A from AI Stack Exchange.",
-        "Question score: 1; answer score: 2.",
-        "Viewed 35 times on the source site."
-      ],
-      "created_at": "2026-05-05T14:51:21+00:00",
-      "curated_at": "2026-05-19T05:51:32.071081+00:00",
-      "path": "posts/se-ai-50568-are-there-tail-aware-strategies-that-keep-tree-based-boosting-models-fro.md"
     }
   ],
   "entries": [
+    {
+      "id": "se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model",
+      "title": "How to Evaluate my RAG System using Local / free tier API model",
+      "question": "I have build a self-evaluating RAG System now i want to evaluate it so i can know what my system performance for that i used DeeEval framework but the thing is i don’t have OpenAI API key as i’m broke so i’m using free tier API from Groq/Cerebra’s or local model but the thing is local model like llama 3.1 8b model is giving invalid json and keep failing like out of 25 question it’s failing on 15-19 question and when i use free tier api from cerebra’s in DeepEval it’s Rate limit just max out as DeevEval generate 3-4 response per question ,",
+      "answer": "you can use the Open source project vllm. https://github.com/vllm-project/vllm vLLM enables you to serve and infer from your local model and provide you an OpenAI compatible interface. once you setup vllm you can use - this will be provide you an open ai interface to your model. [code omitted] you can then call the OpenAI Completions API with vLLM : [code omitted] Since you are already using a local model, I assume you have enough resources to run it. more details on local serving : https://docs.vllm.ai/en/stable/getting_started/quickstart/",
+      "summary": "you can use the Open source project vllm. https://github.com/vllm-project/vllm vLLM enables you to serve and infer from your local model and provide you an OpenAI compatible interface. once you setup vllm you can use -...",
+      "tags": [
+        "public-q&a",
+        "Stack Overflow",
+        "machine-learning",
+        "deep-learning",
+        "artificial-intelligence",
+        "evaluation",
+        "rag"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Arnaud",
+      "source_url": "https://stackoverflow.com/questions/79939816/how-to-evaluate-my-rag-system-using-local-free-tier-api-model",
+      "quality_signals": [
+        "Public Q&A from Stack Overflow.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 116 times on the source site."
+      ],
+      "created_at": "2026-05-12T08:30:23+00:00",
+      "curated_at": "2026-05-23T04:07:54.031579+00:00",
+      "path": "posts/se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model.md"
+    },
     {
       "id": "se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori",
       "title": "Can Federated IID and Non-IID training for datasets with various censoring rates be simplified to a single batch size?",
@@ -211,7 +243,7 @@
         "Viewed 26 times on the source site."
       ],
       "created_at": "2026-05-10T04:27:45+00:00",
-      "curated_at": "2026-05-22T04:35:39.251962+00:00",
+      "curated_at": "2026-05-23T04:07:53.221786+00:00",
       "path": "posts/se-ai-50584-can-federated-iid-and-non-iid-training-for-datasets-with-various-censori.md"
     },
     {
@@ -232,10 +264,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 37 times on the source site."
+        "Viewed 38 times on the source site."
       ],
       "created_at": "2026-05-10T00:29:44+00:00",
-      "curated_at": "2026-05-22T04:35:38.912153+00:00",
+      "curated_at": "2026-05-23T04:07:53.022906+00:00",
       "path": "posts/se-genai-2781-how-accurate-are-modern-ai-content-detectors.md"
     },
     {

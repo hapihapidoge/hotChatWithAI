@@ -1,6 +1,6 @@
 # How to Evaluate my RAG System using Local / free tier API model
 
-Curated at: `2026-05-25T04:51:57.421725+00:00`
+Curated at: `2026-05-26T04:34:26.191843+00:00`
 Model: `Public Q&A`
 Author: `Arnaud`
 Tags: `public-q&a, Stack Overflow, machine-learning, deep-learning, artificial-intelligence, evaluation, rag`
@@ -11,7 +11,7 @@ Source: https://stackoverflow.com/questions/79939816/how-to-evaluate-my-rag-syst
 
 - Public Q&A from Stack Overflow.
 - Question score: 1; answer score: 1.
-- Viewed 118 times on the source site.
+- Viewed 119 times on the source site.
 
 ## Question
 

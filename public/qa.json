@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-26T04:34:26.260757+00:00",
+  "generated_at": "2026-05-27T04:48:51.955197+00:00",
   "summary": {
-    "items": 7,
+    "items": 10,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -11,12 +11,18 @@
       "artificial-intelligence",
       "batch-size",
       "benchmarks",
+      "chromadb",
+      "comparison",
+      "cross-validation",
       "deep-learning",
       "evaluation",
       "federated-learning",
       "genai-ecosystem",
       "gradient",
       "gradient-boosting",
+      "k-fold-cv",
+      "langchain",
+      "llm",
       "machine-learning",
       "mean-squared-error",
       "prompt",
@@ -26,6 +32,9 @@
       "rag",
       "regression",
       "survival",
+      "training",
+      "validation-datasets",
+      "vector-database",
       "产品设计",
       "提问方法",
       "效率",
@@ -37,6 +46,86 @@
     ]
   },
   "featured": [
+    {
+      "id": "se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l",
+      "title": "ChromaDB get() or query() returns empty results after embedding updates in LangChain",
+      "question": "I am building a local RAG pipeline using LangChain, ChromaDB, and a local embedding model. The document ingestion pipeline runs without errors, and the vector store initializes correctly. However, when I attempt to query the vector store immediately after updating or adding new documents, the similarity search returns empty lists [] or fails to retrieve the newly added chunks. Here is a minimal reproducible example of how I am initializing the store and adding documents: [code omitted] What I have tried: I verified that add_documents returns the list of UUIDs successfully, meaning the write operation completes without an explicit exception. If I restart the entire Python script and initiali...",
+      "answer": "The issue is mostly due to the older LangChain Chroma wrapper keeping a stale collection state after add_documents() . Instead of: [code omitted] use: from langchain_chroma import Chroma With newer chromadb versions, newly added embeddings are sometimes not immediately reflected in the active retriever session. Re-initializing the vector store after add_documents() usually fixes it: vector_store.add_documents(docs, ids=ids) vector_store = Chroma( collection_name=\"research_docs\", embedding_function=embeddings, persist_directory=\"./chroma_db\" ) Also make sure: old collections are not created with different embedding models collection count is increasing: print(vector_store._collection.count()) This is mainly a compatibility/state refresh issue between newer chromadb and the deprecated langchain_community wrapper.",
+      "summary": "The issue is mostly due to the older LangChain Chroma wrapper keeping a stale collection state after add_documents() . Instead of: [code omitted] use: from langchain_chroma import Chroma With newer chromadb versions, ne...",
+      "tags": [
+        "public-q&a",
+        "Stack Overflow",
+        "python",
+        "langchain",
+        "vector-database",
+        "chromadb",
+        "rag"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Ritik Thakur",
+      "source_url": "https://stackoverflow.com/questions/79945139/chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-langc",
+      "quality_signals": [
+        "Public Q&A from Stack Overflow.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 58 times on the source site."
+      ],
+      "created_at": "2026-05-22T10:42:56+00:00",
+      "curated_at": "2026-05-27T04:48:51.442504+00:00",
+      "path": "posts/se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l.md"
+    },
+    {
+      "id": "se-ai-50597-ratios-of-train-test-and-validation-data-is-same-in-3-fold-cross-validat",
+      "title": "ratios of train, test and validation data is same in 3-fold cross validation",
+      "question": "In Stratified K Fold Cross Validation, we use 1 fold as validation, 1 fold as evaluation, and remaining 3 folds for training data. This process is represented in the following figure: However, in my experiments, the number of samples are very less and that is why, my supervisor suggested me to perform 3 fold cross validation. As per my understanding, in case of 3 folds, 1 fold will be used as training, 1 will be used as test, and 1 fold will be used validation fold. However, this is absolutely ridiculous as the number of samples in train and validation folds are same. Is there any issue in my understanding? How can I correctly implement 3-fold cross validation for small sampled low dimensio...",
+      "answer": "After reading several papers and blogs, I think, I have got the answer of my question. Now, I am sharing it for future reference. For 3-fold cross-validation, usually 2 folds are considered as training set and remaining 1 fold is treated as test set. This process is illustrated in this figure: In case of validation set, we can divide training set into train and validation set in 80:20 ratio. [code omitted] Full flow will be in this outlined steps: [code omitted] Then we will report average test performance over 3 folds as final result. Full implementation code is provided here: [code omitted] The shuffle=True flag in StratifiedKFold will create reproducible folds only if random_state is fixed. Setting Same folds every run? shuffle=False YES shuffle=True + fixed random_state YES shuffle=True + no random_state NO",
+      "summary": "After reading several papers and blogs, I think, I have got the answer of my question. Now, I am sharing it for future reference. For 3-fold cross-validation, usually 2 folds are considered as training set and remaining...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "machine-learning",
+        "comparison",
+        "cross-validation",
+        "validation-datasets",
+        "k-fold-cv"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "treeoid",
+      "source_url": "https://ai.stackexchange.com/questions/50597/ratios-of-train-test-and-validation-data-is-same-in-3-fold-cross-validation",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 0; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 36 times on the source site."
+      ],
+      "created_at": "2026-05-19T20:42:54+00:00",
+      "curated_at": "2026-05-27T04:48:50.712375+00:00",
+      "path": "posts/se-ai-50597-ratios-of-train-test-and-validation-data-is-same-in-3-fold-cross-validat.md"
+    },
+    {
+      "id": "se-genai-2787-what-data-types-are-used-for-llms-that-can-identify-currently-playing-mu",
+      "title": "What data types are used for LLMs that can identify currently playing music?",
+      "question": "Do LLMs with music identification support use acoustic fingerprints used in traditional music identifiers (Shazam and the like), or music files that get processed (like on an transformer encoder), or something else as data for training?",
+      "answer": "It's not the best answer, little searching about the process, I found this GH repo: Song Identification Using Audio Fingerprinting and Deep Learning , so you could clone and try output; however, you can have a look at this paper about process: Robust Neural Audio Fingerprinting using Music Foundation Models \"Figure 1:The contrastive learning framework for neural audio fingerprinting. Original and augmented audio (e.g., audio with noise, reverb, time/pitch changes) are passed through a shared encoder, followed by a projection head. The resulting embeddings (z and z′) are optimized using a contrastive loss to encourage invariance to audio degradations.\"",
+      "summary": "It's not the best answer, little searching about the process, I found this GH repo: Song Identification Using Audio Fingerprinting and Deep Learning , so you could clone and try output; however, you can have a look at t...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "training"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Mario",
+      "source_url": "https://genai.stackexchange.com/questions/2787/what-data-types-are-used-for-llms-that-can-identify-currently-playing-music",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 33 times on the source site."
+      ],
+      "created_at": "2026-05-21T19:56:49+00:00",
+      "curated_at": "2026-05-27T04:48:50.451363+00:00",
+      "path": "posts/se-genai-2787-what-data-types-are-used-for-llms-that-can-identify-currently-playing-mu.md"
+    },
     {
       "id": "se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model",
       "title": "How to Evaluate my RAG System using Local / free tier API model",
@@ -115,82 +204,89 @@
       "created_at": "2026-05-10T00:29:44+00:00",
       "curated_at": "2026-05-23T04:07:53.022906+00:00",
       "path": "posts/se-genai-2781-how-accurate-are-modern-ai-content-detectors.md"
-    },
+    }
+  ],
+  "entries": [
     {
-      "id": "ai-agent-daily-github-platform",
-      "title": "怎样做一个每天汇总优质 AI 问答并发布到 GitHub 的平台？",
-      "question": "我想让 agent 每天搜集用户向 AI 提出的优质问题和回答，提交到我的 GitHub 上，并且可以在 public network 上查看。这个东西应该怎么设计？",
-      "answer": "最小可行版本可以分成三层：内容入口、审核整理、公开展示。内容入口负责收集候选问答，可以来自手动 JSON、GitHub Issue、表单、浏览器插件或聊天导出，但必须先做授权和匿名化。审核整理层负责给每条问答补标题、摘要、标签、模型、质量理由，并过滤掉隐私、低质量和不可公开内容。公开展示层用 GitHub Pages 发布静态站点，仓库保存原始 curated 数据、每日构建出的 JSON 和 Markdown。每天的自动化任务只做两件事：把新增候选转成规范数据，再重新构建 public 目录并提交。这样它既像知乎一样能浏览和归档，又保留 GitHub 的版本历史和公共可见性。",
-      "summary": "把平台拆成内容入口、审核整理和公开展示三层，用 GitHub Pages 做可公开访问的知识库。",
+      "id": "se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l",
+      "title": "ChromaDB get() or query() returns empty results after embedding updates in LangChain",
+      "question": "I am building a local RAG pipeline using LangChain, ChromaDB, and a local embedding model. The document ingestion pipeline runs without errors, and the vector store initializes correctly. However, when I attempt to query the vector store immediately after updating or adding new documents, the similarity search returns empty lists [] or fails to retrieve the newly added chunks. Here is a minimal reproducible example of how I am initializing the store and adding documents: [code omitted] What I have tried: I verified that add_documents returns the list of UUIDs successfully, meaning the write operation completes without an explicit exception. If I restart the entire Python script and initiali...",
+      "answer": "The issue is mostly due to the older LangChain Chroma wrapper keeping a stale collection state after add_documents() . Instead of: [code omitted] use: from langchain_chroma import Chroma With newer chromadb versions, newly added embeddings are sometimes not immediately reflected in the active retriever session. Re-initializing the vector store after add_documents() usually fixes it: vector_store.add_documents(docs, ids=ids) vector_store = Chroma( collection_name=\"research_docs\", embedding_function=embeddings, persist_directory=\"./chroma_db\" ) Also make sure: old collections are not created with different embedding models collection count is increasing: print(vector_store._collection.count()) This is mainly a compatibility/state refresh issue between newer chromadb and the deprecated langchain_community wrapper.",
+      "summary": "The issue is mostly due to the older LangChain Chroma wrapper keeping a stale collection state after add_documents() . Instead of: [code omitted] use: from langchain_chroma import Chroma With newer chromadb versions, ne...",
       "tags": [
-        "产品设计",
-        "agent",
-        "GitHub Pages",
-        "知识库"
+        "public-q&a",
+        "Stack Overflow",
+        "python",
+        "langchain",
+        "vector-database",
+        "chromadb",
+        "rag"
       ],
-      "model": "ChatGPT",
-      "author_alias": "klis",
-      "source_url": null,
+      "model": "Public Q&A",
+      "author_alias": "Ritik Thakur",
+      "source_url": "https://stackoverflow.com/questions/79945139/chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-langc",
       "quality_signals": [
-        "问题明确提出了自动化、GitHub 留痕和公开访问三个产品约束。",
-        "回答给出可落地架构，而不是停留在概念层。",
-        "适合作为平台第一条元问题，解释这个项目本身为什么存在。"
+        "Public Q&A from Stack Overflow.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 58 times on the source site."
       ],
-      "created_at": "2026-05-19T13:00:00+08:00",
-      "curated_at": "2026-05-19T13:35:00+08:00",
-      "path": "posts/ai-agent-daily-github-platform.md"
+      "created_at": "2026-05-22T10:42:56+00:00",
+      "curated_at": "2026-05-27T04:48:51.442504+00:00",
+      "path": "posts/se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l.md"
     },
     {
-      "id": "how-to-ask-ai-better-questions",
-      "title": "怎样向 AI 提出更容易得到高质量答案的问题？",
-      "question": "我发现自己问 AI 的问题经常太宽泛，回答看起来很完整但用不上。有没有一种提问方式，能让 AI 给出更具体、可执行、能直接帮我推进工作的答案？",
-      "answer": "可以把问题拆成四个部分：背景、目标、约束、输出格式。先告诉 AI 你正在做什么、为什么重要；再说明你希望它帮你完成哪一步；然后列出限制条件，比如时间、预算、技术栈、受众、不能做什么；最后指定你想要的交付物，比如清单、表格、代码、决策建议或下一步行动。一个更好的提问模板是：我正在做 X，目标是 Y，当前限制是 A/B/C。请帮我产出 Z，并解释你为什么这样排序。这样问的好处是，AI 不需要猜上下文，也更容易把答案压到你真正能用的形态。",
-      "summary": "把好问题拆成背景、目标、约束和输出格式，让 AI 从泛泛回答转向可执行交付。",
-      "tags": [
-        "提问方法",
-        "prompt",
-        "效率"
-      ],
-      "model": "ChatGPT",
-      "author_alias": "anonymous",
-      "source_url": null,
-      "quality_signals": [
-        "问题来自真实使用痛点，不是抽象技巧讨论。",
-        "答案给出了可复用模板，能直接迁移到工作、学习和创作场景。",
-        "问题和回答都适合沉淀为公共知识卡片。"
-      ],
-      "created_at": "2026-05-19T00:00:00+08:00",
-      "curated_at": "2026-05-19T13:30:00+08:00",
-      "path": "posts/how-to-ask-ai-better-questions.md"
-    },
-    {
-      "id": "se-ai-50569-what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-ope",
-      "title": "What is the meaning of N in the description \"The mean operation still operates over all the elements, and divides by N\"?",
-      "question": "In torch.nn.MSELoss doc , it is mentioned that : where N is the batch size. Then : The mean operation still operates over all the elements, and divides by N . I am confused about the definition of N. According to my understanding, if the ground truth and predicted inputs are each of shape (B, C, H, W) (a batch of images, each of shape (C, H, W)), and MSE is used in this context as a reconstruction loss in an image reconstruction head with reduction = \"mean\", then N is defined as the total number of pixels = B × C × H × W. So here, N is the total number of pixels, not the batch size. So my question is: is my understanding of N in this use case correct?",
-      "answer": "Yes, reduction mean is equivalent of summing everything and dividing by the product of the resulting tensor",
-      "summary": "Yes, reduction mean is equivalent of summing everything and dividing by the product of the resulting tensor",
+      "id": "se-ai-50597-ratios-of-train-test-and-validation-data-is-same-in-3-fold-cross-validat",
+      "title": "ratios of train, test and validation data is same in 3-fold cross validation",
+      "question": "In Stratified K Fold Cross Validation, we use 1 fold as validation, 1 fold as evaluation, and remaining 3 folds for training data. This process is represented in the following figure: However, in my experiments, the number of samples are very less and that is why, my supervisor suggested me to perform 3 fold cross validation. As per my understanding, in case of 3 folds, 1 fold will be used as training, 1 will be used as test, and 1 fold will be used validation fold. However, this is absolutely ridiculous as the number of samples in train and validation folds are same. Is there any issue in my understanding? How can I correctly implement 3-fold cross validation for small sampled low dimensio...",
+      "answer": "After reading several papers and blogs, I think, I have got the answer of my question. Now, I am sharing it for future reference. For 3-fold cross-validation, usually 2 folds are considered as training set and remaining 1 fold is treated as test set. This process is illustrated in this figure: In case of validation set, we can divide training set into train and validation set in 80:20 ratio. [code omitted] Full flow will be in this outlined steps: [code omitted] Then we will report average test performance over 3 folds as final result. Full implementation code is provided here: [code omitted] The shuffle=True flag in StratifiedKFold will create reproducible folds only if random_state is fixed. Setting Same folds every run? shuffle=False YES shuffle=True + fixed random_state YES shuffle=True + no random_state NO",
+      "summary": "After reading several papers and blogs, I think, I have got the answer of my question. Now, I am sharing it for future reference. For 3-fold cross-validation, usually 2 folds are considered as training set and remaining...",
       "tags": [
         "public-q&a",
         "AI Stack Exchange",
-        "python",
-        "pytorch",
-        "mean-squared-error"
+        "machine-learning",
+        "comparison",
+        "cross-validation",
+        "validation-datasets",
+        "k-fold-cv"
       ],
       "model": "Public Q&A",
-      "author_alias": "Alberto",
-      "source_url": "https://ai.stackexchange.com/questions/50569/what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-operates-o",
+      "author_alias": "treeoid",
+      "source_url": "https://ai.stackexchange.com/questions/50597/ratios-of-train-test-and-validation-data-is-same-in-3-fold-cross-validation",
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
         "Question score: 0; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 48 times on the source site."
+        "Viewed 36 times on the source site."
       ],
-      "created_at": "2026-05-05T14:55:39+00:00",
-      "curated_at": "2026-05-19T05:51:32.192939+00:00",
-      "path": "posts/se-ai-50569-what-is-the-meaning-of-n-in-the-description-the-mean-operation-still-ope.md"
-    }
-  ],
-  "entries": [
+      "created_at": "2026-05-19T20:42:54+00:00",
+      "curated_at": "2026-05-27T04:48:50.712375+00:00",
+      "path": "posts/se-ai-50597-ratios-of-train-test-and-validation-data-is-same-in-3-fold-cross-validat.md"
+    },
+    {
+      "id": "se-genai-2787-what-data-types-are-used-for-llms-that-can-identify-currently-playing-mu",
+      "title": "What data types are used for LLMs that can identify currently playing music?",
+      "question": "Do LLMs with music identification support use acoustic fingerprints used in traditional music identifiers (Shazam and the like), or music files that get processed (like on an transformer encoder), or something else as data for training?",
+      "answer": "It's not the best answer, little searching about the process, I found this GH repo: Song Identification Using Audio Fingerprinting and Deep Learning , so you could clone and try output; however, you can have a look at this paper about process: Robust Neural Audio Fingerprinting using Music Foundation Models \"Figure 1:The contrastive learning framework for neural audio fingerprinting. Original and augmented audio (e.g., audio with noise, reverb, time/pitch changes) are passed through a shared encoder, followed by a projection head. The resulting embeddings (z and z′) are optimized using a contrastive loss to encourage invariance to audio degradations.\"",
+      "summary": "It's not the best answer, little searching about the process, I found this GH repo: Song Identification Using Audio Fingerprinting and Deep Learning , so you could clone and try output; however, you can have a look at t...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "training"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Mario",
+      "source_url": "https://genai.stackexchange.com/questions/2787/what-data-types-are-used-for-llms-that-can-identify-currently-playing-music",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 33 times on the source site."
+      ],
+      "created_at": "2026-05-21T19:56:49+00:00",
+      "curated_at": "2026-05-27T04:48:50.451363+00:00",
+      "path": "posts/se-genai-2787-what-data-types-are-used-for-llms-that-can-identify-currently-playing-mu.md"
+    },
     {
       "id": "se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model",
       "title": "How to Evaluate my RAG System using Local / free tier API model",

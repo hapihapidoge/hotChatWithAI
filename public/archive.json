@@ -1,5 +1,23 @@
 [
   {
+    "id": "se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l",
+    "title": "ChromaDB get() or query() returns empty results after embedding updates in LangChain",
+    "path": "posts/se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l.md",
+    "curated_at": "2026-05-27T04:48:51.442504+00:00"
+  },
+  {
+    "id": "se-ai-50597-ratios-of-train-test-and-validation-data-is-same-in-3-fold-cross-validat",
+    "title": "ratios of train, test and validation data is same in 3-fold cross validation",
+    "path": "posts/se-ai-50597-ratios-of-train-test-and-validation-data-is-same-in-3-fold-cross-validat.md",
+    "curated_at": "2026-05-27T04:48:50.712375+00:00"
+  },
+  {
+    "id": "se-genai-2787-what-data-types-are-used-for-llms-that-can-identify-currently-playing-mu",
+    "title": "What data types are used for LLMs that can identify currently playing music?",
+    "path": "posts/se-genai-2787-what-data-types-are-used-for-llms-that-can-identify-currently-playing-mu.md",
+    "curated_at": "2026-05-27T04:48:50.451363+00:00"
+  },
+  {
     "id": "se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model",
     "title": "How to Evaluate my RAG System using Local / free tier API model",
     "path": "posts/se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model.md",

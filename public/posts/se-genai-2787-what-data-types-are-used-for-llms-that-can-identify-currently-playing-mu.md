@@ -1,6 +1,6 @@
 # What data types are used for LLMs that can identify currently playing music?
 
-Curated at: `2026-05-28T04:39:37.987863+00:00`
+Curated at: `2026-05-29T04:43:03.257014+00:00`
 Model: `Public Q&A`
 Author: `Mario`
 Tags: `public-q&a, GenAI Stack Exchange, llm, training`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2787/what-data-types-are-used-
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 1; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 37 times on the source site.
+- Viewed 41 times on the source site.
 
 ## Question
 

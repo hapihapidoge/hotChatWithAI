@@ -1,6 +1,6 @@
 # ratios of train, test and validation data is same in 3-fold cross validation
 
-Curated at: `2026-05-29T04:43:03.530418+00:00`
+Curated at: `2026-05-30T04:17:43.462339+00:00`
 Model: `Public Q&A`
 Author: `treeoid`
 Tags: `public-q&a, AI Stack Exchange, machine-learning, comparison, cross-validation, validation-datasets, k-fold-cv`

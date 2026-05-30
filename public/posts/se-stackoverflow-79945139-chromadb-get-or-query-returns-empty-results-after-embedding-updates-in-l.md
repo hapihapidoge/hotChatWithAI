@@ -1,6 +1,6 @@
 # ChromaDB get() or query() returns empty results after embedding updates in LangChain
 
-Curated at: `2026-05-29T04:43:04.292733+00:00`
+Curated at: `2026-05-30T04:17:44.618771+00:00`
 Model: `Public Q&A`
 Author: `Ritik Thakur`
 Tags: `public-q&a, Stack Overflow, python, langchain, vector-database, chromadb, rag`
@@ -11,7 +11,7 @@ Source: https://stackoverflow.com/questions/79945139/chromadb-get-or-query-retur
 
 - Public Q&A from Stack Overflow.
 - Question score: 1; answer score: 1.
-- Viewed 61 times on the source site.
+- Viewed 62 times on the source site.
 
 ## Question
 

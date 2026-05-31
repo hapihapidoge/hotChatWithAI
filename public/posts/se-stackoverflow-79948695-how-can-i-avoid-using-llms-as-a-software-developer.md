@@ -1,8 +1,8 @@
 # How can I avoid using LLMs as a software developer?
 
-Curated at: `2026-05-30T04:17:44.073533+00:00`
+Curated at: `2026-05-31T04:51:50.004372+00:00`
 Model: `Public Q&A`
-Author: `Security Hound`
+Author: `bobsbeenjamin`
 Tags: `public-q&a, Stack Overflow, large-language-model`
 Source: https://stackoverflow.com/questions/79948695/how-can-i-avoid-using-llms-as-a-software-developer
 
@@ -10,8 +10,8 @@ Source: https://stackoverflow.com/questions/79948695/how-can-i-avoid-using-llms-
 ## Why It Is Good
 
 - Public Q&A from Stack Overflow.
-- Question score: 3; answer score: 1.
-- Viewed 80 times on the source site.
+- Question score: 8; answer score: 5.
+- Viewed 506 times on the source site.
 
 ## Question
 
@@ -19,4 +19,4 @@ Introduction I've been developing software very successfully for many years. The
 
 ## Answer
 
-If you need something that will think the. You obviously cannot trust LLMs, additionally they almost always will agree with you, even if you are wrong and when you “correct the “ they will agree with you even if you are wrong.
+As someone who has hired software engineers: I would be hesitant to hire someone who outright rejects using LLMs. I don't ever plan on forcing devs to use them, but every dev I've personally worked with has seen speed-ups in output when they really understand how to use them. My best advice is to go out and work for yourself for a while. If you can afford to take 6 months off work (which your problem statement claims), then you can afford to spend 6 month trying to make money off that pet idea you've undoubtfully been kicking around in your head. This would leave no gap in your resume, and would efficiently hedge your bets.

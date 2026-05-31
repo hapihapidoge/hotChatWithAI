@@ -3,25 +3,31 @@
     "id": "se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l",
     "title": "ChromaDB get() or query() returns empty results after embedding updates in LangChain",
     "path": "posts/se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l.md",
-    "curated_at": "2026-05-30T04:17:44.618771+00:00"
+    "curated_at": "2026-05-31T04:51:50.231305+00:00"
   },
   {
     "id": "se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer",
     "title": "How can I avoid using LLMs as a software developer?",
     "path": "posts/se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer.md",
-    "curated_at": "2026-05-30T04:17:44.073533+00:00"
+    "curated_at": "2026-05-31T04:51:50.004372+00:00"
   },
   {
     "id": "se-ai-50597-ratios-of-train-test-and-validation-data-is-same-in-3-fold-cross-validat",
     "title": "ratios of train, test and validation data is same in 3-fold cross validation",
     "path": "posts/se-ai-50597-ratios-of-train-test-and-validation-data-is-same-in-3-fold-cross-validat.md",
-    "curated_at": "2026-05-30T04:17:43.462339+00:00"
+    "curated_at": "2026-05-31T04:51:49.682096+00:00"
+  },
+  {
+    "id": "se-genai-2792-how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-comp",
+    "title": "How to list all Claude Code chat histories across all projects on a computer?",
+    "path": "posts/se-genai-2792-how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-comp.md",
+    "curated_at": "2026-05-31T04:51:49.488362+00:00"
   },
   {
     "id": "se-genai-2787-what-data-types-are-used-for-llms-that-can-identify-currently-playing-mu",
     "title": "What data types are used for LLMs that can identify currently playing music?",
     "path": "posts/se-genai-2787-what-data-types-are-used-for-llms-that-can-identify-currently-playing-mu.md",
-    "curated_at": "2026-05-30T04:17:43.082474+00:00"
+    "curated_at": "2026-05-31T04:51:49.426305+00:00"
   },
   {
     "id": "se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model",

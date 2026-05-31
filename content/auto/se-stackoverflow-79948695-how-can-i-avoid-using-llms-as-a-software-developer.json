@@ -2,23 +2,23 @@
   "id": "se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer",
   "title": "How can I avoid using LLMs as a software developer?",
   "question": "Introduction I've been developing software very successfully for many years. The reason I have chosen this profession is multifold: I'm a creative person and I need to create things I have an insatiable drive to think Financial compensation one may expect for doing this I can do my thing without constantly socializing with superficial small-talk The drive to solve real-world problems and to be a force for the better To work from home It has been a great ride to do this and I achieved quite a lot of things. Yet, the industry gradually deteriorated. I do know that sometimes libraries and APIs are needed, but I witnessed too many times the drive to use some library only to solve some problem w...",
-  "answer": "If you need something that will think the. You obviously cannot trust LLMs, additionally they almost always will agree with you, even if you are wrong and when you “correct the “ they will agree with you even if you are wrong.",
-  "summary": "If you need something that will think the. You obviously cannot trust LLMs, additionally they almost always will agree with you, even if you are wrong and when you “correct the “ they will agree with you even if you are...",
+  "answer": "As someone who has hired software engineers: I would be hesitant to hire someone who outright rejects using LLMs. I don't ever plan on forcing devs to use them, but every dev I've personally worked with has seen speed-ups in output when they really understand how to use them. My best advice is to go out and work for yourself for a while. If you can afford to take 6 months off work (which your problem statement claims), then you can afford to spend 6 month trying to make money off that pet idea you've undoubtfully been kicking around in your head. This would leave no gap in your resume, and would efficiently hedge your bets.",
+  "summary": "As someone who has hired software engineers: I would be hesitant to hire someone who outright rejects using LLMs. I don't ever plan on forcing devs to use them, but every dev I've personally worked with has seen speed-u...",
   "tags": [
     "public-q&a",
     "Stack Overflow",
     "large-language-model"
   ],
   "model": "Public Q&A",
-  "author_alias": "Security Hound",
+  "author_alias": "bobsbeenjamin",
   "source_url": "https://stackoverflow.com/questions/79948695/how-can-i-avoid-using-llms-as-a-software-developer",
   "quality_signals": [
     "Public Q&A from Stack Overflow.",
-    "Question score: 3; answer score: 1.",
-    "Viewed 80 times on the source site."
+    "Question score: 8; answer score: 5.",
+    "Viewed 506 times on the source site."
   ],
   "created_at": "2026-05-29T21:39:47+00:00",
-  "curated_at": "2026-05-30T04:17:44.073533+00:00",
+  "curated_at": "2026-05-31T04:51:50.004372+00:00",
   "license": "Stack Exchange content is user-contributed and requires source attribution.",
   "source": "Stack Overflow"
 }

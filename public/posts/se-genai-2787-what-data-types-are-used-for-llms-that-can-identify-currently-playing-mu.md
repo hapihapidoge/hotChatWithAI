@@ -1,6 +1,6 @@
 # What data types are used for LLMs that can identify currently playing music?
 
-Curated at: `2026-05-31T04:51:49.426305+00:00`
+Curated at: `2026-06-01T05:16:11.567107+00:00`
 Model: `Public Q&A`
 Author: `Mario`
 Tags: `public-q&a, GenAI Stack Exchange, llm, training`

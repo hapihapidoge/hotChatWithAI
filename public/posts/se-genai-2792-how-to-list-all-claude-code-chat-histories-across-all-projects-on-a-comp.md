@@ -1,6 +1,6 @@
 # How to list all Claude Code chat histories across all projects on a computer?
 
-Curated at: `2026-05-31T04:51:49.488362+00:00`
+Curated at: `2026-06-01T05:16:11.717272+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, claude-code, history`

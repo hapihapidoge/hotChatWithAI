@@ -1,6 +1,6 @@
 # How to list all Claude Code chat histories across all projects on a computer?
 
-Curated at: `2026-06-03T05:17:14.248032+00:00`
+Curated at: `2026-06-04T05:05:16.922056+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, claude-code, history`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2792/how-to-list-all-claude-co
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 0; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 30 times on the source site.
+- Viewed 33 times on the source site.
 
 ## Question
 

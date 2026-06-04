@@ -1,8 +1,8 @@
 # How can I avoid using LLMs as a software developer?
 
-Curated at: `2026-06-03T05:17:14.987295+00:00`
+Curated at: `2026-06-04T05:05:17.513430+00:00`
 Model: `Public Q&A`
-Author: `Lajos Arpad`
+Author: `John Dallman`
 Tags: `public-q&a, Stack Overflow, large-language-model`
 Source: https://stackoverflow.com/questions/79948695/how-can-i-avoid-using-llms-as-a-software-developer
 
@@ -10,8 +10,8 @@ Source: https://stackoverflow.com/questions/79948695/how-can-i-avoid-using-llms-
 ## Why It Is Good
 
 - Public Q&A from Stack Overflow.
-- Question score: 71; answer score: 13.
-- Viewed 5207 times on the source site.
+- Question score: 82; answer score: 16.
+- Viewed 5824 times on the source site.
 
 ## Question
 
@@ -19,4 +19,4 @@ Introduction I've been developing software very successfully for many years. The
 
 ## Answer
 
-You write code in order to compile, not vibes. Your compiler is deterministic. A compiler does not eat 5% of the electric output of your country. A compiler does not send your stuff to some remote server outside your control. A compiler does not change your source-code. You are writing your C code and it's being translated by the compiler. Whereas with LLMs you write texts. So if I need to ask "please implement feature XYZ for me" then how is this endeavor different exactly from the ask of a nontechnical person? And how is it remotely satisfying to prompt all day for something that you could write? Why is my engineering even needed if the LLM is so good? And, if it is not so good, then why am I being forced to use it? LLMs are statistical bots, that is, they take the grand average, perhaps adjusted here and there, but without real insight. They predict the statistically most likely next token. Hence, why should I use a bot that generates average code when my aim is high-quality? How come that they want to pay money to some company so it will generate this average for me? They might as well channel that money to me and ask me to spend less time by working on improvements. In that case they would waste the money they are so eager to waste and they would get the average quality they are so eager to acquire.
+If your employer is pressuring developers to maximise token usage, get out, because they're being stupid. That style will vanish as token prices climb steeply to allow the "AI" companies to IPO. There are plenty of companies that are far more restrained about LLM usage. Go and work for one of those.

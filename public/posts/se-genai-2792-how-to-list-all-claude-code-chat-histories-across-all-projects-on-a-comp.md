@@ -1,6 +1,6 @@
 # How to list all Claude Code chat histories across all projects on a computer?
 
-Curated at: `2026-06-04T05:05:16.922056+00:00`
+Curated at: `2026-06-05T04:47:04.505844+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, claude-code, history`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2792/how-to-list-all-claude-co
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 0; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 33 times on the source site.
+- Viewed 35 times on the source site.
 
 ## Question
 
@@ -20,4 +20,4 @@ I use Claude Code CLI ( @anthropic-ai/claude-code ) across many different projec
 
 ## Answer
 
-How to list all Claude Code chat histories across all projects on a computer? One can use Cloud CLI (aka Claude Code UI) : [code omitted] One can also use claude-monitor to view the costs over all sessions: [code omitted]
+How to list all Claude Code chat histories across all projects on a computer? To clarify the terms, Claude Code views each folder as a project, and within a project, each each session is saved as a jsonl file. Therefore, in the Claude Code logs, sessions are grouped by projects. 1 session = 1 jsonl file (the file name is a UUID Version 4, I believe entirely randomly generated). One can use claude-code-log : [code omitted] or, if using a server with no GUI (Claude Code sessions with be browsable via port 8077): [code omitted] It'll generate HTML files like this one: Another option: Cloud CLI (aka Claude Code UI) : [code omitted] One can also use claude-monitor to view the costs over all sessions: [code omitted]

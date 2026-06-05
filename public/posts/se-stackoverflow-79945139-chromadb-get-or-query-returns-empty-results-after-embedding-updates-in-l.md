@@ -1,6 +1,6 @@
 # ChromaDB get() or query() returns empty results after embedding updates in LangChain
 
-Curated at: `2026-06-04T05:05:17.803276+00:00`
+Curated at: `2026-06-05T04:47:05.493126+00:00`
 Model: `Public Q&A`
 Author: `Ritik Thakur`
 Tags: `public-q&a, Stack Overflow, python, langchain, vector-database, chromadb, rag`

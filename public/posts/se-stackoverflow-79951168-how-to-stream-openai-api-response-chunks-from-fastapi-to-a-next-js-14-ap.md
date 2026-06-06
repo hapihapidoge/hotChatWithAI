@@ -1,0 +1,23 @@
+# How to stream OpenAI API response chunks from FastAPI to a Next.js 14 App Router frontend using Server-Sent Events (SSE)?
+
+Curated at: `2026-06-06T04:20:04.510382+00:00`
+Model: `Public Q&A`
+Author: `Tae Kim`
+Tags: `public-q&a, Stack Overflow, python, next.js, fastapi, openai-api, server-sent-events`
+Source: https://stackoverflow.com/questions/79951168/how-to-stream-openai-api-response-chunks-from-fastapi-to-a-next-js-14-app-router
+
+
+## Why It Is Good
+
+- Public Q&A from Stack Overflow.
+- Question score: 0; answer score: 1.
+- The answer was accepted by the question author.
+- Viewed 50 times on the source site.
+
+## Question
+
+I'm building an AI chat feature where FastAPI streams OpenAI responses to my Next.js 14 (App Router) frontend using SSE, but the stream either stops after the first chunk or delivers all chunks at once instead of progressively. Backend (FastAPI) : [code omitted] Frontend (Next.js 14 App Router): [code omitted] What I've tried: Added Cache-Control: no-cache header Added X-Accel-Buffering: no header Tried fetch() with ReadableStream Tried EventSource API (doesn't support POST) Expected : Each word streams progressively like ChatGPT Actual: All text arrives at once after full completion Environment: [code omitted]
+
+## Answer
+
+I run this exact stack in production (FastAPI streaming OpenAI to a Next.js App Router UI). There are usually three independent things that make the chunks "stop after the first one" or "all arrive at once". Fix them together and it streams token-by-token. 1) Your @app.post("/chat") is reading prompt as a query parameter, not from the JSON body async def chat(prompt: str) with no Body(...) makes FastAPI treat prompt as a query string. Your Next.js code sends it inside JSON.stringify({ prompt }) , so the server actually returns a 422 before any streaming starts, and depending on how you log it you can mistake that for "one chunk then stops". Use a Pydantic model (or Body ): from pydantic import BaseModel class ChatIn(BaseModel): prompt: str @app.post("/chat") async def chat(payload: ChatIn): ... 2) SSE framing is broken by newlines in delta.content SSE events are delimited by a blank line ( \n\n ). Model deltas regularly contain \n , which silently splits one logical event into several malformed ones, and many proxies/clients then either drop them or buffer until the connection closes. Encode the payload as JSON (or at minimum escape newlines), and send an explicit terminator so the client knows when to stop: import json from fastapi.responses import StreamingResponse @app.post("/chat") async def chat(payload: ChatIn): async def generate(): stream = await client.chat.completion...

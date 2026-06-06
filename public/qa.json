@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-05T04:47:05.856843+00:00",
+  "generated_at": "2026-06-06T04:20:05.542768+00:00",
   "summary": {
-    "items": 12,
+    "items": 13,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -17,6 +17,7 @@
       "cross-validation",
       "deep-learning",
       "evaluation",
+      "fastapi",
       "federated-learning",
       "genai-ecosystem",
       "gradient",
@@ -28,12 +29,15 @@
       "llm",
       "machine-learning",
       "mean-squared-error",
+      "next.js",
+      "openai-api",
       "prompt",
       "public-q&a",
       "python",
       "pytorch",
       "rag",
       "regression",
+      "server-sent-events",
       "survival",
       "training",
       "validation-datasets",
@@ -49,6 +53,82 @@
     ]
   },
   "featured": [
+    {
+      "id": "se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer",
+      "title": "How can I avoid using LLMs as a software developer?",
+      "question": "Introduction I've been developing software very successfully for many years. The reason I have chosen this profession is multifold: I'm a creative person and I need to create things I have an insatiable drive to think Financial compensation one may expect for doing this I can do my thing without constantly socializing with superficial small-talk The drive to solve real-world problems and to be a force for the better To work from home It has been a great ride to do this and I achieved quite a lot of things. Yet, the industry gradually deteriorated. I do know that sometimes libraries and APIs are needed, but I witnessed too many times the drive to use some library only to solve some problem w...",
+      "answer": "If your employer is pressuring developers to maximise token usage, get out, because they're being stupid. That style will vanish as token prices climb steeply to allow the \"AI\" companies to IPO. There are plenty of companies that are far more restrained about LLM usage. Go and work for one of those.",
+      "summary": "If your employer is pressuring developers to maximise token usage, get out, because they're being stupid. That style will vanish as token prices climb steeply to allow the \"AI\" companies to IPO. There are plenty of comp...",
+      "tags": [
+        "public-q&a",
+        "Stack Overflow",
+        "large-language-model"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "John Dallman",
+      "source_url": "https://stackoverflow.com/questions/79948695/how-can-i-avoid-using-llms-as-a-software-developer",
+      "quality_signals": [
+        "Public Q&A from Stack Overflow.",
+        "Question score: 107; answer score: 16.",
+        "Viewed 7416 times on the source site."
+      ],
+      "created_at": "2026-05-29T21:39:47+00:00",
+      "curated_at": "2026-06-06T04:20:04.953688+00:00",
+      "path": "posts/se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer.md"
+    },
+    {
+      "id": "se-stackoverflow-79951168-how-to-stream-openai-api-response-chunks-from-fastapi-to-a-next-js-14-ap",
+      "title": "How to stream OpenAI API response chunks from FastAPI to a Next.js 14 App Router frontend using Server-Sent Events (SSE)?",
+      "question": "I'm building an AI chat feature where FastAPI streams OpenAI responses to my Next.js 14 (App Router) frontend using SSE, but the stream either stops after the first chunk or delivers all chunks at once instead of progressively. Backend (FastAPI) : [code omitted] Frontend (Next.js 14 App Router): [code omitted] What I've tried: Added Cache-Control: no-cache header Added X-Accel-Buffering: no header Tried fetch() with ReadableStream Tried EventSource API (doesn't support POST) Expected : Each word streams progressively like ChatGPT Actual: All text arrives at once after full completion Environment: [code omitted]",
+      "answer": "I run this exact stack in production (FastAPI streaming OpenAI to a Next.js App Router UI). There are usually three independent things that make the chunks \"stop after the first one\" or \"all arrive at once\". Fix them together and it streams token-by-token. 1) Your @app.post(\"/chat\") is reading prompt as a query parameter, not from the JSON body async def chat(prompt: str) with no Body(...) makes FastAPI treat prompt as a query string. Your Next.js code sends it inside JSON.stringify({ prompt }) , so the server actually returns a 422 before any streaming starts, and depending on how you log it you can mistake that for \"one chunk then stops\". Use a Pydantic model (or Body ): from pydantic import BaseModel class ChatIn(BaseModel): prompt: str @app.post(\"/chat\") async def chat(payload: ChatIn): ... 2) SSE framing is broken by newlines in delta.content SSE events are delimited by a blank line ( \\n\\n ). Model deltas regularly contain \\n , which silently splits one logical event into several malformed ones, and many proxies/clients then either drop them or buffer until the connection closes. Encode the payload as JSON (or at minimum escape newlines), and send an explicit terminator so the client knows when to stop: import json from fastapi.responses import StreamingResponse @app.post(\"/chat\") async def chat(payload: ChatIn): async def generate(): stream = await client.chat.completion...",
+      "summary": "I run this exact stack in production (FastAPI streaming OpenAI to a Next.js App Router UI). There are usually three independent things that make the chunks \"stop after the first one\" or \"all arrive at once\". Fix them to...",
+      "tags": [
+        "public-q&a",
+        "Stack Overflow",
+        "python",
+        "next.js",
+        "fastapi",
+        "openai-api",
+        "server-sent-events"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Tae Kim",
+      "source_url": "https://stackoverflow.com/questions/79951168/how-to-stream-openai-api-response-chunks-from-fastapi-to-a-next-js-14-app-router",
+      "quality_signals": [
+        "Public Q&A from Stack Overflow.",
+        "Question score: 0; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 50 times on the source site."
+      ],
+      "created_at": "2026-06-04T04:26:00+00:00",
+      "curated_at": "2026-06-06T04:20:04.510382+00:00",
+      "path": "posts/se-stackoverflow-79951168-how-to-stream-openai-api-response-chunks-from-fastapi-to-a-next-js-14-ap.md"
+    },
+    {
+      "id": "se-genai-2792-how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-comp",
+      "title": "How to list all Claude Code chat histories across all projects on a computer?",
+      "question": "I use Claude Code CLI ( @anthropic-ai/claude-code ) across many different projects on my local machine. Depending on the project, I might spin it up via the built-in terminal inside Cursor IDE, or directly through standard shells like PowerShell and bash, or somewhere else (VS Code, JetBrains, etc.). Since Claude Code seems to keep track of previous interactions, I would like to know if there is a way to see a unified list of all the chats/sessions I've had across all projects on my computer. How to list all Claude Code chat histories across all projects on a computer?",
+      "answer": "How to list all Claude Code chat histories across all projects on a computer? To clarify the terms, Claude Code views each folder as a project, and within a project, each each session is saved as a jsonl file. Therefore, in the Claude Code logs, sessions are grouped by projects. 1 session = 1 jsonl file (the file name is a UUID Version 4, I believe entirely randomly generated). One can use claude-code-log : [code omitted] or, if using a server with no GUI (Claude Code sessions with be browsable via port 8077): [code omitted] It'll generate HTML files like this one: Another option: Cloud CLI (aka Claude Code UI) : [code omitted] One can also use claude-monitor to view the costs over all sessions: [code omitted]",
+      "summary": "How to list all Claude Code chat histories across all projects on a computer? To clarify the terms, Claude Code views each folder as a project, and within a project, each each session is saved as a jsonl file. Therefore...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "claude-code",
+        "history"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2792/how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-computer",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 41 times on the source site."
+      ],
+      "created_at": "2026-05-24T23:05:16+00:00",
+      "curated_at": "2026-06-06T04:20:04.109998+00:00",
+      "path": "posts/se-genai-2792-how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-comp.md"
+    },
     {
       "id": "se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l",
       "title": "ChromaDB get() or query() returns empty results after embedding updates in LangChain",
@@ -75,54 +155,6 @@
       "created_at": "2026-05-22T10:42:56+00:00",
       "curated_at": "2026-06-05T04:47:05.493126+00:00",
       "path": "posts/se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l.md"
-    },
-    {
-      "id": "se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer",
-      "title": "How can I avoid using LLMs as a software developer?",
-      "question": "Introduction I've been developing software very successfully for many years. The reason I have chosen this profession is multifold: I'm a creative person and I need to create things I have an insatiable drive to think Financial compensation one may expect for doing this I can do my thing without constantly socializing with superficial small-talk The drive to solve real-world problems and to be a force for the better To work from home It has been a great ride to do this and I achieved quite a lot of things. Yet, the industry gradually deteriorated. I do know that sometimes libraries and APIs are needed, but I witnessed too many times the drive to use some library only to solve some problem w...",
-      "answer": "If your employer is pressuring developers to maximise token usage, get out, because they're being stupid. That style will vanish as token prices climb steeply to allow the \"AI\" companies to IPO. There are plenty of companies that are far more restrained about LLM usage. Go and work for one of those.",
-      "summary": "If your employer is pressuring developers to maximise token usage, get out, because they're being stupid. That style will vanish as token prices climb steeply to allow the \"AI\" companies to IPO. There are plenty of comp...",
-      "tags": [
-        "public-q&a",
-        "Stack Overflow",
-        "large-language-model"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "John Dallman",
-      "source_url": "https://stackoverflow.com/questions/79948695/how-can-i-avoid-using-llms-as-a-software-developer",
-      "quality_signals": [
-        "Public Q&A from Stack Overflow.",
-        "Question score: 98; answer score: 16.",
-        "Viewed 6948 times on the source site."
-      ],
-      "created_at": "2026-05-29T21:39:47+00:00",
-      "curated_at": "2026-06-05T04:47:05.118079+00:00",
-      "path": "posts/se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer.md"
-    },
-    {
-      "id": "se-genai-2792-how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-comp",
-      "title": "How to list all Claude Code chat histories across all projects on a computer?",
-      "question": "I use Claude Code CLI ( @anthropic-ai/claude-code ) across many different projects on my local machine. Depending on the project, I might spin it up via the built-in terminal inside Cursor IDE, or directly through standard shells like PowerShell and bash, or somewhere else (VS Code, JetBrains, etc.). Since Claude Code seems to keep track of previous interactions, I would like to know if there is a way to see a unified list of all the chats/sessions I've had across all projects on my computer. How to list all Claude Code chat histories across all projects on a computer?",
-      "answer": "How to list all Claude Code chat histories across all projects on a computer? To clarify the terms, Claude Code views each folder as a project, and within a project, each each session is saved as a jsonl file. Therefore, in the Claude Code logs, sessions are grouped by projects. 1 session = 1 jsonl file (the file name is a UUID Version 4, I believe entirely randomly generated). One can use claude-code-log : [code omitted] or, if using a server with no GUI (Claude Code sessions with be browsable via port 8077): [code omitted] It'll generate HTML files like this one: Another option: Cloud CLI (aka Claude Code UI) : [code omitted] One can also use claude-monitor to view the costs over all sessions: [code omitted]",
-      "summary": "How to list all Claude Code chat histories across all projects on a computer? To clarify the terms, Claude Code views each folder as a project, and within a project, each each session is saved as a jsonl file. Therefore...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "claude-code",
-        "history"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2792/how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-computer",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 35 times on the source site."
-      ],
-      "created_at": "2026-05-24T23:05:16+00:00",
-      "curated_at": "2026-06-05T04:47:04.505844+00:00",
-      "path": "posts/se-genai-2792-how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-comp.md"
     },
     {
       "id": "se-genai-2787-what-data-types-are-used-for-llms-that-can-identify-currently-playing-mu",
@@ -176,36 +208,85 @@
       "created_at": "2026-05-19T20:42:54+00:00",
       "curated_at": "2026-06-02T05:00:19.717544+00:00",
       "path": "posts/se-ai-50597-ratios-of-train-test-and-validation-data-is-same-in-3-fold-cross-validat.md"
-    },
-    {
-      "id": "se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model",
-      "title": "How to Evaluate my RAG System using Local / free tier API model",
-      "question": "I have build a self-evaluating RAG System now i want to evaluate it so i can know what my system performance for that i used DeeEval framework but the thing is i don’t have OpenAI API key as i’m broke so i’m using free tier API from Groq/Cerebra’s or local model but the thing is local model like llama 3.1 8b model is giving invalid json and keep failing like out of 25 question it’s failing on 15-19 question and when i use free tier api from cerebra’s in DeepEval it’s Rate limit just max out as DeevEval generate 3-4 response per question ,",
-      "answer": "you can use the Open source project vllm. https://github.com/vllm-project/vllm vLLM enables you to serve and infer from your local model and provide you an OpenAI compatible interface. once you setup vllm you can use - this will be provide you an open ai interface to your model. [code omitted] you can then call the OpenAI Completions API with vLLM : [code omitted] Since you are already using a local model, I assume you have enough resources to run it. more details on local serving : https://docs.vllm.ai/en/stable/getting_started/quickstart/",
-      "summary": "you can use the Open source project vllm. https://github.com/vllm-project/vllm vLLM enables you to serve and infer from your local model and provide you an OpenAI compatible interface. once you setup vllm you can use -...",
-      "tags": [
-        "public-q&a",
-        "Stack Overflow",
-        "machine-learning",
-        "deep-learning",
-        "artificial-intelligence",
-        "evaluation",
-        "rag"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Arnaud",
-      "source_url": "https://stackoverflow.com/questions/79939816/how-to-evaluate-my-rag-system-using-local-free-tier-api-model",
-      "quality_signals": [
-        "Public Q&A from Stack Overflow.",
-        "Question score: 1; answer score: 1.",
-        "Viewed 119 times on the source site."
-      ],
-      "created_at": "2026-05-12T08:30:23+00:00",
-      "curated_at": "2026-05-26T04:34:26.191843+00:00",
-      "path": "posts/se-stackoverflow-79939816-how-to-evaluate-my-rag-system-using-local-free-tier-api-model.md"
     }
   ],
   "entries": [
+    {
+      "id": "se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer",
+      "title": "How can I avoid using LLMs as a software developer?",
+      "question": "Introduction I've been developing software very successfully for many years. The reason I have chosen this profession is multifold: I'm a creative person and I need to create things I have an insatiable drive to think Financial compensation one may expect for doing this I can do my thing without constantly socializing with superficial small-talk The drive to solve real-world problems and to be a force for the better To work from home It has been a great ride to do this and I achieved quite a lot of things. Yet, the industry gradually deteriorated. I do know that sometimes libraries and APIs are needed, but I witnessed too many times the drive to use some library only to solve some problem w...",
+      "answer": "If your employer is pressuring developers to maximise token usage, get out, because they're being stupid. That style will vanish as token prices climb steeply to allow the \"AI\" companies to IPO. There are plenty of companies that are far more restrained about LLM usage. Go and work for one of those.",
+      "summary": "If your employer is pressuring developers to maximise token usage, get out, because they're being stupid. That style will vanish as token prices climb steeply to allow the \"AI\" companies to IPO. There are plenty of comp...",
+      "tags": [
+        "public-q&a",
+        "Stack Overflow",
+        "large-language-model"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "John Dallman",
+      "source_url": "https://stackoverflow.com/questions/79948695/how-can-i-avoid-using-llms-as-a-software-developer",
+      "quality_signals": [
+        "Public Q&A from Stack Overflow.",
+        "Question score: 107; answer score: 16.",
+        "Viewed 7416 times on the source site."
+      ],
+      "created_at": "2026-05-29T21:39:47+00:00",
+      "curated_at": "2026-06-06T04:20:04.953688+00:00",
+      "path": "posts/se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer.md"
+    },
+    {
+      "id": "se-stackoverflow-79951168-how-to-stream-openai-api-response-chunks-from-fastapi-to-a-next-js-14-ap",
+      "title": "How to stream OpenAI API response chunks from FastAPI to a Next.js 14 App Router frontend using Server-Sent Events (SSE)?",
+      "question": "I'm building an AI chat feature where FastAPI streams OpenAI responses to my Next.js 14 (App Router) frontend using SSE, but the stream either stops after the first chunk or delivers all chunks at once instead of progressively. Backend (FastAPI) : [code omitted] Frontend (Next.js 14 App Router): [code omitted] What I've tried: Added Cache-Control: no-cache header Added X-Accel-Buffering: no header Tried fetch() with ReadableStream Tried EventSource API (doesn't support POST) Expected : Each word streams progressively like ChatGPT Actual: All text arrives at once after full completion Environment: [code omitted]",
+      "answer": "I run this exact stack in production (FastAPI streaming OpenAI to a Next.js App Router UI). There are usually three independent things that make the chunks \"stop after the first one\" or \"all arrive at once\". Fix them together and it streams token-by-token. 1) Your @app.post(\"/chat\") is reading prompt as a query parameter, not from the JSON body async def chat(prompt: str) with no Body(...) makes FastAPI treat prompt as a query string. Your Next.js code sends it inside JSON.stringify({ prompt }) , so the server actually returns a 422 before any streaming starts, and depending on how you log it you can mistake that for \"one chunk then stops\". Use a Pydantic model (or Body ): from pydantic import BaseModel class ChatIn(BaseModel): prompt: str @app.post(\"/chat\") async def chat(payload: ChatIn): ... 2) SSE framing is broken by newlines in delta.content SSE events are delimited by a blank line ( \\n\\n ). Model deltas regularly contain \\n , which silently splits one logical event into several malformed ones, and many proxies/clients then either drop them or buffer until the connection closes. Encode the payload as JSON (or at minimum escape newlines), and send an explicit terminator so the client knows when to stop: import json from fastapi.responses import StreamingResponse @app.post(\"/chat\") async def chat(payload: ChatIn): async def generate(): stream = await client.chat.completion...",
+      "summary": "I run this exact stack in production (FastAPI streaming OpenAI to a Next.js App Router UI). There are usually three independent things that make the chunks \"stop after the first one\" or \"all arrive at once\". Fix them to...",
+      "tags": [
+        "public-q&a",
+        "Stack Overflow",
+        "python",
+        "next.js",
+        "fastapi",
+        "openai-api",
+        "server-sent-events"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Tae Kim",
+      "source_url": "https://stackoverflow.com/questions/79951168/how-to-stream-openai-api-response-chunks-from-fastapi-to-a-next-js-14-app-router",
+      "quality_signals": [
+        "Public Q&A from Stack Overflow.",
+        "Question score: 0; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 50 times on the source site."
+      ],
+      "created_at": "2026-06-04T04:26:00+00:00",
+      "curated_at": "2026-06-06T04:20:04.510382+00:00",
+      "path": "posts/se-stackoverflow-79951168-how-to-stream-openai-api-response-chunks-from-fastapi-to-a-next-js-14-ap.md"
+    },
+    {
+      "id": "se-genai-2792-how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-comp",
+      "title": "How to list all Claude Code chat histories across all projects on a computer?",
+      "question": "I use Claude Code CLI ( @anthropic-ai/claude-code ) across many different projects on my local machine. Depending on the project, I might spin it up via the built-in terminal inside Cursor IDE, or directly through standard shells like PowerShell and bash, or somewhere else (VS Code, JetBrains, etc.). Since Claude Code seems to keep track of previous interactions, I would like to know if there is a way to see a unified list of all the chats/sessions I've had across all projects on my computer. How to list all Claude Code chat histories across all projects on a computer?",
+      "answer": "How to list all Claude Code chat histories across all projects on a computer? To clarify the terms, Claude Code views each folder as a project, and within a project, each each session is saved as a jsonl file. Therefore, in the Claude Code logs, sessions are grouped by projects. 1 session = 1 jsonl file (the file name is a UUID Version 4, I believe entirely randomly generated). One can use claude-code-log : [code omitted] or, if using a server with no GUI (Claude Code sessions with be browsable via port 8077): [code omitted] It'll generate HTML files like this one: Another option: Cloud CLI (aka Claude Code UI) : [code omitted] One can also use claude-monitor to view the costs over all sessions: [code omitted]",
+      "summary": "How to list all Claude Code chat histories across all projects on a computer? To clarify the terms, Claude Code views each folder as a project, and within a project, each each session is saved as a jsonl file. Therefore...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "claude-code",
+        "history"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2792/how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-computer",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 41 times on the source site."
+      ],
+      "created_at": "2026-05-24T23:05:16+00:00",
+      "curated_at": "2026-06-06T04:20:04.109998+00:00",
+      "path": "posts/se-genai-2792-how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-comp.md"
+    },
     {
       "id": "se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l",
       "title": "ChromaDB get() or query() returns empty results after embedding updates in LangChain",
@@ -232,54 +313,6 @@
       "created_at": "2026-05-22T10:42:56+00:00",
       "curated_at": "2026-06-05T04:47:05.493126+00:00",
       "path": "posts/se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l.md"
-    },
-    {
-      "id": "se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer",
-      "title": "How can I avoid using LLMs as a software developer?",
-      "question": "Introduction I've been developing software very successfully for many years. The reason I have chosen this profession is multifold: I'm a creative person and I need to create things I have an insatiable drive to think Financial compensation one may expect for doing this I can do my thing without constantly socializing with superficial small-talk The drive to solve real-world problems and to be a force for the better To work from home It has been a great ride to do this and I achieved quite a lot of things. Yet, the industry gradually deteriorated. I do know that sometimes libraries and APIs are needed, but I witnessed too many times the drive to use some library only to solve some problem w...",
-      "answer": "If your employer is pressuring developers to maximise token usage, get out, because they're being stupid. That style will vanish as token prices climb steeply to allow the \"AI\" companies to IPO. There are plenty of companies that are far more restrained about LLM usage. Go and work for one of those.",
-      "summary": "If your employer is pressuring developers to maximise token usage, get out, because they're being stupid. That style will vanish as token prices climb steeply to allow the \"AI\" companies to IPO. There are plenty of comp...",
-      "tags": [
-        "public-q&a",
-        "Stack Overflow",
-        "large-language-model"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "John Dallman",
-      "source_url": "https://stackoverflow.com/questions/79948695/how-can-i-avoid-using-llms-as-a-software-developer",
-      "quality_signals": [
-        "Public Q&A from Stack Overflow.",
-        "Question score: 98; answer score: 16.",
-        "Viewed 6948 times on the source site."
-      ],
-      "created_at": "2026-05-29T21:39:47+00:00",
-      "curated_at": "2026-06-05T04:47:05.118079+00:00",
-      "path": "posts/se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer.md"
-    },
-    {
-      "id": "se-genai-2792-how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-comp",
-      "title": "How to list all Claude Code chat histories across all projects on a computer?",
-      "question": "I use Claude Code CLI ( @anthropic-ai/claude-code ) across many different projects on my local machine. Depending on the project, I might spin it up via the built-in terminal inside Cursor IDE, or directly through standard shells like PowerShell and bash, or somewhere else (VS Code, JetBrains, etc.). Since Claude Code seems to keep track of previous interactions, I would like to know if there is a way to see a unified list of all the chats/sessions I've had across all projects on my computer. How to list all Claude Code chat histories across all projects on a computer?",
-      "answer": "How to list all Claude Code chat histories across all projects on a computer? To clarify the terms, Claude Code views each folder as a project, and within a project, each each session is saved as a jsonl file. Therefore, in the Claude Code logs, sessions are grouped by projects. 1 session = 1 jsonl file (the file name is a UUID Version 4, I believe entirely randomly generated). One can use claude-code-log : [code omitted] or, if using a server with no GUI (Claude Code sessions with be browsable via port 8077): [code omitted] It'll generate HTML files like this one: Another option: Cloud CLI (aka Claude Code UI) : [code omitted] One can also use claude-monitor to view the costs over all sessions: [code omitted]",
-      "summary": "How to list all Claude Code chat histories across all projects on a computer? To clarify the terms, Claude Code views each folder as a project, and within a project, each each session is saved as a jsonl file. Therefore...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "claude-code",
-        "history"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2792/how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-computer",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 35 times on the source site."
-      ],
-      "created_at": "2026-05-24T23:05:16+00:00",
-      "curated_at": "2026-06-05T04:47:04.505844+00:00",
-      "path": "posts/se-genai-2792-how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-comp.md"
     },
     {
       "id": "se-genai-2787-what-data-types-are-used-for-llms-that-can-identify-currently-playing-mu",

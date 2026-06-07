@@ -1,6 +1,6 @@
 # How to stream OpenAI API response chunks from FastAPI to a Next.js 14 App Router frontend using Server-Sent Events (SSE)?
 
-Curated at: `2026-06-06T04:20:04.510382+00:00`
+Curated at: `2026-06-07T04:56:03.116256+00:00`
 Model: `Public Q&A`
 Author: `Tae Kim`
 Tags: `public-q&a, Stack Overflow, python, next.js, fastapi, openai-api, server-sent-events`
@@ -12,7 +12,7 @@ Source: https://stackoverflow.com/questions/79951168/how-to-stream-openai-api-re
 - Public Q&A from Stack Overflow.
 - Question score: 0; answer score: 1.
 - The answer was accepted by the question author.
-- Viewed 50 times on the source site.
+- Viewed 58 times on the source site.
 
 ## Question
 

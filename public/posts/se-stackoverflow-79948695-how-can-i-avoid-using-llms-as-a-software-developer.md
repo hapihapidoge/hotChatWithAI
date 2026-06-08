@@ -1,6 +1,6 @@
 # How can I avoid using LLMs as a software developer?
 
-Curated at: `2026-06-07T04:56:03.767493+00:00`
+Curated at: `2026-06-08T05:01:31.155483+00:00`
 Model: `Public Q&A`
 Author: `John Dallman`
 Tags: `public-q&a, Stack Overflow, large-language-model`
@@ -11,7 +11,7 @@ Source: https://stackoverflow.com/questions/79948695/how-can-i-avoid-using-llms-
 
 - Public Q&A from Stack Overflow.
 - Question score: 108; answer score: 16.
-- Viewed 7620 times on the source site.
+- Viewed 7747 times on the source site.
 
 ## Question
 

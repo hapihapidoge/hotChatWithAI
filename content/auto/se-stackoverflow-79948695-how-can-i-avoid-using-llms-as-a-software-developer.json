@@ -14,11 +14,11 @@
   "source_url": "https://stackoverflow.com/questions/79948695/how-can-i-avoid-using-llms-as-a-software-developer",
   "quality_signals": [
     "Public Q&A from Stack Overflow.",
-    "Question score: 112; answer score: 16.",
-    "Viewed 7981 times on the source site."
+    "Question score: 114; answer score: 16.",
+    "Viewed 8064 times on the source site."
   ],
   "created_at": "2026-05-29T21:39:47+00:00",
-  "curated_at": "2026-06-10T04:48:51.436104+00:00",
+  "curated_at": "2026-06-11T04:58:50.571012+00:00",
   "license": "Stack Exchange content is user-contributed and requires source attribution.",
   "source": "Stack Overflow"
 }

@@ -1,0 +1,26 @@
+{
+  "id": "se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre",
+  "title": "Can neural music identifiers trained on free data still identify non-free songs?",
+  "question": "Many neural network-based music identifiers (that are sometimes integrated into LLMs) are trained exclusively on freely licensed music (or public-domain music) to avoid liability. Is there a \"RAG-like\" funcionality for this?",
+  "answer": "Can neural music identifiers trained on free data still identify non-free songs? Yes. Example: Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance . (If the test songs were included in the training phase, the evaluation may measure memorization rather than the model's true capability to generalize its acoustic feature extraction to new music.)",
+  "summary": "Can neural music identifiers trained on free data still identify non-free songs? Yes. Example: Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance . (If the test songs were included in...",
+  "tags": [
+    "public-q&a",
+    "GenAI Stack Exchange",
+    "llm",
+    "music"
+  ],
+  "model": "Public Q&A",
+  "author_alias": "Franck Dernoncourt",
+  "source_url": "https://genai.stackexchange.com/questions/2803/can-neural-music-identifiers-trained-on-free-data-still-identify-non-free-songs",
+  "quality_signals": [
+    "Public Q&A from GenAI Stack Exchange.",
+    "Question score: 0; answer score: 0.",
+    "The answer was accepted by the question author.",
+    "Viewed 29 times on the source site."
+  ],
+  "created_at": "2026-06-08T01:16:41+00:00",
+  "curated_at": "2026-06-11T04:58:49.543939+00:00",
+  "license": "Stack Exchange content is user-contributed and requires source attribution.",
+  "source": "GenAI Stack Exchange"
+}

@@ -1,6 +1,6 @@
 # 'Modular' genAI: same base model, different datasets
 
-Curated at: `2026-06-11T04:58:49.273999+00:00`
+Curated at: `2026-06-12T05:03:30.430947+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, fine-tuning, rag`
@@ -11,7 +11,7 @@ Source: https://genai.stackexchange.com/questions/2804/modular-genai-same-base-m
 
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 2; answer score: 1.
-- Viewed 12 times on the source site.
+- Viewed 16 times on the source site.
 
 ## Question
 

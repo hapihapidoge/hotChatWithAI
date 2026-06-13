@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T05:03:31.374338+00:00",
+  "generated_at": "2026-06-13T04:51:39.386537+00:00",
   "summary": {
     "items": 15,
     "tags": [
@@ -56,6 +56,55 @@
   },
   "featured": [
     {
+      "id": "se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre",
+      "title": "Can neural music identifiers trained on free data still identify non-free songs?",
+      "question": "Many neural network-based music identifiers (that are sometimes integrated into LLMs) are trained exclusively on freely licensed music (or public-domain music) to avoid liability. Is there a \"RAG-like\" funcionality for this?",
+      "answer": "Can neural music identifiers trained on free data still identify non-free songs? Yes. Example: Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance . (If the test songs were included in the training phase, the evaluation may measure memorization rather than the model's true capability to generalize its acoustic feature extraction to new music.)",
+      "summary": "Can neural music identifiers trained on free data still identify non-free songs? Yes. Example: Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance . (If the test songs were included in...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "music"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2803/can-neural-music-identifiers-trained-on-free-data-still-identify-non-free-songs",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 35 times on the source site."
+      ],
+      "created_at": "2026-06-08T01:16:41+00:00",
+      "curated_at": "2026-06-13T04:51:38.460601+00:00",
+      "path": "posts/se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre.md"
+    },
+    {
+      "id": "se-genai-2804-modular-genai-same-base-model-different-datasets",
+      "title": "'Modular' genAI: same base model, different datasets",
+      "question": "I have discovered the power of Small Language Models, whose strength is their specialised dataset which can allow them to outperform generic LLMs in a specific field, as well as consume much smaller amounts of energy and computational resources. All the Hugging Face quantised models I've downloaded still occupy ~5GB each, which adds up when going for the 1 LM per job type system. Is this inevitable or can a generic genAI still perform well with a dataset it can query on the fly? The closest I've got to is using a LightRAG MCP server, but I feel like if it hasn't been previously trained on the material it will be slow, clunky and inaccurate nevertheless - still, I'd be curious to know if sep...",
+      "answer": "Totally depends on your use case, tolerable model size and required model quality. RAG, LORA adapters and other light techniques to adapt a base model are useful for some but not all tasks.",
+      "summary": "Totally depends on your use case, tolerable model size and required model quality. RAG, LORA adapters and other light techniques to adapt a base model are useful for some but not all tasks.",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "fine-tuning",
+        "rag"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2804/modular-genai-same-base-model-different-datasets",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 1.",
+        "Viewed 17 times on the source site."
+      ],
+      "created_at": "2026-06-08T15:09:56+00:00",
+      "curated_at": "2026-06-13T04:51:38.253010+00:00",
+      "path": "posts/se-genai-2804-modular-genai-same-base-model-different-datasets.md"
+    },
+    {
       "id": "se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer",
       "title": "How can I avoid using LLMs as a software developer?",
       "question": "Introduction I've been developing software very successfully for many years. The reason I have chosen this profession is multifold: I'm a creative person and I need to create things I have an insatiable drive to think Financial compensation one may expect for doing this I can do my thing without constantly socializing with superficial small-talk The drive to solve real-world problems and to be a force for the better To work from home It has been a great ride to do this and I achieved quite a lot of things. Yet, the industry gradually deteriorated. I do know that sometimes libraries and APIs are needed, but I witnessed too many times the drive to use some library only to solve some problem w...",
@@ -77,55 +126,6 @@
       "created_at": "2026-05-29T21:39:47+00:00",
       "curated_at": "2026-06-12T05:03:31.142801+00:00",
       "path": "posts/se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer.md"
-    },
-    {
-      "id": "se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre",
-      "title": "Can neural music identifiers trained on free data still identify non-free songs?",
-      "question": "Many neural network-based music identifiers (that are sometimes integrated into LLMs) are trained exclusively on freely licensed music (or public-domain music) to avoid liability. Is there a \"RAG-like\" funcionality for this?",
-      "answer": "Can neural music identifiers trained on free data still identify non-free songs? Yes. Example: Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance . (If the test songs were included in the training phase, the evaluation may measure memorization rather than the model's true capability to generalize its acoustic feature extraction to new music.)",
-      "summary": "Can neural music identifiers trained on free data still identify non-free songs? Yes. Example: Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance . (If the test songs were included in...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "llm",
-        "music"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2803/can-neural-music-identifiers-trained-on-free-data-still-identify-non-free-songs",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 33 times on the source site."
-      ],
-      "created_at": "2026-06-08T01:16:41+00:00",
-      "curated_at": "2026-06-12T05:03:30.596408+00:00",
-      "path": "posts/se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre.md"
-    },
-    {
-      "id": "se-genai-2804-modular-genai-same-base-model-different-datasets",
-      "title": "'Modular' genAI: same base model, different datasets",
-      "question": "I have discovered the power of Small Language Models, whose strength is their specialised dataset which can allow them to outperform generic LLMs in a specific field, as well as consume much smaller amounts of energy and computational resources. All the Hugging Face quantised models I've downloaded still occupy ~5GB each, which adds up when going for the 1 LM per job type system. Is this inevitable or can a generic genAI still perform well with a dataset it can query on the fly? The closest I've got to is using a LightRAG MCP server, but I feel like if it hasn't been previously trained on the material it will be slow, clunky and inaccurate nevertheless - still, I'd be curious to know if sep...",
-      "answer": "Totally depends on your use case, tolerable model size and required model quality. RAG, LORA adapters and other light techniques to adapt a base model are useful for some but not all tasks.",
-      "summary": "Totally depends on your use case, tolerable model size and required model quality. RAG, LORA adapters and other light techniques to adapt a base model are useful for some but not all tasks.",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "fine-tuning",
-        "rag"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2804/modular-genai-same-base-model-different-datasets",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 2; answer score: 1.",
-        "Viewed 16 times on the source site."
-      ],
-      "created_at": "2026-06-08T15:09:56+00:00",
-      "curated_at": "2026-06-12T05:03:30.430947+00:00",
-      "path": "posts/se-genai-2804-modular-genai-same-base-model-different-datasets.md"
     },
     {
       "id": "se-stackoverflow-79951168-how-to-stream-openai-api-response-chunks-from-fastapi-to-a-next-js-14-ap",
@@ -210,6 +210,55 @@
   ],
   "entries": [
     {
+      "id": "se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre",
+      "title": "Can neural music identifiers trained on free data still identify non-free songs?",
+      "question": "Many neural network-based music identifiers (that are sometimes integrated into LLMs) are trained exclusively on freely licensed music (or public-domain music) to avoid liability. Is there a \"RAG-like\" funcionality for this?",
+      "answer": "Can neural music identifiers trained on free data still identify non-free songs? Yes. Example: Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance . (If the test songs were included in the training phase, the evaluation may measure memorization rather than the model's true capability to generalize its acoustic feature extraction to new music.)",
+      "summary": "Can neural music identifiers trained on free data still identify non-free songs? Yes. Example: Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance . (If the test songs were included in...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "music"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2803/can-neural-music-identifiers-trained-on-free-data-still-identify-non-free-songs",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 35 times on the source site."
+      ],
+      "created_at": "2026-06-08T01:16:41+00:00",
+      "curated_at": "2026-06-13T04:51:38.460601+00:00",
+      "path": "posts/se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre.md"
+    },
+    {
+      "id": "se-genai-2804-modular-genai-same-base-model-different-datasets",
+      "title": "'Modular' genAI: same base model, different datasets",
+      "question": "I have discovered the power of Small Language Models, whose strength is their specialised dataset which can allow them to outperform generic LLMs in a specific field, as well as consume much smaller amounts of energy and computational resources. All the Hugging Face quantised models I've downloaded still occupy ~5GB each, which adds up when going for the 1 LM per job type system. Is this inevitable or can a generic genAI still perform well with a dataset it can query on the fly? The closest I've got to is using a LightRAG MCP server, but I feel like if it hasn't been previously trained on the material it will be slow, clunky and inaccurate nevertheless - still, I'd be curious to know if sep...",
+      "answer": "Totally depends on your use case, tolerable model size and required model quality. RAG, LORA adapters and other light techniques to adapt a base model are useful for some but not all tasks.",
+      "summary": "Totally depends on your use case, tolerable model size and required model quality. RAG, LORA adapters and other light techniques to adapt a base model are useful for some but not all tasks.",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "fine-tuning",
+        "rag"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2804/modular-genai-same-base-model-different-datasets",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 1.",
+        "Viewed 17 times on the source site."
+      ],
+      "created_at": "2026-06-08T15:09:56+00:00",
+      "curated_at": "2026-06-13T04:51:38.253010+00:00",
+      "path": "posts/se-genai-2804-modular-genai-same-base-model-different-datasets.md"
+    },
+    {
       "id": "se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer",
       "title": "How can I avoid using LLMs as a software developer?",
       "question": "Introduction I've been developing software very successfully for many years. The reason I have chosen this profession is multifold: I'm a creative person and I need to create things I have an insatiable drive to think Financial compensation one may expect for doing this I can do my thing without constantly socializing with superficial small-talk The drive to solve real-world problems and to be a force for the better To work from home It has been a great ride to do this and I achieved quite a lot of things. Yet, the industry gradually deteriorated. I do know that sometimes libraries and APIs are needed, but I witnessed too many times the drive to use some library only to solve some problem w...",
@@ -231,55 +280,6 @@
       "created_at": "2026-05-29T21:39:47+00:00",
       "curated_at": "2026-06-12T05:03:31.142801+00:00",
       "path": "posts/se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer.md"
-    },
-    {
-      "id": "se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre",
-      "title": "Can neural music identifiers trained on free data still identify non-free songs?",
-      "question": "Many neural network-based music identifiers (that are sometimes integrated into LLMs) are trained exclusively on freely licensed music (or public-domain music) to avoid liability. Is there a \"RAG-like\" funcionality for this?",
-      "answer": "Can neural music identifiers trained on free data still identify non-free songs? Yes. Example: Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance . (If the test songs were included in the training phase, the evaluation may measure memorization rather than the model's true capability to generalize its acoustic feature extraction to new music.)",
-      "summary": "Can neural music identifiers trained on free data still identify non-free songs? Yes. Example: Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance . (If the test songs were included in...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "llm",
-        "music"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2803/can-neural-music-identifiers-trained-on-free-data-still-identify-non-free-songs",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 33 times on the source site."
-      ],
-      "created_at": "2026-06-08T01:16:41+00:00",
-      "curated_at": "2026-06-12T05:03:30.596408+00:00",
-      "path": "posts/se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre.md"
-    },
-    {
-      "id": "se-genai-2804-modular-genai-same-base-model-different-datasets",
-      "title": "'Modular' genAI: same base model, different datasets",
-      "question": "I have discovered the power of Small Language Models, whose strength is their specialised dataset which can allow them to outperform generic LLMs in a specific field, as well as consume much smaller amounts of energy and computational resources. All the Hugging Face quantised models I've downloaded still occupy ~5GB each, which adds up when going for the 1 LM per job type system. Is this inevitable or can a generic genAI still perform well with a dataset it can query on the fly? The closest I've got to is using a LightRAG MCP server, but I feel like if it hasn't been previously trained on the material it will be slow, clunky and inaccurate nevertheless - still, I'd be curious to know if sep...",
-      "answer": "Totally depends on your use case, tolerable model size and required model quality. RAG, LORA adapters and other light techniques to adapt a base model are useful for some but not all tasks.",
-      "summary": "Totally depends on your use case, tolerable model size and required model quality. RAG, LORA adapters and other light techniques to adapt a base model are useful for some but not all tasks.",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "fine-tuning",
-        "rag"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2804/modular-genai-same-base-model-different-datasets",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 2; answer score: 1.",
-        "Viewed 16 times on the source site."
-      ],
-      "created_at": "2026-06-08T15:09:56+00:00",
-      "curated_at": "2026-06-12T05:03:30.430947+00:00",
-      "path": "posts/se-genai-2804-modular-genai-same-base-model-different-datasets.md"
     },
     {
       "id": "se-stackoverflow-79951168-how-to-stream-openai-api-response-chunks-from-fastapi-to-a-next-js-14-ap",

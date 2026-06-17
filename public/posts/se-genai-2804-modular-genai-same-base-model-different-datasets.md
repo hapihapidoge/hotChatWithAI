@@ -1,6 +1,6 @@
 # 'Modular' genAI: same base model, different datasets
 
-Curated at: `2026-06-16T05:33:25.575038+00:00`
+Curated at: `2026-06-17T05:16:46.548562+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, fine-tuning, rag`

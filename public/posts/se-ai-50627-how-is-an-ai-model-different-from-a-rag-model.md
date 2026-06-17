@@ -1,0 +1,22 @@
+# How is an AI model different from a RAG model?
+
+Curated at: `2026-06-17T05:16:47.210181+00:00`
+Model: `Public Q&A`
+Author: `nbro`
+Tags: `public-q&a, AI Stack Exchange, comparison, terminology, large-language-models, retrieval-augmented-generation`
+Source: https://ai.stackexchange.com/questions/50627/how-is-an-ai-model-different-from-a-rag-model
+
+
+## Why It Is Good
+
+- Public Q&A from AI Stack Exchange.
+- Question score: 1; answer score: 1.
+- Viewed 31 times on the source site.
+
+## Question
+
+In my understanding, a model is a black box that takes text as input and returns text as output, usually an answer to a question. A model can be trained, meaning it becomes smarter. Is it correct to think that a RAG agent is an agent that was not trained, compared to an LLM agent like GPT-OSS? Is a RAG system trained only by companies on their internal data? And is that the only difference compared to GPT-OSS? Please help me understand in simple words.
+
+## Answer
+
+An AI model can mean different things, but I think you're referring to a machine learning (ML) model. There are many ML models, e.g. linear regression, support vector machines and neural networks (NNs), which are the most successful models nowadays. A large language model (LLM) is a big neural network. They are big because they have many trainable parameters. You can think of an ML model as a function. If you fix the parameters, you get 1 specific function. So, in general, yes, ML models need to be trained, because otherwise they just compute the function that happens to correspond to their initial parameters. You must adjust these parameters for your specific task. Training refers to the process of adjusting the parameters based on the data. RAG stands for Retrieval Augmented Generation . It's a technique to augment LLMs so that the LLMs can access more data without being retrained. You might want to use this technique because LLMs have certain limitations. For example, they can produce AI hallucinations (i.e. factually wrong or made up info). In RAG, you store additional info in a database and use this info to augment the user's prompt with more relevant info before passing it to the LLM and generate the final answer. I think this article by IBM describes RAG very well: https://www.ibm.com/think/topics/retrieval-augmented-generation

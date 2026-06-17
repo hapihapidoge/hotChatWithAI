@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-16T05:33:26.824674+00:00",
+  "generated_at": "2026-06-17T05:16:48.166020+00:00",
   "summary": {
-    "items": 15,
+    "items": 16,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -27,6 +27,7 @@
       "k-fold-cv",
       "langchain",
       "large-language-model",
+      "large-language-models",
       "llm",
       "machine-learning",
       "mean-squared-error",
@@ -39,8 +40,10 @@
       "pytorch",
       "rag",
       "regression",
+      "retrieval-augmented-generation",
       "server-sent-events",
       "survival",
+      "terminology",
       "training",
       "validation-datasets",
       "vector-database",
@@ -55,6 +58,32 @@
     ]
   },
   "featured": [
+    {
+      "id": "se-ai-50627-how-is-an-ai-model-different-from-a-rag-model",
+      "title": "How is an AI model different from a RAG model?",
+      "question": "In my understanding, a model is a black box that takes text as input and returns text as output, usually an answer to a question. A model can be trained, meaning it becomes smarter. Is it correct to think that a RAG agent is an agent that was not trained, compared to an LLM agent like GPT-OSS? Is a RAG system trained only by companies on their internal data? And is that the only difference compared to GPT-OSS? Please help me understand in simple words.",
+      "answer": "An AI model can mean different things, but I think you're referring to a machine learning (ML) model. There are many ML models, e.g. linear regression, support vector machines and neural networks (NNs), which are the most successful models nowadays. A large language model (LLM) is a big neural network. They are big because they have many trainable parameters. You can think of an ML model as a function. If you fix the parameters, you get 1 specific function. So, in general, yes, ML models need to be trained, because otherwise they just compute the function that happens to correspond to their initial parameters. You must adjust these parameters for your specific task. Training refers to the process of adjusting the parameters based on the data. RAG stands for Retrieval Augmented Generation . It's a technique to augment LLMs so that the LLMs can access more data without being retrained. You might want to use this technique because LLMs have certain limitations. For example, they can produce AI hallucinations (i.e. factually wrong or made up info). In RAG, you store additional info in a database and use this info to augment the user's prompt with more relevant info before passing it to the LLM and generate the final answer. I think this article by IBM describes RAG very well: https://www.ibm.com/think/topics/retrieval-augmented-generation",
+      "summary": "An AI model can mean different things, but I think you're referring to a machine learning (ML) model. There are many ML models, e.g. linear regression, support vector machines and neural networks (NNs), which are the mo...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "comparison",
+        "terminology",
+        "large-language-models",
+        "retrieval-augmented-generation"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "nbro",
+      "source_url": "https://ai.stackexchange.com/questions/50627/how-is-an-ai-model-different-from-a-rag-model",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 31 times on the source site."
+      ],
+      "created_at": "2026-06-13T10:29:57+00:00",
+      "curated_at": "2026-06-17T05:16:47.210181+00:00",
+      "path": "posts/se-ai-50627-how-is-an-ai-model-different-from-a-rag-model.md"
+    },
     {
       "id": "se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre",
       "title": "Can neural music identifiers trained on free data still identify non-free songs?",
@@ -77,7 +106,7 @@
         "Viewed 37 times on the source site."
       ],
       "created_at": "2026-06-08T01:16:41+00:00",
-      "curated_at": "2026-06-16T05:33:25.793392+00:00",
+      "curated_at": "2026-06-17T05:16:46.864125+00:00",
       "path": "posts/se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre.md"
     },
     {
@@ -101,7 +130,7 @@
         "Viewed 17 times on the source site."
       ],
       "created_at": "2026-06-08T15:09:56+00:00",
-      "curated_at": "2026-06-16T05:33:25.575038+00:00",
+      "curated_at": "2026-06-17T05:16:46.548562+00:00",
       "path": "posts/se-genai-2804-modular-genai-same-base-model-different-datasets.md"
     },
     {
@@ -179,36 +208,35 @@
       "created_at": "2026-05-24T23:05:16+00:00",
       "curated_at": "2026-06-07T04:56:02.650843+00:00",
       "path": "posts/se-genai-2792-how-to-list-all-claude-code-chat-histories-across-all-projects-on-a-comp.md"
-    },
-    {
-      "id": "se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l",
-      "title": "ChromaDB get() or query() returns empty results after embedding updates in LangChain",
-      "question": "I am building a local RAG pipeline using LangChain, ChromaDB, and a local embedding model. The document ingestion pipeline runs without errors, and the vector store initializes correctly. However, when I attempt to query the vector store immediately after updating or adding new documents, the similarity search returns empty lists [] or fails to retrieve the newly added chunks. Here is a minimal reproducible example of how I am initializing the store and adding documents: [code omitted] What I have tried: I verified that add_documents returns the list of UUIDs successfully, meaning the write operation completes without an explicit exception. If I restart the entire Python script and initiali...",
-      "answer": "The issue is mostly due to the older LangChain Chroma wrapper keeping a stale collection state after add_documents() . Instead of: [code omitted] use: from langchain_chroma import Chroma With newer chromadb versions, newly added embeddings are sometimes not immediately reflected in the active retriever session. Re-initializing the vector store after add_documents() usually fixes it: vector_store.add_documents(docs, ids=ids) vector_store = Chroma( collection_name=\"research_docs\", embedding_function=embeddings, persist_directory=\"./chroma_db\" ) Also make sure: old collections are not created with different embedding models collection count is increasing: print(vector_store._collection.count()) This is mainly a compatibility/state refresh issue between newer chromadb and the deprecated langchain_community wrapper.",
-      "summary": "The issue is mostly due to the older LangChain Chroma wrapper keeping a stale collection state after add_documents() . Instead of: [code omitted] use: from langchain_chroma import Chroma With newer chromadb versions, ne...",
-      "tags": [
-        "public-q&a",
-        "Stack Overflow",
-        "python",
-        "langchain",
-        "vector-database",
-        "chromadb",
-        "rag"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Ritik Thakur",
-      "source_url": "https://stackoverflow.com/questions/79945139/chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-langc",
-      "quality_signals": [
-        "Public Q&A from Stack Overflow.",
-        "Question score: 1; answer score: 1.",
-        "Viewed 66 times on the source site."
-      ],
-      "created_at": "2026-05-22T10:42:56+00:00",
-      "curated_at": "2026-06-05T04:47:05.493126+00:00",
-      "path": "posts/se-stackoverflow-79945139-chromadb-get-or-query-returns-empty-results-after-embedding-updates-in-l.md"
     }
   ],
   "entries": [
+    {
+      "id": "se-ai-50627-how-is-an-ai-model-different-from-a-rag-model",
+      "title": "How is an AI model different from a RAG model?",
+      "question": "In my understanding, a model is a black box that takes text as input and returns text as output, usually an answer to a question. A model can be trained, meaning it becomes smarter. Is it correct to think that a RAG agent is an agent that was not trained, compared to an LLM agent like GPT-OSS? Is a RAG system trained only by companies on their internal data? And is that the only difference compared to GPT-OSS? Please help me understand in simple words.",
+      "answer": "An AI model can mean different things, but I think you're referring to a machine learning (ML) model. There are many ML models, e.g. linear regression, support vector machines and neural networks (NNs), which are the most successful models nowadays. A large language model (LLM) is a big neural network. They are big because they have many trainable parameters. You can think of an ML model as a function. If you fix the parameters, you get 1 specific function. So, in general, yes, ML models need to be trained, because otherwise they just compute the function that happens to correspond to their initial parameters. You must adjust these parameters for your specific task. Training refers to the process of adjusting the parameters based on the data. RAG stands for Retrieval Augmented Generation . It's a technique to augment LLMs so that the LLMs can access more data without being retrained. You might want to use this technique because LLMs have certain limitations. For example, they can produce AI hallucinations (i.e. factually wrong or made up info). In RAG, you store additional info in a database and use this info to augment the user's prompt with more relevant info before passing it to the LLM and generate the final answer. I think this article by IBM describes RAG very well: https://www.ibm.com/think/topics/retrieval-augmented-generation",
+      "summary": "An AI model can mean different things, but I think you're referring to a machine learning (ML) model. There are many ML models, e.g. linear regression, support vector machines and neural networks (NNs), which are the mo...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "comparison",
+        "terminology",
+        "large-language-models",
+        "retrieval-augmented-generation"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "nbro",
+      "source_url": "https://ai.stackexchange.com/questions/50627/how-is-an-ai-model-different-from-a-rag-model",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 31 times on the source site."
+      ],
+      "created_at": "2026-06-13T10:29:57+00:00",
+      "curated_at": "2026-06-17T05:16:47.210181+00:00",
+      "path": "posts/se-ai-50627-how-is-an-ai-model-different-from-a-rag-model.md"
+    },
     {
       "id": "se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre",
       "title": "Can neural music identifiers trained on free data still identify non-free songs?",
@@ -231,7 +259,7 @@
         "Viewed 37 times on the source site."
       ],
       "created_at": "2026-06-08T01:16:41+00:00",
-      "curated_at": "2026-06-16T05:33:25.793392+00:00",
+      "curated_at": "2026-06-17T05:16:46.864125+00:00",
       "path": "posts/se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre.md"
     },
     {
@@ -255,7 +283,7 @@
         "Viewed 17 times on the source site."
       ],
       "created_at": "2026-06-08T15:09:56+00:00",
-      "curated_at": "2026-06-16T05:33:25.575038+00:00",
+      "curated_at": "2026-06-17T05:16:46.548562+00:00",
       "path": "posts/se-genai-2804-modular-genai-same-base-model-different-datasets.md"
     },
     {

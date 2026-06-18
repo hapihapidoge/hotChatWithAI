@@ -1,21 +1,27 @@
 [
   {
+    "id": "se-stackoverflow-79962250-can-anyone-tell-me-how-i-could-do-this",
+    "title": "Can anyone tell me how I could do this?",
+    "path": "posts/se-stackoverflow-79962250-can-anyone-tell-me-how-i-could-do-this.md",
+    "curated_at": "2026-06-18T05:02:19.463826+00:00"
+  },
+  {
     "id": "se-ai-50627-how-is-an-ai-model-different-from-a-rag-model",
     "title": "How is an AI model different from a RAG model?",
     "path": "posts/se-ai-50627-how-is-an-ai-model-different-from-a-rag-model.md",
-    "curated_at": "2026-06-17T05:16:47.210181+00:00"
+    "curated_at": "2026-06-18T05:02:19.260224+00:00"
   },
   {
     "id": "se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre",
     "title": "Can neural music identifiers trained on free data still identify non-free songs?",
     "path": "posts/se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre.md",
-    "curated_at": "2026-06-17T05:16:46.864125+00:00"
+    "curated_at": "2026-06-18T05:02:19.075062+00:00"
   },
   {
     "id": "se-genai-2804-modular-genai-same-base-model-different-datasets",
     "title": "'Modular' genAI: same base model, different datasets",
     "path": "posts/se-genai-2804-modular-genai-same-base-model-different-datasets.md",
-    "curated_at": "2026-06-17T05:16:46.548562+00:00"
+    "curated_at": "2026-06-18T05:02:18.912888+00:00"
   },
   {
     "id": "se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer",

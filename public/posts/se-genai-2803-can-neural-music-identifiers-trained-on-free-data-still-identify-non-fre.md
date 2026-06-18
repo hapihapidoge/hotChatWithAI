@@ -1,6 +1,6 @@
 # Can neural music identifiers trained on free data still identify non-free songs?
 
-Curated at: `2026-06-17T05:16:46.864125+00:00`
+Curated at: `2026-06-18T05:02:19.075062+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, llm, music`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2803/can-neural-music-identifi
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 0; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 37 times on the source site.
+- Viewed 38 times on the source site.
 
 ## Question
 

@@ -1,6 +1,6 @@
 # Can neural music identifiers trained on free data still identify non-free songs?
 
-Curated at: `2026-06-18T05:02:19.075062+00:00`
+Curated at: `2026-06-19T05:24:37.850656+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, llm, music`

@@ -1,6 +1,6 @@
 # How is an AI model different from a RAG model?
 
-Curated at: `2026-06-20T04:40:52.699106+00:00`
+Curated at: `2026-06-21T05:18:32.094651+00:00`
 Model: `Public Q&A`
 Author: `nbro`
 Tags: `public-q&a, AI Stack Exchange, comparison, terminology, large-language-models, retrieval-augmented-generation`
@@ -12,7 +12,7 @@ Source: https://ai.stackexchange.com/questions/50627/how-is-an-ai-model-differen
 - Public Q&A from AI Stack Exchange.
 - Question score: 1; answer score: 1.
 - The answer was accepted by the question author.
-- Viewed 45 times on the source site.
+- Viewed 50 times on the source site.
 
 ## Question
 

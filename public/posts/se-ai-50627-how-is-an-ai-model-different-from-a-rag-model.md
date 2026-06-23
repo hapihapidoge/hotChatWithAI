@@ -1,6 +1,6 @@
 # How is an AI model different from a RAG model?
 
-Curated at: `2026-06-22T05:30:55.508569+00:00`
+Curated at: `2026-06-23T04:20:23.451295+00:00`
 Model: `Public Q&A`
 Author: `nbro`
 Tags: `public-q&a, AI Stack Exchange, comparison, terminology, large-language-models, retrieval-augmented-generation`

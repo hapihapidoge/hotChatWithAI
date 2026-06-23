@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T05:30:57.142827+00:00",
+  "generated_at": "2026-06-23T04:20:25.252222+00:00",
   "summary": {
     "items": 17,
     "tags": [
@@ -82,10 +82,10 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 1; answer score: 4.",
-        "Viewed 166 times on the source site."
+        "Viewed 169 times on the source site."
       ],
       "created_at": "2026-06-17T15:30:14+00:00",
-      "curated_at": "2026-06-22T05:30:55.800782+00:00",
+      "curated_at": "2026-06-23T04:20:23.869890+00:00",
       "path": "posts/se-stackoverflow-79962250-can-anyone-tell-me-how-i-could-do-this.md"
     },
     {
@@ -112,7 +112,7 @@
         "Viewed 51 times on the source site."
       ],
       "created_at": "2026-06-13T10:29:57+00:00",
-      "curated_at": "2026-06-22T05:30:55.508569+00:00",
+      "curated_at": "2026-06-23T04:20:23.451295+00:00",
       "path": "posts/se-ai-50627-how-is-an-ai-model-different-from-a-rag-model.md"
     },
     {
@@ -238,10 +238,10 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 1; answer score: 4.",
-        "Viewed 166 times on the source site."
+        "Viewed 169 times on the source site."
       ],
       "created_at": "2026-06-17T15:30:14+00:00",
-      "curated_at": "2026-06-22T05:30:55.800782+00:00",
+      "curated_at": "2026-06-23T04:20:23.869890+00:00",
       "path": "posts/se-stackoverflow-79962250-can-anyone-tell-me-how-i-could-do-this.md"
     },
     {
@@ -268,7 +268,7 @@
         "Viewed 51 times on the source site."
       ],
       "created_at": "2026-06-13T10:29:57+00:00",
-      "curated_at": "2026-06-22T05:30:55.508569+00:00",
+      "curated_at": "2026-06-23T04:20:23.451295+00:00",
       "path": "posts/se-ai-50627-how-is-an-ai-model-different-from-a-rag-model.md"
     },
     {

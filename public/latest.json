@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-23T04:20:25.252222+00:00",
+  "generated_at": "2026-06-24T04:35:49.666281+00:00",
   "summary": {
-    "items": 17,
+    "items": 18,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -82,10 +82,10 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 1; answer score: 4.",
-        "Viewed 169 times on the source site."
+        "Viewed 185 times on the source site."
       ],
       "created_at": "2026-06-17T15:30:14+00:00",
-      "curated_at": "2026-06-23T04:20:23.869890+00:00",
+      "curated_at": "2026-06-24T04:35:48.799321+00:00",
       "path": "posts/se-stackoverflow-79962250-can-anyone-tell-me-how-i-could-do-this.md"
     },
     {
@@ -109,11 +109,35 @@
         "Public Q&A from AI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 51 times on the source site."
+        "Viewed 53 times on the source site."
       ],
       "created_at": "2026-06-13T10:29:57+00:00",
-      "curated_at": "2026-06-23T04:20:23.451295+00:00",
+      "curated_at": "2026-06-24T04:35:48.563932+00:00",
       "path": "posts/se-ai-50627-how-is-an-ai-model-different-from-a-rag-model.md"
+    },
+    {
+      "id": "se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs",
+      "title": "It's possible to create a model that produces Lo-fi versions of songs?",
+      "question": "The model has to be trained with songs, and the songs must have two versions: one original and the other a Lo-fi remix. Is this possible? (It doesn't have to be based on existing songs, but rather original songs created by the AI developer using Ableton, FL Studio, Logic Pro, etc. The model, however, can still consume existing songs, including famous ones, without explicitly training on them.) If you dont know what I'm talking about, it's like turning this soundtrack: https://www.youtube.com/watch?v=z6HAakYBKAc Into one that sounds like this one: https://www.youtube.com/watch?v=-sLRtsRazDQ",
+      "answer": "It's possible to create a model that produces Lo-fi versions of songs? That task is known as Music Style Transfer. Examples of papers studying that task: A Training-Free Approach for Music Style Transfer with Latent Diffusion Models. https://arxiv.org/abs/2411.15913 Music Style Transfer with Time-Varying Inversion of Diffusion Models. https://arxiv.org/abs/2402.13763",
+      "summary": "It's possible to create a model that produces Lo-fi versions of songs? That task is known as Music Style Transfer. Examples of papers studying that task: A Training-Free Approach for Music Style Transfer with Latent Dif...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2822/its-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 356 times on the source site."
+      ],
+      "created_at": "2026-06-22T19:50:08+00:00",
+      "curated_at": "2026-06-24T04:35:48.251572+00:00",
+      "path": "posts/se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs.md"
     },
     {
       "id": "se-genai-2804-modular-genai-same-base-model-different-datasets",
@@ -186,34 +210,6 @@
       "created_at": "2026-05-29T21:39:47+00:00",
       "curated_at": "2026-06-12T05:03:31.142801+00:00",
       "path": "posts/se-stackoverflow-79948695-how-can-i-avoid-using-llms-as-a-software-developer.md"
-    },
-    {
-      "id": "se-stackoverflow-79951168-how-to-stream-openai-api-response-chunks-from-fastapi-to-a-next-js-14-ap",
-      "title": "How to stream OpenAI API response chunks from FastAPI to a Next.js 14 App Router frontend using Server-Sent Events (SSE)?",
-      "question": "I'm building an AI chat feature where FastAPI streams OpenAI responses to my Next.js 14 (App Router) frontend using SSE, but the stream either stops after the first chunk or delivers all chunks at once instead of progressively. Backend (FastAPI) : [code omitted] Frontend (Next.js 14 App Router): [code omitted] What I've tried: Added Cache-Control: no-cache header Added X-Accel-Buffering: no header Tried fetch() with ReadableStream Tried EventSource API (doesn't support POST) Expected : Each word streams progressively like ChatGPT Actual: All text arrives at once after full completion Environment: [code omitted]",
-      "answer": "I run this exact stack in production (FastAPI streaming OpenAI to a Next.js App Router UI). There are usually three independent things that make the chunks \"stop after the first one\" or \"all arrive at once\". Fix them together and it streams token-by-token. 1) Your @app.post(\"/chat\") is reading prompt as a query parameter, not from the JSON body async def chat(prompt: str) with no Body(...) makes FastAPI treat prompt as a query string. Your Next.js code sends it inside JSON.stringify({ prompt }) , so the server actually returns a 422 before any streaming starts, and depending on how you log it you can mistake that for \"one chunk then stops\". Use a Pydantic model (or Body ): from pydantic import BaseModel class ChatIn(BaseModel): prompt: str @app.post(\"/chat\") async def chat(payload: ChatIn): ... 2) SSE framing is broken by newlines in delta.content SSE events are delimited by a blank line ( \\n\\n ). Model deltas regularly contain \\n , which silently splits one logical event into several malformed ones, and many proxies/clients then either drop them or buffer until the connection closes. Encode the payload as JSON (or at minimum escape newlines), and send an explicit terminator so the client knows when to stop: import json from fastapi.responses import StreamingResponse @app.post(\"/chat\") async def chat(payload: ChatIn): async def generate(): stream = await client.chat.completion...",
-      "summary": "I run this exact stack in production (FastAPI streaming OpenAI to a Next.js App Router UI). There are usually three independent things that make the chunks \"stop after the first one\" or \"all arrive at once\". Fix them to...",
-      "tags": [
-        "public-q&a",
-        "Stack Overflow",
-        "python",
-        "next.js",
-        "fastapi",
-        "openai-api",
-        "server-sent-events"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Tae Kim",
-      "source_url": "https://stackoverflow.com/questions/79951168/how-to-stream-openai-api-response-chunks-from-fastapi-to-a-next-js-14-app-router",
-      "quality_signals": [
-        "Public Q&A from Stack Overflow.",
-        "Question score: 0; answer score: 1.",
-        "The answer was accepted by the question author.",
-        "Viewed 64 times on the source site."
-      ],
-      "created_at": "2026-06-04T04:26:00+00:00",
-      "curated_at": "2026-06-09T04:35:17.514103+00:00",
-      "path": "posts/se-stackoverflow-79951168-how-to-stream-openai-api-response-chunks-from-fastapi-to-a-next-js-14-ap.md"
     }
   ],
   "entries": [
@@ -238,10 +234,10 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 1; answer score: 4.",
-        "Viewed 169 times on the source site."
+        "Viewed 185 times on the source site."
       ],
       "created_at": "2026-06-17T15:30:14+00:00",
-      "curated_at": "2026-06-23T04:20:23.869890+00:00",
+      "curated_at": "2026-06-24T04:35:48.799321+00:00",
       "path": "posts/se-stackoverflow-79962250-can-anyone-tell-me-how-i-could-do-this.md"
     },
     {
@@ -265,11 +261,35 @@
         "Public Q&A from AI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 51 times on the source site."
+        "Viewed 53 times on the source site."
       ],
       "created_at": "2026-06-13T10:29:57+00:00",
-      "curated_at": "2026-06-23T04:20:23.451295+00:00",
+      "curated_at": "2026-06-24T04:35:48.563932+00:00",
       "path": "posts/se-ai-50627-how-is-an-ai-model-different-from-a-rag-model.md"
+    },
+    {
+      "id": "se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs",
+      "title": "It's possible to create a model that produces Lo-fi versions of songs?",
+      "question": "The model has to be trained with songs, and the songs must have two versions: one original and the other a Lo-fi remix. Is this possible? (It doesn't have to be based on existing songs, but rather original songs created by the AI developer using Ableton, FL Studio, Logic Pro, etc. The model, however, can still consume existing songs, including famous ones, without explicitly training on them.) If you dont know what I'm talking about, it's like turning this soundtrack: https://www.youtube.com/watch?v=z6HAakYBKAc Into one that sounds like this one: https://www.youtube.com/watch?v=-sLRtsRazDQ",
+      "answer": "It's possible to create a model that produces Lo-fi versions of songs? That task is known as Music Style Transfer. Examples of papers studying that task: A Training-Free Approach for Music Style Transfer with Latent Diffusion Models. https://arxiv.org/abs/2411.15913 Music Style Transfer with Time-Varying Inversion of Diffusion Models. https://arxiv.org/abs/2402.13763",
+      "summary": "It's possible to create a model that produces Lo-fi versions of songs? That task is known as Music Style Transfer. Examples of papers studying that task: A Training-Free Approach for Music Style Transfer with Latent Dif...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2822/its-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 356 times on the source site."
+      ],
+      "created_at": "2026-06-22T19:50:08+00:00",
+      "curated_at": "2026-06-24T04:35:48.251572+00:00",
+      "path": "posts/se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs.md"
     },
     {
       "id": "se-genai-2804-modular-genai-same-base-model-different-datasets",

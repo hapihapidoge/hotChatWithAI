@@ -1,6 +1,6 @@
 # Can anyone tell me how I could do this?
 
-Curated at: `2026-06-24T04:35:48.799321+00:00`
+Curated at: `2026-06-25T04:34:06.175990+00:00`
 Model: `Public Q&A`
 Author: `KIKO Software`
 Tags: `public-q&a, Stack Overflow, python, web-applications, playwright, openai-api, testautomationfx`
@@ -11,7 +11,7 @@ Source: https://stackoverflow.com/questions/79962250/can-anyone-tell-me-how-i-co
 
 - Public Q&A from Stack Overflow.
 - Question score: 1; answer score: 4.
-- Viewed 185 times on the source site.
+- Viewed 201 times on the source site.
 
 ## Question
 

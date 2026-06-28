@@ -3,25 +3,25 @@
     "id": "se-stackoverflow-79962250-can-anyone-tell-me-how-i-could-do-this",
     "title": "Can anyone tell me how I could do this?",
     "path": "posts/se-stackoverflow-79962250-can-anyone-tell-me-how-i-could-do-this.md",
-    "curated_at": "2026-06-27T04:16:09.497824+00:00"
+    "curated_at": "2026-06-28T04:51:33.602974+00:00"
   },
   {
     "id": "se-ai-50640-how-can-i-estimate-the-time-complexity-of-training-a-neural-network-clas",
     "title": "How can I estimate the time complexity of training a neural network classifier?",
     "path": "posts/se-ai-50640-how-can-i-estimate-the-time-complexity-of-training-a-neural-network-clas.md",
-    "curated_at": "2026-06-27T04:16:09.235978+00:00"
+    "curated_at": "2026-06-28T04:51:33.390157+00:00"
+  },
+  {
+    "id": "se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs",
+    "title": "It's possible to create a model that produces Lo-fi versions of songs?",
+    "path": "posts/se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs.md",
+    "curated_at": "2026-06-28T04:51:33.162795+00:00"
   },
   {
     "id": "se-ai-50627-how-is-an-ai-model-different-from-a-rag-model",
     "title": "How is an AI model different from a RAG model?",
     "path": "posts/se-ai-50627-how-is-an-ai-model-different-from-a-rag-model.md",
     "curated_at": "2026-06-27T04:16:09.147459+00:00"
-  },
-  {
-    "id": "se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs",
-    "title": "It's possible to create a model that produces Lo-fi versions of songs?",
-    "path": "posts/se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs.md",
-    "curated_at": "2026-06-27T04:16:08.925680+00:00"
   },
   {
     "id": "se-genai-2804-modular-genai-same-base-model-different-datasets",

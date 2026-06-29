@@ -1,6 +1,6 @@
 # How can I estimate the time complexity of training a neural network classifier?
 
-Curated at: `2026-06-28T04:51:33.390157+00:00`
+Curated at: `2026-06-29T04:59:45.987456+00:00`
 Model: `Public Q&A`
 Author: `Timur Surov`
 Tags: `public-q&a, AI Stack Exchange, neural-networks, training, python, time-complexity`
@@ -10,9 +10,9 @@ Source: https://ai.stackexchange.com/questions/50640/how-can-i-estimate-the-time
 ## Why It Is Good
 
 - Public Q&A from AI Stack Exchange.
-- Question score: 0; answer score: 0.
+- Question score: 0; answer score: 1.
 - The answer was accepted by the question author.
-- Viewed 17 times on the source site.
+- Viewed 21 times on the source site.
 
 ## Question
 

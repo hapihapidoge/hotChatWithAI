@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-07-04T04:01:45.502567+00:00",
+  "generated_at": "2026-07-05T04:20:11.618589+00:00",
   "summary": {
-    "items": 19,
+    "items": 22,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
       "GitHub Pages",
       "Stack Overflow",
       "agent",
+      "agentic",
       "artificial-intelligence",
       "batch-size",
       "benchmarks",
@@ -37,6 +38,7 @@
       "next.js",
       "openai-api",
       "playwright",
+      "privacy",
       "prompt",
       "public-q&a",
       "python",
@@ -86,11 +88,85 @@
         "Public Q&A from AI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 38 times on the source site."
+        "Viewed 43 times on the source site."
       ],
       "created_at": "2026-06-25T15:15:05+00:00",
-      "curated_at": "2026-07-04T04:01:44.811713+00:00",
+      "curated_at": "2026-07-05T04:20:10.446486+00:00",
       "path": "posts/se-ai-50640-how-can-i-estimate-the-time-complexity-of-training-a-neural-network-clas.md"
+    },
+    {
+      "id": "se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t",
+      "title": "Can image-to-image style transfer models imitate any art style even if they are trained on public domain/free images?",
+      "question": "I asked Google Gemini and it said that this is possible, but I want to confirm. To imitate the art style of non-free works (like anime, manga, games, etc.) the user would have to provide images of characters etc. (that can be obtained from fan sites/wikis or personal reproductions) to the model. Some models may also accept multiple images, that can be enough to \"understand\" the style. Is there's something like a RAG-like generation for style transfer models?",
+      "answer": "Yeah, image-to-image models can copy the styles they were not trained on, see the model as a artist who already knows how to draw or paint. When you give it a new reference image, it applies his knowledge to mimic your new style. In text, we use RAG. But for images, tools use In-Context Learning to do the same thing. You upload reference images, and the AI inserts its style directly into the generation on the fly. (below are the techniques i could find that can be used for this purpose) IP-Adapter: closest thing to RAG, extracts the style from your reference images and feeds it to AI with your text prompt. also look up for StyleAlign, ControlNet (Gemini suggested them). OR You can perform finetuning via LoRA, maybe on around 50 images if you could have. also you can refer to Can art generators imitate art styles of specific works?",
+      "summary": "Yeah, image-to-image models can copy the styles they were not trained on, see the model as a artist who already knows how to draw or paint. When you give it a new reference image, it applies his knowledge to mimic your...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Garvity9.8",
+      "source_url": "https://genai.stackexchange.com/questions/2827/can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-they-are",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 33 times on the source site."
+      ],
+      "created_at": "2026-06-28T16:16:21+00:00",
+      "curated_at": "2026-07-05T04:20:10.212430+00:00",
+      "path": "posts/se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t.md"
+    },
+    {
+      "id": "se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
+      "title": "Can LLMs have end-to-end encryption (or something similar) for chats?",
+      "question": "Many messaging apps support end-to-end encryption. Can LLMs support this feature (or something similar)?",
+      "answer": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively, you can run LLMs entirely within a local network, where terminal connections can be secured using SSH. Of course, all encryption and network configurations must be implemented correctly and securely. HTTPS/TLS encryption in the browser protects data while it travels from your computer to the AI platform's server like OpenAI. SSH protects data while it travels from your computer to a local server within your own network. The principle is that data in transit is protected against attackers who may be monitoring the network. Once the data reaches the LLM server, it must be decrypted so that the AI can read, process, and generate a response. With true end-toend encryption, only the communicating endpoints can access the plaintext. Intermediate servers or service providers do not possess the decryption keys. If you run an LLM on your own local infrastructure on-premises and secure the connection using SSH or local HTTPS, you partially address the trust issue for the communication channel. Your computer is the sender, and your own server is the receiver and the other end of the connection. When an LLM is operated entirely on your own server on-premises and the connect...",
+      "summary": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively,...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "privacy"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2832/can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 31 times on the source site."
+      ],
+      "created_at": "2026-07-02T19:19:28+00:00",
+      "curated_at": "2026-07-05T04:20:10.115901+00:00",
+      "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md"
+    },
+    {
+      "id": "se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se",
+      "title": "Is there any research on agentic AI for suggesting names based on web search queries?",
+      "question": "Like, an agentic AI that can search for things like \"historical figures\", \"mythical creatures\", “islands in Greece”, “Solar System objects” or \"boons in Hades II \" and then provide the user a list of names related to the topic. Note that I’m talking about a feature integrated into software, rather than using LLMs for this task.",
+      "answer": "If I understand you correctly, you're essentially looking for a combination of a crawler , scraper , and parser . At a minimum, you need these steps: Crawler: Searches the web for the relevant pages. Scraper: Downloads the content from those pages. Parser: Extracts the actual names from the downloaded content and either creates a list or stores the values in a database. Or, to put it simply, the crawler finds the way, the scraper fetches the source code, and the parser filters out the noise and saves the names to a database or a file. The challenge is that you need to tell the crawler exactly where to look, that is, which URLs it should crawl. The URL problem is the biggest hurdle in traditional web scraping. Without a seed URL (starting URL), the script has no idea where to begin. What is the difference between web-crawling and web-scraping? Web Crawling vs. Web Scraping Design a Web Crawler The following approaches are also possible: Option 1 (Search Engine Scraping): A Python script queries, for example, the DuckDuckGo HTML search or a search API with a term like: \" Hades II boons wiki \" The script retrieves the first five search results and automatically uses those links as the targets for the scraper. Option 2 (LLM as a URL Provider): You use a fast LLM API (such as ChatGPT or Grok) and simply ask: \" Give me the three best wiki URLs for Hades II item s\" The LLM doesn't ge...",
+      "summary": "If I understand you correctly, you're essentially looking for a combination of a crawler , scraper , and parser . At a minimum, you need these steps: Crawler: Searches the web for the relevant pages. Scraper: Downloads...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem",
+        "agentic"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2828/is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-search-que",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 27 times on the source site."
+      ],
+      "created_at": "2026-06-29T21:14:39+00:00",
+      "curated_at": "2026-07-05T04:20:09.983355+00:00",
+      "path": "posts/se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se.md"
     },
     {
       "id": "se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs",
@@ -110,10 +186,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 394 times on the source site."
+        "Viewed 396 times on the source site."
       ],
       "created_at": "2026-06-22T19:50:08+00:00",
-      "curated_at": "2026-07-04T04:01:44.582906+00:00",
+      "curated_at": "2026-07-05T04:20:09.881434+00:00",
       "path": "posts/se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs.md"
     },
     {
@@ -142,82 +218,6 @@
       "created_at": "2026-06-17T15:30:14+00:00",
       "curated_at": "2026-07-01T04:53:52.431655+00:00",
       "path": "posts/se-stackoverflow-79962250-can-anyone-tell-me-how-i-could-do-this.md"
-    },
-    {
-      "id": "se-ai-50627-how-is-an-ai-model-different-from-a-rag-model",
-      "title": "How is an AI model different from a RAG model?",
-      "question": "In my understanding, a model is a black box that takes text as input and returns text as output, usually an answer to a question. A model can be trained, meaning it becomes smarter. Is it correct to think that a RAG agent is an agent that was not trained, compared to an LLM agent like GPT-OSS? Is a RAG system trained only by companies on their internal data? And is that the only difference compared to GPT-OSS? Please help me understand in simple words.",
-      "answer": "An AI model can mean different things, but I think you're referring to a machine learning (ML) model. There are many ML models, e.g. linear regression, support vector machines and neural networks (NNs), which are the most successful models nowadays. A large language model (LLM) is a big neural network. They are big because they have many trainable parameters. You can think of an ML model as a function. If you fix the parameters, you get 1 specific function. So, in general, yes, ML models need to be trained, because otherwise they just compute the function that happens to correspond to their initial parameters. You must adjust these parameters for your specific task. Training refers to the process of adjusting the parameters based on the data. RAG stands for Retrieval Augmented Generation . It's a technique to augment LLMs so that the LLMs can access more data without being retrained. You might want to use this technique because LLMs have certain limitations. For example, they can produce AI hallucinations (i.e. factually wrong or made up info). In RAG, you store additional info in a database and use this info to augment the user's prompt with more relevant info before passing it to the LLM and generate the final answer. I think this article by IBM describes RAG very well: https://www.ibm.com/think/topics/retrieval-augmented-generation",
-      "summary": "An AI model can mean different things, but I think you're referring to a machine learning (ML) model. There are many ML models, e.g. linear regression, support vector machines and neural networks (NNs), which are the mo...",
-      "tags": [
-        "public-q&a",
-        "AI Stack Exchange",
-        "comparison",
-        "terminology",
-        "large-language-models",
-        "retrieval-augmented-generation"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "nbro",
-      "source_url": "https://ai.stackexchange.com/questions/50627/how-is-an-ai-model-different-from-a-rag-model",
-      "quality_signals": [
-        "Public Q&A from AI Stack Exchange.",
-        "Question score: 1; answer score: 1.",
-        "The answer was accepted by the question author.",
-        "Viewed 57 times on the source site."
-      ],
-      "created_at": "2026-06-13T10:29:57+00:00",
-      "curated_at": "2026-06-27T04:16:09.147459+00:00",
-      "path": "posts/se-ai-50627-how-is-an-ai-model-different-from-a-rag-model.md"
-    },
-    {
-      "id": "se-genai-2804-modular-genai-same-base-model-different-datasets",
-      "title": "'Modular' genAI: same base model, different datasets",
-      "question": "I have discovered the power of Small Language Models, whose strength is their specialised dataset which can allow them to outperform generic LLMs in a specific field, as well as consume much smaller amounts of energy and computational resources. All the Hugging Face quantised models I've downloaded still occupy ~5GB each, which adds up when going for the 1 LM per job type system. Is this inevitable or can a generic genAI still perform well with a dataset it can query on the fly? The closest I've got to is using a LightRAG MCP server, but I feel like if it hasn't been previously trained on the material it will be slow, clunky and inaccurate nevertheless - still, I'd be curious to know if sep...",
-      "answer": "Totally depends on your use case, tolerable model size and required model quality. RAG, LORA adapters and other light techniques to adapt a base model are useful for some but not all tasks.",
-      "summary": "Totally depends on your use case, tolerable model size and required model quality. RAG, LORA adapters and other light techniques to adapt a base model are useful for some but not all tasks.",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "fine-tuning",
-        "rag"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2804/modular-genai-same-base-model-different-datasets",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 2; answer score: 1.",
-        "Viewed 17 times on the source site."
-      ],
-      "created_at": "2026-06-08T15:09:56+00:00",
-      "curated_at": "2026-06-22T05:30:54.970986+00:00",
-      "path": "posts/se-genai-2804-modular-genai-same-base-model-different-datasets.md"
-    },
-    {
-      "id": "se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre",
-      "title": "Can neural music identifiers trained on free data still identify non-free songs?",
-      "question": "Many neural network-based music identifiers (that are sometimes integrated into LLMs) are trained exclusively on freely licensed music (or public-domain music) to avoid liability. Is there a \"RAG-like\" funcionality for this?",
-      "answer": "Can neural music identifiers trained on free data still identify non-free songs? Yes. Example: Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance . (If the test songs were included in the training phase, the evaluation may measure memorization rather than the model's true capability to generalize its acoustic feature extraction to new music.)",
-      "summary": "Can neural music identifiers trained on free data still identify non-free songs? Yes. Example: Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance . (If the test songs were included in...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "llm",
-        "music"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2803/can-neural-music-identifiers-trained-on-free-data-still-identify-non-free-songs",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 38 times on the source site."
-      ],
-      "created_at": "2026-06-08T01:16:41+00:00",
-      "curated_at": "2026-06-21T05:18:31.862174+00:00",
-      "path": "posts/se-genai-2803-can-neural-music-identifiers-trained-on-free-data-still-identify-non-fre.md"
     }
   ],
   "entries": [
@@ -243,11 +243,85 @@
         "Public Q&A from AI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 38 times on the source site."
+        "Viewed 43 times on the source site."
       ],
       "created_at": "2026-06-25T15:15:05+00:00",
-      "curated_at": "2026-07-04T04:01:44.811713+00:00",
+      "curated_at": "2026-07-05T04:20:10.446486+00:00",
       "path": "posts/se-ai-50640-how-can-i-estimate-the-time-complexity-of-training-a-neural-network-clas.md"
+    },
+    {
+      "id": "se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t",
+      "title": "Can image-to-image style transfer models imitate any art style even if they are trained on public domain/free images?",
+      "question": "I asked Google Gemini and it said that this is possible, but I want to confirm. To imitate the art style of non-free works (like anime, manga, games, etc.) the user would have to provide images of characters etc. (that can be obtained from fan sites/wikis or personal reproductions) to the model. Some models may also accept multiple images, that can be enough to \"understand\" the style. Is there's something like a RAG-like generation for style transfer models?",
+      "answer": "Yeah, image-to-image models can copy the styles they were not trained on, see the model as a artist who already knows how to draw or paint. When you give it a new reference image, it applies his knowledge to mimic your new style. In text, we use RAG. But for images, tools use In-Context Learning to do the same thing. You upload reference images, and the AI inserts its style directly into the generation on the fly. (below are the techniques i could find that can be used for this purpose) IP-Adapter: closest thing to RAG, extracts the style from your reference images and feeds it to AI with your text prompt. also look up for StyleAlign, ControlNet (Gemini suggested them). OR You can perform finetuning via LoRA, maybe on around 50 images if you could have. also you can refer to Can art generators imitate art styles of specific works?",
+      "summary": "Yeah, image-to-image models can copy the styles they were not trained on, see the model as a artist who already knows how to draw or paint. When you give it a new reference image, it applies his knowledge to mimic your...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Garvity9.8",
+      "source_url": "https://genai.stackexchange.com/questions/2827/can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-they-are",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 33 times on the source site."
+      ],
+      "created_at": "2026-06-28T16:16:21+00:00",
+      "curated_at": "2026-07-05T04:20:10.212430+00:00",
+      "path": "posts/se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t.md"
+    },
+    {
+      "id": "se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
+      "title": "Can LLMs have end-to-end encryption (or something similar) for chats?",
+      "question": "Many messaging apps support end-to-end encryption. Can LLMs support this feature (or something similar)?",
+      "answer": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively, you can run LLMs entirely within a local network, where terminal connections can be secured using SSH. Of course, all encryption and network configurations must be implemented correctly and securely. HTTPS/TLS encryption in the browser protects data while it travels from your computer to the AI platform's server like OpenAI. SSH protects data while it travels from your computer to a local server within your own network. The principle is that data in transit is protected against attackers who may be monitoring the network. Once the data reaches the LLM server, it must be decrypted so that the AI can read, process, and generate a response. With true end-toend encryption, only the communicating endpoints can access the plaintext. Intermediate servers or service providers do not possess the decryption keys. If you run an LLM on your own local infrastructure on-premises and secure the connection using SSH or local HTTPS, you partially address the trust issue for the communication channel. Your computer is the sender, and your own server is the receiver and the other end of the connection. When an LLM is operated entirely on your own server on-premises and the connect...",
+      "summary": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively,...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "privacy"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2832/can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 31 times on the source site."
+      ],
+      "created_at": "2026-07-02T19:19:28+00:00",
+      "curated_at": "2026-07-05T04:20:10.115901+00:00",
+      "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md"
+    },
+    {
+      "id": "se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se",
+      "title": "Is there any research on agentic AI for suggesting names based on web search queries?",
+      "question": "Like, an agentic AI that can search for things like \"historical figures\", \"mythical creatures\", “islands in Greece”, “Solar System objects” or \"boons in Hades II \" and then provide the user a list of names related to the topic. Note that I’m talking about a feature integrated into software, rather than using LLMs for this task.",
+      "answer": "If I understand you correctly, you're essentially looking for a combination of a crawler , scraper , and parser . At a minimum, you need these steps: Crawler: Searches the web for the relevant pages. Scraper: Downloads the content from those pages. Parser: Extracts the actual names from the downloaded content and either creates a list or stores the values in a database. Or, to put it simply, the crawler finds the way, the scraper fetches the source code, and the parser filters out the noise and saves the names to a database or a file. The challenge is that you need to tell the crawler exactly where to look, that is, which URLs it should crawl. The URL problem is the biggest hurdle in traditional web scraping. Without a seed URL (starting URL), the script has no idea where to begin. What is the difference between web-crawling and web-scraping? Web Crawling vs. Web Scraping Design a Web Crawler The following approaches are also possible: Option 1 (Search Engine Scraping): A Python script queries, for example, the DuckDuckGo HTML search or a search API with a term like: \" Hades II boons wiki \" The script retrieves the first five search results and automatically uses those links as the targets for the scraper. Option 2 (LLM as a URL Provider): You use a fast LLM API (such as ChatGPT or Grok) and simply ask: \" Give me the three best wiki URLs for Hades II item s\" The LLM doesn't ge...",
+      "summary": "If I understand you correctly, you're essentially looking for a combination of a crawler , scraper , and parser . At a minimum, you need these steps: Crawler: Searches the web for the relevant pages. Scraper: Downloads...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem",
+        "agentic"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2828/is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-search-que",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 27 times on the source site."
+      ],
+      "created_at": "2026-06-29T21:14:39+00:00",
+      "curated_at": "2026-07-05T04:20:09.983355+00:00",
+      "path": "posts/se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se.md"
     },
     {
       "id": "se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs",
@@ -267,10 +341,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 394 times on the source site."
+        "Viewed 396 times on the source site."
       ],
       "created_at": "2026-06-22T19:50:08+00:00",
-      "curated_at": "2026-07-04T04:01:44.582906+00:00",
+      "curated_at": "2026-07-05T04:20:09.881434+00:00",
       "path": "posts/se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs.md"
     },
     {

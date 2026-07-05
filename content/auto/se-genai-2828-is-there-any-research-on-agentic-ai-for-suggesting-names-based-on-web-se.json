@@ -1,0 +1,26 @@
+{
+  "id": "se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se",
+  "title": "Is there any research on agentic AI for suggesting names based on web search queries?",
+  "question": "Like, an agentic AI that can search for things like \"historical figures\", \"mythical creatures\", “islands in Greece”, “Solar System objects” or \"boons in Hades II \" and then provide the user a list of names related to the topic. Note that I’m talking about a feature integrated into software, rather than using LLMs for this task.",
+  "answer": "If I understand you correctly, you're essentially looking for a combination of a crawler , scraper , and parser . At a minimum, you need these steps: Crawler: Searches the web for the relevant pages. Scraper: Downloads the content from those pages. Parser: Extracts the actual names from the downloaded content and either creates a list or stores the values in a database. Or, to put it simply, the crawler finds the way, the scraper fetches the source code, and the parser filters out the noise and saves the names to a database or a file. The challenge is that you need to tell the crawler exactly where to look, that is, which URLs it should crawl. The URL problem is the biggest hurdle in traditional web scraping. Without a seed URL (starting URL), the script has no idea where to begin. What is the difference between web-crawling and web-scraping? Web Crawling vs. Web Scraping Design a Web Crawler The following approaches are also possible: Option 1 (Search Engine Scraping): A Python script queries, for example, the DuckDuckGo HTML search or a search API with a term like: \" Hades II boons wiki \" The script retrieves the first five search results and automatically uses those links as the targets for the scraper. Option 2 (LLM as a URL Provider): You use a fast LLM API (such as ChatGPT or Grok) and simply ask: \" Give me the three best wiki URLs for Hades II item s\" The LLM doesn't ge...",
+  "summary": "If I understand you correctly, you're essentially looking for a combination of a crawler , scraper , and parser . At a minimum, you need these steps: Crawler: Searches the web for the relevant pages. Scraper: Downloads...",
+  "tags": [
+    "public-q&a",
+    "GenAI Stack Exchange",
+    "genai-ecosystem",
+    "agentic"
+  ],
+  "model": "Public Q&A",
+  "author_alias": "ReflectYourCharacter",
+  "source_url": "https://genai.stackexchange.com/questions/2828/is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-search-que",
+  "quality_signals": [
+    "Public Q&A from GenAI Stack Exchange.",
+    "Question score: 1; answer score: 0.",
+    "The answer was accepted by the question author.",
+    "Viewed 27 times on the source site."
+  ],
+  "created_at": "2026-06-29T21:14:39+00:00",
+  "curated_at": "2026-07-05T04:20:09.983355+00:00",
+  "license": "Stack Exchange content is user-contributed and requires source attribution.",
+  "source": "GenAI Stack Exchange"
+}

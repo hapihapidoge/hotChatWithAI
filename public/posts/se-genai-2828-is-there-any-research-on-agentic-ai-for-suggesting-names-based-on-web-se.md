@@ -1,6 +1,6 @@
 # Is there any research on agentic AI for suggesting names based on web search queries?
 
-Curated at: `2026-07-06T04:38:43.871099+00:00`
+Curated at: `2026-07-07T04:16:24.849939+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, genai-ecosystem, agentic`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2828/is-there-any-research-on-
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 1; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 41 times on the source site.
+- Viewed 51 times on the source site.
 
 ## Question
 

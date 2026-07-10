@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T04:13:23.379613+00:00",
+  "generated_at": "2026-07-10T04:14:32.959717+00:00",
   "summary": {
     "items": 22,
     "tags": [
@@ -67,6 +67,55 @@
   },
   "featured": [
     {
+      "id": "se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t",
+      "title": "Can image-to-image style transfer models imitate any art style even if they are trained on public domain/free images?",
+      "question": "I asked Google Gemini and it said that this is possible, but I want to confirm. To imitate the art style of non-free works (like anime, manga, games, etc.) the user would have to provide images of characters etc. (that can be obtained from fan sites/wikis or personal reproductions) to the model. Some models may also accept multiple images, that can be enough to \"understand\" the style. Is there's something like a RAG-like generation for style transfer models?",
+      "answer": "Yeah, image-to-image models can copy the styles they were not trained on, see the model as a artist who already knows how to draw or paint. When you give it a new reference image, it applies his knowledge to mimic your new style. In text, we use RAG. But for images, tools use In-Context Learning to do the same thing. You upload reference images, and the AI inserts its style directly into the generation on the fly. (below are the techniques i could find that can be used for this purpose) IP-Adapter: closest thing to RAG, extracts the style from your reference images and feeds it to AI with your text prompt. also look up for StyleAlign, ControlNet (Gemini suggested them). OR You can perform finetuning via LoRA, maybe on around 50 images if you could have. also you can refer to Can art generators imitate art styles of specific works?",
+      "summary": "Yeah, image-to-image models can copy the styles they were not trained on, see the model as a artist who already knows how to draw or paint. When you give it a new reference image, it applies his knowledge to mimic your...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Garvity9.8",
+      "source_url": "https://genai.stackexchange.com/questions/2827/can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-they-are",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 37 times on the source site."
+      ],
+      "created_at": "2026-06-28T16:16:21+00:00",
+      "curated_at": "2026-07-10T04:14:32.161703+00:00",
+      "path": "posts/se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t.md"
+    },
+    {
+      "id": "se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
+      "title": "Can LLMs have end-to-end encryption (or something similar) for chats?",
+      "question": "Many messaging apps support end-to-end encryption. Can LLMs support this feature (or something similar)?",
+      "answer": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively, you can run LLMs entirely within a local network, where terminal connections can be secured using SSH. Of course, all encryption and network configurations must be implemented correctly and securely. HTTPS/TLS encryption in the browser protects data while it travels from your computer to the AI platform's server like OpenAI. SSH protects data while it travels from your computer to a local server within your own network. The principle is that data in transit is protected against attackers who may be monitoring the network. Once the data reaches the LLM server, it must be decrypted so that the AI can read, process, and generate a response. With true end-toend encryption, only the communicating endpoints can access the plaintext. Intermediate servers or service providers do not possess the decryption keys. If you run an LLM on your own local infrastructure on-premises and secure the connection using SSH or local HTTPS, you partially address the trust issue for the communication channel. Your computer is the sender, and your own server is the receiver and the other end of the connection. When an LLM is operated entirely on your own server on-premises and the connect...",
+      "summary": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively,...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "privacy"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2832/can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 52 times on the source site."
+      ],
+      "created_at": "2026-07-02T19:19:28+00:00",
+      "curated_at": "2026-07-10T04:14:32.077320+00:00",
+      "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md"
+    },
+    {
       "id": "se-ai-50640-how-can-i-estimate-the-time-complexity-of-training-a-neural-network-clas",
       "title": "How can I estimate the time complexity of training a neural network classifier?",
       "question": "I'm working on a face classifier using YOLO, but for the classification step, we are using a neural network with the following architecture: [code omitted] I'm training the network with N classes of 200 embeddings each, which means I have 200*N inputs to the neural network. I want to see if there is way to estimate the time complexity of the training phase of the neural network in function of the number of classes. Thank you!",
@@ -93,55 +142,6 @@
       "created_at": "2026-06-25T15:15:05+00:00",
       "curated_at": "2026-07-09T04:13:22.696250+00:00",
       "path": "posts/se-ai-50640-how-can-i-estimate-the-time-complexity-of-training-a-neural-network-clas.md"
-    },
-    {
-      "id": "se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t",
-      "title": "Can image-to-image style transfer models imitate any art style even if they are trained on public domain/free images?",
-      "question": "I asked Google Gemini and it said that this is possible, but I want to confirm. To imitate the art style of non-free works (like anime, manga, games, etc.) the user would have to provide images of characters etc. (that can be obtained from fan sites/wikis or personal reproductions) to the model. Some models may also accept multiple images, that can be enough to \"understand\" the style. Is there's something like a RAG-like generation for style transfer models?",
-      "answer": "Yeah, image-to-image models can copy the styles they were not trained on, see the model as a artist who already knows how to draw or paint. When you give it a new reference image, it applies his knowledge to mimic your new style. In text, we use RAG. But for images, tools use In-Context Learning to do the same thing. You upload reference images, and the AI inserts its style directly into the generation on the fly. (below are the techniques i could find that can be used for this purpose) IP-Adapter: closest thing to RAG, extracts the style from your reference images and feeds it to AI with your text prompt. also look up for StyleAlign, ControlNet (Gemini suggested them). OR You can perform finetuning via LoRA, maybe on around 50 images if you could have. also you can refer to Can art generators imitate art styles of specific works?",
-      "summary": "Yeah, image-to-image models can copy the styles they were not trained on, see the model as a artist who already knows how to draw or paint. When you give it a new reference image, it applies his knowledge to mimic your...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "genai-ecosystem"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Garvity9.8",
-      "source_url": "https://genai.stackexchange.com/questions/2827/can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-they-are",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 36 times on the source site."
-      ],
-      "created_at": "2026-06-28T16:16:21+00:00",
-      "curated_at": "2026-07-09T04:13:22.493343+00:00",
-      "path": "posts/se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t.md"
-    },
-    {
-      "id": "se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
-      "title": "Can LLMs have end-to-end encryption (or something similar) for chats?",
-      "question": "Many messaging apps support end-to-end encryption. Can LLMs support this feature (or something similar)?",
-      "answer": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively, you can run LLMs entirely within a local network, where terminal connections can be secured using SSH. Of course, all encryption and network configurations must be implemented correctly and securely. HTTPS/TLS encryption in the browser protects data while it travels from your computer to the AI platform's server like OpenAI. SSH protects data while it travels from your computer to a local server within your own network. The principle is that data in transit is protected against attackers who may be monitoring the network. Once the data reaches the LLM server, it must be decrypted so that the AI can read, process, and generate a response. With true end-toend encryption, only the communicating endpoints can access the plaintext. Intermediate servers or service providers do not possess the decryption keys. If you run an LLM on your own local infrastructure on-premises and secure the connection using SSH or local HTTPS, you partially address the trust issue for the communication channel. Your computer is the sender, and your own server is the receiver and the other end of the connection. When an LLM is operated entirely on your own server on-premises and the connect...",
-      "summary": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively,...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "llm",
-        "privacy"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2832/can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 48 times on the source site."
-      ],
-      "created_at": "2026-07-02T19:19:28+00:00",
-      "curated_at": "2026-07-09T04:13:22.423098+00:00",
-      "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md"
     },
     {
       "id": "se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se",
@@ -222,6 +222,55 @@
   ],
   "entries": [
     {
+      "id": "se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t",
+      "title": "Can image-to-image style transfer models imitate any art style even if they are trained on public domain/free images?",
+      "question": "I asked Google Gemini and it said that this is possible, but I want to confirm. To imitate the art style of non-free works (like anime, manga, games, etc.) the user would have to provide images of characters etc. (that can be obtained from fan sites/wikis or personal reproductions) to the model. Some models may also accept multiple images, that can be enough to \"understand\" the style. Is there's something like a RAG-like generation for style transfer models?",
+      "answer": "Yeah, image-to-image models can copy the styles they were not trained on, see the model as a artist who already knows how to draw or paint. When you give it a new reference image, it applies his knowledge to mimic your new style. In text, we use RAG. But for images, tools use In-Context Learning to do the same thing. You upload reference images, and the AI inserts its style directly into the generation on the fly. (below are the techniques i could find that can be used for this purpose) IP-Adapter: closest thing to RAG, extracts the style from your reference images and feeds it to AI with your text prompt. also look up for StyleAlign, ControlNet (Gemini suggested them). OR You can perform finetuning via LoRA, maybe on around 50 images if you could have. also you can refer to Can art generators imitate art styles of specific works?",
+      "summary": "Yeah, image-to-image models can copy the styles they were not trained on, see the model as a artist who already knows how to draw or paint. When you give it a new reference image, it applies his knowledge to mimic your...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Garvity9.8",
+      "source_url": "https://genai.stackexchange.com/questions/2827/can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-they-are",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 37 times on the source site."
+      ],
+      "created_at": "2026-06-28T16:16:21+00:00",
+      "curated_at": "2026-07-10T04:14:32.161703+00:00",
+      "path": "posts/se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t.md"
+    },
+    {
+      "id": "se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
+      "title": "Can LLMs have end-to-end encryption (or something similar) for chats?",
+      "question": "Many messaging apps support end-to-end encryption. Can LLMs support this feature (or something similar)?",
+      "answer": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively, you can run LLMs entirely within a local network, where terminal connections can be secured using SSH. Of course, all encryption and network configurations must be implemented correctly and securely. HTTPS/TLS encryption in the browser protects data while it travels from your computer to the AI platform's server like OpenAI. SSH protects data while it travels from your computer to a local server within your own network. The principle is that data in transit is protected against attackers who may be monitoring the network. Once the data reaches the LLM server, it must be decrypted so that the AI can read, process, and generate a response. With true end-toend encryption, only the communicating endpoints can access the plaintext. Intermediate servers or service providers do not possess the decryption keys. If you run an LLM on your own local infrastructure on-premises and secure the connection using SSH or local HTTPS, you partially address the trust issue for the communication channel. Your computer is the sender, and your own server is the receiver and the other end of the connection. When an LLM is operated entirely on your own server on-premises and the connect...",
+      "summary": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively,...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "privacy"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2832/can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 52 times on the source site."
+      ],
+      "created_at": "2026-07-02T19:19:28+00:00",
+      "curated_at": "2026-07-10T04:14:32.077320+00:00",
+      "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md"
+    },
+    {
       "id": "se-ai-50640-how-can-i-estimate-the-time-complexity-of-training-a-neural-network-clas",
       "title": "How can I estimate the time complexity of training a neural network classifier?",
       "question": "I'm working on a face classifier using YOLO, but for the classification step, we are using a neural network with the following architecture: [code omitted] I'm training the network with N classes of 200 embeddings each, which means I have 200*N inputs to the neural network. I want to see if there is way to estimate the time complexity of the training phase of the neural network in function of the number of classes. Thank you!",
@@ -248,55 +297,6 @@
       "created_at": "2026-06-25T15:15:05+00:00",
       "curated_at": "2026-07-09T04:13:22.696250+00:00",
       "path": "posts/se-ai-50640-how-can-i-estimate-the-time-complexity-of-training-a-neural-network-clas.md"
-    },
-    {
-      "id": "se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t",
-      "title": "Can image-to-image style transfer models imitate any art style even if they are trained on public domain/free images?",
-      "question": "I asked Google Gemini and it said that this is possible, but I want to confirm. To imitate the art style of non-free works (like anime, manga, games, etc.) the user would have to provide images of characters etc. (that can be obtained from fan sites/wikis or personal reproductions) to the model. Some models may also accept multiple images, that can be enough to \"understand\" the style. Is there's something like a RAG-like generation for style transfer models?",
-      "answer": "Yeah, image-to-image models can copy the styles they were not trained on, see the model as a artist who already knows how to draw or paint. When you give it a new reference image, it applies his knowledge to mimic your new style. In text, we use RAG. But for images, tools use In-Context Learning to do the same thing. You upload reference images, and the AI inserts its style directly into the generation on the fly. (below are the techniques i could find that can be used for this purpose) IP-Adapter: closest thing to RAG, extracts the style from your reference images and feeds it to AI with your text prompt. also look up for StyleAlign, ControlNet (Gemini suggested them). OR You can perform finetuning via LoRA, maybe on around 50 images if you could have. also you can refer to Can art generators imitate art styles of specific works?",
-      "summary": "Yeah, image-to-image models can copy the styles they were not trained on, see the model as a artist who already knows how to draw or paint. When you give it a new reference image, it applies his knowledge to mimic your...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "genai-ecosystem"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Garvity9.8",
-      "source_url": "https://genai.stackexchange.com/questions/2827/can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-they-are",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 36 times on the source site."
-      ],
-      "created_at": "2026-06-28T16:16:21+00:00",
-      "curated_at": "2026-07-09T04:13:22.493343+00:00",
-      "path": "posts/se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t.md"
-    },
-    {
-      "id": "se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
-      "title": "Can LLMs have end-to-end encryption (or something similar) for chats?",
-      "question": "Many messaging apps support end-to-end encryption. Can LLMs support this feature (or something similar)?",
-      "answer": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively, you can run LLMs entirely within a local network, where terminal connections can be secured using SSH. Of course, all encryption and network configurations must be implemented correctly and securely. HTTPS/TLS encryption in the browser protects data while it travels from your computer to the AI platform's server like OpenAI. SSH protects data while it travels from your computer to a local server within your own network. The principle is that data in transit is protected against attackers who may be monitoring the network. Once the data reaches the LLM server, it must be decrypted so that the AI can read, process, and generate a response. With true end-toend encryption, only the communicating endpoints can access the plaintext. Intermediate servers or service providers do not possess the decryption keys. If you run an LLM on your own local infrastructure on-premises and secure the connection using SSH or local HTTPS, you partially address the trust issue for the communication channel. Your computer is the sender, and your own server is the receiver and the other end of the connection. When an LLM is operated entirely on your own server on-premises and the connect...",
-      "summary": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively,...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "llm",
-        "privacy"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2832/can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 48 times on the source site."
-      ],
-      "created_at": "2026-07-02T19:19:28+00:00",
-      "curated_at": "2026-07-09T04:13:22.423098+00:00",
-      "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md"
     },
     {
       "id": "se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se",

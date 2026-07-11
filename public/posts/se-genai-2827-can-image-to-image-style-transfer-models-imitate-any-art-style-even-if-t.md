@@ -1,6 +1,6 @@
 # Can image-to-image style transfer models imitate any art style even if they are trained on public domain/free images?
 
-Curated at: `2026-07-10T04:14:32.161703+00:00`
+Curated at: `2026-07-11T03:42:33.791019+00:00`
 Model: `Public Q&A`
 Author: `Garvity9.8`
 Tags: `public-q&a, GenAI Stack Exchange, genai-ecosystem`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2827/can-image-to-image-style-
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 0; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 37 times on the source site.
+- Viewed 39 times on the source site.
 
 ## Question
 

@@ -3,31 +3,31 @@
     "id": "se-genai-2830-azure-ai-foundry-is-claude-opus-4-8-version-1-anthropic-hosted-the-same-",
     "title": "Azure AI Foundry: is claude-opus-4-8 \"version 1\" (Anthropic-hosted) the same model as \"version 2\" (Azure-hosted)?",
     "path": "posts/se-genai-2830-azure-ai-foundry-is-claude-opus-4-8-version-1-anthropic-hosted-the-same-.md",
-    "curated_at": "2026-07-11T03:42:33.872570+00:00"
+    "curated_at": "2026-07-12T03:57:18.552116+00:00"
   },
   {
     "id": "se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t",
     "title": "Can image-to-image style transfer models imitate any art style even if they are trained on public domain/free images?",
     "path": "posts/se-genai-2827-can-image-to-image-style-transfer-models-imitate-any-art-style-even-if-t.md",
-    "curated_at": "2026-07-11T03:42:33.791019+00:00"
+    "curated_at": "2026-07-12T03:57:18.410104+00:00"
   },
   {
     "id": "se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
     "title": "Can LLMs have end-to-end encryption (or something similar) for chats?",
     "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md",
-    "curated_at": "2026-07-11T03:42:33.674042+00:00"
+    "curated_at": "2026-07-12T03:57:18.321646+00:00"
+  },
+  {
+    "id": "se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se",
+    "title": "Is there any research on agentic AI for suggesting names based on web search queries?",
+    "path": "posts/se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se.md",
+    "curated_at": "2026-07-12T03:57:18.228338+00:00"
   },
   {
     "id": "se-ai-50640-how-can-i-estimate-the-time-complexity-of-training-a-neural-network-clas",
     "title": "How can I estimate the time complexity of training a neural network classifier?",
     "path": "posts/se-ai-50640-how-can-i-estimate-the-time-complexity-of-training-a-neural-network-clas.md",
     "curated_at": "2026-07-09T04:13:22.696250+00:00"
-  },
-  {
-    "id": "se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se",
-    "title": "Is there any research on agentic AI for suggesting names based on web search queries?",
-    "path": "posts/se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se.md",
-    "curated_at": "2026-07-08T03:44:04.183003+00:00"
   },
   {
     "id": "se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs",

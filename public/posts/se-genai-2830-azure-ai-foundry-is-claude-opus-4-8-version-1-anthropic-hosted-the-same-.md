@@ -1,6 +1,6 @@
 # Azure AI Foundry: is claude-opus-4-8 "version 1" (Anthropic-hosted) the same model as "version 2" (Azure-hosted)?
 
-Curated at: `2026-07-11T03:42:33.872570+00:00`
+Curated at: `2026-07-12T03:57:18.552116+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, claude, azure, anthropic`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2830/azure-ai-foundry-is-claud
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 0; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 23 times on the source site.
+- Viewed 25 times on the source site.
 
 ## Question
 

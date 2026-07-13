@@ -1,6 +1,6 @@
 # Can LLMs have end-to-end encryption (or something similar) for chats?
 
-Curated at: `2026-07-12T03:57:18.321646+00:00`
+Curated at: `2026-07-13T03:59:34.527853+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, llm, privacy`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2832/can-llms-have-end-to-end-
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 1; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 56 times on the source site.
+- Viewed 57 times on the source site.
 
 ## Question
 

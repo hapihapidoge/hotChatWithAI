@@ -1,6 +1,6 @@
 # Azure AI Foundry: is claude-opus-4-8 "version 1" (Anthropic-hosted) the same model as "version 2" (Azure-hosted)?
 
-Curated at: `2026-07-12T03:57:18.552116+00:00`
+Curated at: `2026-07-13T03:59:34.681047+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, claude, azure, anthropic`

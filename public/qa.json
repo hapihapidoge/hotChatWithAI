@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-14T03:33:36.420013+00:00",
+  "generated_at": "2026-07-15T03:34:25.809752+00:00",
   "summary": {
-    "items": 23,
+    "items": 24,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -43,6 +43,7 @@
       "playwright",
       "privacy",
       "prompt",
+      "prompt-design",
       "public-q&a",
       "python",
       "pytorch",
@@ -70,6 +71,56 @@
   },
   "featured": [
     {
+      "id": "se-genai-2837-how-to-make-a-model-produce-ror-style-fighting-tournaments",
+      "title": "How to make a model produce RoR-style fighting tournaments?",
+      "question": "What prompt(s) should I use to get a model to generate battles or fighting tournaments in the style of Record of Ragnarok ? More information about the series can be found in the linked Wikipedia article. List of Record of Ragnarok characters",
+      "answer": "Here are two prompts. Prompt 1 (Shorter & Simpler): Here are two prompts. The first one is simpler and shorter. ChatGPT, DeepSeek, and Grok have all delivered good results. The number of fighters varies here as well. Here, the entire tournament is generated all at once. [code omitted] Prompt 2 (Longer & More Detailed): The second one is longer and more detailed. All three generate the output in multiple parts so they don't produce it all in one go, because that is set as a rule. All parameters can be individually customized and expanded. This was tested with the free and standard settings. I haven't tested Claude or a local LLM yet. [code omitted]",
+      "summary": "Here are two prompts. Prompt 1 (Shorter & Simpler): Here are two prompts. The first one is simpler and shorter. ChatGPT, DeepSeek, and Grok have all delivered good results. The number of fighters varies here as well. He...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "prompt-design"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2837/how-to-make-a-model-produce-ror-style-fighting-tournaments",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 72 times on the source site."
+      ],
+      "created_at": "2026-07-13T17:47:30+00:00",
+      "curated_at": "2026-07-15T03:34:25.288354+00:00",
+      "path": "posts/se-genai-2837-how-to-make-a-model-produce-ror-style-fighting-tournaments.md"
+    },
+    {
+      "id": "se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
+      "title": "Can LLMs have end-to-end encryption (or something similar) for chats?",
+      "question": "Many messaging apps support end-to-end encryption. Can LLMs support this feature (or something similar)?",
+      "answer": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively, you can run LLMs entirely within a local network, where terminal connections can be secured using SSH. Of course, all encryption and network configurations must be implemented correctly and securely. HTTPS/TLS encryption in the browser protects data while it travels from your computer to the AI platform's server like OpenAI. SSH protects data while it travels from your computer to a local server within your own network. The principle is that data in transit is protected against attackers who may be monitoring the network. Once the data reaches the LLM server, it must be decrypted so that the AI can read, process, and generate a response. With true end-toend encryption, only the communicating endpoints can access the plaintext. Intermediate servers or service providers do not possess the decryption keys. If you run an LLM on your own local infrastructure on-premises and secure the connection using SSH or local HTTPS, you partially address the trust issue for the communication channel. Your computer is the sender, and your own server is the receiver and the other end of the connection. When an LLM is operated entirely on your own server on-premises and the connect...",
+      "summary": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively,...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "privacy"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2832/can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 63 times on the source site."
+      ],
+      "created_at": "2026-07-02T19:19:28+00:00",
+      "curated_at": "2026-07-15T03:34:25.088735+00:00",
+      "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md"
+    },
+    {
       "id": "se-genai-2830-azure-ai-foundry-is-claude-opus-4-8-version-1-anthropic-hosted-the-same-",
       "title": "Azure AI Foundry: is claude-opus-4-8 \"version 1\" (Anthropic-hosted) the same model as \"version 2\" (Azure-hosted)?",
       "question": "When deploying claude-opus-4-8 in Azure AI Foundry (Deployment type: Global Standard), the Model version dropdown offers two options: 2 : Hosted on Azure 1 : Hosted on Anthropic infrastructure Both are labeled claude-opus-4-8 , so the model ID is identical. I want to understand what the version number actually distinguishes here. Is it: The same underlying model (same weights, same capabilities, same quality), differing only in where inference physically runs? or Different model builds/behavior in any way that would affect output quality, context window, or supported parameters?",
@@ -94,31 +145,6 @@
       "created_at": "2026-07-01T01:22:04+00:00",
       "curated_at": "2026-07-14T03:33:35.224121+00:00",
       "path": "posts/se-genai-2830-azure-ai-foundry-is-claude-opus-4-8-version-1-anthropic-hosted-the-same-.md"
-    },
-    {
-      "id": "se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
-      "title": "Can LLMs have end-to-end encryption (or something similar) for chats?",
-      "question": "Many messaging apps support end-to-end encryption. Can LLMs support this feature (or something similar)?",
-      "answer": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively, you can run LLMs entirely within a local network, where terminal connections can be secured using SSH. Of course, all encryption and network configurations must be implemented correctly and securely. HTTPS/TLS encryption in the browser protects data while it travels from your computer to the AI platform's server like OpenAI. SSH protects data while it travels from your computer to a local server within your own network. The principle is that data in transit is protected against attackers who may be monitoring the network. Once the data reaches the LLM server, it must be decrypted so that the AI can read, process, and generate a response. With true end-toend encryption, only the communicating endpoints can access the plaintext. Intermediate servers or service providers do not possess the decryption keys. If you run an LLM on your own local infrastructure on-premises and secure the connection using SSH or local HTTPS, you partially address the trust issue for the communication channel. Your computer is the sender, and your own server is the receiver and the other end of the connection. When an LLM is operated entirely on your own server on-premises and the connect...",
-      "summary": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively,...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "llm",
-        "privacy"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2832/can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 60 times on the source site."
-      ],
-      "created_at": "2026-07-02T19:19:28+00:00",
-      "curated_at": "2026-07-14T03:33:35.038973+00:00",
-      "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md"
     },
     {
       "id": "se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se",
@@ -196,33 +222,59 @@
       "created_at": "2026-06-25T15:15:05+00:00",
       "curated_at": "2026-07-09T04:13:22.696250+00:00",
       "path": "posts/se-ai-50640-how-can-i-estimate-the-time-complexity-of-training-a-neural-network-clas.md"
-    },
-    {
-      "id": "se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs",
-      "title": "It's possible to create a model that produces Lo-fi versions of songs?",
-      "question": "The model has to be trained with songs, and the songs must have two versions: one original and the other a Lo-fi remix. Is this possible? (It doesn't have to be based on existing songs, but rather original songs created by the AI developer using Ableton, FL Studio, Logic Pro, etc. The model, however, can still consume existing songs, including famous ones, without explicitly training on them.) If you dont know what I'm talking about, it's like turning this soundtrack: https://www.youtube.com/watch?v=z6HAakYBKAc Into one that sounds like this one: https://www.youtube.com/watch?v=-sLRtsRazDQ",
-      "answer": "It's possible to create a model that produces Lo-fi versions of songs? That task is known as Music Style Transfer. Examples of papers studying that task: A Training-Free Approach for Music Style Transfer with Latent Diffusion Models. https://arxiv.org/abs/2411.15913 Music Style Transfer with Time-Varying Inversion of Diffusion Models. https://arxiv.org/abs/2402.13763",
-      "summary": "It's possible to create a model that produces Lo-fi versions of songs? That task is known as Music Style Transfer. Examples of papers studying that task: A Training-Free Approach for Music Style Transfer with Latent Dif...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "genai-ecosystem"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2822/its-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 1.",
-        "The answer was accepted by the question author.",
-        "Viewed 397 times on the source site."
-      ],
-      "created_at": "2026-06-22T19:50:08+00:00",
-      "curated_at": "2026-07-06T04:38:43.724116+00:00",
-      "path": "posts/se-genai-2822-it-s-possible-to-create-a-model-that-produces-lo-fi-versions-of-songs.md"
     }
   ],
   "entries": [
+    {
+      "id": "se-genai-2837-how-to-make-a-model-produce-ror-style-fighting-tournaments",
+      "title": "How to make a model produce RoR-style fighting tournaments?",
+      "question": "What prompt(s) should I use to get a model to generate battles or fighting tournaments in the style of Record of Ragnarok ? More information about the series can be found in the linked Wikipedia article. List of Record of Ragnarok characters",
+      "answer": "Here are two prompts. Prompt 1 (Shorter & Simpler): Here are two prompts. The first one is simpler and shorter. ChatGPT, DeepSeek, and Grok have all delivered good results. The number of fighters varies here as well. Here, the entire tournament is generated all at once. [code omitted] Prompt 2 (Longer & More Detailed): The second one is longer and more detailed. All three generate the output in multiple parts so they don't produce it all in one go, because that is set as a rule. All parameters can be individually customized and expanded. This was tested with the free and standard settings. I haven't tested Claude or a local LLM yet. [code omitted]",
+      "summary": "Here are two prompts. Prompt 1 (Shorter & Simpler): Here are two prompts. The first one is simpler and shorter. ChatGPT, DeepSeek, and Grok have all delivered good results. The number of fighters varies here as well. He...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "prompt-design"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2837/how-to-make-a-model-produce-ror-style-fighting-tournaments",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 72 times on the source site."
+      ],
+      "created_at": "2026-07-13T17:47:30+00:00",
+      "curated_at": "2026-07-15T03:34:25.288354+00:00",
+      "path": "posts/se-genai-2837-how-to-make-a-model-produce-ror-style-fighting-tournaments.md"
+    },
+    {
+      "id": "se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
+      "title": "Can LLMs have end-to-end encryption (or something similar) for chats?",
+      "question": "Many messaging apps support end-to-end encryption. Can LLMs support this feature (or something similar)?",
+      "answer": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively, you can run LLMs entirely within a local network, where terminal connections can be secured using SSH. Of course, all encryption and network configurations must be implemented correctly and securely. HTTPS/TLS encryption in the browser protects data while it travels from your computer to the AI platform's server like OpenAI. SSH protects data while it travels from your computer to a local server within your own network. The principle is that data in transit is protected against attackers who may be monitoring the network. Once the data reaches the LLM server, it must be decrypted so that the AI can read, process, and generate a response. With true end-toend encryption, only the communicating endpoints can access the plaintext. Intermediate servers or service providers do not possess the decryption keys. If you run an LLM on your own local infrastructure on-premises and secure the connection using SSH or local HTTPS, you partially address the trust issue for the communication channel. Your computer is the sender, and your own server is the receiver and the other end of the connection. When an LLM is operated entirely on your own server on-premises and the connect...",
+      "summary": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively,...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "privacy"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2832/can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 63 times on the source site."
+      ],
+      "created_at": "2026-07-02T19:19:28+00:00",
+      "curated_at": "2026-07-15T03:34:25.088735+00:00",
+      "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md"
+    },
     {
       "id": "se-genai-2830-azure-ai-foundry-is-claude-opus-4-8-version-1-anthropic-hosted-the-same-",
       "title": "Azure AI Foundry: is claude-opus-4-8 \"version 1\" (Anthropic-hosted) the same model as \"version 2\" (Azure-hosted)?",
@@ -248,31 +300,6 @@
       "created_at": "2026-07-01T01:22:04+00:00",
       "curated_at": "2026-07-14T03:33:35.224121+00:00",
       "path": "posts/se-genai-2830-azure-ai-foundry-is-claude-opus-4-8-version-1-anthropic-hosted-the-same-.md"
-    },
-    {
-      "id": "se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
-      "title": "Can LLMs have end-to-end encryption (or something similar) for chats?",
-      "question": "Many messaging apps support end-to-end encryption. Can LLMs support this feature (or something similar)?",
-      "answer": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively, you can run LLMs entirely within a local network, where terminal connections can be secured using SSH. Of course, all encryption and network configurations must be implemented correctly and securely. HTTPS/TLS encryption in the browser protects data while it travels from your computer to the AI platform's server like OpenAI. SSH protects data while it travels from your computer to a local server within your own network. The principle is that data in transit is protected against attackers who may be monitoring the network. Once the data reaches the LLM server, it must be decrypted so that the AI can read, process, and generate a response. With true end-toend encryption, only the communicating endpoints can access the plaintext. Intermediate servers or service providers do not possess the decryption keys. If you run an LLM on your own local infrastructure on-premises and secure the connection using SSH or local HTTPS, you partially address the trust issue for the communication channel. Your computer is the sender, and your own server is the receiver and the other end of the connection. When an LLM is operated entirely on your own server on-premises and the connect...",
-      "summary": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively,...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "llm",
-        "privacy"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2832/can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 60 times on the source site."
-      ],
-      "created_at": "2026-07-02T19:19:28+00:00",
-      "curated_at": "2026-07-14T03:33:35.038973+00:00",
-      "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md"
     },
     {
       "id": "se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se",

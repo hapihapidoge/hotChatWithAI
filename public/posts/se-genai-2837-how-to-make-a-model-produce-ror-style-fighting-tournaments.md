@@ -1,6 +1,6 @@
 # How to make a model produce RoR-style fighting tournaments?
 
-Curated at: `2026-07-17T03:36:39.225911+00:00`
+Curated at: `2026-07-18T03:31:37.372652+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, llm, prompt-design`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2837/how-to-make-a-model-produ
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 1; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 96 times on the source site.
+- Viewed 105 times on the source site.
 
 ## Question
 

@@ -1,6 +1,6 @@
 # How to make a model produce RoR-style fighting tournaments?
 
-Curated at: `2026-07-25T03:36:44.311182+00:00`
+Curated at: `2026-07-26T03:54:54.303121+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, llm, prompt-design`

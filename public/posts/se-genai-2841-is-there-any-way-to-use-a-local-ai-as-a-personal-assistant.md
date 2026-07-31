@@ -1,6 +1,6 @@
 # Is there any way to use a local AI as a personal assistant?
 
-Curated at: `2026-07-30T03:28:05.212051+00:00`
+Curated at: `2026-07-31T03:49:37.834975+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, llm, ollama, agent, agentic, personalization`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2841/is-there-any-way-to-use-a
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 3; answer score: 5.
 - The answer was accepted by the question author.
-- Viewed 1384 times on the source site.
+- Viewed 1387 times on the source site.
 
 ## Question
 

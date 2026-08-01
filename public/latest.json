@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-31T03:49:38.641993+00:00",
+  "generated_at": "2026-08-01T03:49:58.884524+00:00",
   "summary": {
-    "items": 26,
+    "items": 28,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -17,6 +17,7 @@
       "chromadb",
       "claude",
       "claude-code",
+      "claude-desktop",
       "comparison",
       "computational-complexity",
       "cross-validation",
@@ -55,6 +56,7 @@
       "regression",
       "retrieval-augmented-generation",
       "server-sent-events",
+      "slack",
       "survival",
       "terminology",
       "testautomationfx",
@@ -94,11 +96,60 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 1; answer score: 1.",
-        "Viewed 55 times on the source site."
+        "Viewed 57 times on the source site."
       ],
       "created_at": "2026-07-28T00:02:16+00:00",
-      "curated_at": "2026-07-31T03:49:38.565564+00:00",
+      "curated_at": "2026-08-01T03:49:58.778019+00:00",
       "path": "posts/se-stackoverflow-79986462-oceanbase-4-3-x-hybrid-query-ann-search-where-clause-forces-full-table-s.md"
+    },
+    {
+      "id": "se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl",
+      "title": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
+      "question": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
+      "answer": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server include a \"Sent using Claude\" footer that cannot be disabled. For users and organizations with policies against AI attribution in communications, there is no way to opt out of this branding. ... Feature: Add option to disable 'Sent using Claude' message footer #25 This diagram visually illustrates the exact data flow and security boundaries when you use the Claude tag in Slack. It also explains, in part, why you cannot disable the 'Sent using Claude' message locally, all requests are processed through external servers, and this is currently the intended behavior. Inside Claude Tag: How Anthropic’s Slack-Native Agent Actually Works",
+      "summary": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server inclu...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "claude",
+        "claude-desktop",
+        "slack"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2849/how-can-i-configure-claude-or-slack-so-that-it-doesnt-add-sent-using-claude",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 19 times on the source site."
+      ],
+      "created_at": "2026-07-31T18:15:05+00:00",
+      "curated_at": "2026-08-01T03:49:58.201044+00:00",
+      "path": "posts/se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl.md"
+    },
+    {
+      "id": "se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names",
+      "title": "Is This AI Feature Documented? Recognizing Categories from Lists of Names",
+      "question": "An example of such a feature in action: Mercury, Venus, Earth, Mars -> Planets Sirius, Antares, Regulus, Aldebaran -> Stars Izanami, Izanagi, Amaterasu, Susanoo -> Japanese gods Titan, Hyperion, Dione, Prometheus -> Moons of Saturn The pattern followed is this \"names\" -> \"named group\". Is this documented on research? (This may not be a gen AI feature however). Bonus if it supports RAG with web search.",
+      "answer": "The task itself predates the recent GenAI boom and has been studied under names such as entity set labeling, common hypernym discovery, and cluster/topic labeling.",
+      "summary": "The task itself predates the recent GenAI boom and has been studied under names such as entity set labeling, common hypernym discovery, and cluster/topic labeling.",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2846/is-this-ai-feature-documented-recognizing-categories-from-lists-of-names",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 96 times on the source site."
+      ],
+      "created_at": "2026-07-31T02:11:17+00:00",
+      "curated_at": "2026-08-01T03:49:58.115558+00:00",
+      "path": "posts/se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names.md"
     },
     {
       "id": "se-genai-2841-is-there-any-way-to-use-a-local-ai-as-a-personal-assistant",
@@ -122,10 +173,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 3; answer score: 5.",
         "The answer was accepted by the question author.",
-        "Viewed 1387 times on the source site."
+        "Viewed 1391 times on the source site."
       ],
       "created_at": "2026-07-21T21:24:48+00:00",
-      "curated_at": "2026-07-31T03:49:37.834975+00:00",
+      "curated_at": "2026-08-01T03:49:58.051157+00:00",
       "path": "posts/se-genai-2841-is-there-any-way-to-use-a-local-ai-as-a-personal-assistant.md"
     },
     {
@@ -177,57 +228,6 @@
       "created_at": "2026-07-02T19:19:28+00:00",
       "curated_at": "2026-07-16T03:36:47.673480+00:00",
       "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md"
-    },
-    {
-      "id": "se-genai-2830-azure-ai-foundry-is-claude-opus-4-8-version-1-anthropic-hosted-the-same-",
-      "title": "Azure AI Foundry: is claude-opus-4-8 \"version 1\" (Anthropic-hosted) the same model as \"version 2\" (Azure-hosted)?",
-      "question": "When deploying claude-opus-4-8 in Azure AI Foundry (Deployment type: Global Standard), the Model version dropdown offers two options: 2 : Hosted on Azure 1 : Hosted on Anthropic infrastructure Both are labeled claude-opus-4-8 , so the model ID is identical. I want to understand what the version number actually distinguishes here. Is it: The same underlying model (same weights, same capabilities, same quality), differing only in where inference physically runs? or Different model builds/behavior in any way that would affect output quality, context window, or supported parameters?",
-      "answer": "From Azure tech support (private correspondence): Both options use the **same base model (Claude Opus 4.8). Version 2 of Claude Opus 4.8 is hosted on Azure infrastructure. Microsoft Foundry Claude models on Azure infrastructure have full Azure data residency for inference processing. Version 2 supports both Global Standard and US data Zone deployment types. Version 2 currently supports core Messages API features including tool calls and prompt caching. If you need additional features including structured outputs, Web Search, and Files, you can use Version 1 which is hosted on Anthropic infrastructure. We will be adding those API capabilities to Version 2 in the coming months. You can learn more about API feature differences .",
-      "summary": "From Azure tech support (private correspondence): Both options use the **same base model (Claude Opus 4.8). Version 2 of Claude Opus 4.8 is hosted on Azure infrastructure. Microsoft Foundry Claude models on Azure infras...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "claude",
-        "azure",
-        "anthropic"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2830/azure-ai-foundry-is-claude-opus-4-8-version-1-anthropic-hosted-the-same-mod",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 26 times on the source site."
-      ],
-      "created_at": "2026-07-01T01:22:04+00:00",
-      "curated_at": "2026-07-14T03:33:35.224121+00:00",
-      "path": "posts/se-genai-2830-azure-ai-foundry-is-claude-opus-4-8-version-1-anthropic-hosted-the-same-.md"
-    },
-    {
-      "id": "se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se",
-      "title": "Is there any research on agentic AI for suggesting names based on web search queries?",
-      "question": "Like, an agentic AI that can search for things like \"historical figures\", \"mythical creatures\", “islands in Greece”, “Solar System objects” or \"boons in Hades II \" and then provide the user a list of names related to the topic. Note that I’m talking about a feature integrated into software, rather than using LLMs for this task.",
-      "answer": "If I understand you correctly, you're essentially looking for a combination of a crawler , scraper , and parser . At a minimum, you need these steps: Crawler: Searches the web for the relevant pages. Scraper: Downloads the content from those pages. Parser: Extracts the actual names from the downloaded content and either creates a list or stores the values in a database. Or, to put it simply, the crawler finds the way, the scraper fetches the source code, and the parser filters out the noise and saves the names to a database or a file. The challenge is that you need to tell the crawler exactly where to look, that is, which URLs it should crawl. The URL problem is the biggest hurdle in traditional web scraping. Without a seed URL (starting URL), the script has no idea where to begin. What is the difference between web-crawling and web-scraping? Web Crawling vs. Web Scraping Design a Web Crawler The following approaches are also possible: Option 1 (Search Engine Scraping): A Python script queries, for example, the DuckDuckGo HTML search or a search API with a term like: \" Hades II boons wiki \" The script retrieves the first five search results and automatically uses those links as the targets for the scraper Option 2 (LLM as a URL Provider): You use a fast LLM API (such as ChatGPT or Grok) and simply ask: \" Give me the three best wiki URLs for Hades II item s\" The LLM doesn't gen...",
-      "summary": "If I understand you correctly, you're essentially looking for a combination of a crawler , scraper , and parser . At a minimum, you need these steps: Crawler: Searches the web for the relevant pages. Scraper: Downloads...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "genai-ecosystem",
-        "agentic"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2828/is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-search-que",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 71 times on the source site."
-      ],
-      "created_at": "2026-06-29T21:14:39+00:00",
-      "curated_at": "2026-07-13T03:59:34.347684+00:00",
-      "path": "posts/se-genai-2828-is-there-any-research-on-agentic-ai-for-suggesting-names-based-on-web-se.md"
     }
   ],
   "entries": [
@@ -251,11 +251,60 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 1; answer score: 1.",
-        "Viewed 55 times on the source site."
+        "Viewed 57 times on the source site."
       ],
       "created_at": "2026-07-28T00:02:16+00:00",
-      "curated_at": "2026-07-31T03:49:38.565564+00:00",
+      "curated_at": "2026-08-01T03:49:58.778019+00:00",
       "path": "posts/se-stackoverflow-79986462-oceanbase-4-3-x-hybrid-query-ann-search-where-clause-forces-full-table-s.md"
+    },
+    {
+      "id": "se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl",
+      "title": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
+      "question": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
+      "answer": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server include a \"Sent using Claude\" footer that cannot be disabled. For users and organizations with policies against AI attribution in communications, there is no way to opt out of this branding. ... Feature: Add option to disable 'Sent using Claude' message footer #25 This diagram visually illustrates the exact data flow and security boundaries when you use the Claude tag in Slack. It also explains, in part, why you cannot disable the 'Sent using Claude' message locally, all requests are processed through external servers, and this is currently the intended behavior. Inside Claude Tag: How Anthropic’s Slack-Native Agent Actually Works",
+      "summary": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server inclu...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "claude",
+        "claude-desktop",
+        "slack"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2849/how-can-i-configure-claude-or-slack-so-that-it-doesnt-add-sent-using-claude",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 19 times on the source site."
+      ],
+      "created_at": "2026-07-31T18:15:05+00:00",
+      "curated_at": "2026-08-01T03:49:58.201044+00:00",
+      "path": "posts/se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl.md"
+    },
+    {
+      "id": "se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names",
+      "title": "Is This AI Feature Documented? Recognizing Categories from Lists of Names",
+      "question": "An example of such a feature in action: Mercury, Venus, Earth, Mars -> Planets Sirius, Antares, Regulus, Aldebaran -> Stars Izanami, Izanagi, Amaterasu, Susanoo -> Japanese gods Titan, Hyperion, Dione, Prometheus -> Moons of Saturn The pattern followed is this \"names\" -> \"named group\". Is this documented on research? (This may not be a gen AI feature however). Bonus if it supports RAG with web search.",
+      "answer": "The task itself predates the recent GenAI boom and has been studied under names such as entity set labeling, common hypernym discovery, and cluster/topic labeling.",
+      "summary": "The task itself predates the recent GenAI boom and has been studied under names such as entity set labeling, common hypernym discovery, and cluster/topic labeling.",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "genai-ecosystem"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2846/is-this-ai-feature-documented-recognizing-categories-from-lists-of-names",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 96 times on the source site."
+      ],
+      "created_at": "2026-07-31T02:11:17+00:00",
+      "curated_at": "2026-08-01T03:49:58.115558+00:00",
+      "path": "posts/se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names.md"
     },
     {
       "id": "se-genai-2841-is-there-any-way-to-use-a-local-ai-as-a-personal-assistant",
@@ -279,10 +328,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 3; answer score: 5.",
         "The answer was accepted by the question author.",
-        "Viewed 1387 times on the source site."
+        "Viewed 1391 times on the source site."
       ],
       "created_at": "2026-07-21T21:24:48+00:00",
-      "curated_at": "2026-07-31T03:49:37.834975+00:00",
+      "curated_at": "2026-08-01T03:49:58.051157+00:00",
       "path": "posts/se-genai-2841-is-there-any-way-to-use-a-local-ai-as-a-personal-assistant.md"
     },
     {

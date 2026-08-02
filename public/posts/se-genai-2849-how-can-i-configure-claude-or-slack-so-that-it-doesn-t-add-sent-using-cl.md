@@ -1,6 +1,6 @@
 # How can I configure Claude or Slack so that it doesn't add "Sent using @Claude" when sending a message on Slack using Claude Desktop?
 
-Curated at: `2026-08-01T03:49:58.201044+00:00`
+Curated at: `2026-08-02T03:52:25.773527+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, claude, claude-desktop, slack`
@@ -10,8 +10,8 @@ Source: https://genai.stackexchange.com/questions/2849/how-can-i-configure-claud
 ## Why It Is Good
 
 - Public Q&A from GenAI Stack Exchange.
-- Question score: 1; answer score: 1.
-- Viewed 19 times on the source site.
+- Question score: 2; answer score: 2.
+- Viewed 215 times on the source site.
 
 ## Question
 

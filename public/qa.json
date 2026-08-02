@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T03:49:58.884524+00:00",
+  "generated_at": "2026-08-02T03:52:26.971686+00:00",
   "summary": {
     "items": 28,
     "tags": [
@@ -95,37 +95,12 @@
       "source_url": "https://stackoverflow.com/questions/79986462/oceanbase-4-3-x-hybrid-query-ann-search-where-clause-forces-full-table-scan",
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
-        "Question score: 1; answer score: 1.",
-        "Viewed 57 times on the source site."
+        "Question score: 2; answer score: 2.",
+        "Viewed 58 times on the source site."
       ],
       "created_at": "2026-07-28T00:02:16+00:00",
-      "curated_at": "2026-08-01T03:49:58.778019+00:00",
+      "curated_at": "2026-08-02T03:52:26.887968+00:00",
       "path": "posts/se-stackoverflow-79986462-oceanbase-4-3-x-hybrid-query-ann-search-where-clause-forces-full-table-s.md"
-    },
-    {
-      "id": "se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl",
-      "title": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
-      "question": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
-      "answer": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server include a \"Sent using Claude\" footer that cannot be disabled. For users and organizations with policies against AI attribution in communications, there is no way to opt out of this branding. ... Feature: Add option to disable 'Sent using Claude' message footer #25 This diagram visually illustrates the exact data flow and security boundaries when you use the Claude tag in Slack. It also explains, in part, why you cannot disable the 'Sent using Claude' message locally, all requests are processed through external servers, and this is currently the intended behavior. Inside Claude Tag: How Anthropic’s Slack-Native Agent Actually Works",
-      "summary": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server inclu...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "claude",
-        "claude-desktop",
-        "slack"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2849/how-can-i-configure-claude-or-slack-so-that-it-doesnt-add-sent-using-claude",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 1.",
-        "Viewed 19 times on the source site."
-      ],
-      "created_at": "2026-07-31T18:15:05+00:00",
-      "curated_at": "2026-08-01T03:49:58.201044+00:00",
-      "path": "posts/se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl.md"
     },
     {
       "id": "se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names",
@@ -145,11 +120,36 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 96 times on the source site."
+        "Viewed 144 times on the source site."
       ],
       "created_at": "2026-07-31T02:11:17+00:00",
-      "curated_at": "2026-08-01T03:49:58.115558+00:00",
+      "curated_at": "2026-08-02T03:52:25.886480+00:00",
       "path": "posts/se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names.md"
+    },
+    {
+      "id": "se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl",
+      "title": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
+      "question": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
+      "answer": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server include a \"Sent using Claude\" footer that cannot be disabled. For users and organizations with policies against AI attribution in communications, there is no way to opt out of this branding. ... Feature: Add option to disable 'Sent using Claude' message footer #25 This diagram visually illustrates the exact data flow and security boundaries when you use the Claude tag in Slack. It also explains, in part, why you cannot disable the 'Sent using Claude' message locally, all requests are processed through external servers, and this is currently the intended behavior. Inside Claude Tag: How Anthropic’s Slack-Native Agent Actually Works",
+      "summary": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server inclu...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "claude",
+        "claude-desktop",
+        "slack"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2849/how-can-i-configure-claude-or-slack-so-that-it-doesnt-add-sent-using-claude",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 2.",
+        "Viewed 215 times on the source site."
+      ],
+      "created_at": "2026-07-31T18:15:05+00:00",
+      "curated_at": "2026-08-02T03:52:25.773527+00:00",
+      "path": "posts/se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl.md"
     },
     {
       "id": "se-genai-2841-is-there-any-way-to-use-a-local-ai-as-a-personal-assistant",
@@ -173,10 +173,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 3; answer score: 5.",
         "The answer was accepted by the question author.",
-        "Viewed 1391 times on the source site."
+        "Viewed 1392 times on the source site."
       ],
       "created_at": "2026-07-21T21:24:48+00:00",
-      "curated_at": "2026-08-01T03:49:58.051157+00:00",
+      "curated_at": "2026-08-02T03:52:25.634370+00:00",
       "path": "posts/se-genai-2841-is-there-any-way-to-use-a-local-ai-as-a-personal-assistant.md"
     },
     {
@@ -250,37 +250,12 @@
       "source_url": "https://stackoverflow.com/questions/79986462/oceanbase-4-3-x-hybrid-query-ann-search-where-clause-forces-full-table-scan",
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
-        "Question score: 1; answer score: 1.",
-        "Viewed 57 times on the source site."
+        "Question score: 2; answer score: 2.",
+        "Viewed 58 times on the source site."
       ],
       "created_at": "2026-07-28T00:02:16+00:00",
-      "curated_at": "2026-08-01T03:49:58.778019+00:00",
+      "curated_at": "2026-08-02T03:52:26.887968+00:00",
       "path": "posts/se-stackoverflow-79986462-oceanbase-4-3-x-hybrid-query-ann-search-where-clause-forces-full-table-s.md"
-    },
-    {
-      "id": "se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl",
-      "title": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
-      "question": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
-      "answer": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server include a \"Sent using Claude\" footer that cannot be disabled. For users and organizations with policies against AI attribution in communications, there is no way to opt out of this branding. ... Feature: Add option to disable 'Sent using Claude' message footer #25 This diagram visually illustrates the exact data flow and security boundaries when you use the Claude tag in Slack. It also explains, in part, why you cannot disable the 'Sent using Claude' message locally, all requests are processed through external servers, and this is currently the intended behavior. Inside Claude Tag: How Anthropic’s Slack-Native Agent Actually Works",
-      "summary": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server inclu...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "claude",
-        "claude-desktop",
-        "slack"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2849/how-can-i-configure-claude-or-slack-so-that-it-doesnt-add-sent-using-claude",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 1.",
-        "Viewed 19 times on the source site."
-      ],
-      "created_at": "2026-07-31T18:15:05+00:00",
-      "curated_at": "2026-08-01T03:49:58.201044+00:00",
-      "path": "posts/se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl.md"
     },
     {
       "id": "se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names",
@@ -300,11 +275,36 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 96 times on the source site."
+        "Viewed 144 times on the source site."
       ],
       "created_at": "2026-07-31T02:11:17+00:00",
-      "curated_at": "2026-08-01T03:49:58.115558+00:00",
+      "curated_at": "2026-08-02T03:52:25.886480+00:00",
       "path": "posts/se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names.md"
+    },
+    {
+      "id": "se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl",
+      "title": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
+      "question": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
+      "answer": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server include a \"Sent using Claude\" footer that cannot be disabled. For users and organizations with policies against AI attribution in communications, there is no way to opt out of this branding. ... Feature: Add option to disable 'Sent using Claude' message footer #25 This diagram visually illustrates the exact data flow and security boundaries when you use the Claude tag in Slack. It also explains, in part, why you cannot disable the 'Sent using Claude' message locally, all requests are processed through external servers, and this is currently the intended behavior. Inside Claude Tag: How Anthropic’s Slack-Native Agent Actually Works",
+      "summary": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server inclu...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "claude",
+        "claude-desktop",
+        "slack"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2849/how-can-i-configure-claude-or-slack-so-that-it-doesnt-add-sent-using-claude",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 2.",
+        "Viewed 215 times on the source site."
+      ],
+      "created_at": "2026-07-31T18:15:05+00:00",
+      "curated_at": "2026-08-02T03:52:25.773527+00:00",
+      "path": "posts/se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl.md"
     },
     {
       "id": "se-genai-2841-is-there-any-way-to-use-a-local-ai-as-a-personal-assistant",
@@ -328,10 +328,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 3; answer score: 5.",
         "The answer was accepted by the question author.",
-        "Viewed 1391 times on the source site."
+        "Viewed 1392 times on the source site."
       ],
       "created_at": "2026-07-21T21:24:48+00:00",
-      "curated_at": "2026-08-01T03:49:58.051157+00:00",
+      "curated_at": "2026-08-02T03:52:25.634370+00:00",
       "path": "posts/se-genai-2841-is-there-any-way-to-use-a-local-ai-as-a-personal-assistant.md"
     },
     {

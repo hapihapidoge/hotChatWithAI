@@ -1,6 +1,6 @@
 # OceanBase 4.3.x: Hybrid query (ANN_SEARCH + WHERE clause) forces full table scan instead of Vector Index Pre-filtering
 
-Curated at: `2026-08-02T03:52:26.887968+00:00`
+Curated at: `2026-08-03T03:54:25.390886+00:00`
 Model: `Public Q&A`
 Author: `Dmitry543`
 Tags: `public-q&a, Stack Overflow, vector-database, rag, query-planner, oceanbase`
@@ -11,7 +11,7 @@ Source: https://stackoverflow.com/questions/79986462/oceanbase-4-3-x-hybrid-quer
 
 - Public Q&A from Stack Overflow.
 - Question score: 2; answer score: 2.
-- Viewed 58 times on the source site.
+- Viewed 61 times on the source site.
 
 ## Question
 

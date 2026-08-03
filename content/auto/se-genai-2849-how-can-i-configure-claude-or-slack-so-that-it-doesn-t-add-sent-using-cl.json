@@ -16,11 +16,11 @@
   "source_url": "https://genai.stackexchange.com/questions/2849/how-can-i-configure-claude-or-slack-so-that-it-doesnt-add-sent-using-claude",
   "quality_signals": [
     "Public Q&A from GenAI Stack Exchange.",
-    "Question score: 2; answer score: 2.",
-    "Viewed 215 times on the source site."
+    "Question score: 3; answer score: 4.",
+    "Viewed 424 times on the source site."
   ],
   "created_at": "2026-07-31T18:15:05+00:00",
-  "curated_at": "2026-08-02T03:52:25.773527+00:00",
+  "curated_at": "2026-08-03T03:54:24.035429+00:00",
   "license": "Stack Exchange content is user-contributed and requires source attribution.",
   "source": "GenAI Stack Exchange"
 }

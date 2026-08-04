@@ -3,25 +3,25 @@
     "id": "se-stackoverflow-79986462-oceanbase-4-3-x-hybrid-query-ann-search-where-clause-forces-full-table-s",
     "title": "OceanBase 4.3.x: Hybrid query (ANN_SEARCH + WHERE clause) forces full table scan instead of Vector Index Pre-filtering",
     "path": "posts/se-stackoverflow-79986462-oceanbase-4-3-x-hybrid-query-ann-search-where-clause-forces-full-table-s.md",
-    "curated_at": "2026-08-03T03:54:25.390886+00:00"
+    "curated_at": "2026-08-04T03:36:43.518261+00:00"
   },
   {
     "id": "se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names",
     "title": "Is This AI Feature Documented? Recognizing Categories from Lists of Names",
     "path": "posts/se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names.md",
-    "curated_at": "2026-08-03T03:54:24.131045+00:00"
+    "curated_at": "2026-08-04T03:36:42.762042+00:00"
   },
   {
     "id": "se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl",
     "title": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
     "path": "posts/se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl.md",
-    "curated_at": "2026-08-03T03:54:24.035429+00:00"
+    "curated_at": "2026-08-04T03:36:42.675420+00:00"
   },
   {
     "id": "se-genai-2841-is-there-any-way-to-use-a-local-ai-as-a-personal-assistant",
     "title": "Is there any way to use a local AI as a personal assistant?",
     "path": "posts/se-genai-2841-is-there-any-way-to-use-a-local-ai-as-a-personal-assistant.md",
-    "curated_at": "2026-08-03T03:54:23.844328+00:00"
+    "curated_at": "2026-08-04T03:36:42.585634+00:00"
   },
   {
     "id": "se-genai-2837-how-to-make-a-model-produce-ror-style-fighting-tournaments",

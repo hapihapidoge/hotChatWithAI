@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T03:32:10.687131+00:00",
+  "generated_at": "2026-08-06T03:36:44.977078+00:00",
   "summary": {
     "items": 28,
     "tags": [
@@ -96,10 +96,10 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 2; answer score: 2.",
-        "Viewed 61 times on the source site."
+        "Viewed 62 times on the source site."
       ],
       "created_at": "2026-07-28T00:02:16+00:00",
-      "curated_at": "2026-08-05T03:32:10.606556+00:00",
+      "curated_at": "2026-08-06T03:36:44.917325+00:00",
       "path": "posts/se-stackoverflow-79986462-oceanbase-4-3-x-hybrid-query-ann-search-where-clause-forces-full-table-s.md"
     },
     {
@@ -120,10 +120,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 157 times on the source site."
+        "Viewed 159 times on the source site."
       ],
       "created_at": "2026-07-31T02:11:17+00:00",
-      "curated_at": "2026-08-05T03:32:09.953492+00:00",
+      "curated_at": "2026-08-06T03:36:43.782940+00:00",
       "path": "posts/se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names.md"
     },
     {
@@ -145,10 +145,10 @@
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 4; answer score: 5.",
-        "Viewed 906 times on the source site."
+        "Viewed 921 times on the source site."
       ],
       "created_at": "2026-07-31T18:15:05+00:00",
-      "curated_at": "2026-08-05T03:32:09.802488+00:00",
+      "curated_at": "2026-08-06T03:36:43.562831+00:00",
       "path": "posts/se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl.md"
     },
     {
@@ -251,10 +251,10 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 2; answer score: 2.",
-        "Viewed 61 times on the source site."
+        "Viewed 62 times on the source site."
       ],
       "created_at": "2026-07-28T00:02:16+00:00",
-      "curated_at": "2026-08-05T03:32:10.606556+00:00",
+      "curated_at": "2026-08-06T03:36:44.917325+00:00",
       "path": "posts/se-stackoverflow-79986462-oceanbase-4-3-x-hybrid-query-ann-search-where-clause-forces-full-table-s.md"
     },
     {
@@ -275,10 +275,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 157 times on the source site."
+        "Viewed 159 times on the source site."
       ],
       "created_at": "2026-07-31T02:11:17+00:00",
-      "curated_at": "2026-08-05T03:32:09.953492+00:00",
+      "curated_at": "2026-08-06T03:36:43.782940+00:00",
       "path": "posts/se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names.md"
     },
     {
@@ -300,10 +300,10 @@
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 4; answer score: 5.",
-        "Viewed 906 times on the source site."
+        "Viewed 921 times on the source site."
       ],
       "created_at": "2026-07-31T18:15:05+00:00",
-      "curated_at": "2026-08-05T03:32:09.802488+00:00",
+      "curated_at": "2026-08-06T03:36:43.562831+00:00",
       "path": "posts/se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl.md"
     },
     {

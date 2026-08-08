@@ -1,6 +1,6 @@
 # Is This AI Feature Documented? Recognizing Categories from Lists of Names
 
-Curated at: `2026-08-07T03:14:25.118933+00:00`
+Curated at: `2026-08-08T02:20:53.934366+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, genai-ecosystem`

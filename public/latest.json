@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-08T02:20:55.412126+00:00",
+  "generated_at": "2026-08-09T02:28:19.089847+00:00",
   "summary": {
-    "items": 28,
+    "items": 29,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -96,11 +96,36 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 2; answer score: 2.",
-        "Viewed 64 times on the source site."
+        "Viewed 65 times on the source site."
       ],
       "created_at": "2026-07-28T00:02:16+00:00",
-      "curated_at": "2026-08-08T02:20:55.339023+00:00",
+      "curated_at": "2026-08-09T02:28:18.983252+00:00",
       "path": "posts/se-stackoverflow-79986462-oceanbase-4-3-x-hybrid-query-ann-search-where-clause-forces-full-table-s.md"
+    },
+    {
+      "id": "se-genai-2857-how-to-prompt-llms-to-create-epic-the-musical-style-compositions",
+      "title": "How to Prompt LLMs to Create Epic: The Musical-style Compositions?",
+      "question": "Which GenAI tools are suitable for creating Epic: The Musical -style musical compositions with original lyrics, and how should I prompt them? The musical itself is an adaptation of Homer's Odyssey.",
+      "answer": "If the goal is to create a truly original musical, I would not try to simply have an LLM write or copy a song like EPIC The Musical. It works better to describe the characteristics you want and then develop your own work, step by step from that. I would distinguish between two tasks: 1. LLM creates: Story, characters, dramaturgy, lyrics and song structure Here you can use the well-known online ChatGPT, Claude, Gemini, etc. or local AIs. You could also divide each task into smaller subtasks and have each of them processed by different LLMs. If you want to use this repeatedly and professionally, you could also build agents with a main conductor that controls and approves everything, but I don't know if it is worth the effort and whether the know-how is available. 2. Music AI creates: Melody, instrumentation, vocals and production, for example, Suno or Udio are suitable here. Don't copy the artist or the musical, but describe the characteristics Write an epic musical song with a mythological atmosphere, orchestral accompaniment, dramatic character development, strong contrasts between quiet and intense passages, and a big emotional finale. Use the following characteristics: Genre: Musical, Cinematic, Mythological Mood: dramatic, melancholic, heroic Instruments: strings, brass, deep percussion, choir Vocals: Solo, Duet, alternating vocals Dramaturgy: start quietly, build tension,...",
+      "summary": "If the goal is to create a truly original musical, I would not try to simply have an LLM write or copy a song like EPIC The Musical. It works better to describe the characteristics you want and then develop your own wor...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "prompt-design"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2857/how-to-prompt-llms-to-create-epic-the-musical-style-compositions",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 2.",
+        "The answer was accepted by the question author.",
+        "Viewed 64 times on the source site."
+      ],
+      "created_at": "2026-08-05T23:43:33+00:00",
+      "curated_at": "2026-08-09T02:28:18.185312+00:00",
+      "path": "posts/se-genai-2857-how-to-prompt-llms-to-create-epic-the-musical-style-compositions.md"
     },
     {
       "id": "se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names",
@@ -120,10 +145,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 161 times on the source site."
+        "Viewed 162 times on the source site."
       ],
       "created_at": "2026-07-31T02:11:17+00:00",
-      "curated_at": "2026-08-08T02:20:53.934366+00:00",
+      "curated_at": "2026-08-09T02:28:18.023400+00:00",
       "path": "posts/se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names.md"
     },
     {
@@ -145,10 +170,10 @@
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 4; answer score: 5.",
-        "Viewed 932 times on the source site."
+        "Viewed 938 times on the source site."
       ],
       "created_at": "2026-07-31T18:15:05+00:00",
-      "curated_at": "2026-08-08T02:20:53.681153+00:00",
+      "curated_at": "2026-08-09T02:28:17.942151+00:00",
       "path": "posts/se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl.md"
     },
     {
@@ -203,31 +228,6 @@
       "created_at": "2026-07-13T17:47:30+00:00",
       "curated_at": "2026-07-27T04:01:43.869531+00:00",
       "path": "posts/se-genai-2837-how-to-make-a-model-produce-ror-style-fighting-tournaments.md"
-    },
-    {
-      "id": "se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
-      "title": "Can LLMs have end-to-end encryption (or something similar) for chats?",
-      "question": "Many messaging apps support end-to-end encryption. Can LLMs support this feature (or something similar)?",
-      "answer": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively, you can run LLMs entirely within a local network, where terminal connections can be secured using SSH. Of course, all encryption and network configurations must be implemented correctly and securely. HTTPS/TLS encryption in the browser protects data while it travels from your computer to the AI platform's server like OpenAI. SSH protects data while it travels from your computer to a local server within your own network. The principle is that data in transit is protected against attackers who may be monitoring the network. Once the data reaches the LLM server, it must be decrypted so that the AI can read, process, and generate a response. With true end-toend encryption, only the communicating endpoints can access the plaintext. Intermediate servers or service providers do not possess the decryption keys. If you run an LLM on your own local infrastructure on-premises and secure the connection using SSH or local HTTPS, you partially address the trust issue for the communication channel. Your computer is the sender, and your own server is the receiver and the other end of the connection. When an LLM is operated entirely on your own server on-premises and the connect...",
-      "summary": "Standard LLMs currently cannot support true end-to-end encryption (E2EE) while processing your data. With online LLM platforms, the connection is typically protected using SSL/TLS (HTTPS) in the browser. Alternatively,...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "llm",
-        "privacy"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2832/can-llms-have-end-to-end-encryption-or-something-similar-for-chats",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 64 times on the source site."
-      ],
-      "created_at": "2026-07-02T19:19:28+00:00",
-      "curated_at": "2026-07-16T03:36:47.673480+00:00",
-      "path": "posts/se-genai-2832-can-llms-have-end-to-end-encryption-or-something-similar-for-chats.md"
     }
   ],
   "entries": [
@@ -251,11 +251,36 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 2; answer score: 2.",
-        "Viewed 64 times on the source site."
+        "Viewed 65 times on the source site."
       ],
       "created_at": "2026-07-28T00:02:16+00:00",
-      "curated_at": "2026-08-08T02:20:55.339023+00:00",
+      "curated_at": "2026-08-09T02:28:18.983252+00:00",
       "path": "posts/se-stackoverflow-79986462-oceanbase-4-3-x-hybrid-query-ann-search-where-clause-forces-full-table-s.md"
+    },
+    {
+      "id": "se-genai-2857-how-to-prompt-llms-to-create-epic-the-musical-style-compositions",
+      "title": "How to Prompt LLMs to Create Epic: The Musical-style Compositions?",
+      "question": "Which GenAI tools are suitable for creating Epic: The Musical -style musical compositions with original lyrics, and how should I prompt them? The musical itself is an adaptation of Homer's Odyssey.",
+      "answer": "If the goal is to create a truly original musical, I would not try to simply have an LLM write or copy a song like EPIC The Musical. It works better to describe the characteristics you want and then develop your own work, step by step from that. I would distinguish between two tasks: 1. LLM creates: Story, characters, dramaturgy, lyrics and song structure Here you can use the well-known online ChatGPT, Claude, Gemini, etc. or local AIs. You could also divide each task into smaller subtasks and have each of them processed by different LLMs. If you want to use this repeatedly and professionally, you could also build agents with a main conductor that controls and approves everything, but I don't know if it is worth the effort and whether the know-how is available. 2. Music AI creates: Melody, instrumentation, vocals and production, for example, Suno or Udio are suitable here. Don't copy the artist or the musical, but describe the characteristics Write an epic musical song with a mythological atmosphere, orchestral accompaniment, dramatic character development, strong contrasts between quiet and intense passages, and a big emotional finale. Use the following characteristics: Genre: Musical, Cinematic, Mythological Mood: dramatic, melancholic, heroic Instruments: strings, brass, deep percussion, choir Vocals: Solo, Duet, alternating vocals Dramaturgy: start quietly, build tension,...",
+      "summary": "If the goal is to create a truly original musical, I would not try to simply have an LLM write or copy a song like EPIC The Musical. It works better to describe the characteristics you want and then develop your own wor...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "prompt-design"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2857/how-to-prompt-llms-to-create-epic-the-musical-style-compositions",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 2.",
+        "The answer was accepted by the question author.",
+        "Viewed 64 times on the source site."
+      ],
+      "created_at": "2026-08-05T23:43:33+00:00",
+      "curated_at": "2026-08-09T02:28:18.185312+00:00",
+      "path": "posts/se-genai-2857-how-to-prompt-llms-to-create-epic-the-musical-style-compositions.md"
     },
     {
       "id": "se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names",
@@ -275,10 +300,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 161 times on the source site."
+        "Viewed 162 times on the source site."
       ],
       "created_at": "2026-07-31T02:11:17+00:00",
-      "curated_at": "2026-08-08T02:20:53.934366+00:00",
+      "curated_at": "2026-08-09T02:28:18.023400+00:00",
       "path": "posts/se-genai-2846-is-this-ai-feature-documented-recognizing-categories-from-lists-of-names.md"
     },
     {
@@ -300,10 +325,10 @@
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 4; answer score: 5.",
-        "Viewed 932 times on the source site."
+        "Viewed 938 times on the source site."
       ],
       "created_at": "2026-07-31T18:15:05+00:00",
-      "curated_at": "2026-08-08T02:20:53.681153+00:00",
+      "curated_at": "2026-08-09T02:28:17.942151+00:00",
       "path": "posts/se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl.md"
     },
     {

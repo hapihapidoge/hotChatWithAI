@@ -1,6 +1,6 @@
 # Is This AI Feature Documented? Recognizing Categories from Lists of Names
 
-Curated at: `2026-08-09T02:28:18.023400+00:00`
+Curated at: `2026-08-10T02:34:04.716089+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, genai-ecosystem`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2846/is-this-ai-feature-docume
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 2; answer score: 2.
 - The answer was accepted by the question author.
-- Viewed 162 times on the source site.
+- Viewed 167 times on the source site.
 
 ## Question
 

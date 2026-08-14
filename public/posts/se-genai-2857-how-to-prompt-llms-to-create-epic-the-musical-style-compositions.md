@@ -1,6 +1,6 @@
 # How to Prompt LLMs to Create Epic: The Musical-style Compositions?
 
-Curated at: `2026-08-13T02:46:46.766413+00:00`
+Curated at: `2026-08-14T02:45:50.968589+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, llm, prompt-design`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2857/how-to-prompt-llms-to-cre
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 3; answer score: 3.
 - The answer was accepted by the question author.
-- Viewed 105 times on the source site.
+- Viewed 107 times on the source site.
 
 ## Question
 

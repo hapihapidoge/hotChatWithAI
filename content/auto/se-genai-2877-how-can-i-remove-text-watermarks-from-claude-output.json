@@ -2,7 +2,7 @@
   "id": "se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output",
   "title": "How can I remove text watermarks from Claude output?",
   "question": "Claude output now contains watermarks . How can I remove text watermarks from Claude output?",
-  "answer": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal offense or generally illegal. In the EU, for text, the transparency requirements for a person publishing AI-generated content apply in particular to AI-generated or manipulated texts concerning matters of public interest, where there has been no human review or editorial control. In very simple terms: If you have sufficiently modified and reviewed the text yourself, stand behind the final version, and take responsibility for it, then an AI disclosure may no longer be required. I think the main issue is deepfakes and misinformation (hallucinations). EU Commission: Quick facts on transparency rules for AI systems People would probably think that all of my texts are AI-generated, because I always write all my questions and answers in German first. I used to use a translator, and nowadays I usually have LLMs translate everything for me and check the grammar and spelling, in English when I'm finished. Would that also be considered AI-generated content, and would I have to label it as such if they are still my own words? I am referring to this follow-up post, which resulted from this question, so that I do not have to repeat everything here: The following are general wa...",
+  "answer": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal offense or generally illegal. In the EU, for text, the transparency requirements for a person publishing AI-generated content apply in particular to AI-generated or manipulated texts concerning matters of public interest, where there has been no human review or editorial control. In very simple terms: If you have sufficiently modified and reviewed the text yourself, stand behind the final version, and take responsibility for it, then an AI disclosure may no longer be required. I think the main issue is deepfakes and misinformation (hallucinations). EU Commission: Quick facts on transparency rules for AI systems People would probably think that all of my texts are AI-generated, because I always write all my questions and answers in German first. I used to use a translator, and nowadays I usually have LLMs translate everything for me and check the grammar and spelling, in English when I'm finished. Would that also be considered AI-generated content, and would I have to label it as such if they are still my own words? I am referring to this follow-up post, which resulted from this question, so that I do not have to repeat everything here: The following are ways someo...",
   "summary": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal of...",
   "tags": [
     "public-q&a",
@@ -15,11 +15,11 @@
   "source_url": "https://genai.stackexchange.com/questions/2877/how-can-i-remove-text-watermarks-from-claude-output",
   "quality_signals": [
     "Public Q&A from GenAI Stack Exchange.",
-    "Question score: 1; answer score: 1.",
-    "Viewed 69 times on the source site."
+    "Question score: 1; answer score: 2.",
+    "Viewed 90 times on the source site."
   ],
   "created_at": "2026-08-11T08:48:45+00:00",
-  "curated_at": "2026-08-14T02:45:51.265819+00:00",
+  "curated_at": "2026-08-15T01:49:14.563435+00:00",
   "license": "Stack Exchange content is user-contributed and requires source attribution.",
   "source": "GenAI Stack Exchange"
 }

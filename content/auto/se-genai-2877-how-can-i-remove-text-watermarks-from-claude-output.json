@@ -15,11 +15,11 @@
   "source_url": "https://genai.stackexchange.com/questions/2877/how-can-i-remove-text-watermarks-from-claude-output",
   "quality_signals": [
     "Public Q&A from GenAI Stack Exchange.",
-    "Question score: 1; answer score: 2.",
-    "Viewed 90 times on the source site."
+    "Question score: 2; answer score: 3.",
+    "Viewed 100 times on the source site."
   ],
   "created_at": "2026-08-11T08:48:45+00:00",
-  "curated_at": "2026-08-15T01:49:14.563435+00:00",
+  "curated_at": "2026-08-16T01:56:55.408449+00:00",
   "license": "Stack Exchange content is user-contributed and requires source attribution.",
   "source": "GenAI Stack Exchange"
 }

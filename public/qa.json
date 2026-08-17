@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-16T01:56:56.906035+00:00",
+  "generated_at": "2026-08-17T01:55:00.002595+00:00",
   "summary": {
-    "items": 34,
+    "items": 35,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -23,6 +23,7 @@
       "computational-complexity",
       "cross-validation",
       "deep-learning",
+      "definitions",
       "evaluation",
       "fastapi",
       "feature-engineering",
@@ -86,6 +87,30 @@
   },
   "featured": [
     {
+      "id": "se-ai-50700-is-this-considered-an-agentic-ai-feature-scrapping-the-web-and-searching",
+      "title": "Is this considered an agentic AI feature? Scrapping the web and searching for names to use",
+      "question": "The feature is explained below: The user enters a search query: E.g. \"moons of Saturn\" The search produces web results, that are scrapped to parse webpages, and detect names. A list of names related to the topic are produced, like (for the \"Moons of Saturn\" query): \"Titan\", \"Dione\", \"Hyperion\", \"Janus\"... After this list is produced, options are presented to \"use\" this list for any purpose, like creating folders/virtual desktops using this name etc. Optionally including a feature to set maximum number of names to use. Is this an agentic AI feature, or it's just non-agentic name extraction funcionality? It seems that a such feature would predate the AI bubble era.",
+      "answer": "An AI agent is a system that independently pursues a given goal, makes its own decisions about the steps required to achieve that goal, and can use appropriate tools or functions to do so. An agent is a software system that can perceive information, reason about a task, make decisions, and take actions to achieve a goal. AI agents may operate autonomously or semi-autonomously and can use tools, APIs, databases, or external services as part of their work. Agent Tag Wiki Using tools does not automatically make a system an AI agent. An AI agent is not simply any system that uses multiple functions or tools. What matters is autonomy and decision-making capability. For the feature described, it would initially be more accurate to refer to it as an AI-assisted function or automation: Search Extract data from websites Identify relevant names Create a list Use those names for further actions Even if an LLM is used, that does not automatically make the function agentic. It would become agentic when the system is given a goal and independently decides which steps, tools, and actions are necessary, dynamically adapts the process, and makes further decisions based on the results. So, your assumption is correct, that the basic functionality already existed before today AI/agent boom. What would be new is primarily the use of an LLM to take over the decision-making and enable more flexible...",
+      "summary": "An AI agent is a system that independently pursues a given goal, makes its own decisions about the steps required to achieve that goal, and can use appropriate tools or functions to do so. An agent is a software system...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "definitions"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://ai.stackexchange.com/questions/50700/is-this-considered-an-agentic-ai-feature-scrapping-the-web-and-searching-for-na",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 51 times on the source site."
+      ],
+      "created_at": "2026-08-10T21:29:53+00:00",
+      "curated_at": "2026-08-17T01:54:59.284502+00:00",
+      "path": "posts/se-ai-50700-is-this-considered-an-agentic-ai-feature-scrapping-the-web-and-searching.md"
+    },
+    {
       "id": "se-ai-50701-what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confi",
       "title": "What are the best tools to help me close the loop on coding, to get confidence that things work as expected?",
       "question": "I'm diving into agentic coding loops to get my organization to automerge more. I know there are a lot of ai code review tools. There are the runtime code review tools like ito that give me evidence of features and static review tools like coderabbit that tell me when something looks off. What other methods do people use to help their team gain confidence that their coding agents aren't going rogue?",
@@ -108,7 +133,7 @@
         "Viewed 161 times on the source site."
       ],
       "created_at": "2026-08-11T21:33:29+00:00",
-      "curated_at": "2026-08-16T01:56:56.034841+00:00",
+      "curated_at": "2026-08-17T01:54:59.075898+00:00",
       "path": "posts/se-ai-50701-what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confi.md"
     },
     {
@@ -130,10 +155,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 125 times on the source site."
+        "Viewed 134 times on the source site."
       ],
       "created_at": "2026-08-11T23:08:20+00:00",
-      "curated_at": "2026-08-16T01:56:55.688723+00:00",
+      "curated_at": "2026-08-17T01:54:58.718460+00:00",
       "path": "posts/se-genai-2878-how-can-watermarks-be-embedded-in-text-generated-by-llms.md"
     },
     {
@@ -159,7 +184,7 @@
         "Viewed 45 times on the source site."
       ],
       "created_at": "2026-08-09T23:59:18+00:00",
-      "curated_at": "2026-08-16T01:56:55.578573+00:00",
+      "curated_at": "2026-08-17T01:54:58.572321+00:00",
       "path": "posts/se-genai-2869-how-could-an-open-weight-llm-be-technically-tied-to-tpus.md"
     },
     {
@@ -180,10 +205,10 @@
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 3.",
-        "Viewed 100 times on the source site."
+        "Viewed 126 times on the source site."
       ],
       "created_at": "2026-08-11T08:48:45+00:00",
-      "curated_at": "2026-08-16T01:56:55.408449+00:00",
+      "curated_at": "2026-08-17T01:54:58.336467+00:00",
       "path": "posts/se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output.md"
     },
     {
@@ -205,40 +230,39 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 3; answer score: 3.",
         "The answer was accepted by the question author.",
-        "Viewed 112 times on the source site."
+        "Viewed 117 times on the source site."
       ],
       "created_at": "2026-08-05T23:43:33+00:00",
-      "curated_at": "2026-08-16T01:56:55.284824+00:00",
+      "curated_at": "2026-08-17T01:54:58.140186+00:00",
       "path": "posts/se-genai-2857-how-to-prompt-llms-to-create-epic-the-musical-style-compositions.md"
-    },
-    {
-      "id": "se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl",
-      "title": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
-      "question": "How can I configure Claude or Slack so that it doesn't add \"Sent using @Claude\" when sending a message on Slack using Claude Desktop?",
-      "answer": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server include a \"Sent using Claude\" footer that cannot be disabled. For users and organizations with policies against AI attribution in communications, there is no way to opt out of this branding. ... Feature: Add option to disable 'Sent using Claude' message footer #25 This diagram visually illustrates the exact data flow and security boundaries when you use the Claude tag in Slack. It also explains, in part, why you cannot disable the 'Sent using Claude' message locally, all requests are processed through external servers, and this is currently the intended behavior. Inside Claude Tag: How Anthropic’s Slack-Native Agent Actually Works",
-      "summary": "It appears that there is currently no official setting or configuration in Claude Desktop or Slack to remove the footer 'Sent using @Claude' (or 'Sent using Claude'). Problem Messages sent via the Slack MCP server inclu...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "claude",
-        "claude-desktop",
-        "slack"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2849/how-can-i-configure-claude-or-slack-so-that-it-doesnt-add-sent-using-claude",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 4; answer score: 5.",
-        "Viewed 972 times on the source site."
-      ],
-      "created_at": "2026-07-31T18:15:05+00:00",
-      "curated_at": "2026-08-14T02:45:50.844506+00:00",
-      "path": "posts/se-genai-2849-how-can-i-configure-claude-or-slack-so-that-it-doesn-t-add-sent-using-cl.md"
     }
   ],
   "entries": [
     {
+      "id": "se-ai-50700-is-this-considered-an-agentic-ai-feature-scrapping-the-web-and-searching",
+      "title": "Is this considered an agentic AI feature? Scrapping the web and searching for names to use",
+      "question": "The feature is explained below: The user enters a search query: E.g. \"moons of Saturn\" The search produces web results, that are scrapped to parse webpages, and detect names. A list of names related to the topic are produced, like (for the \"Moons of Saturn\" query): \"Titan\", \"Dione\", \"Hyperion\", \"Janus\"... After this list is produced, options are presented to \"use\" this list for any purpose, like creating folders/virtual desktops using this name etc. Optionally including a feature to set maximum number of names to use. Is this an agentic AI feature, or it's just non-agentic name extraction funcionality? It seems that a such feature would predate the AI bubble era.",
+      "answer": "An AI agent is a system that independently pursues a given goal, makes its own decisions about the steps required to achieve that goal, and can use appropriate tools or functions to do so. An agent is a software system that can perceive information, reason about a task, make decisions, and take actions to achieve a goal. AI agents may operate autonomously or semi-autonomously and can use tools, APIs, databases, or external services as part of their work. Agent Tag Wiki Using tools does not automatically make a system an AI agent. An AI agent is not simply any system that uses multiple functions or tools. What matters is autonomy and decision-making capability. For the feature described, it would initially be more accurate to refer to it as an AI-assisted function or automation: Search Extract data from websites Identify relevant names Create a list Use those names for further actions Even if an LLM is used, that does not automatically make the function agentic. It would become agentic when the system is given a goal and independently decides which steps, tools, and actions are necessary, dynamically adapts the process, and makes further decisions based on the results. So, your assumption is correct, that the basic functionality already existed before today AI/agent boom. What would be new is primarily the use of an LLM to take over the decision-making and enable more flexible...",
+      "summary": "An AI agent is a system that independently pursues a given goal, makes its own decisions about the steps required to achieve that goal, and can use appropriate tools or functions to do so. An agent is a software system...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "definitions"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://ai.stackexchange.com/questions/50700/is-this-considered-an-agentic-ai-feature-scrapping-the-web-and-searching-for-na",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 51 times on the source site."
+      ],
+      "created_at": "2026-08-10T21:29:53+00:00",
+      "curated_at": "2026-08-17T01:54:59.284502+00:00",
+      "path": "posts/se-ai-50700-is-this-considered-an-agentic-ai-feature-scrapping-the-web-and-searching.md"
+    },
+    {
       "id": "se-ai-50701-what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confi",
       "title": "What are the best tools to help me close the loop on coding, to get confidence that things work as expected?",
       "question": "I'm diving into agentic coding loops to get my organization to automerge more. I know there are a lot of ai code review tools. There are the runtime code review tools like ito that give me evidence of features and static review tools like coderabbit that tell me when something looks off. What other methods do people use to help their team gain confidence that their coding agents aren't going rogue?",
@@ -261,7 +285,7 @@
         "Viewed 161 times on the source site."
       ],
       "created_at": "2026-08-11T21:33:29+00:00",
-      "curated_at": "2026-08-16T01:56:56.034841+00:00",
+      "curated_at": "2026-08-17T01:54:59.075898+00:00",
       "path": "posts/se-ai-50701-what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confi.md"
     },
     {
@@ -283,10 +307,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 125 times on the source site."
+        "Viewed 134 times on the source site."
       ],
       "created_at": "2026-08-11T23:08:20+00:00",
-      "curated_at": "2026-08-16T01:56:55.688723+00:00",
+      "curated_at": "2026-08-17T01:54:58.718460+00:00",
       "path": "posts/se-genai-2878-how-can-watermarks-be-embedded-in-text-generated-by-llms.md"
     },
     {
@@ -312,7 +336,7 @@
         "Viewed 45 times on the source site."
       ],
       "created_at": "2026-08-09T23:59:18+00:00",
-      "curated_at": "2026-08-16T01:56:55.578573+00:00",
+      "curated_at": "2026-08-17T01:54:58.572321+00:00",
       "path": "posts/se-genai-2869-how-could-an-open-weight-llm-be-technically-tied-to-tpus.md"
     },
     {
@@ -333,10 +357,10 @@
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 3.",
-        "Viewed 100 times on the source site."
+        "Viewed 126 times on the source site."
       ],
       "created_at": "2026-08-11T08:48:45+00:00",
-      "curated_at": "2026-08-16T01:56:55.408449+00:00",
+      "curated_at": "2026-08-17T01:54:58.336467+00:00",
       "path": "posts/se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output.md"
     },
     {
@@ -358,10 +382,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 3; answer score: 3.",
         "The answer was accepted by the question author.",
-        "Viewed 112 times on the source site."
+        "Viewed 117 times on the source site."
       ],
       "created_at": "2026-08-05T23:43:33+00:00",
-      "curated_at": "2026-08-16T01:56:55.284824+00:00",
+      "curated_at": "2026-08-17T01:54:58.140186+00:00",
       "path": "posts/se-genai-2857-how-to-prompt-llms-to-create-epic-the-musical-style-compositions.md"
     },
     {

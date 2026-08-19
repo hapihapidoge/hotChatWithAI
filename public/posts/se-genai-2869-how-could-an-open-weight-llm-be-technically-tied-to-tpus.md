@@ -1,6 +1,6 @@
 # How could an open-weight LLM be technically "tied" to TPUs?
 
-Curated at: `2026-08-18T01:50:30.746012+00:00`
+Curated at: `2026-08-19T01:52:36.620169+00:00`
 Model: `Public Q&A`
 Author: `Martheen`
 Tags: `public-q&a, GenAI Stack Exchange, gemini, google, tpu, open-weights`
@@ -11,7 +11,7 @@ Source: https://genai.stackexchange.com/questions/2869/how-could-an-open-weight-
 
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 1; answer score: 2.
-- Viewed 47 times on the source site.
+- Viewed 49 times on the source site.
 
 ## Question
 

@@ -16,10 +16,10 @@
   "quality_signals": [
     "Public Q&A from GenAI Stack Exchange.",
     "Question score: 2; answer score: 3.",
-    "Viewed 145 times on the source site."
+    "Viewed 150 times on the source site."
   ],
   "created_at": "2026-08-11T08:48:45+00:00",
-  "curated_at": "2026-08-18T01:50:30.596729+00:00",
+  "curated_at": "2026-08-19T01:52:36.460848+00:00",
   "license": "Stack Exchange content is user-contributed and requires source attribution.",
   "source": "GenAI Stack Exchange"
 }

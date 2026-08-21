@@ -1,6 +1,6 @@
 # How can I remove text watermarks from Claude output?
 
-Curated at: `2026-08-20T01:51:14.070542+00:00`
+Curated at: `2026-08-21T01:57:10.818629+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, claude, watermarking`
@@ -11,7 +11,7 @@ Source: https://genai.stackexchange.com/questions/2877/how-can-i-remove-text-wat
 
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 2; answer score: 3.
-- Viewed 156 times on the source site.
+- Viewed 159 times on the source site.
 
 ## Question
 

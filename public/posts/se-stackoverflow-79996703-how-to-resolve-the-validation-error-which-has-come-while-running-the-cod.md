@@ -1,6 +1,6 @@
 # How to resolve the validation error which has come while running the code involving Docling which has been configured
 
-Curated at: `2026-08-21T01:57:12.083967+00:00`
+Curated at: `2026-08-22T01:49:48.361325+00:00`
 Model: `Public Q&A`
 Author: `NullDev`
 Tags: `public-q&a, Stack Overflow, python, langchain`
@@ -10,8 +10,8 @@ Source: https://stackoverflow.com/questions/79996703/how-to-resolve-the-validati
 ## Why It Is Good
 
 - Public Q&A from Stack Overflow.
-- Question score: 2; answer score: 1.
-- Viewed 37 times on the source site.
+- Question score: 2; answer score: 2.
+- Viewed 50 times on the source site.
 
 ## Question
 

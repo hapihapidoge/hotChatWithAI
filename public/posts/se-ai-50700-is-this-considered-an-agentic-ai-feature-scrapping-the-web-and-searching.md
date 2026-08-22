@@ -1,6 +1,6 @@
 # Is this considered an agentic AI feature? Scrapping the web and searching for names to use
 
-Curated at: `2026-08-21T01:57:11.473355+00:00`
+Curated at: `2026-08-22T01:49:47.737265+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, AI Stack Exchange, definitions`
@@ -12,7 +12,7 @@ Source: https://ai.stackexchange.com/questions/50700/is-this-considered-an-agent
 - Public Q&A from AI Stack Exchange.
 - Question score: 1; answer score: 1.
 - The answer was accepted by the question author.
-- Viewed 69 times on the source site.
+- Viewed 72 times on the source site.
 
 ## Question
 

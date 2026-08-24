@@ -1,6 +1,6 @@
 # Is this considered an agentic AI feature? Scrapping the web and searching for names to use
 
-Curated at: `2026-08-23T01:59:28.368469+00:00`
+Curated at: `2026-08-24T01:57:25.983452+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, AI Stack Exchange, definitions`

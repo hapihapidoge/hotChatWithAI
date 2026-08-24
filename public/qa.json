@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T01:59:29.036262+00:00",
+  "generated_at": "2026-08-24T01:57:26.971600+00:00",
   "summary": {
     "items": 36,
     "tags": [
@@ -104,10 +104,10 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 2; answer score: 2.",
-        "Viewed 55 times on the source site."
+        "Viewed 60 times on the source site."
       ],
       "created_at": "2026-08-20T05:54:33+00:00",
-      "curated_at": "2026-08-23T01:59:28.843544+00:00",
+      "curated_at": "2026-08-24T01:57:26.807711+00:00",
       "path": "posts/se-stackoverflow-79996703-how-to-resolve-the-validation-error-which-has-come-while-running-the-cod.md"
     },
     {
@@ -131,7 +131,7 @@
         "Viewed 76 times on the source site."
       ],
       "created_at": "2026-08-10T21:29:53+00:00",
-      "curated_at": "2026-08-23T01:59:28.368469+00:00",
+      "curated_at": "2026-08-24T01:57:25.983452+00:00",
       "path": "posts/se-ai-50700-is-this-considered-an-agentic-ai-feature-scrapping-the-web-and-searching.md"
     },
     {
@@ -154,10 +154,10 @@
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
         "Question score: 2; answer score: 1.",
-        "Viewed 168 times on the source site."
+        "Viewed 169 times on the source site."
       ],
       "created_at": "2026-08-11T21:33:29+00:00",
-      "curated_at": "2026-08-23T01:59:28.260335+00:00",
+      "curated_at": "2026-08-24T01:57:25.823813+00:00",
       "path": "posts/se-ai-50701-what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confi.md"
     },
     {
@@ -182,8 +182,32 @@
         "Viewed 157 times on the source site."
       ],
       "created_at": "2026-08-11T23:08:20+00:00",
-      "curated_at": "2026-08-23T01:59:28.059032+00:00",
+      "curated_at": "2026-08-24T01:57:25.451384+00:00",
       "path": "posts/se-genai-2878-how-can-watermarks-be-embedded-in-text-generated-by-llms.md"
+    },
+    {
+      "id": "se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output",
+      "title": "How can I remove text watermarks from Claude output?",
+      "question": "Claude output now contains watermarks . How can I remove text watermarks from Claude output?",
+      "answer": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal offense or generally illegal. In the EU, for text, the transparency requirements for a person publishing AI-generated content apply in particular to AI-generated or manipulated texts concerning matters of public interest, where there has been no human review or editorial control. In very simple terms: If you have sufficiently modified and reviewed the text yourself, stand behind the final version, and take responsibility for it, then an AI disclosure may no longer be required. I think the main issue is deepfakes and misinformation (hallucinations). EU Commission: Quick facts on transparency rules for AI systems People would probably think that all of my texts are AI-generated, because I always write all my questions and answers in German first. I used to use a translator, and nowadays I usually have LLMs translate everything for me and check the grammar and spelling, in English when I'm finished. Would that also be considered AI-generated content, and would I have to label it as such if they are still my own words? I am referring to this follow-up post, which resulted from this question, so that I do not have to repeat everything here: The following are ways someo...",
+      "summary": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal of...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "claude",
+        "watermarking"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2877/how-can-i-remove-text-watermarks-from-claude-output",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 3.",
+        "Viewed 165 times on the source site."
+      ],
+      "created_at": "2026-08-11T08:48:45+00:00",
+      "curated_at": "2026-08-24T01:57:25.306156+00:00",
+      "path": "posts/se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output.md"
     },
     {
       "id": "se-genai-2869-how-could-an-open-weight-llm-be-technically-tied-to-tpus",
@@ -210,30 +234,6 @@
       "created_at": "2026-08-09T23:59:18+00:00",
       "curated_at": "2026-08-23T01:59:27.958330+00:00",
       "path": "posts/se-genai-2869-how-could-an-open-weight-llm-be-technically-tied-to-tpus.md"
-    },
-    {
-      "id": "se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output",
-      "title": "How can I remove text watermarks from Claude output?",
-      "question": "Claude output now contains watermarks . How can I remove text watermarks from Claude output?",
-      "answer": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal offense or generally illegal. In the EU, for text, the transparency requirements for a person publishing AI-generated content apply in particular to AI-generated or manipulated texts concerning matters of public interest, where there has been no human review or editorial control. In very simple terms: If you have sufficiently modified and reviewed the text yourself, stand behind the final version, and take responsibility for it, then an AI disclosure may no longer be required. I think the main issue is deepfakes and misinformation (hallucinations). EU Commission: Quick facts on transparency rules for AI systems People would probably think that all of my texts are AI-generated, because I always write all my questions and answers in German first. I used to use a translator, and nowadays I usually have LLMs translate everything for me and check the grammar and spelling, in English when I'm finished. Would that also be considered AI-generated content, and would I have to label it as such if they are still my own words? I am referring to this follow-up post, which resulted from this question, so that I do not have to repeat everything here: The following are ways someo...",
-      "summary": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal of...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "claude",
-        "watermarking"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2877/how-can-i-remove-text-watermarks-from-claude-output",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 2; answer score: 3.",
-        "Viewed 165 times on the source site."
-      ],
-      "created_at": "2026-08-11T08:48:45+00:00",
-      "curated_at": "2026-08-23T01:59:27.871008+00:00",
-      "path": "posts/se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output.md"
     }
   ],
   "entries": [
@@ -255,10 +255,10 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 2; answer score: 2.",
-        "Viewed 55 times on the source site."
+        "Viewed 60 times on the source site."
       ],
       "created_at": "2026-08-20T05:54:33+00:00",
-      "curated_at": "2026-08-23T01:59:28.843544+00:00",
+      "curated_at": "2026-08-24T01:57:26.807711+00:00",
       "path": "posts/se-stackoverflow-79996703-how-to-resolve-the-validation-error-which-has-come-while-running-the-cod.md"
     },
     {
@@ -282,7 +282,7 @@
         "Viewed 76 times on the source site."
       ],
       "created_at": "2026-08-10T21:29:53+00:00",
-      "curated_at": "2026-08-23T01:59:28.368469+00:00",
+      "curated_at": "2026-08-24T01:57:25.983452+00:00",
       "path": "posts/se-ai-50700-is-this-considered-an-agentic-ai-feature-scrapping-the-web-and-searching.md"
     },
     {
@@ -305,10 +305,10 @@
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
         "Question score: 2; answer score: 1.",
-        "Viewed 168 times on the source site."
+        "Viewed 169 times on the source site."
       ],
       "created_at": "2026-08-11T21:33:29+00:00",
-      "curated_at": "2026-08-23T01:59:28.260335+00:00",
+      "curated_at": "2026-08-24T01:57:25.823813+00:00",
       "path": "posts/se-ai-50701-what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confi.md"
     },
     {
@@ -333,8 +333,32 @@
         "Viewed 157 times on the source site."
       ],
       "created_at": "2026-08-11T23:08:20+00:00",
-      "curated_at": "2026-08-23T01:59:28.059032+00:00",
+      "curated_at": "2026-08-24T01:57:25.451384+00:00",
       "path": "posts/se-genai-2878-how-can-watermarks-be-embedded-in-text-generated-by-llms.md"
+    },
+    {
+      "id": "se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output",
+      "title": "How can I remove text watermarks from Claude output?",
+      "question": "Claude output now contains watermarks . How can I remove text watermarks from Claude output?",
+      "answer": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal offense or generally illegal. In the EU, for text, the transparency requirements for a person publishing AI-generated content apply in particular to AI-generated or manipulated texts concerning matters of public interest, where there has been no human review or editorial control. In very simple terms: If you have sufficiently modified and reviewed the text yourself, stand behind the final version, and take responsibility for it, then an AI disclosure may no longer be required. I think the main issue is deepfakes and misinformation (hallucinations). EU Commission: Quick facts on transparency rules for AI systems People would probably think that all of my texts are AI-generated, because I always write all my questions and answers in German first. I used to use a translator, and nowadays I usually have LLMs translate everything for me and check the grammar and spelling, in English when I'm finished. Would that also be considered AI-generated content, and would I have to label it as such if they are still my own words? I am referring to this follow-up post, which resulted from this question, so that I do not have to repeat everything here: The following are ways someo...",
+      "summary": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal of...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "claude",
+        "watermarking"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2877/how-can-i-remove-text-watermarks-from-claude-output",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 3.",
+        "Viewed 165 times on the source site."
+      ],
+      "created_at": "2026-08-11T08:48:45+00:00",
+      "curated_at": "2026-08-24T01:57:25.306156+00:00",
+      "path": "posts/se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output.md"
     },
     {
       "id": "se-genai-2869-how-could-an-open-weight-llm-be-technically-tied-to-tpus",
@@ -361,30 +385,6 @@
       "created_at": "2026-08-09T23:59:18+00:00",
       "curated_at": "2026-08-23T01:59:27.958330+00:00",
       "path": "posts/se-genai-2869-how-could-an-open-weight-llm-be-technically-tied-to-tpus.md"
-    },
-    {
-      "id": "se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output",
-      "title": "How can I remove text watermarks from Claude output?",
-      "question": "Claude output now contains watermarks . How can I remove text watermarks from Claude output?",
-      "answer": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal offense or generally illegal. In the EU, for text, the transparency requirements for a person publishing AI-generated content apply in particular to AI-generated or manipulated texts concerning matters of public interest, where there has been no human review or editorial control. In very simple terms: If you have sufficiently modified and reviewed the text yourself, stand behind the final version, and take responsibility for it, then an AI disclosure may no longer be required. I think the main issue is deepfakes and misinformation (hallucinations). EU Commission: Quick facts on transparency rules for AI systems People would probably think that all of my texts are AI-generated, because I always write all my questions and answers in German first. I used to use a translator, and nowadays I usually have LLMs translate everything for me and check the grammar and spelling, in English when I'm finished. Would that also be considered AI-generated content, and would I have to label it as such if they are still my own words? I am referring to this follow-up post, which resulted from this question, so that I do not have to repeat everything here: The following are ways someo...",
-      "summary": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal of...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "claude",
-        "watermarking"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2877/how-can-i-remove-text-watermarks-from-claude-output",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 2; answer score: 3.",
-        "Viewed 165 times on the source site."
-      ],
-      "created_at": "2026-08-11T08:48:45+00:00",
-      "curated_at": "2026-08-23T01:59:27.871008+00:00",
-      "path": "posts/se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output.md"
     },
     {
       "id": "se-genai-2857-how-to-prompt-llms-to-create-epic-the-musical-style-compositions",

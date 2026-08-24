@@ -1,6 +1,6 @@
 # How can I remove text watermarks from Claude output?
 
-Curated at: `2026-08-23T01:59:27.871008+00:00`
+Curated at: `2026-08-24T01:57:25.306156+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, claude, watermarking`

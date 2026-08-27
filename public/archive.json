@@ -3,13 +3,25 @@
     "id": "se-stackoverflow-79996703-how-to-resolve-the-validation-error-which-has-come-while-running-the-cod",
     "title": "How to resolve the validation error which has come while running the code involving Docling which has been configured",
     "path": "posts/se-stackoverflow-79996703-how-to-resolve-the-validation-error-which-has-come-while-running-the-cod.md",
-    "curated_at": "2026-08-26T01:58:06.557937+00:00"
+    "curated_at": "2026-08-27T09:48:58.423936+00:00"
+  },
+  {
+    "id": "se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in",
+    "title": "What's the actual difference between \"Extra High effort\" and \"Pro effort\" in new ChatGPT Chats?",
+    "path": "posts/se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in.md",
+    "curated_at": "2026-08-27T09:48:57.599348+00:00"
   },
   {
     "id": "se-genai-2892-how-can-transformers-generate-select-a-token-outside-top-k",
     "title": "How can transformers.generate() select a token outside top_k?",
     "path": "posts/se-genai-2892-how-can-transformers-generate-select-a-token-outside-top-k.md",
-    "curated_at": "2026-08-26T01:58:04.402283+00:00"
+    "curated_at": "2026-08-27T09:48:57.421058+00:00"
+  },
+  {
+    "id": "se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow",
+    "title": "Is there any suggested containerized/isolated LLM workflow?",
+    "path": "posts/se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow.md",
+    "curated_at": "2026-08-27T09:48:57.287613+00:00"
   },
   {
     "id": "se-ai-50701-what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confi",

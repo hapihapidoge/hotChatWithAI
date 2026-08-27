@@ -1,6 +1,6 @@
 # How can transformers.generate() select a token outside top_k?
 
-Curated at: `2026-08-26T01:58:04.402283+00:00`
+Curated at: `2026-08-27T09:48:57.421058+00:00`
 Model: `Public Q&A`
 Author: `Amadan`
 Tags: `public-q&a, GenAI Stack Exchange, transformers, token, token-usage`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2892/how-can-transformers-gene
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 2; answer score: 2.
 - The answer was accepted by the question author.
-- Viewed 41 times on the source site.
+- Viewed 51 times on the source site.
 
 ## Question
 

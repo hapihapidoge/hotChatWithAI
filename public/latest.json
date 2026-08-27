@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-26T01:58:06.825236+00:00",
+  "generated_at": "2026-08-27T09:48:58.579810+00:00",
   "summary": {
-    "items": 37,
+    "items": 39,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -15,6 +15,7 @@
       "azure",
       "batch-size",
       "benchmarks",
+      "chatgpt",
       "chromadb",
       "claude",
       "claude-code",
@@ -48,6 +49,7 @@
       "oceanbase",
       "ollama",
       "open-weights",
+      "openai",
       "openai-api",
       "personalization",
       "playwright",
@@ -61,6 +63,7 @@
       "rag",
       "regression",
       "retrieval-augmented-generation",
+      "sandbox",
       "server-sent-events",
       "slack",
       "software-development",
@@ -107,11 +110,35 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 2; answer score: 2.",
-        "Viewed 63 times on the source site."
+        "Viewed 64 times on the source site."
       ],
       "created_at": "2026-08-20T05:54:33+00:00",
-      "curated_at": "2026-08-26T01:58:06.557937+00:00",
+      "curated_at": "2026-08-27T09:48:58.423936+00:00",
       "path": "posts/se-stackoverflow-79996703-how-to-resolve-the-validation-error-which-has-come-while-running-the-cod.md"
+    },
+    {
+      "id": "se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in",
+      "title": "What's the actual difference between \"Extra High effort\" and \"Pro effort\" in new ChatGPT Chats?",
+      "question": "When starting a new ChatGPT Chat, then I can choose between various effort levels. I want to know the actual difference between \" Extra High effort \" and \" Pro effort \". What will be different? You can see the two options here below:",
+      "answer": "According to OpenAIs documentation, the key takeaway is: Extra High and Pro are not simply two levels on the same scale. They are two different models/model variants. With Extra High , you are still using GPT-5.6 Sol, but you are giving it the highest available reasoning effort within that model family. OpenAI explicitly describes Extra High as the highest reasoning effort available for GPT-5.6 Sol. This should be particularly useful for: Difficult mathematics Complex programming Multi-step logic Challenging research and analysis Tasks where additional thinking time can make a difference Pro = GPT-5.6 Sol Pro , which means: This is not simply Extra High + even more thinking time. Instead, it is a more capable Pro model variant that OpenAI positions for particularly difficult tasks and longer workflows. It may look as if the two options are essentially the same. The user interface presents Extra High as an effort level and Pro as a model option side by side. OpenAI simplified the interface in June 2026 for precisely this reason. For example, Thinking Heavy was renamed to Extra High, while Pro remained a separate model category. The specific technical differences internally for example, how much additional compute is used, what architectural differences exist, or how many additional reasoning passes Pro actually performs, have not been fully disclosed by OpenAI. Learn how GPT-5....",
+      "summary": "According to OpenAIs documentation, the key takeaway is: Extra High and Pro are not simply two levels on the same scale. They are two different models/model variants. With Extra High , you are still using GPT-5.6 Sol, b...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "chatgpt",
+        "openai"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2895/whats-the-actual-difference-between-extra-high-effort-and-pro-effort-in-new",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 2.",
+        "Viewed 509 times on the source site."
+      ],
+      "created_at": "2026-08-25T18:21:39+00:00",
+      "curated_at": "2026-08-27T09:48:57.599348+00:00",
+      "path": "posts/se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in.md"
     },
     {
       "id": "se-genai-2892-how-can-transformers-generate-select-a-token-outside-top-k",
@@ -133,11 +160,36 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 41 times on the source site."
+        "Viewed 51 times on the source site."
       ],
       "created_at": "2026-08-21T07:26:33+00:00",
-      "curated_at": "2026-08-26T01:58:04.402283+00:00",
+      "curated_at": "2026-08-27T09:48:57.421058+00:00",
       "path": "posts/se-genai-2892-how-can-transformers-generate-select-a-token-outside-top-k.md"
+    },
+    {
+      "id": "se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow",
+      "title": "Is there any suggested containerized/isolated LLM workflow?",
+      "question": "I’d like to use the paid/free raw CLI prompts of commercial remote LLM clients or apps while isolating my data from the rest of the system. QEMU or other virtualization solutions are the obvious choice, but are there any common isolation methods for Linux-like operating systems? Is there a more practical approach than installing an additional OS?",
+      "answer": "A practical alternative to a full VM or a container solution such as Docker would be Bubblewrap and AppArmor . Bubblewrap can run the CLI client in a sandbox and restrict its access to the filesystem, network, and other resources. Bubblewrap | ArchWiki Bubblewrap | Debian Wiki With AppArmor , you can additionally define which files and system resources the program is allowed to access. AppArmor | Wikipedia AppArmor Documentation This provides relatively lightweight isolation without having to install a second operating system. I use this myself on Debian. There is also Firejail , which is easy to use for sandboxing, but it has some limitations with X11 and therefore may not provide the same level of isolation in my opinion. Firejail | ArchWiki A sandbox only protects your local system. It cannot prevent data sent to the provider over the internet from reaching them if you use an external CLI/API.",
+      "summary": "A practical alternative to a full VM or a container solution such as Docker would be Bubblewrap and AppArmor . Bubblewrap can run the CLI client in a sandbox and restrict its access to the filesystem, network, and other...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "sandbox"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2897/is-there-any-suggested-containerized-isolated-llm-workflow",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 3; answer score: 3.",
+        "The answer was accepted by the question author.",
+        "Viewed 220 times on the source site."
+      ],
+      "created_at": "2026-08-26T09:08:14+00:00",
+      "curated_at": "2026-08-27T09:48:57.287613+00:00",
+      "path": "posts/se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow.md"
     },
     {
       "id": "se-ai-50701-what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confi",
@@ -189,54 +241,6 @@
       "created_at": "2026-08-11T23:08:20+00:00",
       "curated_at": "2026-08-25T01:52:09.322805+00:00",
       "path": "posts/se-genai-2878-how-can-watermarks-be-embedded-in-text-generated-by-llms.md"
-    },
-    {
-      "id": "se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output",
-      "title": "How can I remove text watermarks from Claude output?",
-      "question": "Claude output now contains watermarks . How can I remove text watermarks from Claude output?",
-      "answer": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal offense or generally illegal. In the EU, for text, the transparency requirements for a person publishing AI-generated content apply in particular to AI-generated or manipulated texts concerning matters of public interest, where there has been no human review or editorial control. In very simple terms: If you have sufficiently modified and reviewed the text yourself, stand behind the final version, and take responsibility for it, then an AI disclosure may no longer be required. I think the main issue is deepfakes and misinformation (hallucinations). EU Commission: Quick facts on transparency rules for AI systems People would probably think that all of my texts are AI-generated, because I always write all my questions and answers in German first. I used to use a translator, and nowadays I usually have LLMs translate everything for me and check the grammar and spelling, in English when I'm finished. Would that also be considered AI-generated content, and would I have to label it as such if they are still my own words? I am referring to this follow-up post, which resulted from this question, so that I do not have to repeat everything here: The following are ways someo...",
-      "summary": "In my opinion, the term watermark is misleading and not really appropriate. A legal requirement to label AI-generated content does not automatically mean that removing a specific Claude watermark is itself a criminal of...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "claude",
-        "watermarking"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2877/how-can-i-remove-text-watermarks-from-claude-output",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 2; answer score: 3.",
-        "Viewed 169 times on the source site."
-      ],
-      "created_at": "2026-08-11T08:48:45+00:00",
-      "curated_at": "2026-08-25T01:52:09.220762+00:00",
-      "path": "posts/se-genai-2877-how-can-i-remove-text-watermarks-from-claude-output.md"
-    },
-    {
-      "id": "se-ai-50700-is-this-considered-an-agentic-ai-feature-scrapping-the-web-and-searching",
-      "title": "Is this considered an agentic AI feature? Scrapping the web and searching for names to use",
-      "question": "The feature is explained below: The user enters a search query: E.g. \"moons of Saturn\" The search produces web results, that are scrapped to parse webpages, and detect names. A list of names related to the topic are produced, like (for the \"Moons of Saturn\" query): \"Titan\", \"Dione\", \"Hyperion\", \"Janus\"... After this list is produced, options are presented to \"use\" this list for any purpose, like creating folders/virtual desktops using this name etc. Optionally including a feature to set maximum number of names to use. Is this an agentic AI feature, or it's just non-agentic name extraction funcionality? It seems that a such feature would predate the AI bubble era.",
-      "answer": "An AI agent is a system that independently pursues a given goal, makes its own decisions about the steps required to achieve that goal, and can use appropriate tools or functions to do so. An agent is a software system that can perceive information, reason about a task, make decisions, and take actions to achieve a goal. AI agents may operate autonomously or semi-autonomously and can use tools, APIs, databases, or external services as part of their work. Agent Tag Wiki Using tools does not automatically make a system an AI agent. An AI agent is not simply any system that uses multiple functions or tools. What matters is autonomy and decision-making capability. For the feature described, it would initially be more accurate to refer to it as an AI-assisted function or automation: Search Extract data from websites Identify relevant names Create a list Use those names for further actions Even if an LLM is used, that does not automatically make the function agentic. It would become agentic when the system is given a goal and independently decides which steps, tools, and actions are necessary, dynamically adapts the process, and makes further decisions based on the results. So, your assumption is correct, that the basic functionality already existed before today AI/agent boom. What would be new is primarily the use of an LLM to take over the decision-making and enable more flexible...",
-      "summary": "An AI agent is a system that independently pursues a given goal, makes its own decisions about the steps required to achieve that goal, and can use appropriate tools or functions to do so. An agent is a software system...",
-      "tags": [
-        "public-q&a",
-        "AI Stack Exchange",
-        "definitions"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://ai.stackexchange.com/questions/50700/is-this-considered-an-agentic-ai-feature-scrapping-the-web-and-searching-for-na",
-      "quality_signals": [
-        "Public Q&A from AI Stack Exchange.",
-        "Question score: 1; answer score: 1.",
-        "The answer was accepted by the question author.",
-        "Viewed 76 times on the source site."
-      ],
-      "created_at": "2026-08-10T21:29:53+00:00",
-      "curated_at": "2026-08-24T01:57:25.983452+00:00",
-      "path": "posts/se-ai-50700-is-this-considered-an-agentic-ai-feature-scrapping-the-web-and-searching.md"
     }
   ],
   "entries": [
@@ -258,11 +262,35 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 2; answer score: 2.",
-        "Viewed 63 times on the source site."
+        "Viewed 64 times on the source site."
       ],
       "created_at": "2026-08-20T05:54:33+00:00",
-      "curated_at": "2026-08-26T01:58:06.557937+00:00",
+      "curated_at": "2026-08-27T09:48:58.423936+00:00",
       "path": "posts/se-stackoverflow-79996703-how-to-resolve-the-validation-error-which-has-come-while-running-the-cod.md"
+    },
+    {
+      "id": "se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in",
+      "title": "What's the actual difference between \"Extra High effort\" and \"Pro effort\" in new ChatGPT Chats?",
+      "question": "When starting a new ChatGPT Chat, then I can choose between various effort levels. I want to know the actual difference between \" Extra High effort \" and \" Pro effort \". What will be different? You can see the two options here below:",
+      "answer": "According to OpenAIs documentation, the key takeaway is: Extra High and Pro are not simply two levels on the same scale. They are two different models/model variants. With Extra High , you are still using GPT-5.6 Sol, but you are giving it the highest available reasoning effort within that model family. OpenAI explicitly describes Extra High as the highest reasoning effort available for GPT-5.6 Sol. This should be particularly useful for: Difficult mathematics Complex programming Multi-step logic Challenging research and analysis Tasks where additional thinking time can make a difference Pro = GPT-5.6 Sol Pro , which means: This is not simply Extra High + even more thinking time. Instead, it is a more capable Pro model variant that OpenAI positions for particularly difficult tasks and longer workflows. It may look as if the two options are essentially the same. The user interface presents Extra High as an effort level and Pro as a model option side by side. OpenAI simplified the interface in June 2026 for precisely this reason. For example, Thinking Heavy was renamed to Extra High, while Pro remained a separate model category. The specific technical differences internally for example, how much additional compute is used, what architectural differences exist, or how many additional reasoning passes Pro actually performs, have not been fully disclosed by OpenAI. Learn how GPT-5....",
+      "summary": "According to OpenAIs documentation, the key takeaway is: Extra High and Pro are not simply two levels on the same scale. They are two different models/model variants. With Extra High , you are still using GPT-5.6 Sol, b...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "chatgpt",
+        "openai"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2895/whats-the-actual-difference-between-extra-high-effort-and-pro-effort-in-new",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 2.",
+        "Viewed 509 times on the source site."
+      ],
+      "created_at": "2026-08-25T18:21:39+00:00",
+      "curated_at": "2026-08-27T09:48:57.599348+00:00",
+      "path": "posts/se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in.md"
     },
     {
       "id": "se-genai-2892-how-can-transformers-generate-select-a-token-outside-top-k",
@@ -284,11 +312,36 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 41 times on the source site."
+        "Viewed 51 times on the source site."
       ],
       "created_at": "2026-08-21T07:26:33+00:00",
-      "curated_at": "2026-08-26T01:58:04.402283+00:00",
+      "curated_at": "2026-08-27T09:48:57.421058+00:00",
       "path": "posts/se-genai-2892-how-can-transformers-generate-select-a-token-outside-top-k.md"
+    },
+    {
+      "id": "se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow",
+      "title": "Is there any suggested containerized/isolated LLM workflow?",
+      "question": "I’d like to use the paid/free raw CLI prompts of commercial remote LLM clients or apps while isolating my data from the rest of the system. QEMU or other virtualization solutions are the obvious choice, but are there any common isolation methods for Linux-like operating systems? Is there a more practical approach than installing an additional OS?",
+      "answer": "A practical alternative to a full VM or a container solution such as Docker would be Bubblewrap and AppArmor . Bubblewrap can run the CLI client in a sandbox and restrict its access to the filesystem, network, and other resources. Bubblewrap | ArchWiki Bubblewrap | Debian Wiki With AppArmor , you can additionally define which files and system resources the program is allowed to access. AppArmor | Wikipedia AppArmor Documentation This provides relatively lightweight isolation without having to install a second operating system. I use this myself on Debian. There is also Firejail , which is easy to use for sandboxing, but it has some limitations with X11 and therefore may not provide the same level of isolation in my opinion. Firejail | ArchWiki A sandbox only protects your local system. It cannot prevent data sent to the provider over the internet from reaching them if you use an external CLI/API.",
+      "summary": "A practical alternative to a full VM or a container solution such as Docker would be Bubblewrap and AppArmor . Bubblewrap can run the CLI client in a sandbox and restrict its access to the filesystem, network, and other...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "sandbox"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2897/is-there-any-suggested-containerized-isolated-llm-workflow",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 3; answer score: 3.",
+        "The answer was accepted by the question author.",
+        "Viewed 220 times on the source site."
+      ],
+      "created_at": "2026-08-26T09:08:14+00:00",
+      "curated_at": "2026-08-27T09:48:57.287613+00:00",
+      "path": "posts/se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow.md"
     },
     {
       "id": "se-ai-50701-what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confi",

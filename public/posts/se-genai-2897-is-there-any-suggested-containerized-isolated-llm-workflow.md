@@ -1,6 +1,6 @@
 # Is there any suggested containerized/isolated LLM workflow?
 
-Curated at: `2026-08-28T11:23:37.555424+00:00`
+Curated at: `2026-08-29T07:04:29.526844+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, llm, sandbox`
@@ -10,9 +10,9 @@ Source: https://genai.stackexchange.com/questions/2897/is-there-any-suggested-co
 ## Why It Is Good
 
 - Public Q&A from GenAI Stack Exchange.
-- Question score: 4; answer score: 3.
+- Question score: 5; answer score: 3.
 - The answer was accepted by the question author.
-- Viewed 477 times on the source site.
+- Viewed 618 times on the source site.
 
 ## Question
 

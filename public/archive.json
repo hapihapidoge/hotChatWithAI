@@ -3,25 +3,31 @@
     "id": "se-stackoverflow-79996703-how-to-resolve-the-validation-error-which-has-come-while-running-the-cod",
     "title": "How to resolve the validation error which has come while running the code involving Docling which has been configured",
     "path": "posts/se-stackoverflow-79996703-how-to-resolve-the-validation-error-which-has-come-while-running-the-cod.md",
-    "curated_at": "2026-08-29T07:04:30.469797+00:00"
+    "curated_at": "2026-08-30T05:24:35.730821+00:00"
+  },
+  {
+    "id": "se-genai-2899-are-llms-capable-of-producing-original-names-suitable-for-specific-thing",
+    "title": "Are LLMS capable of producing original names suitable for specific things?",
+    "path": "posts/se-genai-2899-are-llms-capable-of-producing-original-names-suitable-for-specific-thing.md",
+    "curated_at": "2026-08-30T05:24:34.468144+00:00"
   },
   {
     "id": "se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in",
     "title": "What's the actual difference between \"Extra High effort\" and \"Pro effort\" in new ChatGPT Chats?",
     "path": "posts/se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in.md",
-    "curated_at": "2026-08-29T07:04:29.721436+00:00"
+    "curated_at": "2026-08-30T05:24:34.290897+00:00"
   },
   {
     "id": "se-genai-2892-how-can-transformers-generate-select-a-token-outside-top-k",
     "title": "How can transformers.generate() select a token outside top_k?",
     "path": "posts/se-genai-2892-how-can-transformers-generate-select-a-token-outside-top-k.md",
-    "curated_at": "2026-08-29T07:04:29.619581+00:00"
+    "curated_at": "2026-08-30T05:24:34.063152+00:00"
   },
   {
     "id": "se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow",
     "title": "Is there any suggested containerized/isolated LLM workflow?",
     "path": "posts/se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow.md",
-    "curated_at": "2026-08-29T07:04:29.526844+00:00"
+    "curated_at": "2026-08-30T05:24:33.870367+00:00"
   },
   {
     "id": "se-ai-50701-what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confi",

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-31T05:35:17.854525+00:00",
+  "generated_at": "2026-09-01T05:08:15.835231+00:00",
   "summary": {
-    "items": 40,
+    "items": 42,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -20,6 +20,7 @@
       "claude",
       "claude-code",
       "claude-desktop",
+      "coding",
       "comparison",
       "computational-complexity",
       "cross-validation",
@@ -32,6 +33,7 @@
       "fine-tuning",
       "gemini",
       "genai-ecosystem",
+      "github-copilot",
       "google",
       "gradient",
       "gradient-boosting",
@@ -79,6 +81,7 @@
       "transformers",
       "validation-datasets",
       "vector-database",
+      "visual-studio",
       "watermarking",
       "web-applications",
       "产品设计",
@@ -110,10 +113,10 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 2; answer score: 2.",
-        "Viewed 65 times on the source site."
+        "Viewed 66 times on the source site."
       ],
       "created_at": "2026-08-20T05:54:33+00:00",
-      "curated_at": "2026-08-31T05:35:17.601325+00:00",
+      "curated_at": "2026-09-01T05:08:15.514187+00:00",
       "path": "posts/se-stackoverflow-79996703-how-to-resolve-the-validation-error-which-has-come-while-running-the-cod.md"
     },
     {
@@ -134,11 +137,61 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 44 times on the source site."
+        "Viewed 53 times on the source site."
       ],
       "created_at": "2026-08-27T01:48:40+00:00",
-      "curated_at": "2026-08-31T05:35:16.445240+00:00",
+      "curated_at": "2026-09-01T05:08:14.808689+00:00",
       "path": "posts/se-genai-2899-are-llms-capable-of-producing-original-names-suitable-for-specific-thing.md"
+    },
+    {
+      "id": "se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin",
+      "title": "How should AI-generated Python code be tested and reviewed before merging?",
+      "question": "I'm using an AI coding assistant to generate and modify Python code in a Django/FastAPI backend. When the AI assistant generates or modifies code, should it be reviewed and tested in the same way as manually written code before merging? For example, should it go through code review, automated tests, linting, and security checks? Are there any additional review or testing steps needed for AI-generated Python code?",
+      "answer": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integration tests, linting/type checking, dependency and security scanning, and CI checks before merge. I would add one extra rule for AI-generated code: review the assumptions, not only the syntax. LLMs can produce perfectly plausible code that calls the wrong API, mishandles edge cases, weakens authentication/authorization, or invents dependencies. A practical workflow nowadays is: [code omitted] For a Pythonic Django/FastAPI project, this could mean pytest + coverage, ruff / black , mypy or pyright , bandit, dependency scanning such as Dependabot / Snyk , and optionally CodeQL in GitHub Actions. The PR should still require a human reviewer. Absolutely, AI review can be useful as an additional reviewer , not the final authority. For example, GitHub Copilot can automatically review pull requests and identify bugs, security issues, and style problems, but GitHub itself recommends validating its feedback and supplementing it with human review. For example, should it go through code review, automated tests, linting, and security checks? OWASP's recent guidance for AI-assisted coding specifically recommends sandboxing coding agents, auditing AI-suggested dependencies, prote...",
+      "summary": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integrati...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "python",
+        "coding"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Mario",
+      "source_url": "https://genai.stackexchange.com/questions/2905/how-should-ai-generated-python-code-be-tested-and-reviewed-before-merging",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 40 times on the source site."
+      ],
+      "created_at": "2026-08-31T17:40:17+00:00",
+      "curated_at": "2026-09-01T05:08:14.722866+00:00",
+      "path": "posts/se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin.md"
+    },
+    {
+      "id": "se-genai-2903-claude-over-multiple-visual-studio-solutions",
+      "title": "Claude over multiple Visual Studio solutions",
+      "question": "In my company, we regularly use GitHub Copilot for development purposes. For historical reasons, our code is distributed over multiple Visual Studio solutions, each of them holding multiple projects. Due to Copilot limitations, there is one Claude per solution (you can imagine that \"Claude\" refers to \"Claude Sonnet\" or \"Claude Opus\", the LLMs mostly used by Copilot). It happens more and more that issues are cross-solution, which means that Claude1 says I need to ask Claude2, and Claude2 just answers to ask Claude1. Until now, I have created temporary solutions in which I have merged the projects from the solutions, relevant to my problems, but this is just a temporary solution of this probl...",
+      "answer": "If I understood your question correctly, then one possible solution is to make the relevant projects/repos available in a shared workspace or Copilot Space, instead of temporarily merging the solutions. This way, you can use multiple repositories as context, which, in my opinion, makes it much more future-proof for cross-solution questions. Sources: About GitHub Copilot Spaces Collaborating with others using GitHub Copilot Spaces Speeding up development work with GitHub Copilot Spaces Introducing Copilot Spaces: A new way to work with code and context Your New Context Hub for AI Development",
+      "summary": "If I understood your question correctly, then one possible solution is to make the relevant projects/repos available in a shared workspace or Copilot Space, instead of temporarily merging the solutions. This way, you ca...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "claude",
+        "github-copilot",
+        "visual-studio"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2903/claude-over-multiple-visual-studio-solutions",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 106 times on the source site."
+      ],
+      "created_at": "2026-08-31T11:19:40+00:00",
+      "curated_at": "2026-09-01T05:08:14.552253+00:00",
+      "path": "posts/se-genai-2903-claude-over-multiple-visual-studio-solutions.md"
     },
     {
       "id": "se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in",
@@ -158,10 +211,10 @@
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 2.",
-        "Viewed 591 times on the source site."
+        "Viewed 631 times on the source site."
       ],
       "created_at": "2026-08-25T18:21:39+00:00",
-      "curated_at": "2026-08-31T05:35:16.168721+00:00",
+      "curated_at": "2026-09-01T05:08:14.463084+00:00",
       "path": "posts/se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in.md"
     },
     {
@@ -184,62 +237,11 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 59 times on the source site."
+        "Viewed 60 times on the source site."
       ],
       "created_at": "2026-08-21T07:26:33+00:00",
-      "curated_at": "2026-08-31T05:35:15.923515+00:00",
+      "curated_at": "2026-09-01T05:08:14.340077+00:00",
       "path": "posts/se-genai-2892-how-can-transformers-generate-select-a-token-outside-top-k.md"
-    },
-    {
-      "id": "se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow",
-      "title": "Is there any suggested containerized/isolated LLM workflow?",
-      "question": "I’d like to use the paid/free raw CLI prompts of commercial remote LLM clients or apps while isolating my data from the rest of the system. QEMU or other virtualization solutions are the obvious choice, but are there any common isolation methods for Linux-like operating systems? Is there a more practical approach than installing an additional OS?",
-      "answer": "A practical alternative to a full VM or a container solution such as Docker would be Bubblewrap and AppArmor . Bubblewrap can run the CLI client in a sandbox and restrict its access to the filesystem, network, and other resources. Bubblewrap | ArchWiki Bubblewrap | Debian Wiki With AppArmor , you can additionally define which files and system resources the program is allowed to access. AppArmor | Wikipedia AppArmor Documentation This provides relatively lightweight isolation without having to install a second operating system. I use this myself on Debian. There is also Firejail , which is easy to use for sandboxing, but it has some limitations with X11 and therefore may not provide the same level of isolation in my opinion. Firejail | ArchWiki A sandbox only protects your local system. It cannot prevent data sent to the provider over the internet from reaching them if you use an external CLI/API.",
-      "summary": "A practical alternative to a full VM or a container solution such as Docker would be Bubblewrap and AppArmor . Bubblewrap can run the CLI client in a sandbox and restrict its access to the filesystem, network, and other...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "llm",
-        "sandbox"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2897/is-there-any-suggested-containerized-isolated-llm-workflow",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 5; answer score: 4.",
-        "The answer was accepted by the question author.",
-        "Viewed 662 times on the source site."
-      ],
-      "created_at": "2026-08-26T09:08:14+00:00",
-      "curated_at": "2026-08-31T05:35:15.714628+00:00",
-      "path": "posts/se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow.md"
-    },
-    {
-      "id": "se-ai-50701-what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confi",
-      "title": "What are the best tools to help me close the loop on coding, to get confidence that things work as expected?",
-      "question": "I'm diving into agentic coding loops to get my organization to automerge more. I know there are a lot of ai code review tools. There are the runtime code review tools like ito that give me evidence of features and static review tools like coderabbit that tell me when something looks off. What other methods do people use to help their team gain confidence that their coding agents aren't going rogue?",
-      "answer": "Coding review is just a small part of testing for \"going rogue\" While code review tools are useful, they are just one part of overall testing for an AI system. Under standard AI governance approaches, review and testing of the system usually involves several steps that take place at different stages during development, deployment and use: Step 1: Review/auditing of the data, coding and pipelines; Step 2: Offline validation tests using testing problems or testing data; Step 3: Testing edge-cases (metamorphic testing) and adversarial testing (red teaming); Step 4: Live monitoring and continuous testing. Coding review tools come into this process in the first step, but if you want to ensure that your AI system is not \"going rogue\" then you will need to perform the remaining testing steps, involving test cases, adversarial testing and continuous testing. These latter tests may pick up problems that were not evident from the initial coding review (including problems that accrue over time, such as model drift). The best tool to test for these problems is to form a good and expansive test set and test the performance of your AI system on the test set.",
-      "summary": "Coding review is just a small part of testing for \"going rogue\" While code review tools are useful, they are just one part of overall testing for an AI system. Under standard AI governance approaches, review and testing...",
-      "tags": [
-        "public-q&a",
-        "AI Stack Exchange",
-        "feature-engineering",
-        "automation",
-        "software-development",
-        "software-evaluation"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Ben",
-      "source_url": "https://ai.stackexchange.com/questions/50701/what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confidence-t",
-      "quality_signals": [
-        "Public Q&A from AI Stack Exchange.",
-        "Question score: 2; answer score: 1.",
-        "Viewed 170 times on the source site."
-      ],
-      "created_at": "2026-08-11T21:33:29+00:00",
-      "curated_at": "2026-08-25T01:52:09.531311+00:00",
-      "path": "posts/se-ai-50701-what-are-the-best-tools-to-help-me-close-the-loop-on-coding-to-get-confi.md"
     }
   ],
   "entries": [
@@ -261,10 +263,10 @@
       "quality_signals": [
         "Public Q&A from Stack Overflow.",
         "Question score: 2; answer score: 2.",
-        "Viewed 65 times on the source site."
+        "Viewed 66 times on the source site."
       ],
       "created_at": "2026-08-20T05:54:33+00:00",
-      "curated_at": "2026-08-31T05:35:17.601325+00:00",
+      "curated_at": "2026-09-01T05:08:15.514187+00:00",
       "path": "posts/se-stackoverflow-79996703-how-to-resolve-the-validation-error-which-has-come-while-running-the-cod.md"
     },
     {
@@ -285,11 +287,61 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 44 times on the source site."
+        "Viewed 53 times on the source site."
       ],
       "created_at": "2026-08-27T01:48:40+00:00",
-      "curated_at": "2026-08-31T05:35:16.445240+00:00",
+      "curated_at": "2026-09-01T05:08:14.808689+00:00",
       "path": "posts/se-genai-2899-are-llms-capable-of-producing-original-names-suitable-for-specific-thing.md"
+    },
+    {
+      "id": "se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin",
+      "title": "How should AI-generated Python code be tested and reviewed before merging?",
+      "question": "I'm using an AI coding assistant to generate and modify Python code in a Django/FastAPI backend. When the AI assistant generates or modifies code, should it be reviewed and tested in the same way as manually written code before merging? For example, should it go through code review, automated tests, linting, and security checks? Are there any additional review or testing steps needed for AI-generated Python code?",
+      "answer": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integration tests, linting/type checking, dependency and security scanning, and CI checks before merge. I would add one extra rule for AI-generated code: review the assumptions, not only the syntax. LLMs can produce perfectly plausible code that calls the wrong API, mishandles edge cases, weakens authentication/authorization, or invents dependencies. A practical workflow nowadays is: [code omitted] For a Pythonic Django/FastAPI project, this could mean pytest + coverage, ruff / black , mypy or pyright , bandit, dependency scanning such as Dependabot / Snyk , and optionally CodeQL in GitHub Actions. The PR should still require a human reviewer. Absolutely, AI review can be useful as an additional reviewer , not the final authority. For example, GitHub Copilot can automatically review pull requests and identify bugs, security issues, and style problems, but GitHub itself recommends validating its feedback and supplementing it with human review. For example, should it go through code review, automated tests, linting, and security checks? OWASP's recent guidance for AI-assisted coding specifically recommends sandboxing coding agents, auditing AI-suggested dependencies, prote...",
+      "summary": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integrati...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "python",
+        "coding"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Mario",
+      "source_url": "https://genai.stackexchange.com/questions/2905/how-should-ai-generated-python-code-be-tested-and-reviewed-before-merging",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 40 times on the source site."
+      ],
+      "created_at": "2026-08-31T17:40:17+00:00",
+      "curated_at": "2026-09-01T05:08:14.722866+00:00",
+      "path": "posts/se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin.md"
+    },
+    {
+      "id": "se-genai-2903-claude-over-multiple-visual-studio-solutions",
+      "title": "Claude over multiple Visual Studio solutions",
+      "question": "In my company, we regularly use GitHub Copilot for development purposes. For historical reasons, our code is distributed over multiple Visual Studio solutions, each of them holding multiple projects. Due to Copilot limitations, there is one Claude per solution (you can imagine that \"Claude\" refers to \"Claude Sonnet\" or \"Claude Opus\", the LLMs mostly used by Copilot). It happens more and more that issues are cross-solution, which means that Claude1 says I need to ask Claude2, and Claude2 just answers to ask Claude1. Until now, I have created temporary solutions in which I have merged the projects from the solutions, relevant to my problems, but this is just a temporary solution of this probl...",
+      "answer": "If I understood your question correctly, then one possible solution is to make the relevant projects/repos available in a shared workspace or Copilot Space, instead of temporarily merging the solutions. This way, you can use multiple repositories as context, which, in my opinion, makes it much more future-proof for cross-solution questions. Sources: About GitHub Copilot Spaces Collaborating with others using GitHub Copilot Spaces Speeding up development work with GitHub Copilot Spaces Introducing Copilot Spaces: A new way to work with code and context Your New Context Hub for AI Development",
+      "summary": "If I understood your question correctly, then one possible solution is to make the relevant projects/repos available in a shared workspace or Copilot Space, instead of temporarily merging the solutions. This way, you ca...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "claude",
+        "github-copilot",
+        "visual-studio"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2903/claude-over-multiple-visual-studio-solutions",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 106 times on the source site."
+      ],
+      "created_at": "2026-08-31T11:19:40+00:00",
+      "curated_at": "2026-09-01T05:08:14.552253+00:00",
+      "path": "posts/se-genai-2903-claude-over-multiple-visual-studio-solutions.md"
     },
     {
       "id": "se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in",
@@ -309,10 +361,10 @@
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 2.",
-        "Viewed 591 times on the source site."
+        "Viewed 631 times on the source site."
       ],
       "created_at": "2026-08-25T18:21:39+00:00",
-      "curated_at": "2026-08-31T05:35:16.168721+00:00",
+      "curated_at": "2026-09-01T05:08:14.463084+00:00",
       "path": "posts/se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in.md"
     },
     {
@@ -335,10 +387,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 59 times on the source site."
+        "Viewed 60 times on the source site."
       ],
       "created_at": "2026-08-21T07:26:33+00:00",
-      "curated_at": "2026-08-31T05:35:15.923515+00:00",
+      "curated_at": "2026-09-01T05:08:14.340077+00:00",
       "path": "posts/se-genai-2892-how-can-transformers-generate-select-a-token-outside-top-k.md"
     },
     {
@@ -360,10 +412,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 5; answer score: 4.",
         "The answer was accepted by the question author.",
-        "Viewed 662 times on the source site."
+        "Viewed 670 times on the source site."
       ],
       "created_at": "2026-08-26T09:08:14+00:00",
-      "curated_at": "2026-08-31T05:35:15.714628+00:00",
+      "curated_at": "2026-09-01T05:08:14.244917+00:00",
       "path": "posts/se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow.md"
     },
     {

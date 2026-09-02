@@ -1,6 +1,6 @@
 # Claude over multiple Visual Studio solutions
 
-Curated at: `2026-09-01T05:08:14.552253+00:00`
+Curated at: `2026-09-02T04:34:03.887856+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, llm, claude, github-copilot, visual-studio`
@@ -10,8 +10,8 @@ Source: https://genai.stackexchange.com/questions/2903/claude-over-multiple-visu
 ## Why It Is Good
 
 - Public Q&A from GenAI Stack Exchange.
-- Question score: 1; answer score: 1.
-- Viewed 106 times on the source site.
+- Question score: 1; answer score: 2.
+- Viewed 398 times on the source site.
 
 ## Question
 

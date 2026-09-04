@@ -1,6 +1,6 @@
 # How can transformers.generate() select a token outside top_k?
 
-Curated at: `2026-09-03T04:33:42.359859+00:00`
+Curated at: `2026-09-04T04:33:39.278936+00:00`
 Model: `Public Q&A`
 Author: `Amadan`
 Tags: `public-q&a, GenAI Stack Exchange, transformers, token, token-usage`

@@ -1,6 +1,6 @@
 # What's the actual difference between "Extra High effort" and "Pro effort" in new ChatGPT Chats?
 
-Curated at: `2026-09-05T04:29:16.160819+00:00`
+Curated at: `2026-09-06T04:38:53.462194+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, chatgpt, openai`
@@ -11,7 +11,7 @@ Source: https://genai.stackexchange.com/questions/2895/whats-the-actual-differen
 
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 2; answer score: 2.
-- Viewed 740 times on the source site.
+- Viewed 790 times on the source site.
 
 ## Question
 

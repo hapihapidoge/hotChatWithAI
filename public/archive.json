@@ -3,31 +3,31 @@
     "id": "se-genai-2899-are-llms-capable-of-producing-original-names-suitable-for-specific-thing",
     "title": "Are LLMS capable of producing original names suitable for specific things?",
     "path": "posts/se-genai-2899-are-llms-capable-of-producing-original-names-suitable-for-specific-thing.md",
-    "curated_at": "2026-09-08T04:36:21.129666+00:00"
+    "curated_at": "2026-09-09T04:42:24.168624+00:00"
   },
   {
     "id": "se-genai-2903-claude-over-multiple-visual-studio-solutions",
     "title": "Claude over multiple Visual Studio solutions",
     "path": "posts/se-genai-2903-claude-over-multiple-visual-studio-solutions.md",
-    "curated_at": "2026-09-08T04:36:20.991081+00:00"
+    "curated_at": "2026-09-09T04:42:23.960082+00:00"
+  },
+  {
+    "id": "se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin",
+    "title": "How should AI-generated Python code be tested and reviewed before merging?",
+    "path": "posts/se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin.md",
+    "curated_at": "2026-09-09T04:42:23.770095+00:00"
+  },
+  {
+    "id": "se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow",
+    "title": "Is there any suggested containerized/isolated LLM workflow?",
+    "path": "posts/se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow.md",
+    "curated_at": "2026-09-09T04:42:23.645111+00:00"
   },
   {
     "id": "se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in",
     "title": "What's the actual difference between \"Extra High effort\" and \"Pro effort\" in new ChatGPT Chats?",
     "path": "posts/se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in.md",
     "curated_at": "2026-09-08T04:36:20.874328+00:00"
-  },
-  {
-    "id": "se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin",
-    "title": "How should AI-generated Python code be tested and reviewed before merging?",
-    "path": "posts/se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin.md",
-    "curated_at": "2026-09-08T04:36:20.729172+00:00"
-  },
-  {
-    "id": "se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow",
-    "title": "Is there any suggested containerized/isolated LLM workflow?",
-    "path": "posts/se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow.md",
-    "curated_at": "2026-09-08T04:36:20.582329+00:00"
   },
   {
     "id": "se-genai-2892-how-can-transformers-generate-select-a-token-outside-top-k",

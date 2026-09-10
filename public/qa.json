@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T04:42:25.195673+00:00",
+  "generated_at": "2026-09-10T04:42:51.111638+00:00",
   "summary": {
     "items": 42,
     "tags": [
@@ -96,6 +96,56 @@
   },
   "featured": [
     {
+      "id": "se-genai-2903-claude-over-multiple-visual-studio-solutions",
+      "title": "Claude over multiple Visual Studio solutions",
+      "question": "In my company, we regularly use GitHub Copilot for development purposes. For historical reasons, our code is distributed over multiple Visual Studio solutions, each of them holding multiple projects. Due to Copilot limitations, there is one Claude per solution (you can imagine that \"Claude\" refers to \"Claude Sonnet\" or \"Claude Opus\", the LLMs mostly used by Copilot). It happens more and more that issues are cross-solution, which means that Claude1 says I need to ask Claude2, and Claude2 just answers to ask Claude1. Until now, I have created temporary solutions in which I have merged the projects from the solutions, relevant to my problems, but this is just a temporary solution of this probl...",
+      "answer": "If I understood your question correctly, then one possible solution is to make the relevant projects/repos available in a shared workspace or Copilot Space, instead of temporarily merging the solutions. This way, you can use multiple repositories as context, which, in my opinion, makes it much more future-proof for cross-solution questions. Sources: About GitHub Copilot Spaces Collaborating with others using GitHub Copilot Spaces Speeding up development work with GitHub Copilot Spaces Introducing Copilot Spaces: A new way to work with code and context Your New Context Hub for AI Development",
+      "summary": "If I understood your question correctly, then one possible solution is to make the relevant projects/repos available in a shared workspace or Copilot Space, instead of temporarily merging the solutions. This way, you ca...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "claude",
+        "github-copilot",
+        "visual-studio"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2903/claude-over-multiple-visual-studio-solutions",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 2.",
+        "Viewed 421 times on the source site."
+      ],
+      "created_at": "2026-08-31T11:19:40+00:00",
+      "curated_at": "2026-09-10T04:42:50.304996+00:00",
+      "path": "posts/se-genai-2903-claude-over-multiple-visual-studio-solutions.md"
+    },
+    {
+      "id": "se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin",
+      "title": "How should AI-generated Python code be tested and reviewed before merging?",
+      "question": "I'm using an AI coding assistant to generate and modify Python code in a Django/FastAPI backend. When the AI assistant generates or modifies code, should it be reviewed and tested in the same way as manually written code before merging? For example, should it go through code review, automated tests, linting, and security checks? Are there any additional review or testing steps needed for AI-generated Python code?",
+      "answer": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integration tests, linting/type checking, dependency and security scanning, and CI checks before merge. I would add one extra rule for AI-generated code: review the assumptions, not only the syntax. LLMs can produce perfectly plausible code that calls the wrong API, mishandles edge cases, weakens authentication/authorization, or invents dependencies. A practical workflow nowadays is: [code omitted] For a Pythonic Django/FastAPI project, this could mean pytest + coverage, ruff / black , mypy or pyright , bandit, dependency scanning such as Dependabot / Snyk , and optionally CodeQL in GitHub Actions. The PR should still require a human reviewer. Potentially, AI review can be useful as an additional reviewer , not the final authority. For example, GitHub Copilot can automatically review pull requests and identify bugs, security issues, and style problems, but GitHub itself recommends validating its feedback and supplementing it with human review. For example, should it go through code review, automated tests, linting, and security checks? OWASP's recent guidance for AI-assisted coding specifically recommends sandboxing coding agents, auditing AI-suggested dependencies, prot...",
+      "summary": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integrati...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "python",
+        "coding"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Mario",
+      "source_url": "https://genai.stackexchange.com/questions/2905/how-should-ai-generated-python-code-be-tested-and-reviewed-before-merging",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 3; answer score: 3.",
+        "Viewed 1149 times on the source site."
+      ],
+      "created_at": "2026-08-31T17:40:17+00:00",
+      "curated_at": "2026-09-10T04:42:50.154020+00:00",
+      "path": "posts/se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin.md"
+    },
+    {
       "id": "se-genai-2899-are-llms-capable-of-producing-original-names-suitable-for-specific-thing",
       "title": "Are LLMS capable of producing original names suitable for specific things?",
       "question": "Can a LLM produce original names suitable for specific things, like names using the style of boons from the Hades video games? This produces names suitable for Hades boons like those generated by this website .",
@@ -118,56 +168,6 @@
       "created_at": "2026-08-27T01:48:40+00:00",
       "curated_at": "2026-09-09T04:42:24.168624+00:00",
       "path": "posts/se-genai-2899-are-llms-capable-of-producing-original-names-suitable-for-specific-thing.md"
-    },
-    {
-      "id": "se-genai-2903-claude-over-multiple-visual-studio-solutions",
-      "title": "Claude over multiple Visual Studio solutions",
-      "question": "In my company, we regularly use GitHub Copilot for development purposes. For historical reasons, our code is distributed over multiple Visual Studio solutions, each of them holding multiple projects. Due to Copilot limitations, there is one Claude per solution (you can imagine that \"Claude\" refers to \"Claude Sonnet\" or \"Claude Opus\", the LLMs mostly used by Copilot). It happens more and more that issues are cross-solution, which means that Claude1 says I need to ask Claude2, and Claude2 just answers to ask Claude1. Until now, I have created temporary solutions in which I have merged the projects from the solutions, relevant to my problems, but this is just a temporary solution of this probl...",
-      "answer": "If I understood your question correctly, then one possible solution is to make the relevant projects/repos available in a shared workspace or Copilot Space, instead of temporarily merging the solutions. This way, you can use multiple repositories as context, which, in my opinion, makes it much more future-proof for cross-solution questions. Sources: About GitHub Copilot Spaces Collaborating with others using GitHub Copilot Spaces Speeding up development work with GitHub Copilot Spaces Introducing Copilot Spaces: A new way to work with code and context Your New Context Hub for AI Development",
-      "summary": "If I understood your question correctly, then one possible solution is to make the relevant projects/repos available in a shared workspace or Copilot Space, instead of temporarily merging the solutions. This way, you ca...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "llm",
-        "claude",
-        "github-copilot",
-        "visual-studio"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2903/claude-over-multiple-visual-studio-solutions",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 2.",
-        "Viewed 420 times on the source site."
-      ],
-      "created_at": "2026-08-31T11:19:40+00:00",
-      "curated_at": "2026-09-09T04:42:23.960082+00:00",
-      "path": "posts/se-genai-2903-claude-over-multiple-visual-studio-solutions.md"
-    },
-    {
-      "id": "se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin",
-      "title": "How should AI-generated Python code be tested and reviewed before merging?",
-      "question": "I'm using an AI coding assistant to generate and modify Python code in a Django/FastAPI backend. When the AI assistant generates or modifies code, should it be reviewed and tested in the same way as manually written code before merging? For example, should it go through code review, automated tests, linting, and security checks? Are there any additional review or testing steps needed for AI-generated Python code?",
-      "answer": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integration tests, linting/type checking, dependency and security scanning, and CI checks before merge. I would add one extra rule for AI-generated code: review the assumptions, not only the syntax. LLMs can produce perfectly plausible code that calls the wrong API, mishandles edge cases, weakens authentication/authorization, or invents dependencies. A practical workflow nowadays is: [code omitted] For a Pythonic Django/FastAPI project, this could mean pytest + coverage, ruff / black , mypy or pyright , bandit, dependency scanning such as Dependabot / Snyk , and optionally CodeQL in GitHub Actions. The PR should still require a human reviewer. Potentially, AI review can be useful as an additional reviewer , not the final authority. For example, GitHub Copilot can automatically review pull requests and identify bugs, security issues, and style problems, but GitHub itself recommends validating its feedback and supplementing it with human review. For example, should it go through code review, automated tests, linting, and security checks? OWASP's recent guidance for AI-assisted coding specifically recommends sandboxing coding agents, auditing AI-suggested dependencies, prot...",
-      "summary": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integrati...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "python",
-        "coding"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Mario",
-      "source_url": "https://genai.stackexchange.com/questions/2905/how-should-ai-generated-python-code-be-tested-and-reviewed-before-merging",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 3; answer score: 3.",
-        "Viewed 1147 times on the source site."
-      ],
-      "created_at": "2026-08-31T17:40:17+00:00",
-      "curated_at": "2026-09-09T04:42:23.770095+00:00",
-      "path": "posts/se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin.md"
     },
     {
       "id": "se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow",
@@ -247,6 +247,56 @@
   ],
   "entries": [
     {
+      "id": "se-genai-2903-claude-over-multiple-visual-studio-solutions",
+      "title": "Claude over multiple Visual Studio solutions",
+      "question": "In my company, we regularly use GitHub Copilot for development purposes. For historical reasons, our code is distributed over multiple Visual Studio solutions, each of them holding multiple projects. Due to Copilot limitations, there is one Claude per solution (you can imagine that \"Claude\" refers to \"Claude Sonnet\" or \"Claude Opus\", the LLMs mostly used by Copilot). It happens more and more that issues are cross-solution, which means that Claude1 says I need to ask Claude2, and Claude2 just answers to ask Claude1. Until now, I have created temporary solutions in which I have merged the projects from the solutions, relevant to my problems, but this is just a temporary solution of this probl...",
+      "answer": "If I understood your question correctly, then one possible solution is to make the relevant projects/repos available in a shared workspace or Copilot Space, instead of temporarily merging the solutions. This way, you can use multiple repositories as context, which, in my opinion, makes it much more future-proof for cross-solution questions. Sources: About GitHub Copilot Spaces Collaborating with others using GitHub Copilot Spaces Speeding up development work with GitHub Copilot Spaces Introducing Copilot Spaces: A new way to work with code and context Your New Context Hub for AI Development",
+      "summary": "If I understood your question correctly, then one possible solution is to make the relevant projects/repos available in a shared workspace or Copilot Space, instead of temporarily merging the solutions. This way, you ca...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "claude",
+        "github-copilot",
+        "visual-studio"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2903/claude-over-multiple-visual-studio-solutions",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 2.",
+        "Viewed 421 times on the source site."
+      ],
+      "created_at": "2026-08-31T11:19:40+00:00",
+      "curated_at": "2026-09-10T04:42:50.304996+00:00",
+      "path": "posts/se-genai-2903-claude-over-multiple-visual-studio-solutions.md"
+    },
+    {
+      "id": "se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin",
+      "title": "How should AI-generated Python code be tested and reviewed before merging?",
+      "question": "I'm using an AI coding assistant to generate and modify Python code in a Django/FastAPI backend. When the AI assistant generates or modifies code, should it be reviewed and tested in the same way as manually written code before merging? For example, should it go through code review, automated tests, linting, and security checks? Are there any additional review or testing steps needed for AI-generated Python code?",
+      "answer": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integration tests, linting/type checking, dependency and security scanning, and CI checks before merge. I would add one extra rule for AI-generated code: review the assumptions, not only the syntax. LLMs can produce perfectly plausible code that calls the wrong API, mishandles edge cases, weakens authentication/authorization, or invents dependencies. A practical workflow nowadays is: [code omitted] For a Pythonic Django/FastAPI project, this could mean pytest + coverage, ruff / black , mypy or pyright , bandit, dependency scanning such as Dependabot / Snyk , and optionally CodeQL in GitHub Actions. The PR should still require a human reviewer. Potentially, AI review can be useful as an additional reviewer , not the final authority. For example, GitHub Copilot can automatically review pull requests and identify bugs, security issues, and style problems, but GitHub itself recommends validating its feedback and supplementing it with human review. For example, should it go through code review, automated tests, linting, and security checks? OWASP's recent guidance for AI-assisted coding specifically recommends sandboxing coding agents, auditing AI-suggested dependencies, prot...",
+      "summary": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integrati...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "python",
+        "coding"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Mario",
+      "source_url": "https://genai.stackexchange.com/questions/2905/how-should-ai-generated-python-code-be-tested-and-reviewed-before-merging",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 3; answer score: 3.",
+        "Viewed 1149 times on the source site."
+      ],
+      "created_at": "2026-08-31T17:40:17+00:00",
+      "curated_at": "2026-09-10T04:42:50.154020+00:00",
+      "path": "posts/se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin.md"
+    },
+    {
       "id": "se-genai-2899-are-llms-capable-of-producing-original-names-suitable-for-specific-thing",
       "title": "Are LLMS capable of producing original names suitable for specific things?",
       "question": "Can a LLM produce original names suitable for specific things, like names using the style of boons from the Hades video games? This produces names suitable for Hades boons like those generated by this website .",
@@ -269,56 +319,6 @@
       "created_at": "2026-08-27T01:48:40+00:00",
       "curated_at": "2026-09-09T04:42:24.168624+00:00",
       "path": "posts/se-genai-2899-are-llms-capable-of-producing-original-names-suitable-for-specific-thing.md"
-    },
-    {
-      "id": "se-genai-2903-claude-over-multiple-visual-studio-solutions",
-      "title": "Claude over multiple Visual Studio solutions",
-      "question": "In my company, we regularly use GitHub Copilot for development purposes. For historical reasons, our code is distributed over multiple Visual Studio solutions, each of them holding multiple projects. Due to Copilot limitations, there is one Claude per solution (you can imagine that \"Claude\" refers to \"Claude Sonnet\" or \"Claude Opus\", the LLMs mostly used by Copilot). It happens more and more that issues are cross-solution, which means that Claude1 says I need to ask Claude2, and Claude2 just answers to ask Claude1. Until now, I have created temporary solutions in which I have merged the projects from the solutions, relevant to my problems, but this is just a temporary solution of this probl...",
-      "answer": "If I understood your question correctly, then one possible solution is to make the relevant projects/repos available in a shared workspace or Copilot Space, instead of temporarily merging the solutions. This way, you can use multiple repositories as context, which, in my opinion, makes it much more future-proof for cross-solution questions. Sources: About GitHub Copilot Spaces Collaborating with others using GitHub Copilot Spaces Speeding up development work with GitHub Copilot Spaces Introducing Copilot Spaces: A new way to work with code and context Your New Context Hub for AI Development",
-      "summary": "If I understood your question correctly, then one possible solution is to make the relevant projects/repos available in a shared workspace or Copilot Space, instead of temporarily merging the solutions. This way, you ca...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "llm",
-        "claude",
-        "github-copilot",
-        "visual-studio"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2903/claude-over-multiple-visual-studio-solutions",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 2.",
-        "Viewed 420 times on the source site."
-      ],
-      "created_at": "2026-08-31T11:19:40+00:00",
-      "curated_at": "2026-09-09T04:42:23.960082+00:00",
-      "path": "posts/se-genai-2903-claude-over-multiple-visual-studio-solutions.md"
-    },
-    {
-      "id": "se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin",
-      "title": "How should AI-generated Python code be tested and reviewed before merging?",
-      "question": "I'm using an AI coding assistant to generate and modify Python code in a Django/FastAPI backend. When the AI assistant generates or modifies code, should it be reviewed and tested in the same way as manually written code before merging? For example, should it go through code review, automated tests, linting, and security checks? Are there any additional review or testing steps needed for AI-generated Python code?",
-      "answer": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integration tests, linting/type checking, dependency and security scanning, and CI checks before merge. I would add one extra rule for AI-generated code: review the assumptions, not only the syntax. LLMs can produce perfectly plausible code that calls the wrong API, mishandles edge cases, weakens authentication/authorization, or invents dependencies. A practical workflow nowadays is: [code omitted] For a Pythonic Django/FastAPI project, this could mean pytest + coverage, ruff / black , mypy or pyright , bandit, dependency scanning such as Dependabot / Snyk , and optionally CodeQL in GitHub Actions. The PR should still require a human reviewer. Potentially, AI review can be useful as an additional reviewer , not the final authority. For example, GitHub Copilot can automatically review pull requests and identify bugs, security issues, and style problems, but GitHub itself recommends validating its feedback and supplementing it with human review. For example, should it go through code review, automated tests, linting, and security checks? OWASP's recent guidance for AI-assisted coding specifically recommends sandboxing coding agents, auditing AI-suggested dependencies, prot...",
-      "summary": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integrati...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "python",
-        "coding"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Mario",
-      "source_url": "https://genai.stackexchange.com/questions/2905/how-should-ai-generated-python-code-be-tested-and-reviewed-before-merging",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 3; answer score: 3.",
-        "Viewed 1147 times on the source site."
-      ],
-      "created_at": "2026-08-31T17:40:17+00:00",
-      "curated_at": "2026-09-09T04:42:23.770095+00:00",
-      "path": "posts/se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin.md"
     },
     {
       "id": "se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow",

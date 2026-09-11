@@ -1,6 +1,6 @@
 # Claude over multiple Visual Studio solutions
 
-Curated at: `2026-09-10T04:42:50.304996+00:00`
+Curated at: `2026-09-11T04:40:39.479610+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, llm, claude, github-copilot, visual-studio`

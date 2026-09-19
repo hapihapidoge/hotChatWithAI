@@ -1,6 +1,6 @@
 # Extracting Contract Rules from Contract Document
 
-Curated at: `2026-09-18T04:43:49.717679+00:00`
+Curated at: `2026-09-19T04:37:50.960166+00:00`
 Model: `Public Q&A`
 Author: `Manish Ranjan`
 Tags: `public-q&a, GenAI Stack Exchange, llm, azure, search, json`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2916/extracting-contract-rules
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 0; answer score: 1.
 - The answer was accepted by the question author.
-- Viewed 34 times on the source site.
+- Viewed 35 times on the source site.
 
 ## Question
 

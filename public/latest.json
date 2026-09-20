@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-19T04:37:52.058745+00:00",
+  "generated_at": "2026-09-20T04:53:58.848311+00:00",
   "summary": {
-    "items": 43,
+    "items": 44,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -37,6 +37,7 @@
       "google",
       "gradient",
       "gradient-boosting",
+      "hallucination",
       "history",
       "json",
       "k-fold-cv",
@@ -44,6 +45,7 @@
       "large-language-model",
       "large-language-models",
       "llm",
+      "llm-bias",
       "machine-learning",
       "mean-squared-error",
       "music",
@@ -118,11 +120,35 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 35 times on the source site."
+        "Viewed 38 times on the source site."
       ],
       "created_at": "2026-09-11T16:25:55+00:00",
-      "curated_at": "2026-09-19T04:37:50.960166+00:00",
+      "curated_at": "2026-09-20T04:53:58.133939+00:00",
       "path": "posts/se-genai-2916-extracting-contract-rules-from-contract-document.md"
+    },
+    {
+      "id": "se-genai-2920-increasing-awerness-learning-new-thing-with-ai",
+      "title": "Increasing awerness learning new thing with AI",
+      "question": "Some intrinsic structures of AI sometimes suck a lot when learning anything, while dealing with other things, or adding an unknown part to a thing. I mean misdirection, manipulation, hallucinated content exposure, etc. some causation end up post-exposure side effects like frustration and the AI drift to a very distinct point. Are there a specialized prompt addition, any key questions, methodologies or something else like methodology, that decreases the probable side effects of re-exposure? Especially ask the right questions, move forward, or otherwise improve our way of learning? We're not really aware of new thing's mechanics, interactions etc., so maybe we end up misdirecting ourselves wi...",
+      "answer": "One of the main problems is which AI you use online or offline, free or paid, which model and which model version, what level of knowledge it has and which data sources it is based on, the context, temperature for more or less creativity and so on. If you ask the same question to different AIs, they can give different answers. Sometimes even several answers can sound very plausible, although one, several, or even all of them may be wrong. The problem can be roughly represented like this: AI A - Answer A AI B - Answer B AI C - Answer C Then you do not automatically know which answer is actually correct. 1. Always questioning is one possibility, but you do not have to completely check every single answer Are you sure? How do you know that? Where does this information come from and do you have evidence? Which parts of your answer are uncertain or could be wrong? What speaks against your own answer? This forces the AI to check its explanation again. 2. Use a second or several sources/AIs for important facts If two or more AIs say the same thing, it is an indication but not proof, because they can all make the same mistake. 3. Check an independent source for important things Especially for science, law, medicine, finance, etc. 4. The probably most important point is not to build further on an unchecked answer, but to clarify first and then continue learning Is this foundation actua...",
+      "summary": "One of the main problems is which AI you use online or offline, free or paid, which model and which model version, what level of knowledge it has and which data sources it is based on, the context, temperature for more...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "hallucination",
+        "llm-bias"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2920/increasing-awerness-learning-new-thing-with-ai",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 50 times on the source site."
+      ],
+      "created_at": "2026-09-19T08:59:05+00:00",
+      "curated_at": "2026-09-20T04:53:58.006612+00:00",
+      "path": "posts/se-genai-2920-increasing-awerness-learning-new-thing-with-ai.md"
     },
     {
       "id": "se-genai-2903-claude-over-multiple-visual-studio-solutions",
@@ -222,30 +248,6 @@
       "created_at": "2026-08-26T09:08:14+00:00",
       "curated_at": "2026-09-09T04:42:23.645111+00:00",
       "path": "posts/se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow.md"
-    },
-    {
-      "id": "se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in",
-      "title": "What's the actual difference between \"Extra High effort\" and \"Pro effort\" in new ChatGPT Chats?",
-      "question": "When starting a new ChatGPT Chat, then I can choose between various effort levels. I want to know the actual difference between \" Extra High effort \" and \" Pro effort \". What will be different? You can see the two options here below:",
-      "answer": "According to OpenAIs documentation, the key takeaway is: Extra High and Pro are not simply two levels on the same scale. They are two different models/model variants. With Extra High , you are still using GPT-5.6 Sol, but you are giving it the highest available reasoning effort within that model family. OpenAI explicitly describes Extra High as the highest reasoning effort available for GPT-5.6 Sol. This should be particularly useful for: Difficult mathematics Complex programming Multi-step logic Challenging research and analysis Tasks where additional thinking time can make a difference Pro = GPT-5.6 Sol Pro , which means: This is not simply Extra High + even more thinking time. Instead, it is a more capable Pro model variant that OpenAI positions for particularly difficult tasks and longer workflows. It may look as if the two options are essentially the same. The user interface presents Extra High as an effort level and Pro as a model option side by side. OpenAI simplified the interface in June 2026 for precisely this reason. For example, Thinking Heavy was renamed to Extra High, while Pro remained a separate model category. The specific technical differences internally for example, how much additional compute is used, what architectural differences exist, or how many additional reasoning passes Pro actually performs, have not been fully disclosed by OpenAI. Learn how GPT-5....",
-      "summary": "According to OpenAIs documentation, the key takeaway is: Extra High and Pro are not simply two levels on the same scale. They are two different models/model variants. With Extra High , you are still using GPT-5.6 Sol, b...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "chatgpt",
-        "openai"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2895/whats-the-actual-difference-between-extra-high-effort-and-pro-effort-in-new",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 2; answer score: 2.",
-        "Viewed 830 times on the source site."
-      ],
-      "created_at": "2026-08-25T18:21:39+00:00",
-      "curated_at": "2026-09-08T04:36:20.874328+00:00",
-      "path": "posts/se-genai-2895-what-s-the-actual-difference-between-extra-high-effort-and-pro-effort-in.md"
     }
   ],
   "entries": [
@@ -270,11 +272,35 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 35 times on the source site."
+        "Viewed 38 times on the source site."
       ],
       "created_at": "2026-09-11T16:25:55+00:00",
-      "curated_at": "2026-09-19T04:37:50.960166+00:00",
+      "curated_at": "2026-09-20T04:53:58.133939+00:00",
       "path": "posts/se-genai-2916-extracting-contract-rules-from-contract-document.md"
+    },
+    {
+      "id": "se-genai-2920-increasing-awerness-learning-new-thing-with-ai",
+      "title": "Increasing awerness learning new thing with AI",
+      "question": "Some intrinsic structures of AI sometimes suck a lot when learning anything, while dealing with other things, or adding an unknown part to a thing. I mean misdirection, manipulation, hallucinated content exposure, etc. some causation end up post-exposure side effects like frustration and the AI drift to a very distinct point. Are there a specialized prompt addition, any key questions, methodologies or something else like methodology, that decreases the probable side effects of re-exposure? Especially ask the right questions, move forward, or otherwise improve our way of learning? We're not really aware of new thing's mechanics, interactions etc., so maybe we end up misdirecting ourselves wi...",
+      "answer": "One of the main problems is which AI you use online or offline, free or paid, which model and which model version, what level of knowledge it has and which data sources it is based on, the context, temperature for more or less creativity and so on. If you ask the same question to different AIs, they can give different answers. Sometimes even several answers can sound very plausible, although one, several, or even all of them may be wrong. The problem can be roughly represented like this: AI A - Answer A AI B - Answer B AI C - Answer C Then you do not automatically know which answer is actually correct. 1. Always questioning is one possibility, but you do not have to completely check every single answer Are you sure? How do you know that? Where does this information come from and do you have evidence? Which parts of your answer are uncertain or could be wrong? What speaks against your own answer? This forces the AI to check its explanation again. 2. Use a second or several sources/AIs for important facts If two or more AIs say the same thing, it is an indication but not proof, because they can all make the same mistake. 3. Check an independent source for important things Especially for science, law, medicine, finance, etc. 4. The probably most important point is not to build further on an unchecked answer, but to clarify first and then continue learning Is this foundation actua...",
+      "summary": "One of the main problems is which AI you use online or offline, free or paid, which model and which model version, what level of knowledge it has and which data sources it is based on, the context, temperature for more...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "hallucination",
+        "llm-bias"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2920/increasing-awerness-learning-new-thing-with-ai",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 50 times on the source site."
+      ],
+      "created_at": "2026-09-19T08:59:05+00:00",
+      "curated_at": "2026-09-20T04:53:58.006612+00:00",
+      "path": "posts/se-genai-2920-increasing-awerness-learning-new-thing-with-ai.md"
     },
     {
       "id": "se-genai-2903-claude-over-multiple-visual-studio-solutions",

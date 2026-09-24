@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-23T04:45:13.497939+00:00",
+  "generated_at": "2026-09-24T04:51:00.398338+00:00",
   "summary": {
-    "items": 44,
+    "items": 45,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -120,11 +120,35 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 41 times on the source site."
+        "Viewed 44 times on the source site."
       ],
       "created_at": "2026-09-11T16:25:55+00:00",
-      "curated_at": "2026-09-23T04:45:12.552952+00:00",
+      "curated_at": "2026-09-24T04:50:59.125177+00:00",
       "path": "posts/se-genai-2916-extracting-contract-rules-from-contract-document.md"
+    },
+    {
+      "id": "se-genai-2920-increasing-awareness-learning-new-thing-with-ai",
+      "title": "Increasing awareness learning new thing with AI",
+      "question": "Some intrinsic structures of AI sometimes suck a lot when learning anything, while dealing with other things, or adding an unknown part to a thing. I mean misdirection, manipulation, hallucinated content exposure, etc. some causation end up post-exposure side effects like frustration and the AI drift to a very distinct point. Are there a specialized prompt addition, any key questions, methodologies or something else like methodology, that decreases the probable side effects of re-exposure? Especially ask the right questions, move forward, or otherwise improve our way of learning? We're not really aware of new thing's mechanics, interactions etc., so maybe we end up misdirecting ourselves wi...",
+      "answer": "One of the main problems is which AI you use online or offline, free or paid, which model and which model version, what level of knowledge it has and which data sources it is based on, the context, temperature for more or less creativity and so on. If you ask the same question to different AIs, they can give different answers. Sometimes even several answers can sound very plausible, although one, several, or even all of them may be wrong. The problem can be roughly represented like this: AI A - Answer A AI B - Answer B AI C - Answer C Then you do not automatically know which answer is actually correct. 1. Always questioning is one possibility, but you do not have to completely check every single answer Are you sure? How do you know that? Where does this information come from and do you have evidence? Which parts of your answer are uncertain or could be wrong? What speaks against your own answer? This forces the AI to check its explanation again. 2. Use a second or several sources/AIs for important facts If two or more AIs say the same thing, it is an indication but not proof, because they can all make the same mistake. 3. Check an independent source for important things Especially for science, law, medicine, finance, etc. 4. The probably most important point is not to build further on an unchecked answer, but to clarify first and then continue learning Is this foundation actua...",
+      "summary": "One of the main problems is which AI you use online or offline, free or paid, which model and which model version, what level of knowledge it has and which data sources it is based on, the context, temperature for more...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "hallucination",
+        "llm-bias"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2920/increasing-awareness-learning-new-thing-with-ai",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 3.",
+        "Viewed 649 times on the source site."
+      ],
+      "created_at": "2026-09-19T08:59:05+00:00",
+      "curated_at": "2026-09-24T04:50:58.990005+00:00",
+      "path": "posts/se-genai-2920-increasing-awareness-learning-new-thing-with-ai.md"
     },
     {
       "id": "se-genai-2920-increasing-awerness-learning-new-thing-with-ai",
@@ -223,31 +247,6 @@
       "created_at": "2026-08-27T01:48:40+00:00",
       "curated_at": "2026-09-09T04:42:24.168624+00:00",
       "path": "posts/se-genai-2899-are-llms-capable-of-producing-original-names-suitable-for-specific-thing.md"
-    },
-    {
-      "id": "se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow",
-      "title": "Is there any suggested containerized/isolated LLM workflow?",
-      "question": "I’d like to use the paid/free raw CLI prompts of commercial remote LLM clients or apps while isolating my data from the rest of the system. QEMU or other virtualization solutions are the obvious choice, but are there any common isolation methods for Linux-like operating systems? Is there a more practical approach than installing an additional OS?",
-      "answer": "A practical alternative to a full VM or a container solution such as Docker would be Bubblewrap and AppArmor . Bubblewrap can run the CLI client in a sandbox and restrict its access to the filesystem, network, and other resources. Bubblewrap | ArchWiki Bubblewrap | Debian Wiki With AppArmor , you can additionally define which files and system resources the program is allowed to access. AppArmor | Wikipedia AppArmor Documentation This provides relatively lightweight isolation without having to install a second operating system. I use this myself on Debian. There is also Firejail , which is easy to use for sandboxing, but it has some limitations with X11 and therefore may not provide the same level of isolation in my opinion. Firejail | ArchWiki A sandbox only protects your local system. It cannot prevent data sent to the provider over the internet from reaching them if you use an external CLI/API.",
-      "summary": "A practical alternative to a full VM or a container solution such as Docker would be Bubblewrap and AppArmor . Bubblewrap can run the CLI client in a sandbox and restrict its access to the filesystem, network, and other...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "llm",
-        "sandbox"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2897/is-there-any-suggested-containerized-isolated-llm-workflow",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 5; answer score: 4.",
-        "The answer was accepted by the question author.",
-        "Viewed 716 times on the source site."
-      ],
-      "created_at": "2026-08-26T09:08:14+00:00",
-      "curated_at": "2026-09-09T04:42:23.645111+00:00",
-      "path": "posts/se-genai-2897-is-there-any-suggested-containerized-isolated-llm-workflow.md"
     }
   ],
   "entries": [
@@ -272,11 +271,35 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 41 times on the source site."
+        "Viewed 44 times on the source site."
       ],
       "created_at": "2026-09-11T16:25:55+00:00",
-      "curated_at": "2026-09-23T04:45:12.552952+00:00",
+      "curated_at": "2026-09-24T04:50:59.125177+00:00",
       "path": "posts/se-genai-2916-extracting-contract-rules-from-contract-document.md"
+    },
+    {
+      "id": "se-genai-2920-increasing-awareness-learning-new-thing-with-ai",
+      "title": "Increasing awareness learning new thing with AI",
+      "question": "Some intrinsic structures of AI sometimes suck a lot when learning anything, while dealing with other things, or adding an unknown part to a thing. I mean misdirection, manipulation, hallucinated content exposure, etc. some causation end up post-exposure side effects like frustration and the AI drift to a very distinct point. Are there a specialized prompt addition, any key questions, methodologies or something else like methodology, that decreases the probable side effects of re-exposure? Especially ask the right questions, move forward, or otherwise improve our way of learning? We're not really aware of new thing's mechanics, interactions etc., so maybe we end up misdirecting ourselves wi...",
+      "answer": "One of the main problems is which AI you use online or offline, free or paid, which model and which model version, what level of knowledge it has and which data sources it is based on, the context, temperature for more or less creativity and so on. If you ask the same question to different AIs, they can give different answers. Sometimes even several answers can sound very plausible, although one, several, or even all of them may be wrong. The problem can be roughly represented like this: AI A - Answer A AI B - Answer B AI C - Answer C Then you do not automatically know which answer is actually correct. 1. Always questioning is one possibility, but you do not have to completely check every single answer Are you sure? How do you know that? Where does this information come from and do you have evidence? Which parts of your answer are uncertain or could be wrong? What speaks against your own answer? This forces the AI to check its explanation again. 2. Use a second or several sources/AIs for important facts If two or more AIs say the same thing, it is an indication but not proof, because they can all make the same mistake. 3. Check an independent source for important things Especially for science, law, medicine, finance, etc. 4. The probably most important point is not to build further on an unchecked answer, but to clarify first and then continue learning Is this foundation actua...",
+      "summary": "One of the main problems is which AI you use online or offline, free or paid, which model and which model version, what level of knowledge it has and which data sources it is based on, the context, temperature for more...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "hallucination",
+        "llm-bias"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2920/increasing-awareness-learning-new-thing-with-ai",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 3.",
+        "Viewed 649 times on the source site."
+      ],
+      "created_at": "2026-09-19T08:59:05+00:00",
+      "curated_at": "2026-09-24T04:50:58.990005+00:00",
+      "path": "posts/se-genai-2920-increasing-awareness-learning-new-thing-with-ai.md"
     },
     {
       "id": "se-genai-2920-increasing-awerness-learning-new-thing-with-ai",

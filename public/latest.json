@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-27T05:18:41.327628+00:00",
+  "generated_at": "2026-09-28T05:24:04.481941+00:00",
   "summary": {
-    "items": 46,
+    "items": 47,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -9,7 +9,9 @@
       "Stack Overflow",
       "agent",
       "agentic",
+      "ai-design",
       "anthropic",
+      "artificial-consciousness",
       "artificial-intelligence",
       "automation",
       "azure",
@@ -100,6 +102,30 @@
   },
   "featured": [
     {
+      "id": "se-ai-50753-agi-vs-current-ai-how-will-we-be-able-to-differentiate",
+      "title": "AGI vs current AI how will we be able to differentiate?",
+      "question": "I dont know if this is the right site to ask it but suppose we create a AGI , how would be able to differentiate from current LLMs?I mean what tests would a AGI pass that current LLMs cannot?",
+      "answer": "My sense is that the main differentiator would be not so much one \"intelligence test,\" but rather the ability to reliably show that the system can outperform current LLMs on things they currently perform poorly on. For example, I'd look at: Can long-horizon planning breakdown and achieve a complex task over many steps without a human in the loop? Continual learning: Are there mechanisms in the model for it to take in new experiences, learn from them and use that experience in the future without retraining? Transfer/generalization: Can it truly not know the situation, with a new setting completely unlike what it trained on? Autonomous reasoning: Does it realize when it is on the wrong track, adapt its plan and still be able to reach its goal? Self-motivated goals: Could it generate and follow through with goals of its own that are not directly reflected in the prompt? I would also design the tests to be more flexible and interactive. A real AGI should be able to consistently handle problems it has never seen before in different areas of knowledge, changing its approach according to the trial-and-error it receives. That is much more significant than a higher score on current benchmarks. The challenge is in defining a test that doesn't end up being yet another goodie to be written for and optimized for by subsequent systems.",
+      "summary": "My sense is that the main differentiator would be not so much one \"intelligence test,\" but rather the ability to reliably show that the system can outperform current LLMs on things they currently perform poorly on. For...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "ai-design",
+        "artificial-consciousness"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ProcessPro",
+      "source_url": "https://ai.stackexchange.com/questions/50753/agi-vs-current-ai-how-will-we-be-able-to-differentiate",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 1; answer score: 2.",
+        "Viewed 62 times on the source site."
+      ],
+      "created_at": "2026-09-21T20:02:48+00:00",
+      "curated_at": "2026-09-28T05:24:03.362882+00:00",
+      "path": "posts/se-ai-50753-agi-vs-current-ai-how-will-we-be-able-to-differentiate.md"
+    },
+    {
       "id": "se-genai-2920-how-can-we-increase-awareness-when-learning-new-things-with-ai",
       "title": "How can we increase awareness when learning new things with AI?",
       "question": "Some intrinsic structures of AI can sometimes struggle significantly when learning something, dealing with other things, or incorporating an unknown part into something. I mean misdirection, manipulation, hallucinated content exposure, etc. some causation end up post-exposure side effects like frustration and the AI drift to a very distinct point. Are there a specialized prompt addition, any key questions, methodologies or something else like methodology, that decreases the probable side effects of re-exposure? Especially ask the right questions, move forward, or otherwise improve our way of learning? We're not really aware of new thing's mechanics, interactions etc., so maybe we end up mis...",
@@ -118,10 +144,10 @@
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 3.",
-        "Viewed 674 times on the source site."
+        "Viewed 678 times on the source site."
       ],
       "created_at": "2026-09-19T08:59:05+00:00",
-      "curated_at": "2026-09-27T05:18:39.932582+00:00",
+      "curated_at": "2026-09-28T05:24:02.732504+00:00",
       "path": "posts/se-genai-2920-how-can-we-increase-awareness-when-learning-new-things-with-ai.md"
     },
     {
@@ -224,33 +250,33 @@
       "created_at": "2026-08-31T11:19:40+00:00",
       "curated_at": "2026-09-14T04:56:53.977187+00:00",
       "path": "posts/se-genai-2903-claude-over-multiple-visual-studio-solutions.md"
-    },
-    {
-      "id": "se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin",
-      "title": "How should AI-generated Python code be tested and reviewed before merging?",
-      "question": "I'm using an AI coding assistant to generate and modify Python code in a Django/FastAPI backend. When the AI assistant generates or modifies code, should it be reviewed and tested in the same way as manually written code before merging? For example, should it go through code review, automated tests, linting, and security checks? Are there any additional review or testing steps needed for AI-generated Python code?",
-      "answer": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integration tests, linting/type checking, dependency and security scanning, and CI checks before merge. I would add one extra rule for AI-generated code: review the assumptions, not only the syntax. LLMs can produce perfectly plausible code that calls the wrong API, mishandles edge cases, weakens authentication/authorization, or invents dependencies. A practical workflow nowadays is: [code omitted] For a Pythonic Django/FastAPI project, this could mean pytest + coverage, ruff / black , mypy or pyright , bandit, dependency scanning such as Dependabot / Snyk , and optionally CodeQL in GitHub Actions. The PR should still require a human reviewer. Potentially, AI review can be useful as an additional reviewer , not the final authority. For example, GitHub Copilot can automatically review pull requests and identify bugs, security issues, and style problems, but GitHub itself recommends validating its feedback and supplementing it with human review. For example, should it go through code review, automated tests, linting, and security checks? OWASP's recent guidance for AI-assisted coding specifically recommends sandboxing coding agents, auditing AI-suggested dependencies, prot...",
-      "summary": "Are there any additional review or testing steps needed for AI-generated Python code? AI-generated code should not be treated as trusted code. It should pass the normal development pipeline: human review, unit/integrati...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "python",
-        "coding"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Mario",
-      "source_url": "https://genai.stackexchange.com/questions/2905/how-should-ai-generated-python-code-be-tested-and-reviewed-before-merging",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 3; answer score: 3.",
-        "Viewed 1159 times on the source site."
-      ],
-      "created_at": "2026-08-31T17:40:17+00:00",
-      "curated_at": "2026-09-14T04:56:53.853910+00:00",
-      "path": "posts/se-genai-2905-how-should-ai-generated-python-code-be-tested-and-reviewed-before-mergin.md"
     }
   ],
   "entries": [
+    {
+      "id": "se-ai-50753-agi-vs-current-ai-how-will-we-be-able-to-differentiate",
+      "title": "AGI vs current AI how will we be able to differentiate?",
+      "question": "I dont know if this is the right site to ask it but suppose we create a AGI , how would be able to differentiate from current LLMs?I mean what tests would a AGI pass that current LLMs cannot?",
+      "answer": "My sense is that the main differentiator would be not so much one \"intelligence test,\" but rather the ability to reliably show that the system can outperform current LLMs on things they currently perform poorly on. For example, I'd look at: Can long-horizon planning breakdown and achieve a complex task over many steps without a human in the loop? Continual learning: Are there mechanisms in the model for it to take in new experiences, learn from them and use that experience in the future without retraining? Transfer/generalization: Can it truly not know the situation, with a new setting completely unlike what it trained on? Autonomous reasoning: Does it realize when it is on the wrong track, adapt its plan and still be able to reach its goal? Self-motivated goals: Could it generate and follow through with goals of its own that are not directly reflected in the prompt? I would also design the tests to be more flexible and interactive. A real AGI should be able to consistently handle problems it has never seen before in different areas of knowledge, changing its approach according to the trial-and-error it receives. That is much more significant than a higher score on current benchmarks. The challenge is in defining a test that doesn't end up being yet another goodie to be written for and optimized for by subsequent systems.",
+      "summary": "My sense is that the main differentiator would be not so much one \"intelligence test,\" but rather the ability to reliably show that the system can outperform current LLMs on things they currently perform poorly on. For...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "ai-design",
+        "artificial-consciousness"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ProcessPro",
+      "source_url": "https://ai.stackexchange.com/questions/50753/agi-vs-current-ai-how-will-we-be-able-to-differentiate",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 1; answer score: 2.",
+        "Viewed 62 times on the source site."
+      ],
+      "created_at": "2026-09-21T20:02:48+00:00",
+      "curated_at": "2026-09-28T05:24:03.362882+00:00",
+      "path": "posts/se-ai-50753-agi-vs-current-ai-how-will-we-be-able-to-differentiate.md"
+    },
     {
       "id": "se-genai-2920-how-can-we-increase-awareness-when-learning-new-things-with-ai",
       "title": "How can we increase awareness when learning new things with AI?",
@@ -270,10 +296,10 @@
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 3.",
-        "Viewed 674 times on the source site."
+        "Viewed 678 times on the source site."
       ],
       "created_at": "2026-09-19T08:59:05+00:00",
-      "curated_at": "2026-09-27T05:18:39.932582+00:00",
+      "curated_at": "2026-09-28T05:24:02.732504+00:00",
       "path": "posts/se-genai-2920-how-can-we-increase-awareness-when-learning-new-things-with-ai.md"
     },
     {

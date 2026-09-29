@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T05:24:04.481941+00:00",
+  "generated_at": "2026-09-29T05:44:07.888219+00:00",
   "summary": {
     "items": 47,
     "tags": [
@@ -119,10 +119,10 @@
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
         "Question score: 1; answer score: 2.",
-        "Viewed 62 times on the source site."
+        "Viewed 74 times on the source site."
       ],
       "created_at": "2026-09-21T20:02:48+00:00",
-      "curated_at": "2026-09-28T05:24:03.362882+00:00",
+      "curated_at": "2026-09-29T05:44:07.121090+00:00",
       "path": "posts/se-ai-50753-agi-vs-current-ai-how-will-we-be-able-to-differentiate.md"
     },
     {
@@ -144,10 +144,10 @@
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 3.",
-        "Viewed 678 times on the source site."
+        "Viewed 685 times on the source site."
       ],
       "created_at": "2026-09-19T08:59:05+00:00",
-      "curated_at": "2026-09-28T05:24:02.732504+00:00",
+      "curated_at": "2026-09-29T05:44:06.820239+00:00",
       "path": "posts/se-genai-2920-how-can-we-increase-awareness-when-learning-new-things-with-ai.md"
     },
     {
@@ -271,10 +271,10 @@
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
         "Question score: 1; answer score: 2.",
-        "Viewed 62 times on the source site."
+        "Viewed 74 times on the source site."
       ],
       "created_at": "2026-09-21T20:02:48+00:00",
-      "curated_at": "2026-09-28T05:24:03.362882+00:00",
+      "curated_at": "2026-09-29T05:44:07.121090+00:00",
       "path": "posts/se-ai-50753-agi-vs-current-ai-how-will-we-be-able-to-differentiate.md"
     },
     {
@@ -296,10 +296,10 @@
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 3.",
-        "Viewed 678 times on the source site."
+        "Viewed 685 times on the source site."
       ],
       "created_at": "2026-09-19T08:59:05+00:00",
-      "curated_at": "2026-09-28T05:24:02.732504+00:00",
+      "curated_at": "2026-09-29T05:44:06.820239+00:00",
       "path": "posts/se-genai-2920-how-can-we-increase-awareness-when-learning-new-things-with-ai.md"
     },
     {

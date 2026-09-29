@@ -1,6 +1,6 @@
 # How can we increase awareness when learning new things with AI?
 
-Curated at: `2026-09-28T05:24:02.732504+00:00`
+Curated at: `2026-09-29T05:44:06.820239+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, llm, hallucination, llm-bias`
@@ -11,7 +11,7 @@ Source: https://genai.stackexchange.com/questions/2920/how-can-we-increase-aware
 
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 2; answer score: 3.
-- Viewed 678 times on the source site.
+- Viewed 685 times on the source site.
 
 ## Question
 

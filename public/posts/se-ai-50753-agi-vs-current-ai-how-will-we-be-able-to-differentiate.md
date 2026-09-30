@@ -1,6 +1,6 @@
 # AGI vs current AI how will we be able to differentiate?
 
-Curated at: `2026-09-29T05:44:07.121090+00:00`
+Curated at: `2026-09-30T05:32:35.900076+00:00`
 Model: `Public Q&A`
 Author: `ProcessPro`
 Tags: `public-q&a, AI Stack Exchange, ai-design, artificial-consciousness`
@@ -11,7 +11,7 @@ Source: https://ai.stackexchange.com/questions/50753/agi-vs-current-ai-how-will-
 
 - Public Q&A from AI Stack Exchange.
 - Question score: 1; answer score: 2.
-- Viewed 74 times on the source site.
+- Viewed 97 times on the source site.
 
 ## Question
 

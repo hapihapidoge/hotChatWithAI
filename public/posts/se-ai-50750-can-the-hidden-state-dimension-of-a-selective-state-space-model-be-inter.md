@@ -1,6 +1,6 @@
 # Can the hidden-state dimension of a selective state-space model be interpreted as an effective tensor-network bond dimension?
 
-Curated at: `2026-10-01T05:54:07.090418+00:00`
+Curated at: `2026-10-02T05:37:21.336236+00:00`
 Model: `Public Q&A`
 Author: `Enzo Carpanetti`
 Tags: `public-q&a, AI Stack Exchange, neural-networks, machine-learning, deep-learning, computational-learning-theory, representation-learning`

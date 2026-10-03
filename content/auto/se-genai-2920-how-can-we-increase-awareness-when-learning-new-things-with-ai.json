@@ -16,11 +16,11 @@
   "source_url": "https://genai.stackexchange.com/questions/2920/how-can-we-increase-awareness-when-learning-new-things-with-ai",
   "quality_signals": [
     "Public Q&A from GenAI Stack Exchange.",
-    "Question score: 2; answer score: 3.",
-    "Viewed 710 times on the source site."
+    "Question score: 1; answer score: 3.",
+    "Viewed 718 times on the source site."
   ],
   "created_at": "2026-09-19T08:59:05+00:00",
-  "curated_at": "2026-10-02T05:37:20.848603+00:00",
+  "curated_at": "2026-10-03T05:18:53.916022+00:00",
   "license": "Stack Exchange content is user-contributed and requires source attribution.",
   "source": "GenAI Stack Exchange"
 }

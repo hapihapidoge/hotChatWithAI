@@ -3,25 +3,25 @@
     "id": "se-ai-50753-agi-vs-current-ai-how-will-we-be-able-to-differentiate",
     "title": "AGI vs current AI how will we be able to differentiate?",
     "path": "posts/se-ai-50753-agi-vs-current-ai-how-will-we-be-able-to-differentiate.md",
-    "curated_at": "2026-10-02T05:37:21.510959+00:00"
+    "curated_at": "2026-10-03T05:18:54.419147+00:00"
+  },
+  {
+    "id": "se-ai-50762-llm-always-returns-17-when-i-ask-it-give-me-a-number-between-1-and-30",
+    "title": "LLM always returns 17 when I ask it 'Give me a number between 1 and 30'",
+    "path": "posts/se-ai-50762-llm-always-returns-17-when-i-ask-it-give-me-a-number-between-1-and-30.md",
+    "curated_at": "2026-10-03T05:18:54.303011+00:00"
+  },
+  {
+    "id": "se-genai-2920-how-can-we-increase-awareness-when-learning-new-things-with-ai",
+    "title": "How can we increase awareness when learning new things with AI?",
+    "path": "posts/se-genai-2920-how-can-we-increase-awareness-when-learning-new-things-with-ai.md",
+    "curated_at": "2026-10-03T05:18:53.916022+00:00"
   },
   {
     "id": "se-ai-50750-can-the-hidden-state-dimension-of-a-selective-state-space-model-be-inter",
     "title": "Can the hidden-state dimension of a selective state-space model be interpreted as an effective tensor-network bond dimension?",
     "path": "posts/se-ai-50750-can-the-hidden-state-dimension-of-a-selective-state-space-model-be-inter.md",
     "curated_at": "2026-10-02T05:37:21.336236+00:00"
-  },
-  {
-    "id": "se-ai-50762-llm-always-returns-17-when-i-ask-it-give-me-a-number-between-1-and-30",
-    "title": "LLM always returns 17 when I ask it 'Give me a number between 1 and 30'",
-    "path": "posts/se-ai-50762-llm-always-returns-17-when-i-ask-it-give-me-a-number-between-1-and-30.md",
-    "curated_at": "2026-10-02T05:37:21.250730+00:00"
-  },
-  {
-    "id": "se-genai-2920-how-can-we-increase-awareness-when-learning-new-things-with-ai",
-    "title": "How can we increase awareness when learning new things with AI?",
-    "path": "posts/se-genai-2920-how-can-we-increase-awareness-when-learning-new-things-with-ai.md",
-    "curated_at": "2026-10-02T05:37:20.848603+00:00"
   },
   {
     "id": "se-ai-50761-agi-running-on-a-analog-computer",

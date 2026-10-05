@@ -16,10 +16,10 @@
   "quality_signals": [
     "Public Q&A from AI Stack Exchange.",
     "Question score: 1; answer score: 2.",
-    "Viewed 127 times on the source site."
+    "Viewed 129 times on the source site."
   ],
   "created_at": "2026-09-21T20:02:48+00:00",
-  "curated_at": "2026-10-04T05:53:22.078066+00:00",
+  "curated_at": "2026-10-05T05:40:34.131870+00:00",
   "license": "Stack Exchange content is user-contributed and requires source attribution.",
   "source": "AI Stack Exchange"
 }

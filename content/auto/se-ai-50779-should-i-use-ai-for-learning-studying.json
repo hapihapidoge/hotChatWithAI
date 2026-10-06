@@ -1,0 +1,25 @@
+{
+  "id": "se-ai-50779-should-i-use-ai-for-learning-studying",
+  "title": "Should I use AI for learning/studying?",
+  "question": "I am wondering if I should use AI for learning, but specifically for the following part: In order to learn a concept it helps a lot to try to connect it to other already known concepts. The way I sometimes use AI is to simplify the concept I am trying to learn and make that connections for me. This for sure makes the process of learning easier and faster, but is it worth it or will it damage me in the long run?",
+  "answer": "An LLM is a very powerful tutor. It is always available, know basically the whole internet and is actually very good at explaining. They are also very patient and forgiving cough cough stack exchange . There are however a few caveats LLMs can be wrong sometimes. They have gotten better and textbooks also contain misstakes sometimes, but while textbook misstakes are often small typos, LLMs can be wrong in important concepts and will do so very confidently. Be aware what you are reading might be wrong. Try to cross check. Also, try sticking to questions that are well known in literature. Use it or lose it. If you use AI to do all the thinking, you will not getter better at it or maybe even worse. When I started using the AI, I sometimes got the urge to use it for even small obstacles. This is your brain wanting to do the easy option. Be sure to incorporate exercises into your learning and be sure not too offhand important thinking. Struggling is an important part of learning: if you ask for the solutions to a problem after only trying for one second, you are missing out on learning. Text books will give you a more structured form of learning. The author has oversight of the topic and knows what is important to learn. LLMs used on their own will just lead to your deeper and deeper tangents. To combat this, you could use a textbook as main study material, and use AI if you want cl...",
+  "summary": "An LLM is a very powerful tutor. It is always available, know basically the whole internet and is actually very good at explaining. They are also very patient and forgiving cough cough stack exchange . There are however...",
+  "tags": [
+    "public-q&a",
+    "AI Stack Exchange",
+    "large-language-models",
+    "brain"
+  ],
+  "model": "Public Q&A",
+  "author_alias": "AccidentalTaylorExpansion",
+  "source_url": "https://ai.stackexchange.com/questions/50779/should-i-use-ai-for-learning-studying",
+  "quality_signals": [
+    "Public Q&A from AI Stack Exchange.",
+    "Question score: 2; answer score: 3.",
+    "Viewed 577 times on the source site."
+  ],
+  "created_at": "2026-10-04T07:43:04+00:00",
+  "curated_at": "2026-10-06T06:20:49.706670+00:00",
+  "license": "Stack Exchange content is user-contributed and requires source attribution.",
+  "source": "AI Stack Exchange"
+}

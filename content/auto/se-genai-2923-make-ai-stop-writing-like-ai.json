@@ -1,0 +1,24 @@
+{
+  "id": "se-genai-2923-make-ai-stop-writing-like-ai",
+  "title": "Make AI stop writing like AI",
+  "question": "Does anyone have a prompt that gets AI to not be so annoying in how it writes? For instance, I don't want the smarmy breathless marketing-speak, constant pummeling with short punchy sentences, \"X not Y\", vague excited-sounding claims that are not concrete, constantly telling me what it's not, inventing custom improvised noun phrases and then using them without introducing them or defining what they mean, technical word salad, sycophancy, signposting (e.g., \"here's the key\"), vapid meaningless bullshit, etc. And, I'm tired of overused technical jargon like \"load-bearing\", \"gate\", \"land\", \"seam\", \"shape\", \"boundary\", \"topology\", \"surface\", \"backstop\", etc., and content-free sycophantic/intens...",
+  "answer": "TL;DR Be short, specific, and structured Iterate Check what matters That’s it AI writing style The typical AI writing style is created through training and post-training. The model learns from many texts and is then optimized to generate responses that are rated as helpful, friendly, clear, professional, etc. And they are trying to make the models sound natural and cool, which is why you get all this AI bullshit. As a result, certain patterns can become more pronounced, which is increasingly the case currently, such as excessive structuring, filler phrases, short punchy sentences, or agreeable phrasing. The problem is that models don’t always reliably follow long style prompts, especially when the style rules and the actual task are mixed together. Thats why you should define a short and clear block with the permanent writing rules and separate it from the actual question or task. Then the concrete task comes in its own section, so it’s clear that: These are the rules and this is what you’re supposed to do now A few prioritized rules usually work better than a long list of individual forbidden words and phrases. So the model can briefly check its answer against the rules and silently correct any problematic phrasing. From my observation, without going into too much detail right now, prompts have not been followed as reliably by many models since the beginning of the year. Espe...",
+  "summary": "TL;DR Be short, specific, and structured Iterate Check what matters That’s it AI writing style The typical AI writing style is created through training and post-training. The model learns from many texts and is then opt...",
+  "tags": [
+    "public-q&a",
+    "GenAI Stack Exchange",
+    "prompting"
+  ],
+  "model": "Public Q&A",
+  "author_alias": "ReflectYourCharacter",
+  "source_url": "https://genai.stackexchange.com/questions/2923/make-ai-stop-writing-like-ai",
+  "quality_signals": [
+    "Public Q&A from GenAI Stack Exchange.",
+    "Question score: 1; answer score: 1.",
+    "Viewed 109 times on the source site."
+  ],
+  "created_at": "2026-09-24T18:47:03+00:00",
+  "curated_at": "2026-10-07T05:59:40.251145+00:00",
+  "license": "Stack Exchange content is user-contributed and requires source attribution.",
+  "source": "GenAI Stack Exchange"
+}

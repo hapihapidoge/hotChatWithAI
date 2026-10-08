@@ -1,6 +1,6 @@
 # Make AI stop writing like AI
 
-Curated at: `2026-10-07T05:59:40.251145+00:00`
+Curated at: `2026-10-08T06:04:12.162857+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, prompting`
@@ -11,7 +11,7 @@ Source: https://genai.stackexchange.com/questions/2923/make-ai-stop-writing-like
 
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 1; answer score: 1.
-- Viewed 109 times on the source site.
+- Viewed 117 times on the source site.
 
 ## Question
 

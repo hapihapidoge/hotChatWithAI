@@ -1,6 +1,6 @@
 # LLM always returns 17 when I ask it 'Give me a number between 1 and 30'
 
-Curated at: `2026-10-08T06:04:12.478868+00:00`
+Curated at: `2026-10-09T06:08:53.904631+00:00`
 Model: `Public Q&A`
 Author: `Toph`
 Tags: `public-q&a, AI Stack Exchange, large-language-models, chatgpt`
@@ -12,7 +12,7 @@ Source: https://ai.stackexchange.com/questions/50762/llm-always-returns-17-when-
 - Public Q&A from AI Stack Exchange.
 - Question score: 12; answer score: 24.
 - The answer was accepted by the question author.
-- Viewed 3086 times on the source site.
+- Viewed 3103 times on the source site.
 
 ## Question
 

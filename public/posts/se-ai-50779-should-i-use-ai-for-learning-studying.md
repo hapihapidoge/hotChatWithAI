@@ -1,9 +1,9 @@
 # Should I use AI for learning/studying?
 
-Curated at: `2026-10-11T05:46:45.381548+00:00`
+Curated at: `2026-10-12T05:58:14.664008+00:00`
 Model: `Public Q&A`
 Author: `AccidentalTaylorExpansion`
-Tags: `public-q&a, AI Stack Exchange, large-language-models, brain`
+Tags: `public-q&a, AI Stack Exchange, large-language-models, education`
 Source: https://ai.stackexchange.com/questions/50779/should-i-use-ai-for-learning-studying
 
 
@@ -11,7 +11,7 @@ Source: https://ai.stackexchange.com/questions/50779/should-i-use-ai-for-learnin
 
 - Public Q&A from AI Stack Exchange.
 - Question score: 3; answer score: 8.
-- Viewed 1213 times on the source site.
+- Viewed 1229 times on the source site.
 
 ## Question
 

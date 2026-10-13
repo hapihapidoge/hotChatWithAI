@@ -1,0 +1,25 @@
+{
+  "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
+  "title": "How can I see which model Gemini uses?",
+  "question": "I use Gemini free version. Since a few days ago, I can't see which models it uses: How can I see which model Gemini uses?",
+  "answer": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that need deeper reasoning may go to Flash or Pro. ... If smart model selection is turned off, chats for users without an AI plan will use Flash-Lite for all responses. Note that even a Plus user (practically free with various promos) will soon also lose the ability to pick Pro option",
+  "summary": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that n...",
+  "tags": [
+    "public-q&a",
+    "GenAI Stack Exchange",
+    "gemini"
+  ],
+  "model": "Public Q&A",
+  "author_alias": "Martheen",
+  "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
+  "quality_signals": [
+    "Public Q&A from GenAI Stack Exchange.",
+    "Question score: 0; answer score: 1.",
+    "The answer was accepted by the question author.",
+    "Viewed 19 times on the source site."
+  ],
+  "created_at": "2026-10-12T08:23:23+00:00",
+  "curated_at": "2026-10-13T06:47:04.670367+00:00",
+  "license": "Stack Exchange content is user-contributed and requires source attribution.",
+  "source": "GenAI Stack Exchange"
+}

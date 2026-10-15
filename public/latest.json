@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T04:53:58.169263+00:00",
+  "generated_at": "2026-10-15T04:39:05.404294+00:00",
   "summary": {
-    "items": 54,
+    "items": 56,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -23,6 +23,7 @@
       "claude",
       "claude-code",
       "claude-desktop",
+      "codex",
       "coding",
       "comparison",
       "computational-complexity",
@@ -126,11 +127,61 @@
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
         "Question score: 2; answer score: 8.",
-        "Viewed 1246 times on the source site."
+        "Viewed 1257 times on the source site."
       ],
       "created_at": "2026-10-04T07:43:04+00:00",
-      "curated_at": "2026-10-14T04:53:57.295336+00:00",
+      "curated_at": "2026-10-15T04:39:04.824235+00:00",
       "path": "posts/se-ai-50779-should-i-use-ai-for-learning-studying.md"
+    },
+    {
+      "id": "se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset",
+      "title": "Why can’t I redeem an available Codex usage-limit reset?",
+      "question": "I have a Codex usage-limit reset that is about to expire, but attempting to use it says I have nothing to reset. How do I use the reset?",
+      "answer": "Using a reset requires your remaining allowance to be below a threshold (estimated at 10% based on the automatic reset setting). Docs : If there is nothing to reset, it remains available.",
+      "summary": "Using a reset requires your remaining allowance to be below a threshold (estimated at 10% based on the automatic reset setting). Docs : If there is nothing to reset, it remains available.",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "openai",
+        "codex"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "JBallin",
+      "source_url": "https://genai.stackexchange.com/questions/2942/why-can-t-i-redeem-an-available-codex-usage-limit-reset",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 14 times on the source site."
+      ],
+      "created_at": "2026-10-10T15:01:16+00:00",
+      "curated_at": "2026-10-15T04:39:04.646296+00:00",
+      "path": "posts/se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset.md"
+    },
+    {
+      "id": "se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset",
+      "title": "How can I see the expiration time of a Codex usage-limit reset?",
+      "question": "In Usage settings, I can see the date when my Codex usage-limit reset expires. How can I see the exact expiration time?",
+      "answer": "Hovering over the reset reveals a tooltip with an exact expiration timestamp.",
+      "summary": "Hovering over the reset reveals a tooltip with an exact expiration timestamp.",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "openai",
+        "codex"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "JBallin",
+      "source_url": "https://genai.stackexchange.com/questions/2940/how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 17 times on the source site."
+      ],
+      "created_at": "2026-10-10T14:37:56+00:00",
+      "curated_at": "2026-10-15T04:39:04.570497+00:00",
+      "path": "posts/se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset.md"
     },
     {
       "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
@@ -148,12 +199,12 @@
       "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 1.",
+        "Question score: 1; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 22 times on the source site."
+        "Viewed 35 times on the source site."
       ],
       "created_at": "2026-10-12T08:23:23+00:00",
-      "curated_at": "2026-10-14T04:53:56.982148+00:00",
+      "curated_at": "2026-10-15T04:39:04.498507+00:00",
       "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
     },
     {
@@ -176,10 +227,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 146 times on the source site."
+        "Viewed 155 times on the source site."
       ],
       "created_at": "2026-10-11T12:16:18+00:00",
-      "curated_at": "2026-10-14T04:53:56.846370+00:00",
+      "curated_at": "2026-10-15T04:39:04.431556+00:00",
       "path": "posts/se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation.md"
     },
     {
@@ -206,53 +257,6 @@
       "created_at": "2026-09-29T00:44:16+00:00",
       "curated_at": "2026-10-12T05:58:14.581133+00:00",
       "path": "posts/se-ai-50762-llm-always-returns-17-when-i-ask-it-give-me-a-number-between-1-and-30.md"
-    },
-    {
-      "id": "se-genai-2923-make-ai-stop-writing-like-ai",
-      "title": "Make AI stop writing like AI",
-      "question": "Does anyone have a prompt that gets AI to not be so annoying in how it writes? For instance, I don't want the smarmy breathless marketing-speak, constant pummeling with short punchy sentences, \"X not Y\", vague excited-sounding claims that are not concrete, constantly telling me what it's not, inventing custom improvised noun phrases and then using them without introducing them or defining what they mean, technical word salad, sycophancy, signposting (e.g., \"here's the key\"), vapid meaningless bullshit, etc. And, I'm tired of overused technical jargon like \"load-bearing\", \"gate\", \"land\", \"seam\", \"shape\", \"boundary\", \"topology\", \"surface\", \"backstop\", etc., and content-free sycophantic/intens...",
-      "answer": "TL;DR Be short, specific, and structured Iterate Check what matters That’s it AI writing style The typical AI writing style is created through training and post-training. The model learns from many texts and is then optimized to generate responses that are rated as helpful, friendly, clear, professional, etc. And they are trying to make the models sound natural and cool, which is why you get all this AI bullshit. As a result, certain patterns can become more pronounced, which is increasingly the case currently, such as excessive structuring, filler phrases, short punchy sentences, or agreeable phrasing. The problem is that models don’t always reliably follow long style prompts, especially when the style rules and the actual task are mixed together. Thats why you should define a short and clear block with the permanent writing rules and separate it from the actual question or task. Then the concrete task comes in its own section, so it’s clear that: These are the rules and this is what you’re supposed to do now A few prioritized rules usually work better than a long list of individual forbidden words and phrases. So the model can briefly check its answer against the rules and silently correct any problematic phrasing. From my observation, without going into too much detail right now, prompts have not been followed as reliably by many models since the beginning of the year. Espe...",
-      "summary": "TL;DR Be short, specific, and structured Iterate Check what matters That’s it AI writing style The typical AI writing style is created through training and post-training. The model learns from many texts and is then opt...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "prompting"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2923/make-ai-stop-writing-like-ai",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 1.",
-        "Viewed 117 times on the source site."
-      ],
-      "created_at": "2026-09-24T18:47:03+00:00",
-      "curated_at": "2026-10-08T06:04:12.162857+00:00",
-      "path": "posts/se-genai-2923-make-ai-stop-writing-like-ai.md"
-    },
-    {
-      "id": "se-ai-50753-agi-vs-current-ai-how-will-we-be-able-to-differentiate",
-      "title": "AGI vs current AI how will we be able to differentiate?",
-      "question": "I dont know if this is the right site to ask it but suppose we create a AGI , how would be able to differentiate from current LLMs?I mean what tests would a AGI pass that current LLMs cannot?",
-      "answer": "My sense is that the main differentiator would be not so much one \"intelligence test,\" but rather the ability to reliably show that the system can outperform current LLMs on things they currently perform poorly on. For example, I'd look at: Can long-horizon planning breakdown and achieve a complex task over many steps without a human in the loop? Continual learning: Are there mechanisms in the model for it to take in new experiences, learn from them and use that experience in the future without retraining? Transfer/generalization: Can it truly not know the situation, with a new setting completely unlike what it trained on? Autonomous reasoning: Does it realize when it is on the wrong track, adapt its plan and still be able to reach its goal? Self-motivated goals: Could it generate and follow through with goals of its own that are not directly reflected in the prompt? I would also design the tests to be more flexible and interactive. A real AGI should be able to consistently handle problems it has never seen before in different areas of knowledge, changing its approach according to the trial-and-error it receives. That is much more significant than a higher score on current benchmarks. The challenge is in defining a test that doesn't end up being yet another goodie to be written for and optimized for by subsequent systems.",
-      "summary": "My sense is that the main differentiator would be not so much one \"intelligence test,\" but rather the ability to reliably show that the system can outperform current LLMs on things they currently perform poorly on. For...",
-      "tags": [
-        "public-q&a",
-        "AI Stack Exchange",
-        "ai-design",
-        "artificial-consciousness"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "ProcessPro",
-      "source_url": "https://ai.stackexchange.com/questions/50753/agi-vs-current-ai-how-will-we-be-able-to-differentiate",
-      "quality_signals": [
-        "Public Q&A from AI Stack Exchange.",
-        "Question score: 1; answer score: 2.",
-        "Viewed 129 times on the source site."
-      ],
-      "created_at": "2026-09-21T20:02:48+00:00",
-      "curated_at": "2026-10-05T05:40:34.131870+00:00",
-      "path": "posts/se-ai-50753-agi-vs-current-ai-how-will-we-be-able-to-differentiate.md"
     }
   ],
   "entries": [
@@ -274,11 +278,61 @@
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
         "Question score: 2; answer score: 8.",
-        "Viewed 1246 times on the source site."
+        "Viewed 1257 times on the source site."
       ],
       "created_at": "2026-10-04T07:43:04+00:00",
-      "curated_at": "2026-10-14T04:53:57.295336+00:00",
+      "curated_at": "2026-10-15T04:39:04.824235+00:00",
       "path": "posts/se-ai-50779-should-i-use-ai-for-learning-studying.md"
+    },
+    {
+      "id": "se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset",
+      "title": "Why can’t I redeem an available Codex usage-limit reset?",
+      "question": "I have a Codex usage-limit reset that is about to expire, but attempting to use it says I have nothing to reset. How do I use the reset?",
+      "answer": "Using a reset requires your remaining allowance to be below a threshold (estimated at 10% based on the automatic reset setting). Docs : If there is nothing to reset, it remains available.",
+      "summary": "Using a reset requires your remaining allowance to be below a threshold (estimated at 10% based on the automatic reset setting). Docs : If there is nothing to reset, it remains available.",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "openai",
+        "codex"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "JBallin",
+      "source_url": "https://genai.stackexchange.com/questions/2942/why-can-t-i-redeem-an-available-codex-usage-limit-reset",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 14 times on the source site."
+      ],
+      "created_at": "2026-10-10T15:01:16+00:00",
+      "curated_at": "2026-10-15T04:39:04.646296+00:00",
+      "path": "posts/se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset.md"
+    },
+    {
+      "id": "se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset",
+      "title": "How can I see the expiration time of a Codex usage-limit reset?",
+      "question": "In Usage settings, I can see the date when my Codex usage-limit reset expires. How can I see the exact expiration time?",
+      "answer": "Hovering over the reset reveals a tooltip with an exact expiration timestamp.",
+      "summary": "Hovering over the reset reveals a tooltip with an exact expiration timestamp.",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "openai",
+        "codex"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "JBallin",
+      "source_url": "https://genai.stackexchange.com/questions/2940/how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 17 times on the source site."
+      ],
+      "created_at": "2026-10-10T14:37:56+00:00",
+      "curated_at": "2026-10-15T04:39:04.570497+00:00",
+      "path": "posts/se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset.md"
     },
     {
       "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
@@ -296,12 +350,12 @@
       "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 1.",
+        "Question score: 1; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 22 times on the source site."
+        "Viewed 35 times on the source site."
       ],
       "created_at": "2026-10-12T08:23:23+00:00",
-      "curated_at": "2026-10-14T04:53:56.982148+00:00",
+      "curated_at": "2026-10-15T04:39:04.498507+00:00",
       "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
     },
     {
@@ -324,10 +378,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 146 times on the source site."
+        "Viewed 155 times on the source site."
       ],
       "created_at": "2026-10-11T12:16:18+00:00",
-      "curated_at": "2026-10-14T04:53:56.846370+00:00",
+      "curated_at": "2026-10-15T04:39:04.431556+00:00",
       "path": "posts/se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation.md"
     },
     {

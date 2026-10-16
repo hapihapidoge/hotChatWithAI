@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T04:39:05.404294+00:00",
+  "generated_at": "2026-10-16T04:31:49.562539+00:00",
   "summary": {
     "items": 56,
     "tags": [
@@ -127,10 +127,10 @@
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
         "Question score: 2; answer score: 8.",
-        "Viewed 1257 times on the source site."
+        "Viewed 1270 times on the source site."
       ],
       "created_at": "2026-10-04T07:43:04+00:00",
-      "curated_at": "2026-10-15T04:39:04.824235+00:00",
+      "curated_at": "2026-10-16T04:31:48.896191+00:00",
       "path": "posts/se-ai-50779-should-i-use-ai-for-learning-studying.md"
     },
     {
@@ -152,10 +152,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 14 times on the source site."
+        "Viewed 16 times on the source site."
       ],
       "created_at": "2026-10-10T15:01:16+00:00",
-      "curated_at": "2026-10-15T04:39:04.646296+00:00",
+      "curated_at": "2026-10-16T04:31:48.647956+00:00",
       "path": "posts/se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset.md"
     },
     {
@@ -177,35 +177,11 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 17 times on the source site."
+        "Viewed 18 times on the source site."
       ],
       "created_at": "2026-10-10T14:37:56+00:00",
-      "curated_at": "2026-10-15T04:39:04.570497+00:00",
+      "curated_at": "2026-10-16T04:31:48.537706+00:00",
       "path": "posts/se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset.md"
-    },
-    {
-      "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
-      "title": "How can I see which model Gemini uses?",
-      "question": "I use Gemini free version. Since a few days ago, I can't see which models it uses: How can I see which model Gemini uses?",
-      "answer": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that need deeper reasoning may go to Flash or Pro. ... If smart model selection is turned off, chats for users without an AI plan will use Flash-Lite for all responses. Note that even a Plus user (practically free with various promos) will soon also lose the ability to pick Pro option",
-      "summary": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that n...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "gemini"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Martheen",
-      "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 2.",
-        "The answer was accepted by the question author.",
-        "Viewed 35 times on the source site."
-      ],
-      "created_at": "2026-10-12T08:23:23+00:00",
-      "curated_at": "2026-10-15T04:39:04.498507+00:00",
-      "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
     },
     {
       "id": "se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation",
@@ -227,11 +203,35 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 155 times on the source site."
+        "Viewed 169 times on the source site."
       ],
       "created_at": "2026-10-11T12:16:18+00:00",
-      "curated_at": "2026-10-15T04:39:04.431556+00:00",
+      "curated_at": "2026-10-16T04:31:48.450589+00:00",
       "path": "posts/se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation.md"
+    },
+    {
+      "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
+      "title": "How can I see which model Gemini uses?",
+      "question": "I use Gemini free version. Since a few days ago, I can't see which models it uses: How can I see which model Gemini uses?",
+      "answer": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that need deeper reasoning may go to Flash or Pro. ... If smart model selection is turned off, chats for users without an AI plan will use Flash-Lite for all responses. Note that even a Plus user (practically free with various promos) will soon also lose the ability to pick Pro option",
+      "summary": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that n...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "gemini"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Martheen",
+      "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 3.",
+        "The answer was accepted by the question author.",
+        "Viewed 163 times on the source site."
+      ],
+      "created_at": "2026-10-12T08:23:23+00:00",
+      "curated_at": "2026-10-16T04:31:48.324170+00:00",
+      "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
     },
     {
       "id": "se-ai-50762-llm-always-returns-17-when-i-ask-it-give-me-a-number-between-1-and-30",
@@ -278,10 +278,10 @@
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
         "Question score: 2; answer score: 8.",
-        "Viewed 1257 times on the source site."
+        "Viewed 1270 times on the source site."
       ],
       "created_at": "2026-10-04T07:43:04+00:00",
-      "curated_at": "2026-10-15T04:39:04.824235+00:00",
+      "curated_at": "2026-10-16T04:31:48.896191+00:00",
       "path": "posts/se-ai-50779-should-i-use-ai-for-learning-studying.md"
     },
     {
@@ -303,10 +303,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 14 times on the source site."
+        "Viewed 16 times on the source site."
       ],
       "created_at": "2026-10-10T15:01:16+00:00",
-      "curated_at": "2026-10-15T04:39:04.646296+00:00",
+      "curated_at": "2026-10-16T04:31:48.647956+00:00",
       "path": "posts/se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset.md"
     },
     {
@@ -328,35 +328,11 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 17 times on the source site."
+        "Viewed 18 times on the source site."
       ],
       "created_at": "2026-10-10T14:37:56+00:00",
-      "curated_at": "2026-10-15T04:39:04.570497+00:00",
+      "curated_at": "2026-10-16T04:31:48.537706+00:00",
       "path": "posts/se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset.md"
-    },
-    {
-      "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
-      "title": "How can I see which model Gemini uses?",
-      "question": "I use Gemini free version. Since a few days ago, I can't see which models it uses: How can I see which model Gemini uses?",
-      "answer": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that need deeper reasoning may go to Flash or Pro. ... If smart model selection is turned off, chats for users without an AI plan will use Flash-Lite for all responses. Note that even a Plus user (practically free with various promos) will soon also lose the ability to pick Pro option",
-      "summary": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that n...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "gemini"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Martheen",
-      "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 2.",
-        "The answer was accepted by the question author.",
-        "Viewed 35 times on the source site."
-      ],
-      "created_at": "2026-10-12T08:23:23+00:00",
-      "curated_at": "2026-10-15T04:39:04.498507+00:00",
-      "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
     },
     {
       "id": "se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation",
@@ -378,11 +354,35 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 155 times on the source site."
+        "Viewed 169 times on the source site."
       ],
       "created_at": "2026-10-11T12:16:18+00:00",
-      "curated_at": "2026-10-15T04:39:04.431556+00:00",
+      "curated_at": "2026-10-16T04:31:48.450589+00:00",
       "path": "posts/se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation.md"
+    },
+    {
+      "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
+      "title": "How can I see which model Gemini uses?",
+      "question": "I use Gemini free version. Since a few days ago, I can't see which models it uses: How can I see which model Gemini uses?",
+      "answer": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that need deeper reasoning may go to Flash or Pro. ... If smart model selection is turned off, chats for users without an AI plan will use Flash-Lite for all responses. Note that even a Plus user (practically free with various promos) will soon also lose the ability to pick Pro option",
+      "summary": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that n...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "gemini"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Martheen",
+      "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 3.",
+        "The answer was accepted by the question author.",
+        "Viewed 163 times on the source site."
+      ],
+      "created_at": "2026-10-12T08:23:23+00:00",
+      "curated_at": "2026-10-16T04:31:48.324170+00:00",
+      "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
     },
     {
       "id": "se-ai-50762-llm-always-returns-17-when-i-ask-it-give-me-a-number-between-1-and-30",

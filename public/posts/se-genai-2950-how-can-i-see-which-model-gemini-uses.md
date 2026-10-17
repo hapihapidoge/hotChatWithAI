@@ -1,6 +1,6 @@
 # How can I see which model Gemini uses?
 
-Curated at: `2026-10-16T04:31:48.324170+00:00`
+Curated at: `2026-10-17T04:25:53.747094+00:00`
 Model: `Public Q&A`
 Author: `Martheen`
 Tags: `public-q&a, GenAI Stack Exchange, gemini`
@@ -10,9 +10,9 @@ Source: https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model
 ## Why It Is Good
 
 - Public Q&A from GenAI Stack Exchange.
-- Question score: 2; answer score: 3.
+- Question score: 3; answer score: 3.
 - The answer was accepted by the question author.
-- Viewed 163 times on the source site.
+- Viewed 274 times on the source site.
 
 ## Question
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T04:25:55.509835+00:00",
+  "generated_at": "2026-10-18T04:34:03.544017+00:00",
   "summary": {
     "items": 57,
     "tags": [
@@ -131,11 +131,11 @@
       "source_url": "https://ai.stackexchange.com/questions/50806/how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-proprietar",
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
-        "Question score: 1; answer score: 1.",
-        "Viewed 68 times on the source site."
+        "Question score: 2; answer score: 3.",
+        "Viewed 253 times on the source site."
       ],
       "created_at": "2026-10-14T13:41:30+00:00",
-      "curated_at": "2026-10-17T04:25:54.692328+00:00",
+      "curated_at": "2026-10-18T04:34:02.914450+00:00",
       "path": "posts/se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop.md"
     },
     {
@@ -155,11 +155,11 @@
       "source_url": "https://ai.stackexchange.com/questions/50779/should-i-use-ai-for-learning-studying",
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
-        "Question score: 2; answer score: 8.",
-        "Viewed 1278 times on the source site."
+        "Question score: 3; answer score: 9.",
+        "Viewed 1289 times on the source site."
       ],
       "created_at": "2026-10-04T07:43:04+00:00",
-      "curated_at": "2026-10-17T04:25:54.564053+00:00",
+      "curated_at": "2026-10-18T04:34:02.634355+00:00",
       "path": "posts/se-ai-50779-should-i-use-ai-for-learning-studying.md"
     },
     {
@@ -181,10 +181,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 16 times on the source site."
+        "Viewed 18 times on the source site."
       ],
       "created_at": "2026-10-10T15:01:16+00:00",
-      "curated_at": "2026-10-17T04:25:54.241689+00:00",
+      "curated_at": "2026-10-18T04:34:02.257505+00:00",
       "path": "posts/se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset.md"
     },
     {
@@ -209,7 +209,7 @@
         "Viewed 18 times on the source site."
       ],
       "created_at": "2026-10-10T14:37:56+00:00",
-      "curated_at": "2026-10-17T04:25:54.070333+00:00",
+      "curated_at": "2026-10-18T04:34:02.160754+00:00",
       "path": "posts/se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset.md"
     },
     {
@@ -232,10 +232,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 173 times on the source site."
+        "Viewed 176 times on the source site."
       ],
       "created_at": "2026-10-11T12:16:18+00:00",
-      "curated_at": "2026-10-17T04:25:53.879351+00:00",
+      "curated_at": "2026-10-18T04:34:02.081712+00:00",
       "path": "posts/se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation.md"
     },
     {
@@ -256,10 +256,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 3; answer score: 3.",
         "The answer was accepted by the question author.",
-        "Viewed 274 times on the source site."
+        "Viewed 346 times on the source site."
       ],
       "created_at": "2026-10-12T08:23:23+00:00",
-      "curated_at": "2026-10-17T04:25:53.747094+00:00",
+      "curated_at": "2026-10-18T04:34:01.992652+00:00",
       "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
     }
   ],
@@ -284,11 +284,11 @@
       "source_url": "https://ai.stackexchange.com/questions/50806/how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-proprietar",
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
-        "Question score: 1; answer score: 1.",
-        "Viewed 68 times on the source site."
+        "Question score: 2; answer score: 3.",
+        "Viewed 253 times on the source site."
       ],
       "created_at": "2026-10-14T13:41:30+00:00",
-      "curated_at": "2026-10-17T04:25:54.692328+00:00",
+      "curated_at": "2026-10-18T04:34:02.914450+00:00",
       "path": "posts/se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop.md"
     },
     {
@@ -308,11 +308,11 @@
       "source_url": "https://ai.stackexchange.com/questions/50779/should-i-use-ai-for-learning-studying",
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
-        "Question score: 2; answer score: 8.",
-        "Viewed 1278 times on the source site."
+        "Question score: 3; answer score: 9.",
+        "Viewed 1289 times on the source site."
       ],
       "created_at": "2026-10-04T07:43:04+00:00",
-      "curated_at": "2026-10-17T04:25:54.564053+00:00",
+      "curated_at": "2026-10-18T04:34:02.634355+00:00",
       "path": "posts/se-ai-50779-should-i-use-ai-for-learning-studying.md"
     },
     {
@@ -334,10 +334,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 16 times on the source site."
+        "Viewed 18 times on the source site."
       ],
       "created_at": "2026-10-10T15:01:16+00:00",
-      "curated_at": "2026-10-17T04:25:54.241689+00:00",
+      "curated_at": "2026-10-18T04:34:02.257505+00:00",
       "path": "posts/se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset.md"
     },
     {
@@ -362,7 +362,7 @@
         "Viewed 18 times on the source site."
       ],
       "created_at": "2026-10-10T14:37:56+00:00",
-      "curated_at": "2026-10-17T04:25:54.070333+00:00",
+      "curated_at": "2026-10-18T04:34:02.160754+00:00",
       "path": "posts/se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset.md"
     },
     {
@@ -385,10 +385,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 173 times on the source site."
+        "Viewed 176 times on the source site."
       ],
       "created_at": "2026-10-11T12:16:18+00:00",
-      "curated_at": "2026-10-17T04:25:53.879351+00:00",
+      "curated_at": "2026-10-18T04:34:02.081712+00:00",
       "path": "posts/se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation.md"
     },
     {
@@ -409,10 +409,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 3; answer score: 3.",
         "The answer was accepted by the question author.",
-        "Viewed 274 times on the source site."
+        "Viewed 346 times on the source site."
       ],
       "created_at": "2026-10-12T08:23:23+00:00",
-      "curated_at": "2026-10-17T04:25:53.747094+00:00",
+      "curated_at": "2026-10-18T04:34:01.992652+00:00",
       "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
     },
     {

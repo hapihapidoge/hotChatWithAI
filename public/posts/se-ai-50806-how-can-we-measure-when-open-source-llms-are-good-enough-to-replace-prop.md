@@ -1,6 +1,6 @@
 # How can we measure when open-source LLMs are "good enough" to replace proprietary frontier models like Claude/ChatGPT?
 
-Curated at: `2026-10-18T04:34:02.914450+00:00`
+Curated at: `2026-10-19T04:40:42.631042+00:00`
 Model: `Public Q&A`
 Author: `Chris `
 Tags: `public-q&a, AI Stack Exchange, comparison, large-language-models, performance, benchmarks, open-source`
@@ -10,8 +10,8 @@ Source: https://ai.stackexchange.com/questions/50806/how-can-we-measure-when-ope
 ## Why It Is Good
 
 - Public Q&A from AI Stack Exchange.
-- Question score: 2; answer score: 3.
-- Viewed 253 times on the source site.
+- Question score: 3; answer score: 5.
+- Viewed 441 times on the source site.
 
 ## Question
 

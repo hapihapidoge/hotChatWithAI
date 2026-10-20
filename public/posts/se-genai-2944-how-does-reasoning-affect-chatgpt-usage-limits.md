@@ -1,9 +1,9 @@
 # How does reasoning affect ChatGPT usage limits?
 
-Curated at: `2026-10-19T04:40:41.967650+00:00`
+Curated at: `2026-10-20T04:51:10.079444+00:00`
 Model: `Public Q&A`
 Author: `Mario`
-Tags: `public-q&a, GenAI Stack Exchange, chatgpt, openai`
+Tags: `public-q&a, GenAI Stack Exchange, chatgpt, openai, quota`
 Source: https://genai.stackexchange.com/questions/2944/how-does-reasoning-affect-chatgpt-usage-limits
 
 
@@ -11,7 +11,7 @@ Source: https://genai.stackexchange.com/questions/2944/how-does-reasoning-affect
 
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 1; answer score: 1.
-- Viewed 47 times on the source site.
+- Viewed 52 times on the source site.
 
 ## Question
 

@@ -1,6 +1,6 @@
 # Are there any usage limits for Gemini image generation?
 
-Curated at: `2026-10-20T04:51:09.922141+00:00`
+Curated at: `2026-10-21T04:47:17.621739+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, image-generation, gemini, rate-limit`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2945/are-there-any-usage-limit
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 2; answer score: 1.
 - The answer was accepted by the question author.
-- Viewed 194 times on the source site.
+- Viewed 196 times on the source site.
 
 ## Question
 

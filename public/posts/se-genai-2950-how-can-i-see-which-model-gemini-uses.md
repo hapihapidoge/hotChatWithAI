@@ -1,6 +1,6 @@
 # How can I see which model Gemini uses?
 
-Curated at: `2026-10-22T04:45:31.875242+00:00`
+Curated at: `2026-10-23T04:49:19.028668+00:00`
 Model: `Public Q&A`
 Author: `Martheen`
 Tags: `public-q&a, GenAI Stack Exchange, gemini`

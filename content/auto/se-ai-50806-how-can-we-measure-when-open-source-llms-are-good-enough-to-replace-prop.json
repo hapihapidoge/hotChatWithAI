@@ -18,11 +18,11 @@
   "source_url": "https://ai.stackexchange.com/questions/50806/how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-proprietar",
   "quality_signals": [
     "Public Q&A from AI Stack Exchange.",
-    "Question score: 3; answer score: 6.",
-    "Viewed 913 times on the source site."
+    "Question score: 4; answer score: 6.",
+    "Viewed 926 times on the source site."
   ],
   "created_at": "2026-10-14T13:41:30+00:00",
-  "curated_at": "2026-10-22T04:45:32.737004+00:00",
+  "curated_at": "2026-10-23T04:49:20.495457+00:00",
   "license": "Stack Exchange content is user-contributed and requires source attribution.",
   "source": "AI Stack Exchange"
 }

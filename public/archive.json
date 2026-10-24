@@ -3,49 +3,49 @@
     "id": "se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop",
     "title": "How can we measure when open-source LLMs are \"good enough\" to replace proprietary frontier models like Claude/ChatGPT?",
     "path": "posts/se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop.md",
-    "curated_at": "2026-10-23T04:49:20.495457+00:00"
-  },
-  {
-    "id": "se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci",
-    "title": "Does Codex use quota while waiting for tests or CI?",
-    "path": "posts/se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci.md",
-    "curated_at": "2026-10-23T04:49:20.136074+00:00"
+    "curated_at": "2026-10-24T04:36:42.855538+00:00"
   },
   {
     "id": "se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset",
     "title": "Why can’t I redeem an available Codex usage-limit reset?",
     "path": "posts/se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset.md",
-    "curated_at": "2026-10-23T04:49:20.011108+00:00"
+    "curated_at": "2026-10-24T04:36:42.658036+00:00"
   },
   {
     "id": "se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset",
     "title": "How can I see the expiration time of a Codex usage-limit reset?",
     "path": "posts/se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset.md",
-    "curated_at": "2026-10-23T04:49:19.829776+00:00"
+    "curated_at": "2026-10-24T04:36:42.582582+00:00"
+  },
+  {
+    "id": "se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci",
+    "title": "Does Codex use quota while waiting for tests or CI?",
+    "path": "posts/se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci.md",
+    "curated_at": "2026-10-24T04:36:42.505206+00:00"
   },
   {
     "id": "se-genai-2946-how-to-prompt-image-generators-to-produce-text-with-typography-resemblin",
     "title": "How to prompt image generators to produce text with typography resembling real fonts?",
     "path": "posts/se-genai-2946-how-to-prompt-image-generators-to-produce-text-with-typography-resemblin.md",
-    "curated_at": "2026-10-23T04:49:19.631740+00:00"
+    "curated_at": "2026-10-24T04:36:42.430104+00:00"
   },
   {
     "id": "se-genai-2944-how-does-reasoning-affect-chatgpt-usage-limits",
     "title": "How does reasoning affect ChatGPT usage limits?",
     "path": "posts/se-genai-2944-how-does-reasoning-affect-chatgpt-usage-limits.md",
-    "curated_at": "2026-10-23T04:49:19.400527+00:00"
+    "curated_at": "2026-10-24T04:36:42.357429+00:00"
   },
   {
     "id": "se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation",
     "title": "Are there any usage limits for Gemini image generation?",
     "path": "posts/se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation.md",
-    "curated_at": "2026-10-23T04:49:19.264193+00:00"
+    "curated_at": "2026-10-24T04:36:42.268260+00:00"
   },
   {
     "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
     "title": "How can I see which model Gemini uses?",
     "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md",
-    "curated_at": "2026-10-23T04:49:19.028668+00:00"
+    "curated_at": "2026-10-24T04:36:42.186269+00:00"
   },
   {
     "id": "se-ai-50779-should-i-use-ai-for-learning-studying",

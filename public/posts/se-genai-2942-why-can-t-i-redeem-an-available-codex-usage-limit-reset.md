@@ -1,6 +1,6 @@
 # Why can’t I redeem an available Codex usage-limit reset?
 
-Curated at: `2026-10-23T04:49:20.011108+00:00`
+Curated at: `2026-10-24T04:36:42.658036+00:00`
 Model: `Public Q&A`
 Author: `JBallin`
 Tags: `public-q&a, GenAI Stack Exchange, openai, codex`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2942/why-can-t-i-redeem-an-ava
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 0; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 19 times on the source site.
+- Viewed 21 times on the source site.
 
 ## Question
 

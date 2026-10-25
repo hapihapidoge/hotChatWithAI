@@ -1,6 +1,6 @@
 # How to prompt image generators to produce text with typography resembling real fonts?
 
-Curated at: `2026-10-24T04:36:42.430104+00:00`
+Curated at: `2026-10-25T04:41:10.836602+00:00`
 Model: `Public Q&A`
 Author: `Geryon`
 Tags: `public-q&a, GenAI Stack Exchange, prompt-design`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2946/how-to-prompt-image-gener
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 1; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 48 times on the source site.
+- Viewed 50 times on the source site.
 
 ## Question
 

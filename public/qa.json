@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-24T04:36:43.475621+00:00",
+  "generated_at": "2026-10-25T04:41:12.244794+00:00",
   "summary": {
-    "items": 60,
+    "items": 61,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -113,6 +113,30 @@
   },
   "featured": [
     {
+      "id": "se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im",
+      "title": "What is the difference between autoregressive and diffusion models in image generation?",
+      "question": "What is the difference between transformers and autoregressive models in image generation? Are autoregressive models better at photorealism, text rendering and instruction following, given architecture choice and training data?",
+      "answer": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on. In image models, that looks like predicting a patch of the image, using that patch to predict the next patch, continuing to fill in the image in that manner. Diffusion specifically refers to Langevin diffusion models, but has taken on a more general connotation of any flow model—normalizing flows, rectified flows, flow-matching, flow maps, etc. A diffusion model trains trajectories between datasets, most famously mapping a normal distribution to an image distribution. Autoregression and diffusion are not incompatible. Autoregression is a data architecture, while diffusion is a learning model. Or, to put it another way, autoregression deals with what data you look at, while diffusion deals with how you generate that data. Diffusion language models autoregressively produce chunks of tokens using a language diffusion model. Many video models autoregressively produce frames using image diffusion models. Why not do diffusion on the entire video? Some models do, but quadratic attention scales... quadratically. It becomes very expensive to diffuse on every patch in an entire video, and much cheaper to compress earlier frames in the video, which you can do if you genera...",
+      "summary": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on....",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "image-generation"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "programjames",
+      "source_url": "https://ai.stackexchange.com/questions/50796/what-is-the-difference-between-autoregressive-and-diffusion-models-in-image-gene",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 0; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 49 times on the source site."
+      ],
+      "created_at": "2026-10-11T12:59:24+00:00",
+      "curated_at": "2026-10-25T04:41:11.490562+00:00",
+      "path": "posts/se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im.md"
+    },
+    {
       "id": "se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop",
       "title": "How can we measure when open-source LLMs are \"good enough\" to replace proprietary frontier models like Claude/ChatGPT?",
       "question": "Frontier models from OpenAI, Anthropic, etc. keep improving, but the Chinese open-source/open-weight models are catching up. Open models could become good enough for most consumers and business applications, even if frontier models remain technically superior. Already DeepSeek is logging 3x as many tokens as Antrophic & OpenAI combined . Think of the shift from $10-20 CDs to freely accessible alternatives (Napster) or cheaper iTunes/Spotify. The cheaper alternative didn't necessarily have to be better audio quality/bitrate; it just had to be good enough (and be more convenient). How can we objectively measure when that point has been reached for AI models? A point where, for most consumers,...",
@@ -133,61 +157,11 @@
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
         "Question score: 4; answer score: 6.",
-        "Viewed 929 times on the source site."
+        "Viewed 933 times on the source site."
       ],
       "created_at": "2026-10-14T13:41:30+00:00",
-      "curated_at": "2026-10-24T04:36:42.855538+00:00",
+      "curated_at": "2026-10-25T04:41:11.369921+00:00",
       "path": "posts/se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop.md"
-    },
-    {
-      "id": "se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset",
-      "title": "Why can’t I redeem an available Codex usage-limit reset?",
-      "question": "I have a Codex usage-limit reset that is about to expire, but attempting to use it says I have nothing to reset. How do I use the reset?",
-      "answer": "Using a reset requires your remaining allowance to be below a threshold (estimated at 10% based on the automatic reset setting). Docs : If there is nothing to reset, it remains available.",
-      "summary": "Using a reset requires your remaining allowance to be below a threshold (estimated at 10% based on the automatic reset setting). Docs : If there is nothing to reset, it remains available.",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "openai",
-        "codex"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "JBallin",
-      "source_url": "https://genai.stackexchange.com/questions/2942/why-can-t-i-redeem-an-available-codex-usage-limit-reset",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 21 times on the source site."
-      ],
-      "created_at": "2026-10-10T15:01:16+00:00",
-      "curated_at": "2026-10-24T04:36:42.658036+00:00",
-      "path": "posts/se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset.md"
-    },
-    {
-      "id": "se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset",
-      "title": "How can I see the expiration time of a Codex usage-limit reset?",
-      "question": "In Usage settings, I can see the date when my Codex usage-limit reset expires. How can I see the exact expiration time?",
-      "answer": "Hovering over the reset reveals a tooltip with an exact expiration timestamp.",
-      "summary": "Hovering over the reset reveals a tooltip with an exact expiration timestamp.",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "openai",
-        "codex"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "JBallin",
-      "source_url": "https://genai.stackexchange.com/questions/2940/how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 23 times on the source site."
-      ],
-      "created_at": "2026-10-10T14:37:56+00:00",
-      "curated_at": "2026-10-24T04:36:42.582582+00:00",
-      "path": "posts/se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset.md"
     },
     {
       "id": "se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci",
@@ -212,7 +186,7 @@
         "Viewed 27 times on the source site."
       ],
       "created_at": "2026-10-20T01:25:32+00:00",
-      "curated_at": "2026-10-24T04:36:42.505206+00:00",
+      "curated_at": "2026-10-25T04:41:11.077550+00:00",
       "path": "posts/se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci.md"
     },
     {
@@ -233,190 +207,11 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 48 times on the source site."
+        "Viewed 50 times on the source site."
       ],
       "created_at": "2026-10-11T14:12:47+00:00",
-      "curated_at": "2026-10-24T04:36:42.430104+00:00",
+      "curated_at": "2026-10-25T04:41:10.836602+00:00",
       "path": "posts/se-genai-2946-how-to-prompt-image-generators-to-produce-text-with-typography-resemblin.md"
-    },
-    {
-      "id": "se-genai-2944-how-does-reasoning-affect-chatgpt-usage-limits",
-      "title": "How does reasoning affect ChatGPT usage limits?",
-      "question": "When using a reasoning model in ChatGPT, what determines how much of my usage allowance a message consumes? Does each message count equally, does the selected thinking or reasoning-effort setting determine a fixed amount, or does it depend on how much reasoning the model actually performs? For example, do a simple question and a difficult question consume the same allowance when using the same model and thinking setting? I’m asking about reaching ChatGPT’s usage limit, rather than API billing.",
-      "answer": "... do a simple question and a difficult question consume the same allowance when using the same model and thinking setting? I’m asking about reaching ChatGPT’s usage limit, rather than API billing. Generally, no, a simple question and a difficult question do not necessarily consume the same amount of your ChatGPT usage allowance, even when you're using the same model and the same \"thinking\" setting. However, OpenAI does not publicly disclose the exact formula used for ChatGPT's message limits, so no one outside OpenAI can say precisely how the accounting works. A useful mental model is: A short question like: \"What is the capital of France?\" uses relatively few computing resources. A complex request like: \"Analyze this 100-page PDF, compare it with three research papers, and generate a detailed report.\" uses substantially more compute resources. Because usage limits exist to manage compute capacity, many users observe that heavier interactions tend to contribute more toward limits than trivial ones. But it's not as simple as \"one prompt = one unit.\" Some factors that can affect consumption like: Length of your prompt/the response Whether files are uploaded and analyzed Whether advanced reasoning (\" thinking \") is used Whether web search or tool usage is involved Total conversation context size Think of long conversations with large context windows consume more resources, or u...",
-      "summary": "... do a simple question and a difficult question consume the same allowance when using the same model and thinking setting? I’m asking about reaching ChatGPT’s usage limit, rather than API billing. Generally, no, a sim...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "chatgpt",
-        "openai",
-        "quota"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Mario",
-      "source_url": "https://genai.stackexchange.com/questions/2944/how-does-reasoning-affect-chatgpt-usage-limits",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 1.",
-        "Viewed 55 times on the source site."
-      ],
-      "created_at": "2026-10-10T15:40:15+00:00",
-      "curated_at": "2026-10-24T04:36:42.357429+00:00",
-      "path": "posts/se-genai-2944-how-does-reasoning-affect-chatgpt-usage-limits.md"
-    }
-  ],
-  "entries": [
-    {
-      "id": "se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop",
-      "title": "How can we measure when open-source LLMs are \"good enough\" to replace proprietary frontier models like Claude/ChatGPT?",
-      "question": "Frontier models from OpenAI, Anthropic, etc. keep improving, but the Chinese open-source/open-weight models are catching up. Open models could become good enough for most consumers and business applications, even if frontier models remain technically superior. Already DeepSeek is logging 3x as many tokens as Antrophic & OpenAI combined . Think of the shift from $10-20 CDs to freely accessible alternatives (Napster) or cheaper iTunes/Spotify. The cheaper alternative didn't necessarily have to be better audio quality/bitrate; it just had to be good enough (and be more convenient). How can we objectively measure when that point has been reached for AI models? A point where, for most consumers,...",
-      "answer": "“Good enough” needs a specified population of users, a distribution of tasks, and an acceptance threshold. An overall benchmark rank cannot supply those three things for you. A model can be sufficient for one workflow while still failing an essential requirement in another. One workable evaluation design would be: Sample tasks from the intended workflows, including difficult cases and failures that matter. Define the scoring rubric before comparing models: correctness, unacceptable errors, instruction following, and any latency or privacy constraints. Keep a fixed, held-out evaluation set for measuring progress over time. Test the same inputs and document the model version, tools, agent setup, quantization where applicable, and inference budget. Repeat stochastic runs and report uncertainty instead of treating one successful answer as reliable performance. Decide in advance what counts as acceptable performance and what difference would matter operationally. Test those criteria per important task category; an average can hide a serious failure in a smaller category. Compare the total effort required to obtain an acceptable result, including retries and human checking. That makes the value of a subscription a workflow-specific question, rather than something determined by the model's position on a leaderboard. A fixed suite and harder frontier benchmarks answer different questi...",
-      "summary": "“Good enough” needs a specified population of users, a distribution of tasks, and an acceptance threshold. An overall benchmark rank cannot supply those three things for you. A model can be sufficient for one workflow w...",
-      "tags": [
-        "public-q&a",
-        "AI Stack Exchange",
-        "comparison",
-        "large-language-models",
-        "performance",
-        "benchmarks",
-        "open-source"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Chris ",
-      "source_url": "https://ai.stackexchange.com/questions/50806/how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-proprietar",
-      "quality_signals": [
-        "Public Q&A from AI Stack Exchange.",
-        "Question score: 4; answer score: 6.",
-        "Viewed 929 times on the source site."
-      ],
-      "created_at": "2026-10-14T13:41:30+00:00",
-      "curated_at": "2026-10-24T04:36:42.855538+00:00",
-      "path": "posts/se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop.md"
-    },
-    {
-      "id": "se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset",
-      "title": "Why can’t I redeem an available Codex usage-limit reset?",
-      "question": "I have a Codex usage-limit reset that is about to expire, but attempting to use it says I have nothing to reset. How do I use the reset?",
-      "answer": "Using a reset requires your remaining allowance to be below a threshold (estimated at 10% based on the automatic reset setting). Docs : If there is nothing to reset, it remains available.",
-      "summary": "Using a reset requires your remaining allowance to be below a threshold (estimated at 10% based on the automatic reset setting). Docs : If there is nothing to reset, it remains available.",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "openai",
-        "codex"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "JBallin",
-      "source_url": "https://genai.stackexchange.com/questions/2942/why-can-t-i-redeem-an-available-codex-usage-limit-reset",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 21 times on the source site."
-      ],
-      "created_at": "2026-10-10T15:01:16+00:00",
-      "curated_at": "2026-10-24T04:36:42.658036+00:00",
-      "path": "posts/se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset.md"
-    },
-    {
-      "id": "se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset",
-      "title": "How can I see the expiration time of a Codex usage-limit reset?",
-      "question": "In Usage settings, I can see the date when my Codex usage-limit reset expires. How can I see the exact expiration time?",
-      "answer": "Hovering over the reset reveals a tooltip with an exact expiration timestamp.",
-      "summary": "Hovering over the reset reveals a tooltip with an exact expiration timestamp.",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "openai",
-        "codex"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "JBallin",
-      "source_url": "https://genai.stackexchange.com/questions/2940/how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 0; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 23 times on the source site."
-      ],
-      "created_at": "2026-10-10T14:37:56+00:00",
-      "curated_at": "2026-10-24T04:36:42.582582+00:00",
-      "path": "posts/se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset.md"
-    },
-    {
-      "id": "se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci",
-      "title": "Does Codex use quota while waiting for tests or CI?",
-      "question": "Does time spent waiting for commands, tests, or CI count toward my ChatGPT plan’s Codex usage limit?",
-      "answer": "Not by elapsed time alone. OpenAI Support states that Codex usage is not based on wall-clock time. Its usage guidance lists factors such as the model, task complexity, context, and tools. If Codex invokes the model to check progress or process test output, that is additional model activity, not merely waiting. I would expect that activity to consume usage even while a test or CI job is still running. The sources don't specifically explain progress checks during tests or CI. That part is my interpretation of the general usage guidance, rather than an explicitly documented rule for this scenario.",
-      "summary": "Not by elapsed time alone. OpenAI Support states that Codex usage is not based on wall-clock time. Its usage guidance lists factors such as the model, task complexity, context, and tools. If Codex invokes the model to c...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "openai",
-        "quota",
-        "codex"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "JBallin",
-      "source_url": "https://genai.stackexchange.com/questions/2958/does-codex-use-quota-while-waiting-for-tests-or-ci",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 2.",
-        "The answer was accepted by the question author.",
-        "Viewed 27 times on the source site."
-      ],
-      "created_at": "2026-10-20T01:25:32+00:00",
-      "curated_at": "2026-10-24T04:36:42.505206+00:00",
-      "path": "posts/se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci.md"
-    },
-    {
-      "id": "se-genai-2946-how-to-prompt-image-generators-to-produce-text-with-typography-resemblin",
-      "title": "How to prompt image generators to produce text with typography resembling real fonts?",
-      "question": "How to prompt image generators to produce text with typography resembling real typefaces? Like Trajan-style typefaces (very often used in movie posters and such). And what model is better for this (GPT-Image/Nano Banana/Flux/Stable Diffusion/etc.)?",
-      "answer": "Yes. When specified in the prompt (like \"lettering in style of the Trajan typeface\" or \"ancient Roman lettering\"), modern image generation engines can reliably reproduce the typeface style, albeit not exactly like the real Trajan typeface or resembling it. For better results is it recommended to use the generator to generate images and then use image editors like Photoshop to add text using the actual typeface, optionally with effects like bevel & emboss and textures to resemble golden/silver/etc. text.",
-      "summary": "Yes. When specified in the prompt (like \"lettering in style of the Trajan typeface\" or \"ancient Roman lettering\"), modern image generation engines can reliably reproduce the typeface style, albeit not exactly like the r...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "prompt-design"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Geryon",
-      "source_url": "https://genai.stackexchange.com/questions/2946/how-to-prompt-image-generators-to-produce-text-with-typography-resembling-real-f",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 0.",
-        "The answer was accepted by the question author.",
-        "Viewed 48 times on the source site."
-      ],
-      "created_at": "2026-10-11T14:12:47+00:00",
-      "curated_at": "2026-10-24T04:36:42.430104+00:00",
-      "path": "posts/se-genai-2946-how-to-prompt-image-generators-to-produce-text-with-typography-resemblin.md"
-    },
-    {
-      "id": "se-genai-2944-how-does-reasoning-affect-chatgpt-usage-limits",
-      "title": "How does reasoning affect ChatGPT usage limits?",
-      "question": "When using a reasoning model in ChatGPT, what determines how much of my usage allowance a message consumes? Does each message count equally, does the selected thinking or reasoning-effort setting determine a fixed amount, or does it depend on how much reasoning the model actually performs? For example, do a simple question and a difficult question consume the same allowance when using the same model and thinking setting? I’m asking about reaching ChatGPT’s usage limit, rather than API billing.",
-      "answer": "... do a simple question and a difficult question consume the same allowance when using the same model and thinking setting? I’m asking about reaching ChatGPT’s usage limit, rather than API billing. Generally, no, a simple question and a difficult question do not necessarily consume the same amount of your ChatGPT usage allowance, even when you're using the same model and the same \"thinking\" setting. However, OpenAI does not publicly disclose the exact formula used for ChatGPT's message limits, so no one outside OpenAI can say precisely how the accounting works. A useful mental model is: A short question like: \"What is the capital of France?\" uses relatively few computing resources. A complex request like: \"Analyze this 100-page PDF, compare it with three research papers, and generate a detailed report.\" uses substantially more compute resources. Because usage limits exist to manage compute capacity, many users observe that heavier interactions tend to contribute more toward limits than trivial ones. But it's not as simple as \"one prompt = one unit.\" Some factors that can affect consumption like: Length of your prompt/the response Whether files are uploaded and analyzed Whether advanced reasoning (\" thinking \") is used Whether web search or tool usage is involved Total conversation context size Think of long conversations with large context windows consume more resources, or u...",
-      "summary": "... do a simple question and a difficult question consume the same allowance when using the same model and thinking setting? I’m asking about reaching ChatGPT’s usage limit, rather than API billing. Generally, no, a sim...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "chatgpt",
-        "openai",
-        "quota"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Mario",
-      "source_url": "https://genai.stackexchange.com/questions/2944/how-does-reasoning-affect-chatgpt-usage-limits",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 1; answer score: 1.",
-        "Viewed 55 times on the source site."
-      ],
-      "created_at": "2026-10-10T15:40:15+00:00",
-      "curated_at": "2026-10-24T04:36:42.357429+00:00",
-      "path": "posts/se-genai-2944-how-does-reasoning-affect-chatgpt-usage-limits.md"
     },
     {
       "id": "se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation",
@@ -438,10 +233,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 2; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 209 times on the source site."
+        "Viewed 214 times on the source site."
       ],
       "created_at": "2026-10-11T12:16:18+00:00",
-      "curated_at": "2026-10-24T04:36:42.268260+00:00",
+      "curated_at": "2026-10-25T04:41:10.731052+00:00",
       "path": "posts/se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation.md"
     },
     {
@@ -465,8 +260,236 @@
         "Viewed 365 times on the source site."
       ],
       "created_at": "2026-10-12T08:23:23+00:00",
-      "curated_at": "2026-10-24T04:36:42.186269+00:00",
+      "curated_at": "2026-10-25T04:41:10.592785+00:00",
       "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
+    }
+  ],
+  "entries": [
+    {
+      "id": "se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im",
+      "title": "What is the difference between autoregressive and diffusion models in image generation?",
+      "question": "What is the difference between transformers and autoregressive models in image generation? Are autoregressive models better at photorealism, text rendering and instruction following, given architecture choice and training data?",
+      "answer": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on. In image models, that looks like predicting a patch of the image, using that patch to predict the next patch, continuing to fill in the image in that manner. Diffusion specifically refers to Langevin diffusion models, but has taken on a more general connotation of any flow model—normalizing flows, rectified flows, flow-matching, flow maps, etc. A diffusion model trains trajectories between datasets, most famously mapping a normal distribution to an image distribution. Autoregression and diffusion are not incompatible. Autoregression is a data architecture, while diffusion is a learning model. Or, to put it another way, autoregression deals with what data you look at, while diffusion deals with how you generate that data. Diffusion language models autoregressively produce chunks of tokens using a language diffusion model. Many video models autoregressively produce frames using image diffusion models. Why not do diffusion on the entire video? Some models do, but quadratic attention scales... quadratically. It becomes very expensive to diffuse on every patch in an entire video, and much cheaper to compress earlier frames in the video, which you can do if you genera...",
+      "summary": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on....",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "image-generation"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "programjames",
+      "source_url": "https://ai.stackexchange.com/questions/50796/what-is-the-difference-between-autoregressive-and-diffusion-models-in-image-gene",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 0; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 49 times on the source site."
+      ],
+      "created_at": "2026-10-11T12:59:24+00:00",
+      "curated_at": "2026-10-25T04:41:11.490562+00:00",
+      "path": "posts/se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im.md"
+    },
+    {
+      "id": "se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop",
+      "title": "How can we measure when open-source LLMs are \"good enough\" to replace proprietary frontier models like Claude/ChatGPT?",
+      "question": "Frontier models from OpenAI, Anthropic, etc. keep improving, but the Chinese open-source/open-weight models are catching up. Open models could become good enough for most consumers and business applications, even if frontier models remain technically superior. Already DeepSeek is logging 3x as many tokens as Antrophic & OpenAI combined . Think of the shift from $10-20 CDs to freely accessible alternatives (Napster) or cheaper iTunes/Spotify. The cheaper alternative didn't necessarily have to be better audio quality/bitrate; it just had to be good enough (and be more convenient). How can we objectively measure when that point has been reached for AI models? A point where, for most consumers,...",
+      "answer": "“Good enough” needs a specified population of users, a distribution of tasks, and an acceptance threshold. An overall benchmark rank cannot supply those three things for you. A model can be sufficient for one workflow while still failing an essential requirement in another. One workable evaluation design would be: Sample tasks from the intended workflows, including difficult cases and failures that matter. Define the scoring rubric before comparing models: correctness, unacceptable errors, instruction following, and any latency or privacy constraints. Keep a fixed, held-out evaluation set for measuring progress over time. Test the same inputs and document the model version, tools, agent setup, quantization where applicable, and inference budget. Repeat stochastic runs and report uncertainty instead of treating one successful answer as reliable performance. Decide in advance what counts as acceptable performance and what difference would matter operationally. Test those criteria per important task category; an average can hide a serious failure in a smaller category. Compare the total effort required to obtain an acceptable result, including retries and human checking. That makes the value of a subscription a workflow-specific question, rather than something determined by the model's position on a leaderboard. A fixed suite and harder frontier benchmarks answer different questi...",
+      "summary": "“Good enough” needs a specified population of users, a distribution of tasks, and an acceptance threshold. An overall benchmark rank cannot supply those three things for you. A model can be sufficient for one workflow w...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "comparison",
+        "large-language-models",
+        "performance",
+        "benchmarks",
+        "open-source"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Chris ",
+      "source_url": "https://ai.stackexchange.com/questions/50806/how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-proprietar",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 4; answer score: 6.",
+        "Viewed 933 times on the source site."
+      ],
+      "created_at": "2026-10-14T13:41:30+00:00",
+      "curated_at": "2026-10-25T04:41:11.369921+00:00",
+      "path": "posts/se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop.md"
+    },
+    {
+      "id": "se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci",
+      "title": "Does Codex use quota while waiting for tests or CI?",
+      "question": "Does time spent waiting for commands, tests, or CI count toward my ChatGPT plan’s Codex usage limit?",
+      "answer": "Not by elapsed time alone. OpenAI Support states that Codex usage is not based on wall-clock time. Its usage guidance lists factors such as the model, task complexity, context, and tools. If Codex invokes the model to check progress or process test output, that is additional model activity, not merely waiting. I would expect that activity to consume usage even while a test or CI job is still running. The sources don't specifically explain progress checks during tests or CI. That part is my interpretation of the general usage guidance, rather than an explicitly documented rule for this scenario.",
+      "summary": "Not by elapsed time alone. OpenAI Support states that Codex usage is not based on wall-clock time. Its usage guidance lists factors such as the model, task complexity, context, and tools. If Codex invokes the model to c...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "openai",
+        "quota",
+        "codex"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "JBallin",
+      "source_url": "https://genai.stackexchange.com/questions/2958/does-codex-use-quota-while-waiting-for-tests-or-ci",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 2.",
+        "The answer was accepted by the question author.",
+        "Viewed 27 times on the source site."
+      ],
+      "created_at": "2026-10-20T01:25:32+00:00",
+      "curated_at": "2026-10-25T04:41:11.077550+00:00",
+      "path": "posts/se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci.md"
+    },
+    {
+      "id": "se-genai-2946-how-to-prompt-image-generators-to-produce-text-with-typography-resemblin",
+      "title": "How to prompt image generators to produce text with typography resembling real fonts?",
+      "question": "How to prompt image generators to produce text with typography resembling real typefaces? Like Trajan-style typefaces (very often used in movie posters and such). And what model is better for this (GPT-Image/Nano Banana/Flux/Stable Diffusion/etc.)?",
+      "answer": "Yes. When specified in the prompt (like \"lettering in style of the Trajan typeface\" or \"ancient Roman lettering\"), modern image generation engines can reliably reproduce the typeface style, albeit not exactly like the real Trajan typeface or resembling it. For better results is it recommended to use the generator to generate images and then use image editors like Photoshop to add text using the actual typeface, optionally with effects like bevel & emboss and textures to resemble golden/silver/etc. text.",
+      "summary": "Yes. When specified in the prompt (like \"lettering in style of the Trajan typeface\" or \"ancient Roman lettering\"), modern image generation engines can reliably reproduce the typeface style, albeit not exactly like the r...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "prompt-design"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Geryon",
+      "source_url": "https://genai.stackexchange.com/questions/2946/how-to-prompt-image-generators-to-produce-text-with-typography-resembling-real-f",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 50 times on the source site."
+      ],
+      "created_at": "2026-10-11T14:12:47+00:00",
+      "curated_at": "2026-10-25T04:41:10.836602+00:00",
+      "path": "posts/se-genai-2946-how-to-prompt-image-generators-to-produce-text-with-typography-resemblin.md"
+    },
+    {
+      "id": "se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation",
+      "title": "Are there any usage limits for Gemini image generation?",
+      "question": "Are there separate usage limits for Gemini image generation, independent of the daily usage limits for Gemini chat?",
+      "answer": "Image generation in Gemini has its own usage limits, depending on the specific feature. These are separate from the general Gemini chat and model limits. The exact limits depend on your Google account type, subscription, and the image generation model you use. There are differences in image generation usage limits between school and work accounts, depending on the specific Google Workspace license. Use Gemini Apps with a work or school Google Account The documentation distinguishes between general Gemini usage, which can depend on the computational effort, and the limits for image generation. Image generation is tracked separately and can reset daily. The limits can also change depending on how busy the system is. The values mentioned apply to different Google Workspace license tiers and are not a guarantee of your personal usage limit. Google says that image generation limits can change frequently and reset daily. Gemini Apps limits & upgrades for Google AI subscribers Gemini Apps have compute-based usage limits that determine how much you can interact with Gemini tools and features. These limits factor in the complexity of your prompt, the models and features you use, and the length of your chat. Your limit refreshes every 5 hours until you reach your weekly limit. You can upgrade to a Google AI plan for expanded access to features and models in Gemini Apps. Gemini Apps upgr...",
+      "summary": "Image generation in Gemini has its own usage limits, depending on the specific feature. These are separate from the general Gemini chat and model limits. The exact limits depend on your Google account type, subscription...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "image-generation",
+        "gemini",
+        "rate-limit"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2945/are-there-any-usage-limits-for-gemini-image-generation",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 2; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 214 times on the source site."
+      ],
+      "created_at": "2026-10-11T12:16:18+00:00",
+      "curated_at": "2026-10-25T04:41:10.731052+00:00",
+      "path": "posts/se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation.md"
+    },
+    {
+      "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
+      "title": "How can I see which model Gemini uses?",
+      "question": "I use Gemini free version. Since a few days ago, I can't see which models it uses: How can I see which model Gemini uses?",
+      "answer": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that need deeper reasoning may go to Flash or Pro. ... If smart model selection is turned off, chats for users without an AI plan will use Flash-Lite for all responses. Note that even a Plus user (practically free with various promos) will soon also lose the ability to pick Pro option",
+      "summary": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that n...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "gemini"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Martheen",
+      "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 3; answer score: 4.",
+        "The answer was accepted by the question author.",
+        "Viewed 365 times on the source site."
+      ],
+      "created_at": "2026-10-12T08:23:23+00:00",
+      "curated_at": "2026-10-25T04:41:10.592785+00:00",
+      "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
+    },
+    {
+      "id": "se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset",
+      "title": "Why can’t I redeem an available Codex usage-limit reset?",
+      "question": "I have a Codex usage-limit reset that is about to expire, but attempting to use it says I have nothing to reset. How do I use the reset?",
+      "answer": "Using a reset requires your remaining allowance to be below a threshold (estimated at 10% based on the automatic reset setting). Docs : If there is nothing to reset, it remains available.",
+      "summary": "Using a reset requires your remaining allowance to be below a threshold (estimated at 10% based on the automatic reset setting). Docs : If there is nothing to reset, it remains available.",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "openai",
+        "codex"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "JBallin",
+      "source_url": "https://genai.stackexchange.com/questions/2942/why-can-t-i-redeem-an-available-codex-usage-limit-reset",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 21 times on the source site."
+      ],
+      "created_at": "2026-10-10T15:01:16+00:00",
+      "curated_at": "2026-10-24T04:36:42.658036+00:00",
+      "path": "posts/se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset.md"
+    },
+    {
+      "id": "se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset",
+      "title": "How can I see the expiration time of a Codex usage-limit reset?",
+      "question": "In Usage settings, I can see the date when my Codex usage-limit reset expires. How can I see the exact expiration time?",
+      "answer": "Hovering over the reset reveals a tooltip with an exact expiration timestamp.",
+      "summary": "Hovering over the reset reveals a tooltip with an exact expiration timestamp.",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "openai",
+        "codex"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "JBallin",
+      "source_url": "https://genai.stackexchange.com/questions/2940/how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 23 times on the source site."
+      ],
+      "created_at": "2026-10-10T14:37:56+00:00",
+      "curated_at": "2026-10-24T04:36:42.582582+00:00",
+      "path": "posts/se-genai-2940-how-can-i-see-the-expiration-time-of-a-codex-usage-limit-reset.md"
+    },
+    {
+      "id": "se-genai-2944-how-does-reasoning-affect-chatgpt-usage-limits",
+      "title": "How does reasoning affect ChatGPT usage limits?",
+      "question": "When using a reasoning model in ChatGPT, what determines how much of my usage allowance a message consumes? Does each message count equally, does the selected thinking or reasoning-effort setting determine a fixed amount, or does it depend on how much reasoning the model actually performs? For example, do a simple question and a difficult question consume the same allowance when using the same model and thinking setting? I’m asking about reaching ChatGPT’s usage limit, rather than API billing.",
+      "answer": "... do a simple question and a difficult question consume the same allowance when using the same model and thinking setting? I’m asking about reaching ChatGPT’s usage limit, rather than API billing. Generally, no, a simple question and a difficult question do not necessarily consume the same amount of your ChatGPT usage allowance, even when you're using the same model and the same \"thinking\" setting. However, OpenAI does not publicly disclose the exact formula used for ChatGPT's message limits, so no one outside OpenAI can say precisely how the accounting works. A useful mental model is: A short question like: \"What is the capital of France?\" uses relatively few computing resources. A complex request like: \"Analyze this 100-page PDF, compare it with three research papers, and generate a detailed report.\" uses substantially more compute resources. Because usage limits exist to manage compute capacity, many users observe that heavier interactions tend to contribute more toward limits than trivial ones. But it's not as simple as \"one prompt = one unit.\" Some factors that can affect consumption like: Length of your prompt/the response Whether files are uploaded and analyzed Whether advanced reasoning (\" thinking \") is used Whether web search or tool usage is involved Total conversation context size Think of long conversations with large context windows consume more resources, or u...",
+      "summary": "... do a simple question and a difficult question consume the same allowance when using the same model and thinking setting? I’m asking about reaching ChatGPT’s usage limit, rather than API billing. Generally, no, a sim...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "chatgpt",
+        "openai",
+        "quota"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Mario",
+      "source_url": "https://genai.stackexchange.com/questions/2944/how-does-reasoning-affect-chatgpt-usage-limits",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "Viewed 55 times on the source site."
+      ],
+      "created_at": "2026-10-10T15:40:15+00:00",
+      "curated_at": "2026-10-24T04:36:42.357429+00:00",
+      "path": "posts/se-genai-2944-how-does-reasoning-affect-chatgpt-usage-limits.md"
     },
     {
       "id": "se-ai-50779-should-i-use-ai-for-learning-studying",

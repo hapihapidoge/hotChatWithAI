@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T04:41:12.244794+00:00",
+  "generated_at": "2026-10-26T04:47:04.967811+00:00",
   "summary": {
     "items": 61,
     "tags": [
@@ -113,30 +113,6 @@
   },
   "featured": [
     {
-      "id": "se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im",
-      "title": "What is the difference between autoregressive and diffusion models in image generation?",
-      "question": "What is the difference between transformers and autoregressive models in image generation? Are autoregressive models better at photorealism, text rendering and instruction following, given architecture choice and training data?",
-      "answer": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on. In image models, that looks like predicting a patch of the image, using that patch to predict the next patch, continuing to fill in the image in that manner. Diffusion specifically refers to Langevin diffusion models, but has taken on a more general connotation of any flow model—normalizing flows, rectified flows, flow-matching, flow maps, etc. A diffusion model trains trajectories between datasets, most famously mapping a normal distribution to an image distribution. Autoregression and diffusion are not incompatible. Autoregression is a data architecture, while diffusion is a learning model. Or, to put it another way, autoregression deals with what data you look at, while diffusion deals with how you generate that data. Diffusion language models autoregressively produce chunks of tokens using a language diffusion model. Many video models autoregressively produce frames using image diffusion models. Why not do diffusion on the entire video? Some models do, but quadratic attention scales... quadratically. It becomes very expensive to diffuse on every patch in an entire video, and much cheaper to compress earlier frames in the video, which you can do if you genera...",
-      "summary": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on....",
-      "tags": [
-        "public-q&a",
-        "AI Stack Exchange",
-        "image-generation"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "programjames",
-      "source_url": "https://ai.stackexchange.com/questions/50796/what-is-the-difference-between-autoregressive-and-diffusion-models-in-image-gene",
-      "quality_signals": [
-        "Public Q&A from AI Stack Exchange.",
-        "Question score: 0; answer score: 1.",
-        "The answer was accepted by the question author.",
-        "Viewed 49 times on the source site."
-      ],
-      "created_at": "2026-10-11T12:59:24+00:00",
-      "curated_at": "2026-10-25T04:41:11.490562+00:00",
-      "path": "posts/se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im.md"
-    },
-    {
       "id": "se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop",
       "title": "How can we measure when open-source LLMs are \"good enough\" to replace proprietary frontier models like Claude/ChatGPT?",
       "question": "Frontier models from OpenAI, Anthropic, etc. keep improving, but the Chinese open-source/open-weight models are catching up. Open models could become good enough for most consumers and business applications, even if frontier models remain technically superior. Already DeepSeek is logging 3x as many tokens as Antrophic & OpenAI combined . Think of the shift from $10-20 CDs to freely accessible alternatives (Napster) or cheaper iTunes/Spotify. The cheaper alternative didn't necessarily have to be better audio quality/bitrate; it just had to be good enough (and be more convenient). How can we objectively measure when that point has been reached for AI models? A point where, for most consumers,...",
@@ -157,10 +133,10 @@
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
         "Question score: 4; answer score: 6.",
-        "Viewed 933 times on the source site."
+        "Viewed 936 times on the source site."
       ],
       "created_at": "2026-10-14T13:41:30+00:00",
-      "curated_at": "2026-10-25T04:41:11.369921+00:00",
+      "curated_at": "2026-10-26T04:47:04.293682+00:00",
       "path": "posts/se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop.md"
     },
     {
@@ -183,11 +159,59 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 27 times on the source site."
+        "Viewed 29 times on the source site."
       ],
       "created_at": "2026-10-20T01:25:32+00:00",
-      "curated_at": "2026-10-25T04:41:11.077550+00:00",
+      "curated_at": "2026-10-26T04:47:03.941301+00:00",
       "path": "posts/se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci.md"
+    },
+    {
+      "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
+      "title": "How can I see which model Gemini uses?",
+      "question": "I use Gemini free version. Since a few days ago, I can't see which models it uses: How can I see which model Gemini uses?",
+      "answer": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that need deeper reasoning may go to Flash or Pro. ... If smart model selection is turned off, chats for users without an AI plan will use Flash-Lite for all responses. Note that even a Plus user (practically free with various promos) will soon also lose the ability to pick Pro option",
+      "summary": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that n...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "gemini"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Martheen",
+      "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 3; answer score: 4.",
+        "The answer was accepted by the question author.",
+        "Viewed 370 times on the source site."
+      ],
+      "created_at": "2026-10-12T08:23:23+00:00",
+      "curated_at": "2026-10-26T04:47:03.784636+00:00",
+      "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
+    },
+    {
+      "id": "se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im",
+      "title": "What is the difference between autoregressive and diffusion models in image generation?",
+      "question": "What is the difference between transformers and autoregressive models in image generation? Are autoregressive models better at photorealism, text rendering and instruction following, given architecture choice and training data?",
+      "answer": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on. In image models, that looks like predicting a patch of the image, using that patch to predict the next patch, continuing to fill in the image in that manner. Diffusion specifically refers to Langevin diffusion models, but has taken on a more general connotation of any flow model—normalizing flows, rectified flows, flow-matching, flow maps, etc. A diffusion model trains trajectories between datasets, most famously mapping a normal distribution to an image distribution. Autoregression and diffusion are not incompatible. Autoregression is a data architecture, while diffusion is a learning model. Or, to put it another way, autoregression deals with what data you look at, while diffusion deals with how you generate that data. Diffusion language models autoregressively produce chunks of tokens using a language diffusion model. Many video models autoregressively produce frames using image diffusion models. Why not do diffusion on the entire video? Some models do, but quadratic attention scales... quadratically. It becomes very expensive to diffuse on every patch in an entire video, and much cheaper to compress earlier frames in the video, which you can do if you genera...",
+      "summary": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on....",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "image-generation"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "programjames",
+      "source_url": "https://ai.stackexchange.com/questions/50796/what-is-the-difference-between-autoregressive-and-diffusion-models-in-image-gene",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 0; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 49 times on the source site."
+      ],
+      "created_at": "2026-10-11T12:59:24+00:00",
+      "curated_at": "2026-10-25T04:41:11.490562+00:00",
+      "path": "posts/se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im.md"
     },
     {
       "id": "se-genai-2946-how-to-prompt-image-generators-to-produce-text-with-typography-resemblin",
@@ -238,58 +262,10 @@
       "created_at": "2026-10-11T12:16:18+00:00",
       "curated_at": "2026-10-25T04:41:10.731052+00:00",
       "path": "posts/se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation.md"
-    },
-    {
-      "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
-      "title": "How can I see which model Gemini uses?",
-      "question": "I use Gemini free version. Since a few days ago, I can't see which models it uses: How can I see which model Gemini uses?",
-      "answer": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that need deeper reasoning may go to Flash or Pro. ... If smart model selection is turned off, chats for users without an AI plan will use Flash-Lite for all responses. Note that even a Plus user (practically free with various promos) will soon also lose the ability to pick Pro option",
-      "summary": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that n...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "gemini"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Martheen",
-      "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 3; answer score: 4.",
-        "The answer was accepted by the question author.",
-        "Viewed 365 times on the source site."
-      ],
-      "created_at": "2026-10-12T08:23:23+00:00",
-      "curated_at": "2026-10-25T04:41:10.592785+00:00",
-      "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
     }
   ],
   "entries": [
     {
-      "id": "se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im",
-      "title": "What is the difference between autoregressive and diffusion models in image generation?",
-      "question": "What is the difference between transformers and autoregressive models in image generation? Are autoregressive models better at photorealism, text rendering and instruction following, given architecture choice and training data?",
-      "answer": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on. In image models, that looks like predicting a patch of the image, using that patch to predict the next patch, continuing to fill in the image in that manner. Diffusion specifically refers to Langevin diffusion models, but has taken on a more general connotation of any flow model—normalizing flows, rectified flows, flow-matching, flow maps, etc. A diffusion model trains trajectories between datasets, most famously mapping a normal distribution to an image distribution. Autoregression and diffusion are not incompatible. Autoregression is a data architecture, while diffusion is a learning model. Or, to put it another way, autoregression deals with what data you look at, while diffusion deals with how you generate that data. Diffusion language models autoregressively produce chunks of tokens using a language diffusion model. Many video models autoregressively produce frames using image diffusion models. Why not do diffusion on the entire video? Some models do, but quadratic attention scales... quadratically. It becomes very expensive to diffuse on every patch in an entire video, and much cheaper to compress earlier frames in the video, which you can do if you genera...",
-      "summary": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on....",
-      "tags": [
-        "public-q&a",
-        "AI Stack Exchange",
-        "image-generation"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "programjames",
-      "source_url": "https://ai.stackexchange.com/questions/50796/what-is-the-difference-between-autoregressive-and-diffusion-models-in-image-gene",
-      "quality_signals": [
-        "Public Q&A from AI Stack Exchange.",
-        "Question score: 0; answer score: 1.",
-        "The answer was accepted by the question author.",
-        "Viewed 49 times on the source site."
-      ],
-      "created_at": "2026-10-11T12:59:24+00:00",
-      "curated_at": "2026-10-25T04:41:11.490562+00:00",
-      "path": "posts/se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im.md"
-    },
-    {
       "id": "se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop",
       "title": "How can we measure when open-source LLMs are \"good enough\" to replace proprietary frontier models like Claude/ChatGPT?",
       "question": "Frontier models from OpenAI, Anthropic, etc. keep improving, but the Chinese open-source/open-weight models are catching up. Open models could become good enough for most consumers and business applications, even if frontier models remain technically superior. Already DeepSeek is logging 3x as many tokens as Antrophic & OpenAI combined . Think of the shift from $10-20 CDs to freely accessible alternatives (Napster) or cheaper iTunes/Spotify. The cheaper alternative didn't necessarily have to be better audio quality/bitrate; it just had to be good enough (and be more convenient). How can we objectively measure when that point has been reached for AI models? A point where, for most consumers,...",
@@ -310,10 +286,10 @@
       "quality_signals": [
         "Public Q&A from AI Stack Exchange.",
         "Question score: 4; answer score: 6.",
-        "Viewed 933 times on the source site."
+        "Viewed 936 times on the source site."
       ],
       "created_at": "2026-10-14T13:41:30+00:00",
-      "curated_at": "2026-10-25T04:41:11.369921+00:00",
+      "curated_at": "2026-10-26T04:47:04.293682+00:00",
       "path": "posts/se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop.md"
     },
     {
@@ -336,11 +312,59 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 1; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 27 times on the source site."
+        "Viewed 29 times on the source site."
       ],
       "created_at": "2026-10-20T01:25:32+00:00",
-      "curated_at": "2026-10-25T04:41:11.077550+00:00",
+      "curated_at": "2026-10-26T04:47:03.941301+00:00",
       "path": "posts/se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci.md"
+    },
+    {
+      "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
+      "title": "How can I see which model Gemini uses?",
+      "question": "I use Gemini free version. Since a few days ago, I can't see which models it uses: How can I see which model Gemini uses?",
+      "answer": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that need deeper reasoning may go to Flash or Pro. ... If smart model selection is turned off, chats for users without an AI plan will use Flash-Lite for all responses. Note that even a Plus user (practically free with various promos) will soon also lose the ability to pick Pro option",
+      "summary": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that n...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "gemini"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Martheen",
+      "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 3; answer score: 4.",
+        "The answer was accepted by the question author.",
+        "Viewed 370 times on the source site."
+      ],
+      "created_at": "2026-10-12T08:23:23+00:00",
+      "curated_at": "2026-10-26T04:47:03.784636+00:00",
+      "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
+    },
+    {
+      "id": "se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im",
+      "title": "What is the difference between autoregressive and diffusion models in image generation?",
+      "question": "What is the difference between transformers and autoregressive models in image generation? Are autoregressive models better at photorealism, text rendering and instruction following, given architecture choice and training data?",
+      "answer": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on. In image models, that looks like predicting a patch of the image, using that patch to predict the next patch, continuing to fill in the image in that manner. Diffusion specifically refers to Langevin diffusion models, but has taken on a more general connotation of any flow model—normalizing flows, rectified flows, flow-matching, flow maps, etc. A diffusion model trains trajectories between datasets, most famously mapping a normal distribution to an image distribution. Autoregression and diffusion are not incompatible. Autoregression is a data architecture, while diffusion is a learning model. Or, to put it another way, autoregression deals with what data you look at, while diffusion deals with how you generate that data. Diffusion language models autoregressively produce chunks of tokens using a language diffusion model. Many video models autoregressively produce frames using image diffusion models. Why not do diffusion on the entire video? Some models do, but quadratic attention scales... quadratically. It becomes very expensive to diffuse on every patch in an entire video, and much cheaper to compress earlier frames in the video, which you can do if you genera...",
+      "summary": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on....",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "image-generation"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "programjames",
+      "source_url": "https://ai.stackexchange.com/questions/50796/what-is-the-difference-between-autoregressive-and-diffusion-models-in-image-gene",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 0; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 49 times on the source site."
+      ],
+      "created_at": "2026-10-11T12:59:24+00:00",
+      "curated_at": "2026-10-25T04:41:11.490562+00:00",
+      "path": "posts/se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im.md"
     },
     {
       "id": "se-genai-2946-how-to-prompt-image-generators-to-produce-text-with-typography-resemblin",
@@ -391,30 +415,6 @@
       "created_at": "2026-10-11T12:16:18+00:00",
       "curated_at": "2026-10-25T04:41:10.731052+00:00",
       "path": "posts/se-genai-2945-are-there-any-usage-limits-for-gemini-image-generation.md"
-    },
-    {
-      "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
-      "title": "How can I see which model Gemini uses?",
-      "question": "I use Gemini free version. Since a few days ago, I can't see which models it uses: How can I see which model Gemini uses?",
-      "answer": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that need deeper reasoning may go to Flash or Pro. ... If smart model selection is turned off, chats for users without an AI plan will use Flash-Lite for all responses. Note that even a Plus user (practically free with various promos) will soon also lose the ability to pick Pro option",
-      "summary": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that n...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "gemini"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Martheen",
-      "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 3; answer score: 4.",
-        "The answer was accepted by the question author.",
-        "Viewed 365 times on the source site."
-      ],
-      "created_at": "2026-10-12T08:23:23+00:00",
-      "curated_at": "2026-10-25T04:41:10.592785+00:00",
-      "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
     },
     {
       "id": "se-genai-2942-why-can-t-i-redeem-an-available-codex-usage-limit-reset",

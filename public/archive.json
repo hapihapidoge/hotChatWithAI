@@ -1,15 +1,15 @@
 [
   {
+    "id": "se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci",
+    "title": "Does Codex use quota while waiting for tests or CI?",
+    "path": "posts/se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci.md",
+    "curated_at": "2026-10-29T05:47:54.142689+00:00"
+  },
+  {
     "id": "se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop",
     "title": "How can we measure when open-source LLMs are \"good enough\" to replace proprietary frontier models like Claude/ChatGPT?",
     "path": "posts/se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop.md",
     "curated_at": "2026-10-28T05:42:30.950684+00:00"
-  },
-  {
-    "id": "se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci",
-    "title": "Does Codex use quota while waiting for tests or CI?",
-    "path": "posts/se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci.md",
-    "curated_at": "2026-10-28T05:42:30.695380+00:00"
   },
   {
     "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",

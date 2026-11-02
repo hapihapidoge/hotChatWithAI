@@ -1,6 +1,6 @@
 # Does Codex use quota while waiting for tests or CI?
 
-Curated at: `2026-11-01T06:04:21.491632+00:00`
+Curated at: `2026-11-02T06:02:16.186161+00:00`
 Model: `Public Q&A`
 Author: `JBallin`
 Tags: `public-q&a, GenAI Stack Exchange, openai, quota, codex`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2958/does-codex-use-quota-whil
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 1; answer score: 2.
 - The answer was accepted by the question author.
-- Viewed 40 times on the source site.
+- Viewed 42 times on the source site.
 
 ## Question
 

@@ -1,6 +1,6 @@
 # Can I archive a Codex Cloud environment’s setup chat after publishing?
 
-Curated at: `2026-11-04T06:22:07.886570+00:00`
+Curated at: `2026-11-05T06:45:59.519918+00:00`
 Model: `Public Q&A`
 Author: `JBallin`
 Tags: `public-q&a, GenAI Stack Exchange, openai, codex`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2964/can-i-archive-a-codex-clo
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 0; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 24 times on the source site.
+- Viewed 26 times on the source site.
 
 ## Question
 

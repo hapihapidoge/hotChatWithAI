@@ -1,0 +1,23 @@
+# Can the artificial FP16/BF16/TF32 performance limitations of NVIDIA GeForce GPUs be lifted under Debian GNU/Linux?
+
+Curated at: `2026-11-06T06:45:51.128737+00:00`
+Model: `Public Q&A`
+Author: `ReflectYourCharacter`
+Tags: `public-q&a, GenAI Stack Exchange, machine-learning, nvidia, tensor`
+Source: https://genai.stackexchange.com/questions/2979/can-the-artificial-fp16-bf16-tf32-performance-limitations-of-nvidia-geforce-gpus
+
+
+## Why It Is Good
+
+- Public Q&A from GenAI Stack Exchange.
+- Question score: 0; answer score: 0.
+- The answer was accepted by the question author.
+- Viewed 28 times on the source site.
+
+## Question
+
+NVIDIA artificially limits the performance of certain tensor operations, such as FP16, BF16, and TF32, to approximately 50% of the theoretical maximum performance on various GeForce graphics cards (RTX 20, 30, and 40 series). This limitation primarily affects AI and machine learning workloads. It is presumably intended to maintain a performance gap between consumer graphics cards (GeForce) and professional NVIDIA GPUs (e.g., the RTX A series). Is there any way to bypass these limitations under Debian GNU/Linux?
+
+## Answer
+
+The open-source project GPU Unlock ( gpu-unlock ) claims to remove this limitation using a Linux kernel module that takes effect directly during system startup. Risks and limitations Support is still experimental The GPU operates outside NVIDIA's specified operating parameters for GeForce cards. The significantly increased computational throughput can lead to substantially higher power consumption and heat generation. Some GPUs, such as the RTX 4090, may immediately hit their power limits when running at full throughput. It Is Unsafe at the System Level (Security Risks) What are the risks of using GPU Unlock on Debian GNU/Linux? How it works The tool integrates itself into the system as a Linux kernel module It intervenes in the GPU initialization process very early during boot, before the official NVIDIA driver is loaded, and unlocks the full computational throughput Unlike older methods, it does not require a VBIOS flash or modified (patched) NVIDIA drivers. The original NVIDIA driver continues to operate without modifications Debian GNU/Linux support The main repository for this exploit, gpu-unlock on GitHub, explicitly provides support for Debian-based systems (as indicated by the integrated debian directory used for package building). Performance improvements The tool theoretically doubles the computational performance of the Tensor Cores (+65% to +100%, depending on the...

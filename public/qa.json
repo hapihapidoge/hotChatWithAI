@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-05T06:46:00.031902+00:00",
+  "generated_at": "2026-11-06T06:45:52.257117+00:00",
   "summary": {
-    "items": 63,
+    "items": 66,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -29,6 +29,7 @@
       "computational-complexity",
       "computational-learning-theory",
       "cross-validation",
+      "debian",
       "deep-learning",
       "definitions",
       "education",
@@ -43,8 +44,10 @@
       "google",
       "gradient",
       "gradient-boosting",
+      "graphic-card",
       "hallucination",
       "history",
+      "hyper-parameters",
       "image-generation",
       "json",
       "k-fold-cv",
@@ -58,6 +61,7 @@
       "music",
       "neural-networks",
       "next.js",
+      "nvidia",
       "oceanbase",
       "ollama",
       "open-source",
@@ -88,6 +92,7 @@
       "software-development",
       "software-evaluation",
       "survival",
+      "tensor",
       "terminology",
       "testautomationfx",
       "time-complexity",
@@ -101,6 +106,7 @@
       "visual-studio",
       "watermarking",
       "web-applications",
+      "weights",
       "产品设计",
       "提问方法",
       "效率",
@@ -112,6 +118,84 @@
     ]
   },
   "featured": [
+    {
+      "id": "se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters",
+      "title": "Does the term \"hyperparameter\" refer to hard-coded model parameters?",
+      "question": "Does the term \"hyperparameter\" refer to hard-coded model parameters? For example, suppose I have the simple model: $$f(x) = 3x+a.$$ Would \"3\" be a hyperparameter, and $a$ a model parameter?",
+      "answer": "No. \"Hard-coded\" and \"hyperparameter\" are different things, and in your example $3$ is neither a parameter nor a hyperparameter: it is simply a fixed constant , part of the model's specification. The distinction is about how a value is determined , not where it is written. Parameters are learned from the training data. In $f(x) = 3x + a$ , $a$ is a parameter: you fit it, e.g. by minimizing a loss with gradient descent. Hyperparameters are set before training, are not learned from the training data, and control either the learning process or the form of the model. Typical examples are the learning rate, the regularization strength $\\lambda$ , the number of layers, or the degree of a polynomial. Constants are values nobody chooses or tunes. Your $3$ is one of these: it is just part of the definition of the function. The interesting edge case: if you decided to treat that coefficient as a knob, say $f(x) = cx + a$ , and picked $c$ by trying several values and comparing performance on a validation set, then $c$ would be acting as a hyperparameter. If instead you learned $c$ by gradient descent along with $a$ , it would be a parameter. So the same number can play any of the three roles depending on how it is chosen.",
+      "summary": "No. \"Hard-coded\" and \"hyperparameter\" are different things, and in your example $3$ is neither a parameter nor a hyperparameter: it is simply a fixed constant , part of the model's specification. The distinction is abou...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "terminology",
+        "weights",
+        "hyper-parameters"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Carlos Dagorret",
+      "source_url": "https://ai.stackexchange.com/questions/50829/does-the-term-hyperparameter-refer-to-hard-coded-model-parameters",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 28 times on the source site."
+      ],
+      "created_at": "2026-11-02T14:28:12+00:00",
+      "curated_at": "2026-11-06T06:45:51.502802+00:00",
+      "path": "posts/se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters.md"
+    },
+    {
+      "id": "se-genai-2981-what-are-the-risks-of-using-gpu-unlock",
+      "title": "What are the risks of using GPU Unlock?",
+      "question": "What are the potential risks and reasons why using gpu-unlock could be unsafe when attempting to modify NVIDIA graphics card behavior through software? This is a follow-up question to: Can the artificial FP16/BF16/TF32 performance limitations of NVIDIA GeForce GPUs be lifted under Debian GNU/Linux? In particular, I am interested in potential hardware damage, overheating, increased power consumption, system instability, kernel compatibility issues, and possible conflicts with official NVIDIA drivers and, of course, the overall security of the system.",
+      "answer": "Here are the risks and the reasons why using gpu-unlock could be unsafe. Hardware Risks Extreme Heat & Power Consumption By unlocking the artificial performance limitation, the computational workload of the Tensor Cores doubles The card operates outside the specifications defined by NVIDIA for GeForce products The graphics card suddenly draws significantly more power and becomes extremely hot Some cards (such as the RTX 4090) immediately hit their power limit as a result Risk of Hardware Damage The cooling systems and power delivery components (VRMs) of consumer graphics cards (GeForce) are not designed for the sustained maximum load that only expensive professional cards (RTX A series) are normally built to handle Overheating or, in the worst case, hardware failure may occur Immediate Loss of Warranty Since the card is operated outside the specifications defined by NVIDIA, using such kernel modules voids any warranty claims Why It Is Unsafe at the System Level (Security Risks) Security Features Are Bypassed The hack only works because it exploits a vulnerability in NVIDIA's cryptographically signed bootloader (SEC2) In other words, a security barrier in the GPU firmware is deliberately bypassed It intervenes in the GPU initialization process very early during boot, before the official NVIDIA driver is loaded, and unlocks the full computational throughput Dangerous Kernel Modu...",
+      "summary": "Here are the risks and the reasons why using gpu-unlock could be unsafe. Hardware Risks Extreme Heat & Power Consumption By unlocking the artificial performance limitation, the computational workload of the Tensor Cores...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "nvidia",
+        "debian",
+        "graphic-card"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2981/what-are-the-risks-of-using-gpu-unlock",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 64 times on the source site."
+      ],
+      "created_at": "2026-11-03T12:42:24+00:00",
+      "curated_at": "2026-11-06T06:45:51.227936+00:00",
+      "path": "posts/se-genai-2981-what-are-the-risks-of-using-gpu-unlock.md"
+    },
+    {
+      "id": "se-genai-2979-can-the-artificial-fp16-bf16-tf32-performance-limitations-of-nvidia-gefo",
+      "title": "Can the artificial FP16/BF16/TF32 performance limitations of NVIDIA GeForce GPUs be lifted under Debian GNU/Linux?",
+      "question": "NVIDIA artificially limits the performance of certain tensor operations, such as FP16, BF16, and TF32, to approximately 50% of the theoretical maximum performance on various GeForce graphics cards (RTX 20, 30, and 40 series). This limitation primarily affects AI and machine learning workloads. It is presumably intended to maintain a performance gap between consumer graphics cards (GeForce) and professional NVIDIA GPUs (e.g., the RTX A series). Is there any way to bypass these limitations under Debian GNU/Linux?",
+      "answer": "The open-source project GPU Unlock ( gpu-unlock ) claims to remove this limitation using a Linux kernel module that takes effect directly during system startup. Risks and limitations Support is still experimental The GPU operates outside NVIDIA's specified operating parameters for GeForce cards. The significantly increased computational throughput can lead to substantially higher power consumption and heat generation. Some GPUs, such as the RTX 4090, may immediately hit their power limits when running at full throughput. It Is Unsafe at the System Level (Security Risks) What are the risks of using GPU Unlock on Debian GNU/Linux? How it works The tool integrates itself into the system as a Linux kernel module It intervenes in the GPU initialization process very early during boot, before the official NVIDIA driver is loaded, and unlocks the full computational throughput Unlike older methods, it does not require a VBIOS flash or modified (patched) NVIDIA drivers. The original NVIDIA driver continues to operate without modifications Debian GNU/Linux support The main repository for this exploit, gpu-unlock on GitHub, explicitly provides support for Debian-based systems (as indicated by the integrated debian directory used for package building). Performance improvements The tool theoretically doubles the computational performance of the Tensor Cores (+65% to +100%, depending on the...",
+      "summary": "The open-source project GPU Unlock ( gpu-unlock ) claims to remove this limitation using a Linux kernel module that takes effect directly during system startup. Risks and limitations Support is still experimental The GP...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "machine-learning",
+        "nvidia",
+        "tensor"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2979/can-the-artificial-fp16-bf16-tf32-performance-limitations-of-nvidia-geforce-gpus",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 28 times on the source site."
+      ],
+      "created_at": "2026-11-03T10:27:17+00:00",
+      "curated_at": "2026-11-06T06:45:51.128737+00:00",
+      "path": "posts/se-genai-2979-can-the-artificial-fp16-bf16-tf32-performance-limitations-of-nvidia-gefo.md"
+    },
     {
       "id": "se-genai-2968-where-can-i-view-codex-github-pull-request-review-tasks-and-reports",
       "title": "Where can I view Codex GitHub pull-request review tasks and reports?",
@@ -131,10 +215,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 18 times on the source site."
+        "Viewed 20 times on the source site."
       ],
       "created_at": "2026-10-25T21:41:18+00:00",
-      "curated_at": "2026-11-05T06:45:59.584779+00:00",
+      "curated_at": "2026-11-06T06:45:51.041363+00:00",
       "path": "posts/se-genai-2968-where-can-i-view-codex-github-pull-request-review-tasks-and-reports.md"
     },
     {
@@ -156,10 +240,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 26 times on the source site."
+        "Viewed 28 times on the source site."
       ],
       "created_at": "2026-10-25T18:52:38+00:00",
-      "curated_at": "2026-11-05T06:45:59.519918+00:00",
+      "curated_at": "2026-11-06T06:45:50.940527+00:00",
       "path": "posts/se-genai-2964-can-i-archive-a-codex-cloud-environment-s-setup-chat-after-publishing.md"
     },
     {
@@ -187,84 +271,87 @@
       "created_at": "2026-10-20T01:25:32+00:00",
       "curated_at": "2026-11-02T06:02:16.186161+00:00",
       "path": "posts/se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci.md"
-    },
-    {
-      "id": "se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop",
-      "title": "How can we measure when open-source LLMs are \"good enough\" to replace proprietary frontier models like Claude/ChatGPT?",
-      "question": "Frontier models from OpenAI, Anthropic, etc. keep improving, but the Chinese open-source/open-weight models are catching up. Open models could become good enough for most consumers and business applications, even if frontier models remain technically superior. Already DeepSeek is logging 3x as many tokens as Antrophic & OpenAI combined . Think of the shift from $10-20 CDs to freely accessible alternatives (Napster) or cheaper iTunes/Spotify. The cheaper alternative didn't necessarily have to be better audio quality/bitrate; it just had to be good enough (and be more convenient). How can we objectively measure when that point has been reached for AI models? A point where, for most consumers,...",
-      "answer": "“Good enough” needs a specified population of users, a distribution of tasks, and an acceptance threshold. An overall benchmark rank cannot supply those three things for you. A model can be sufficient for one workflow while still failing an essential requirement in another. One workable evaluation design would be: Sample tasks from the intended workflows, including difficult cases and failures that matter. Define the scoring rubric before comparing models: correctness, unacceptable errors, instruction following, and any latency or privacy constraints. Keep a fixed, held-out evaluation set for measuring progress over time. Test the same inputs and document the model version, tools, agent setup, quantization where applicable, and inference budget. Repeat stochastic runs and report uncertainty instead of treating one successful answer as reliable performance. Decide in advance what counts as acceptable performance and what difference would matter operationally. Test those criteria per important task category; an average can hide a serious failure in a smaller category. Compare the total effort required to obtain an acceptable result, including retries and human checking. That makes the value of a subscription a workflow-specific question, rather than something determined by the model's position on a leaderboard. A fixed suite and harder frontier benchmarks answer different questi...",
-      "summary": "“Good enough” needs a specified population of users, a distribution of tasks, and an acceptance threshold. An overall benchmark rank cannot supply those three things for you. A model can be sufficient for one workflow w...",
-      "tags": [
-        "public-q&a",
-        "AI Stack Exchange",
-        "comparison",
-        "large-language-models",
-        "performance",
-        "benchmarks",
-        "open-source"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Chris ",
-      "source_url": "https://ai.stackexchange.com/questions/50806/how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-proprietar",
-      "quality_signals": [
-        "Public Q&A from AI Stack Exchange.",
-        "Question score: 4; answer score: 6.",
-        "Viewed 946 times on the source site."
-      ],
-      "created_at": "2026-10-14T13:41:30+00:00",
-      "curated_at": "2026-10-28T05:42:30.950684+00:00",
-      "path": "posts/se-ai-50806-how-can-we-measure-when-open-source-llms-are-good-enough-to-replace-prop.md"
-    },
-    {
-      "id": "se-genai-2950-how-can-i-see-which-model-gemini-uses",
-      "title": "How can I see which model Gemini uses?",
-      "question": "I use Gemini free version. Since a few days ago, I can't see which models it uses: How can I see which model Gemini uses?",
-      "answer": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that need deeper reasoning may go to Flash or Pro. ... If smart model selection is turned off, chats for users without an AI plan will use Flash-Lite for all responses. Note that even a Plus user (practically free with various promos) will soon also lose the ability to pick Pro option",
-      "summary": "This is documented at https://support.google.com/gemini/answer/17004136?hl=en Auto will be the default setting for users without a Google AI plan ... Most prompts will go to Flash-Lite, our fastest model. Prompts that n...",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "gemini"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Martheen",
-      "source_url": "https://genai.stackexchange.com/questions/2950/how-can-i-see-which-model-gemini-uses",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 3; answer score: 4.",
-        "The answer was accepted by the question author.",
-        "Viewed 370 times on the source site."
-      ],
-      "created_at": "2026-10-12T08:23:23+00:00",
-      "curated_at": "2026-10-26T04:47:03.784636+00:00",
-      "path": "posts/se-genai-2950-how-can-i-see-which-model-gemini-uses.md"
-    },
-    {
-      "id": "se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im",
-      "title": "What is the difference between autoregressive and diffusion models in image generation?",
-      "question": "What is the difference between transformers and autoregressive models in image generation? Are autoregressive models better at photorealism, text rendering and instruction following, given architecture choice and training data?",
-      "answer": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on. In image models, that looks like predicting a patch of the image, using that patch to predict the next patch, continuing to fill in the image in that manner. Diffusion specifically refers to Langevin diffusion models, but has taken on a more general connotation of any flow model—normalizing flows, rectified flows, flow-matching, flow maps, etc. A diffusion model trains trajectories between datasets, most famously mapping a normal distribution to an image distribution. Autoregression and diffusion are not incompatible. Autoregression is a data architecture, while diffusion is a learning model. Or, to put it another way, autoregression deals with what data you look at, while diffusion deals with how you generate that data. Diffusion language models autoregressively produce chunks of tokens using a language diffusion model. Many video models autoregressively produce frames using image diffusion models. Why not do diffusion on the entire video? Some models do, but quadratic attention scales... quadratically. It becomes very expensive to diffuse on every patch in an entire video, and much cheaper to compress earlier frames in the video, which you can do if you genera...",
-      "summary": "Autoregressive comes from 'auto' + 'regressive', which means to extrapolate from its own outputs. In language models this looks like predicting a word, then using that word as input to predict the next word, and so on....",
-      "tags": [
-        "public-q&a",
-        "AI Stack Exchange",
-        "image-generation"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "programjames",
-      "source_url": "https://ai.stackexchange.com/questions/50796/what-is-the-difference-between-autoregressive-and-diffusion-models-in-image-gene",
-      "quality_signals": [
-        "Public Q&A from AI Stack Exchange.",
-        "Question score: 0; answer score: 1.",
-        "The answer was accepted by the question author.",
-        "Viewed 49 times on the source site."
-      ],
-      "created_at": "2026-10-11T12:59:24+00:00",
-      "curated_at": "2026-10-25T04:41:11.490562+00:00",
-      "path": "posts/se-ai-50796-what-is-the-difference-between-autoregressive-and-diffusion-models-in-im.md"
     }
   ],
   "entries": [
+    {
+      "id": "se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters",
+      "title": "Does the term \"hyperparameter\" refer to hard-coded model parameters?",
+      "question": "Does the term \"hyperparameter\" refer to hard-coded model parameters? For example, suppose I have the simple model: $$f(x) = 3x+a.$$ Would \"3\" be a hyperparameter, and $a$ a model parameter?",
+      "answer": "No. \"Hard-coded\" and \"hyperparameter\" are different things, and in your example $3$ is neither a parameter nor a hyperparameter: it is simply a fixed constant , part of the model's specification. The distinction is about how a value is determined , not where it is written. Parameters are learned from the training data. In $f(x) = 3x + a$ , $a$ is a parameter: you fit it, e.g. by minimizing a loss with gradient descent. Hyperparameters are set before training, are not learned from the training data, and control either the learning process or the form of the model. Typical examples are the learning rate, the regularization strength $\\lambda$ , the number of layers, or the degree of a polynomial. Constants are values nobody chooses or tunes. Your $3$ is one of these: it is just part of the definition of the function. The interesting edge case: if you decided to treat that coefficient as a knob, say $f(x) = cx + a$ , and picked $c$ by trying several values and comparing performance on a validation set, then $c$ would be acting as a hyperparameter. If instead you learned $c$ by gradient descent along with $a$ , it would be a parameter. So the same number can play any of the three roles depending on how it is chosen.",
+      "summary": "No. \"Hard-coded\" and \"hyperparameter\" are different things, and in your example $3$ is neither a parameter nor a hyperparameter: it is simply a fixed constant , part of the model's specification. The distinction is abou...",
+      "tags": [
+        "public-q&a",
+        "AI Stack Exchange",
+        "terminology",
+        "weights",
+        "hyper-parameters"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Carlos Dagorret",
+      "source_url": "https://ai.stackexchange.com/questions/50829/does-the-term-hyperparameter-refer-to-hard-coded-model-parameters",
+      "quality_signals": [
+        "Public Q&A from AI Stack Exchange.",
+        "Question score: 1; answer score: 1.",
+        "The answer was accepted by the question author.",
+        "Viewed 28 times on the source site."
+      ],
+      "created_at": "2026-11-02T14:28:12+00:00",
+      "curated_at": "2026-11-06T06:45:51.502802+00:00",
+      "path": "posts/se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters.md"
+    },
+    {
+      "id": "se-genai-2981-what-are-the-risks-of-using-gpu-unlock",
+      "title": "What are the risks of using GPU Unlock?",
+      "question": "What are the potential risks and reasons why using gpu-unlock could be unsafe when attempting to modify NVIDIA graphics card behavior through software? This is a follow-up question to: Can the artificial FP16/BF16/TF32 performance limitations of NVIDIA GeForce GPUs be lifted under Debian GNU/Linux? In particular, I am interested in potential hardware damage, overheating, increased power consumption, system instability, kernel compatibility issues, and possible conflicts with official NVIDIA drivers and, of course, the overall security of the system.",
+      "answer": "Here are the risks and the reasons why using gpu-unlock could be unsafe. Hardware Risks Extreme Heat & Power Consumption By unlocking the artificial performance limitation, the computational workload of the Tensor Cores doubles The card operates outside the specifications defined by NVIDIA for GeForce products The graphics card suddenly draws significantly more power and becomes extremely hot Some cards (such as the RTX 4090) immediately hit their power limit as a result Risk of Hardware Damage The cooling systems and power delivery components (VRMs) of consumer graphics cards (GeForce) are not designed for the sustained maximum load that only expensive professional cards (RTX A series) are normally built to handle Overheating or, in the worst case, hardware failure may occur Immediate Loss of Warranty Since the card is operated outside the specifications defined by NVIDIA, using such kernel modules voids any warranty claims Why It Is Unsafe at the System Level (Security Risks) Security Features Are Bypassed The hack only works because it exploits a vulnerability in NVIDIA's cryptographically signed bootloader (SEC2) In other words, a security barrier in the GPU firmware is deliberately bypassed It intervenes in the GPU initialization process very early during boot, before the official NVIDIA driver is loaded, and unlocks the full computational throughput Dangerous Kernel Modu...",
+      "summary": "Here are the risks and the reasons why using gpu-unlock could be unsafe. Hardware Risks Extreme Heat & Power Consumption By unlocking the artificial performance limitation, the computational workload of the Tensor Cores...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "nvidia",
+        "debian",
+        "graphic-card"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2981/what-are-the-risks-of-using-gpu-unlock",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 64 times on the source site."
+      ],
+      "created_at": "2026-11-03T12:42:24+00:00",
+      "curated_at": "2026-11-06T06:45:51.227936+00:00",
+      "path": "posts/se-genai-2981-what-are-the-risks-of-using-gpu-unlock.md"
+    },
+    {
+      "id": "se-genai-2979-can-the-artificial-fp16-bf16-tf32-performance-limitations-of-nvidia-gefo",
+      "title": "Can the artificial FP16/BF16/TF32 performance limitations of NVIDIA GeForce GPUs be lifted under Debian GNU/Linux?",
+      "question": "NVIDIA artificially limits the performance of certain tensor operations, such as FP16, BF16, and TF32, to approximately 50% of the theoretical maximum performance on various GeForce graphics cards (RTX 20, 30, and 40 series). This limitation primarily affects AI and machine learning workloads. It is presumably intended to maintain a performance gap between consumer graphics cards (GeForce) and professional NVIDIA GPUs (e.g., the RTX A series). Is there any way to bypass these limitations under Debian GNU/Linux?",
+      "answer": "The open-source project GPU Unlock ( gpu-unlock ) claims to remove this limitation using a Linux kernel module that takes effect directly during system startup. Risks and limitations Support is still experimental The GPU operates outside NVIDIA's specified operating parameters for GeForce cards. The significantly increased computational throughput can lead to substantially higher power consumption and heat generation. Some GPUs, such as the RTX 4090, may immediately hit their power limits when running at full throughput. It Is Unsafe at the System Level (Security Risks) What are the risks of using GPU Unlock on Debian GNU/Linux? How it works The tool integrates itself into the system as a Linux kernel module It intervenes in the GPU initialization process very early during boot, before the official NVIDIA driver is loaded, and unlocks the full computational throughput Unlike older methods, it does not require a VBIOS flash or modified (patched) NVIDIA drivers. The original NVIDIA driver continues to operate without modifications Debian GNU/Linux support The main repository for this exploit, gpu-unlock on GitHub, explicitly provides support for Debian-based systems (as indicated by the integrated debian directory used for package building). Performance improvements The tool theoretically doubles the computational performance of the Tensor Cores (+65% to +100%, depending on the...",
+      "summary": "The open-source project GPU Unlock ( gpu-unlock ) claims to remove this limitation using a Linux kernel module that takes effect directly during system startup. Risks and limitations Support is still experimental The GP...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "machine-learning",
+        "nvidia",
+        "tensor"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2979/can-the-artificial-fp16-bf16-tf32-performance-limitations-of-nvidia-geforce-gpus",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 0; answer score: 0.",
+        "The answer was accepted by the question author.",
+        "Viewed 28 times on the source site."
+      ],
+      "created_at": "2026-11-03T10:27:17+00:00",
+      "curated_at": "2026-11-06T06:45:51.128737+00:00",
+      "path": "posts/se-genai-2979-can-the-artificial-fp16-bf16-tf32-performance-limitations-of-nvidia-gefo.md"
+    },
     {
       "id": "se-genai-2968-where-can-i-view-codex-github-pull-request-review-tasks-and-reports",
       "title": "Where can I view Codex GitHub pull-request review tasks and reports?",
@@ -284,10 +371,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 18 times on the source site."
+        "Viewed 20 times on the source site."
       ],
       "created_at": "2026-10-25T21:41:18+00:00",
-      "curated_at": "2026-11-05T06:45:59.584779+00:00",
+      "curated_at": "2026-11-06T06:45:51.041363+00:00",
       "path": "posts/se-genai-2968-where-can-i-view-codex-github-pull-request-review-tasks-and-reports.md"
     },
     {
@@ -309,10 +396,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 26 times on the source site."
+        "Viewed 28 times on the source site."
       ],
       "created_at": "2026-10-25T18:52:38+00:00",
-      "curated_at": "2026-11-05T06:45:59.519918+00:00",
+      "curated_at": "2026-11-06T06:45:50.940527+00:00",
       "path": "posts/se-genai-2964-can-i-archive-a-codex-cloud-environment-s-setup-chat-after-publishing.md"
     },
     {

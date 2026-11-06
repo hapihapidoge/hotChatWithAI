@@ -1,0 +1,27 @@
+{
+  "id": "se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters",
+  "title": "Does the term \"hyperparameter\" refer to hard-coded model parameters?",
+  "question": "Does the term \"hyperparameter\" refer to hard-coded model parameters? For example, suppose I have the simple model: $$f(x) = 3x+a.$$ Would \"3\" be a hyperparameter, and $a$ a model parameter?",
+  "answer": "No. \"Hard-coded\" and \"hyperparameter\" are different things, and in your example $3$ is neither a parameter nor a hyperparameter: it is simply a fixed constant , part of the model's specification. The distinction is about how a value is determined , not where it is written. Parameters are learned from the training data. In $f(x) = 3x + a$ , $a$ is a parameter: you fit it, e.g. by minimizing a loss with gradient descent. Hyperparameters are set before training, are not learned from the training data, and control either the learning process or the form of the model. Typical examples are the learning rate, the regularization strength $\\lambda$ , the number of layers, or the degree of a polynomial. Constants are values nobody chooses or tunes. Your $3$ is one of these: it is just part of the definition of the function. The interesting edge case: if you decided to treat that coefficient as a knob, say $f(x) = cx + a$ , and picked $c$ by trying several values and comparing performance on a validation set, then $c$ would be acting as a hyperparameter. If instead you learned $c$ by gradient descent along with $a$ , it would be a parameter. So the same number can play any of the three roles depending on how it is chosen.",
+  "summary": "No. \"Hard-coded\" and \"hyperparameter\" are different things, and in your example $3$ is neither a parameter nor a hyperparameter: it is simply a fixed constant , part of the model's specification. The distinction is abou...",
+  "tags": [
+    "public-q&a",
+    "AI Stack Exchange",
+    "terminology",
+    "weights",
+    "hyper-parameters"
+  ],
+  "model": "Public Q&A",
+  "author_alias": "Carlos Dagorret",
+  "source_url": "https://ai.stackexchange.com/questions/50829/does-the-term-hyperparameter-refer-to-hard-coded-model-parameters",
+  "quality_signals": [
+    "Public Q&A from AI Stack Exchange.",
+    "Question score: 1; answer score: 1.",
+    "The answer was accepted by the question author.",
+    "Viewed 28 times on the source site."
+  ],
+  "created_at": "2026-11-02T14:28:12+00:00",
+  "curated_at": "2026-11-06T06:45:51.502802+00:00",
+  "license": "Stack Exchange content is user-contributed and requires source attribution.",
+  "source": "AI Stack Exchange"
+}

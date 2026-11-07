@@ -1,6 +1,6 @@
 # Can I archive a Codex Cloud environment’s setup chat after publishing?
 
-Curated at: `2026-11-06T06:45:50.940527+00:00`
+Curated at: `2026-11-07T05:58:07.836876+00:00`
 Model: `Public Q&A`
 Author: `JBallin`
 Tags: `public-q&a, GenAI Stack Exchange, openai, codex`

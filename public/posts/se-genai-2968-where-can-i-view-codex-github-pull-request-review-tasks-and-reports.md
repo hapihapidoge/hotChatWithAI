@@ -1,6 +1,6 @@
 # Where can I view Codex GitHub pull-request review tasks and reports?
 
-Curated at: `2026-11-06T06:45:51.041363+00:00`
+Curated at: `2026-11-07T05:58:07.967821+00:00`
 Model: `Public Q&A`
 Author: `JBallin`
 Tags: `public-q&a, GenAI Stack Exchange, openai, codex`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2968/where-can-i-view-codex-gi
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 0; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 20 times on the source site.
+- Viewed 21 times on the source site.
 
 ## Question
 

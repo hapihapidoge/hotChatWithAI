@@ -3,31 +3,43 @@
     "id": "se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters",
     "title": "Does the term \"hyperparameter\" refer to hard-coded model parameters?",
     "path": "posts/se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters.md",
-    "curated_at": "2026-11-07T05:58:08.435706+00:00"
+    "curated_at": "2026-11-08T06:00:43.130650+00:00"
+  },
+  {
+    "id": "se-genai-2985-can-codex-use-a-banked-reset-on-my-behalf-after-my-usage-reaches-0",
+    "title": "Can Codex use a banked reset on my behalf after my usage reaches 0%?",
+    "path": "posts/se-genai-2985-can-codex-use-a-banked-reset-on-my-behalf-after-my-usage-reaches-0.md",
+    "curated_at": "2026-11-08T06:00:42.735798+00:00"
+  },
+  {
+    "id": "se-genai-2983-codex-computer-use-isn-t-working-after-granting-permissions-what-else-sh",
+    "title": "Codex Computer Use isn’t working after granting permissions—what else should I enable?",
+    "path": "posts/se-genai-2983-codex-computer-use-isn-t-working-after-granting-permissions-what-else-sh.md",
+    "curated_at": "2026-11-08T06:00:42.626427+00:00"
   },
   {
     "id": "se-genai-2981-what-are-the-risks-of-using-gpu-unlock",
     "title": "What are the risks of using GPU Unlock?",
     "path": "posts/se-genai-2981-what-are-the-risks-of-using-gpu-unlock.md",
-    "curated_at": "2026-11-07T05:58:08.200529+00:00"
+    "curated_at": "2026-11-08T06:00:42.459900+00:00"
   },
   {
     "id": "se-genai-2979-can-the-artificial-fp16-bf16-tf32-performance-limitations-of-nvidia-gefo",
     "title": "Can the artificial FP16/BF16/TF32 performance limitations of NVIDIA GeForce GPUs be lifted under Debian GNU/Linux?",
     "path": "posts/se-genai-2979-can-the-artificial-fp16-bf16-tf32-performance-limitations-of-nvidia-gefo.md",
-    "curated_at": "2026-11-07T05:58:08.102085+00:00"
+    "curated_at": "2026-11-08T06:00:42.338792+00:00"
   },
   {
     "id": "se-genai-2968-where-can-i-view-codex-github-pull-request-review-tasks-and-reports",
     "title": "Where can I view Codex GitHub pull-request review tasks and reports?",
     "path": "posts/se-genai-2968-where-can-i-view-codex-github-pull-request-review-tasks-and-reports.md",
-    "curated_at": "2026-11-07T05:58:07.967821+00:00"
+    "curated_at": "2026-11-08T06:00:42.237112+00:00"
   },
   {
     "id": "se-genai-2964-can-i-archive-a-codex-cloud-environment-s-setup-chat-after-publishing",
     "title": "Can I archive a Codex Cloud environment’s setup chat after publishing?",
     "path": "posts/se-genai-2964-can-i-archive-a-codex-cloud-environment-s-setup-chat-after-publishing.md",
-    "curated_at": "2026-11-07T05:58:07.836876+00:00"
+    "curated_at": "2026-11-08T06:00:42.056689+00:00"
   },
   {
     "id": "se-genai-2958-does-codex-use-quota-while-waiting-for-tests-or-ci",

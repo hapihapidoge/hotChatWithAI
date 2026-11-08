@@ -1,6 +1,6 @@
 # Does the term "hyperparameter" refer to hard-coded model parameters?
 
-Curated at: `2026-11-07T05:58:08.435706+00:00`
+Curated at: `2026-11-08T06:00:43.130650+00:00`
 Model: `Public Q&A`
 Author: `Carlos Dagorret`
 Tags: `public-q&a, AI Stack Exchange, terminology, weights, hyper-parameters`
@@ -12,7 +12,7 @@ Source: https://ai.stackexchange.com/questions/50829/does-the-term-hyperparamete
 - Public Q&A from AI Stack Exchange.
 - Question score: 1; answer score: 1.
 - The answer was accepted by the question author.
-- Viewed 31 times on the source site.
+- Viewed 34 times on the source site.
 
 ## Question
 

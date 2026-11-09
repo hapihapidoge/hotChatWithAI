@@ -3,31 +3,37 @@
     "id": "se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters",
     "title": "Does the term \"hyperparameter\" refer to hard-coded model parameters?",
     "path": "posts/se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters.md",
-    "curated_at": "2026-11-08T06:00:43.130650+00:00"
+    "curated_at": "2026-11-09T06:28:38.756813+00:00"
   },
   {
     "id": "se-genai-2985-can-codex-use-a-banked-reset-on-my-behalf-after-my-usage-reaches-0",
     "title": "Can Codex use a banked reset on my behalf after my usage reaches 0%?",
     "path": "posts/se-genai-2985-can-codex-use-a-banked-reset-on-my-behalf-after-my-usage-reaches-0.md",
-    "curated_at": "2026-11-08T06:00:42.735798+00:00"
+    "curated_at": "2026-11-09T06:28:38.563569+00:00"
   },
   {
     "id": "se-genai-2983-codex-computer-use-isn-t-working-after-granting-permissions-what-else-sh",
     "title": "Codex Computer Use isn’t working after granting permissions—what else should I enable?",
     "path": "posts/se-genai-2983-codex-computer-use-isn-t-working-after-granting-permissions-what-else-sh.md",
-    "curated_at": "2026-11-08T06:00:42.626427+00:00"
+    "curated_at": "2026-11-09T06:28:38.456327+00:00"
   },
   {
     "id": "se-genai-2981-what-are-the-risks-of-using-gpu-unlock",
     "title": "What are the risks of using GPU Unlock?",
     "path": "posts/se-genai-2981-what-are-the-risks-of-using-gpu-unlock.md",
-    "curated_at": "2026-11-08T06:00:42.459900+00:00"
+    "curated_at": "2026-11-09T06:28:38.388732+00:00"
   },
   {
     "id": "se-genai-2979-can-the-artificial-fp16-bf16-tf32-performance-limitations-of-nvidia-gefo",
     "title": "Can the artificial FP16/BF16/TF32 performance limitations of NVIDIA GeForce GPUs be lifted under Debian GNU/Linux?",
     "path": "posts/se-genai-2979-can-the-artificial-fp16-bf16-tf32-performance-limitations-of-nvidia-gefo.md",
-    "curated_at": "2026-11-08T06:00:42.338792+00:00"
+    "curated_at": "2026-11-09T06:28:38.309573+00:00"
+  },
+  {
+    "id": "se-genai-2989-can-ai-image-generators-generate-fake-screenshots-of-real-video-games",
+    "title": "Can AI image generators generate \"fake screenshots\" of real video games?",
+    "path": "posts/se-genai-2989-can-ai-image-generators-generate-fake-screenshots-of-real-video-games.md",
+    "curated_at": "2026-11-09T06:28:38.214788+00:00"
   },
   {
     "id": "se-genai-2968-where-can-i-view-codex-github-pull-request-review-tasks-and-reports",

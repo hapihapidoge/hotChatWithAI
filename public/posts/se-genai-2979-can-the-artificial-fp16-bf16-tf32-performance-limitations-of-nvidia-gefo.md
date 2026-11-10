@@ -1,6 +1,6 @@
 # Can the artificial FP16/BF16/TF32 performance limitations of NVIDIA GeForce GPUs be lifted under Debian GNU/Linux?
 
-Curated at: `2026-11-09T06:28:38.309573+00:00`
+Curated at: `2026-11-10T07:17:58.162453+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, machine-learning, nvidia, tensor`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2979/can-the-artificial-fp16-b
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 0; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 38 times on the source site.
+- Viewed 47 times on the source site.
 
 ## Question
 

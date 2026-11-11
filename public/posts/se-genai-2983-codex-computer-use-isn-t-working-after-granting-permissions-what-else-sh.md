@@ -1,6 +1,6 @@
 # Codex Computer Use isn’t working after granting permissions—what else should I enable?
 
-Curated at: `2026-11-10T07:17:58.360975+00:00`
+Curated at: `2026-11-11T06:20:12.413315+00:00`
 Model: `Public Q&A`
 Author: `JBallin`
 Tags: `public-q&a, GenAI Stack Exchange, openai, codex`

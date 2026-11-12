@@ -1,0 +1,27 @@
+{
+  "id": "se-genai-2991-how-can-i-determine-the-capabilities-of-a-model-before-i-download-it",
+  "title": "How can I determine the capabilities of a model before I download it?",
+  "question": "I've got a laptop with an RTX 5080 (16GB vram) it can run the 2.0 models of Qwen coder pretty well. I understand how to pick models that are able to stay inside the limits of the video card and the limitations on running them locally. I've got code completion working (more or less) in Neovim. What I was hoping, and didn't realize was a limitation, was that this would be capable of writing to disk instead of spitting out a json blob kind of explaining what it wants to do. So, what is the process of finding a safe, small model to run that can also do writes? Is there some capability matrix one can find by looking at meta data embedded in these things? Here's my \"stack\": Ollama Various sub 16G...",
+  "answer": "Cline Approach You don't necessarily need a special coding LLM. You need a model that can work with the tools provided by Cline . Cline provides the tools , but the LLM needs to know how to use them. That's the key difference. You need to look for a specific capability in the models like Tool Calling, also known as Function Calling. If it supports Tools, the model can generally call tools such as Cline's file operations, if it does not support Tools, the model may not be suitable for this. There are Different ways to find this out. You can try the following to get more information. Tool Calling is only the basic requirement. You still need to test in practice how reliably, and whether, the model can subsequently work with Cline . Ollama Website Open https://ollama.com/library Search for your desired model, e.g. Qwen Open the model description Look for the mention of Tools or Tool Calling Ollama Filter via the Website(Ollama also offers a direct filter) Open the URL https://ollama.com/search?c=tools This will show models that support Tool Calling. Via Ollama in the Terminal ollama show LLMNAME Look for tools in the output of Capabilities . Or run ollama show LLMNAME | grep tools If tools appears there, this particular model variant supports Tool Calling. General Tool Calling/Agent A language model itself cannot directly write to the disk. It can only generate text, such as code...",
+  "summary": "Cline Approach You don't necessarily need a special coding LLM. You need a model that can work with the tools provided by Cline . Cline provides the tools , but the LLM needs to know how to use them. That's the key diff...",
+  "tags": [
+    "public-q&a",
+    "GenAI Stack Exchange",
+    "llm",
+    "ollama",
+    "agent",
+    "tool-calling"
+  ],
+  "model": "Public Q&A",
+  "author_alias": "ReflectYourCharacter",
+  "source_url": "https://genai.stackexchange.com/questions/2991/how-can-i-determine-the-capabilities-of-a-model-before-i-download-it",
+  "quality_signals": [
+    "Public Q&A from GenAI Stack Exchange.",
+    "Question score: 3; answer score: 3.",
+    "Viewed 450 times on the source site."
+  ],
+  "created_at": "2026-11-09T13:50:23+00:00",
+  "curated_at": "2026-11-12T07:09:57.708560+00:00",
+  "license": "Stack Exchange content is user-contributed and requires source attribution.",
+  "source": "GenAI Stack Exchange"
+}

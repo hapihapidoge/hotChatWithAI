@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-11T06:20:13.289942+00:00",
+  "generated_at": "2026-11-12T07:09:59.596590+00:00",
   "summary": {
-    "items": 71,
+    "items": 72,
     "tags": [
       "AI Stack Exchange",
       "GenAI Stack Exchange",
@@ -138,10 +138,10 @@
         "Public Q&A from AI Stack Exchange.",
         "Question score: 1; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 55 times on the source site."
+        "Viewed 61 times on the source site."
       ],
       "created_at": "2026-11-06T23:55:35+00:00",
-      "curated_at": "2026-11-11T06:20:12.805281+00:00",
+      "curated_at": "2026-11-12T07:09:58.553780+00:00",
       "path": "posts/se-ai-50834-how-to-improve-typeface-rendering-in-image-generators-without-needing-fo.md"
     },
     {
@@ -164,10 +164,10 @@
         "Public Q&A from AI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 43 times on the source site."
+        "Viewed 49 times on the source site."
       ],
       "created_at": "2026-11-02T14:28:12+00:00",
-      "curated_at": "2026-11-11T06:20:12.720486+00:00",
+      "curated_at": "2026-11-12T07:09:58.367273+00:00",
       "path": "posts/se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters.md"
     },
     {
@@ -190,10 +190,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 25 times on the source site."
+        "Viewed 27 times on the source site."
       ],
       "created_at": "2026-11-03T21:17:48+00:00",
-      "curated_at": "2026-11-11T06:20:12.499005+00:00",
+      "curated_at": "2026-11-12T07:09:58.033676+00:00",
       "path": "posts/se-genai-2985-can-codex-use-a-banked-reset-on-my-behalf-after-my-usage-reaches-0.md"
     },
     {
@@ -215,16 +215,16 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 16 times on the source site."
+        "Viewed 18 times on the source site."
       ],
       "created_at": "2026-11-03T18:59:18+00:00",
-      "curated_at": "2026-11-11T06:20:12.413315+00:00",
+      "curated_at": "2026-11-12T07:09:57.839181+00:00",
       "path": "posts/se-genai-2983-codex-computer-use-isn-t-working-after-granting-permissions-what-else-sh.md"
     },
     {
-      "id": "se-genai-2991-how-can-i-determine-the-capabilities-of-an-model-before-i-download-it",
-      "title": "How can I determine the capabilities of an model before I download it?",
-      "question": "I've got a laptop with an RTX 5080 (16GB vram) it can run the 2.0 models of qwen coder pretty well. I understand how to pick models that are able to stay inside the limits of the video card and the limitations on running them locally. I've got code completion working (more or less ) in neovim. What I was hoping, and didn't realize was a limitation, was that this would be capable of writing to disk instead of spitting out a json blob kind of explaining what it wants to do. So, what is the process of finding a safe, small model to run that can also do writes. Is there some capability matrix one can find by looking at meta data embeded in these things? here's my \"stack\" Ollama various sub 16GB...",
+      "id": "se-genai-2991-how-can-i-determine-the-capabilities-of-a-model-before-i-download-it",
+      "title": "How can I determine the capabilities of a model before I download it?",
+      "question": "I've got a laptop with an RTX 5080 (16GB vram) it can run the 2.0 models of Qwen coder pretty well. I understand how to pick models that are able to stay inside the limits of the video card and the limitations on running them locally. I've got code completion working (more or less) in Neovim. What I was hoping, and didn't realize was a limitation, was that this would be capable of writing to disk instead of spitting out a json blob kind of explaining what it wants to do. So, what is the process of finding a safe, small model to run that can also do writes? Is there some capability matrix one can find by looking at meta data embedded in these things? Here's my \"stack\": Ollama Various sub 16G...",
       "answer": "Cline Approach You don't necessarily need a special coding LLM. You need a model that can work with the tools provided by Cline . Cline provides the tools , but the LLM needs to know how to use them. That's the key difference. You need to look for a specific capability in the models like Tool Calling, also known as Function Calling. If it supports Tools, the model can generally call tools such as Cline's file operations, if it does not support Tools, the model may not be suitable for this. There are Different ways to find this out. You can try the following to get more information. Tool Calling is only the basic requirement. You still need to test in practice how reliably, and whether, the model can subsequently work with Cline . Ollama Website Open https://ollama.com/library Search for your desired model, e.g. Qwen Open the model description Look for the mention of Tools or Tool Calling Ollama Filter via the Website(Ollama also offers a direct filter) Open the URL https://ollama.com/search?c=tools This will show models that support Tool Calling. Via Ollama in the Terminal ollama show LLMNAME Look for tools in the output of Capabilities . Or run ollama show LLMNAME | grep tools If tools appears there, this particular model variant supports Tool Calling. General Tool Calling/Agent A language model itself cannot directly write to the disk. It can only generate text, such as code...",
       "summary": "Cline Approach You don't necessarily need a special coding LLM. You need a model that can work with the tools provided by Cline . Cline provides the tools , but the LLM needs to know how to use them. That's the key diff...",
       "tags": [
@@ -237,15 +237,15 @@
       ],
       "model": "Public Q&A",
       "author_alias": "ReflectYourCharacter",
-      "source_url": "https://genai.stackexchange.com/questions/2991/how-can-i-determine-the-capabilities-of-an-model-before-i-download-it",
+      "source_url": "https://genai.stackexchange.com/questions/2991/how-can-i-determine-the-capabilities-of-a-model-before-i-download-it",
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 3; answer score: 3.",
-        "Viewed 305 times on the source site."
+        "Viewed 450 times on the source site."
       ],
       "created_at": "2026-11-09T13:50:23+00:00",
-      "curated_at": "2026-11-11T06:20:12.327853+00:00",
-      "path": "posts/se-genai-2991-how-can-i-determine-the-capabilities-of-an-model-before-i-download-it.md"
+      "curated_at": "2026-11-12T07:09:57.708560+00:00",
+      "path": "posts/se-genai-2991-how-can-i-determine-the-capabilities-of-a-model-before-i-download-it.md"
     },
     {
       "id": "se-genai-2989-can-ai-image-generators-generate-fake-screenshots-of-real-video-games",
@@ -263,12 +263,12 @@
       "source_url": "https://genai.stackexchange.com/questions/2989/can-ai-image-generators-generate-fake-screenshots-of-real-video-games",
       "quality_signals": [
         "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 3; answer score: 7.",
+        "Question score: 4; answer score: 8.",
         "The answer was accepted by the question author.",
-        "Viewed 1328 times on the source site."
+        "Viewed 1771 times on the source site."
       ],
       "created_at": "2026-11-08T19:54:39+00:00",
-      "curated_at": "2026-11-11T06:20:12.244111+00:00",
+      "curated_at": "2026-11-12T07:09:57.508686+00:00",
       "path": "posts/se-genai-2989-can-ai-image-generators-generate-fake-screenshots-of-real-video-games.md"
     }
   ],
@@ -292,10 +292,10 @@
         "Public Q&A from AI Stack Exchange.",
         "Question score: 1; answer score: 2.",
         "The answer was accepted by the question author.",
-        "Viewed 55 times on the source site."
+        "Viewed 61 times on the source site."
       ],
       "created_at": "2026-11-06T23:55:35+00:00",
-      "curated_at": "2026-11-11T06:20:12.805281+00:00",
+      "curated_at": "2026-11-12T07:09:58.553780+00:00",
       "path": "posts/se-ai-50834-how-to-improve-typeface-rendering-in-image-generators-without-needing-fo.md"
     },
     {
@@ -318,10 +318,10 @@
         "Public Q&A from AI Stack Exchange.",
         "Question score: 1; answer score: 1.",
         "The answer was accepted by the question author.",
-        "Viewed 43 times on the source site."
+        "Viewed 49 times on the source site."
       ],
       "created_at": "2026-11-02T14:28:12+00:00",
-      "curated_at": "2026-11-11T06:20:12.720486+00:00",
+      "curated_at": "2026-11-12T07:09:58.367273+00:00",
       "path": "posts/se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters.md"
     },
     {
@@ -344,10 +344,10 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 25 times on the source site."
+        "Viewed 27 times on the source site."
       ],
       "created_at": "2026-11-03T21:17:48+00:00",
-      "curated_at": "2026-11-11T06:20:12.499005+00:00",
+      "curated_at": "2026-11-12T07:09:58.033676+00:00",
       "path": "posts/se-genai-2985-can-codex-use-a-banked-reset-on-my-behalf-after-my-usage-reaches-0.md"
     },
     {
@@ -369,11 +369,61 @@
         "Public Q&A from GenAI Stack Exchange.",
         "Question score: 0; answer score: 0.",
         "The answer was accepted by the question author.",
-        "Viewed 16 times on the source site."
+        "Viewed 18 times on the source site."
       ],
       "created_at": "2026-11-03T18:59:18+00:00",
-      "curated_at": "2026-11-11T06:20:12.413315+00:00",
+      "curated_at": "2026-11-12T07:09:57.839181+00:00",
       "path": "posts/se-genai-2983-codex-computer-use-isn-t-working-after-granting-permissions-what-else-sh.md"
+    },
+    {
+      "id": "se-genai-2991-how-can-i-determine-the-capabilities-of-a-model-before-i-download-it",
+      "title": "How can I determine the capabilities of a model before I download it?",
+      "question": "I've got a laptop with an RTX 5080 (16GB vram) it can run the 2.0 models of Qwen coder pretty well. I understand how to pick models that are able to stay inside the limits of the video card and the limitations on running them locally. I've got code completion working (more or less) in Neovim. What I was hoping, and didn't realize was a limitation, was that this would be capable of writing to disk instead of spitting out a json blob kind of explaining what it wants to do. So, what is the process of finding a safe, small model to run that can also do writes? Is there some capability matrix one can find by looking at meta data embedded in these things? Here's my \"stack\": Ollama Various sub 16G...",
+      "answer": "Cline Approach You don't necessarily need a special coding LLM. You need a model that can work with the tools provided by Cline . Cline provides the tools , but the LLM needs to know how to use them. That's the key difference. You need to look for a specific capability in the models like Tool Calling, also known as Function Calling. If it supports Tools, the model can generally call tools such as Cline's file operations, if it does not support Tools, the model may not be suitable for this. There are Different ways to find this out. You can try the following to get more information. Tool Calling is only the basic requirement. You still need to test in practice how reliably, and whether, the model can subsequently work with Cline . Ollama Website Open https://ollama.com/library Search for your desired model, e.g. Qwen Open the model description Look for the mention of Tools or Tool Calling Ollama Filter via the Website(Ollama also offers a direct filter) Open the URL https://ollama.com/search?c=tools This will show models that support Tool Calling. Via Ollama in the Terminal ollama show LLMNAME Look for tools in the output of Capabilities . Or run ollama show LLMNAME | grep tools If tools appears there, this particular model variant supports Tool Calling. General Tool Calling/Agent A language model itself cannot directly write to the disk. It can only generate text, such as code...",
+      "summary": "Cline Approach You don't necessarily need a special coding LLM. You need a model that can work with the tools provided by Cline . Cline provides the tools , but the LLM needs to know how to use them. That's the key diff...",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "llm",
+        "ollama",
+        "agent",
+        "tool-calling"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "ReflectYourCharacter",
+      "source_url": "https://genai.stackexchange.com/questions/2991/how-can-i-determine-the-capabilities-of-a-model-before-i-download-it",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 3; answer score: 3.",
+        "Viewed 450 times on the source site."
+      ],
+      "created_at": "2026-11-09T13:50:23+00:00",
+      "curated_at": "2026-11-12T07:09:57.708560+00:00",
+      "path": "posts/se-genai-2991-how-can-i-determine-the-capabilities-of-a-model-before-i-download-it.md"
+    },
+    {
+      "id": "se-genai-2989-can-ai-image-generators-generate-fake-screenshots-of-real-video-games",
+      "title": "Can AI image generators generate \"fake screenshots\" of real video games?",
+      "question": "Can AI image generators generate \"fake screenshots\" of real video games? I'm looking specifically for Minecraft and Hades (indie game from Supergiant Games) screenshots. Using GPT-Image and Gemini Nano Banana.",
+      "answer": "Yes. E.g., with GPT Image 2.6 Flare (Quality set to Medium, 1K): Minecraft (prompt: \"Generate a screenshot of Minecraft\"): Hades (prompt: \"Generate a screenshot of Hades (indie game from Supergiant Games)\"):",
+      "summary": "Yes. E.g., with GPT Image 2.6 Flare (Quality set to Medium, 1K): Minecraft (prompt: \"Generate a screenshot of Minecraft\"): Hades (prompt: \"Generate a screenshot of Hades (indie game from Supergiant Games)\"):",
+      "tags": [
+        "public-q&a",
+        "GenAI Stack Exchange",
+        "image-generation"
+      ],
+      "model": "Public Q&A",
+      "author_alias": "Franck Dernoncourt",
+      "source_url": "https://genai.stackexchange.com/questions/2989/can-ai-image-generators-generate-fake-screenshots-of-real-video-games",
+      "quality_signals": [
+        "Public Q&A from GenAI Stack Exchange.",
+        "Question score: 4; answer score: 8.",
+        "The answer was accepted by the question author.",
+        "Viewed 1771 times on the source site."
+      ],
+      "created_at": "2026-11-08T19:54:39+00:00",
+      "curated_at": "2026-11-12T07:09:57.508686+00:00",
+      "path": "posts/se-genai-2989-can-ai-image-generators-generate-fake-screenshots-of-real-video-games.md"
     },
     {
       "id": "se-genai-2991-how-can-i-determine-the-capabilities-of-an-model-before-i-download-it",
@@ -400,30 +450,6 @@
       "created_at": "2026-11-09T13:50:23+00:00",
       "curated_at": "2026-11-11T06:20:12.327853+00:00",
       "path": "posts/se-genai-2991-how-can-i-determine-the-capabilities-of-an-model-before-i-download-it.md"
-    },
-    {
-      "id": "se-genai-2989-can-ai-image-generators-generate-fake-screenshots-of-real-video-games",
-      "title": "Can AI image generators generate \"fake screenshots\" of real video games?",
-      "question": "Can AI image generators generate \"fake screenshots\" of real video games? I'm looking specifically for Minecraft and Hades (indie game from Supergiant Games) screenshots. Using GPT-Image and Gemini Nano Banana.",
-      "answer": "Yes. E.g., with GPT Image 2.6 Flare (Quality set to Medium, 1K): Minecraft (prompt: \"Generate a screenshot of Minecraft\"): Hades (prompt: \"Generate a screenshot of Hades (indie game from Supergiant Games)\"):",
-      "summary": "Yes. E.g., with GPT Image 2.6 Flare (Quality set to Medium, 1K): Minecraft (prompt: \"Generate a screenshot of Minecraft\"): Hades (prompt: \"Generate a screenshot of Hades (indie game from Supergiant Games)\"):",
-      "tags": [
-        "public-q&a",
-        "GenAI Stack Exchange",
-        "image-generation"
-      ],
-      "model": "Public Q&A",
-      "author_alias": "Franck Dernoncourt",
-      "source_url": "https://genai.stackexchange.com/questions/2989/can-ai-image-generators-generate-fake-screenshots-of-real-video-games",
-      "quality_signals": [
-        "Public Q&A from GenAI Stack Exchange.",
-        "Question score: 3; answer score: 7.",
-        "The answer was accepted by the question author.",
-        "Viewed 1328 times on the source site."
-      ],
-      "created_at": "2026-11-08T19:54:39+00:00",
-      "curated_at": "2026-11-11T06:20:12.244111+00:00",
-      "path": "posts/se-genai-2989-can-ai-image-generators-generate-fake-screenshots-of-real-video-games.md"
     },
     {
       "id": "se-genai-2981-what-are-the-risks-of-using-gpu-unlock",

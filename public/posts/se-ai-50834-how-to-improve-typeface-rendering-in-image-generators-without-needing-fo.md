@@ -1,6 +1,6 @@
 # How to improve typeface rendering in image generators, without needing font files?
 
-Curated at: `2026-11-12T07:09:58.553780+00:00`
+Curated at: `2026-11-13T06:45:40.091481+00:00`
 Model: `Public Q&A`
 Author: `chessprogrammer`
 Tags: `public-q&a, AI Stack Exchange, training, image-generation`
@@ -12,7 +12,7 @@ Source: https://ai.stackexchange.com/questions/50834/how-to-improve-typeface-ren
 - Public Q&A from AI Stack Exchange.
 - Question score: 1; answer score: 2.
 - The answer was accepted by the question author.
-- Viewed 61 times on the source site.
+- Viewed 68 times on the source site.
 
 ## Question
 

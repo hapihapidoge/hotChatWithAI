@@ -3,37 +3,43 @@
     "id": "se-ai-50834-how-to-improve-typeface-rendering-in-image-generators-without-needing-fo",
     "title": "How to improve typeface rendering in image generators, without needing font files?",
     "path": "posts/se-ai-50834-how-to-improve-typeface-rendering-in-image-generators-without-needing-fo.md",
-    "curated_at": "2026-11-12T07:09:58.553780+00:00"
+    "curated_at": "2026-11-13T06:45:40.091481+00:00"
   },
   {
     "id": "se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters",
     "title": "Does the term \"hyperparameter\" refer to hard-coded model parameters?",
     "path": "posts/se-ai-50829-does-the-term-hyperparameter-refer-to-hard-coded-model-parameters.md",
-    "curated_at": "2026-11-12T07:09:58.367273+00:00"
+    "curated_at": "2026-11-13T06:45:40.027822+00:00"
+  },
+  {
+    "id": "se-ai-50845-is-there-a-rag-architecture-for-speech-synthesis",
+    "title": "Is there a RAG architecture for speech synthesis?",
+    "path": "posts/se-ai-50845-is-there-a-rag-architecture-for-speech-synthesis.md",
+    "curated_at": "2026-11-13T06:45:39.959149+00:00"
   },
   {
     "id": "se-genai-2985-can-codex-use-a-banked-reset-on-my-behalf-after-my-usage-reaches-0",
     "title": "Can Codex use a banked reset on my behalf after my usage reaches 0%?",
     "path": "posts/se-genai-2985-can-codex-use-a-banked-reset-on-my-behalf-after-my-usage-reaches-0.md",
-    "curated_at": "2026-11-12T07:09:58.033676+00:00"
+    "curated_at": "2026-11-13T06:45:39.808512+00:00"
   },
   {
     "id": "se-genai-2983-codex-computer-use-isn-t-working-after-granting-permissions-what-else-sh",
     "title": "Codex Computer Use isn’t working after granting permissions—what else should I enable?",
     "path": "posts/se-genai-2983-codex-computer-use-isn-t-working-after-granting-permissions-what-else-sh.md",
-    "curated_at": "2026-11-12T07:09:57.839181+00:00"
+    "curated_at": "2026-11-13T06:45:39.741254+00:00"
   },
   {
     "id": "se-genai-2991-how-can-i-determine-the-capabilities-of-a-model-before-i-download-it",
     "title": "How can I determine the capabilities of a model before I download it?",
     "path": "posts/se-genai-2991-how-can-i-determine-the-capabilities-of-a-model-before-i-download-it.md",
-    "curated_at": "2026-11-12T07:09:57.708560+00:00"
+    "curated_at": "2026-11-13T06:45:39.672382+00:00"
   },
   {
     "id": "se-genai-2989-can-ai-image-generators-generate-fake-screenshots-of-real-video-games",
     "title": "Can AI image generators generate \"fake screenshots\" of real video games?",
     "path": "posts/se-genai-2989-can-ai-image-generators-generate-fake-screenshots-of-real-video-games.md",
-    "curated_at": "2026-11-12T07:09:57.508686+00:00"
+    "curated_at": "2026-11-13T06:45:39.558902+00:00"
   },
   {
     "id": "se-genai-2991-how-can-i-determine-the-capabilities-of-an-model-before-i-download-it",

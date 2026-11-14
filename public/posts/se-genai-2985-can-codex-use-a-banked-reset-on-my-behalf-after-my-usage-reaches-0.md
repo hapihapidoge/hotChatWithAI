@@ -1,6 +1,6 @@
 # Can Codex use a banked reset on my behalf after my usage reaches 0%?
 
-Curated at: `2026-11-13T06:45:39.808512+00:00`
+Curated at: `2026-11-14T06:22:54.070584+00:00`
 Model: `Public Q&A`
 Author: `JBallin`
 Tags: `public-q&a, GenAI Stack Exchange, openai, codex, quota`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2985/can-codex-use-a-banked-re
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 0; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 29 times on the source site.
+- Viewed 30 times on the source site.
 
 ## Question
 

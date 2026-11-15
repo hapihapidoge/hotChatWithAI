@@ -1,6 +1,6 @@
 # Can Codex use a banked reset on my behalf after my usage reaches 0%?
 
-Curated at: `2026-11-14T06:22:54.070584+00:00`
+Curated at: `2026-11-15T06:31:11.588121+00:00`
 Model: `Public Q&A`
 Author: `JBallin`
 Tags: `public-q&a, GenAI Stack Exchange, openai, codex, quota`

@@ -1,6 +1,6 @@
 # Codex Computer Use isn’t working after granting permissions—what else should I enable?
 
-Curated at: `2026-11-15T06:31:11.492107+00:00`
+Curated at: `2026-11-16T06:29:07.881715+00:00`
 Model: `Public Q&A`
 Author: `JBallin`
 Tags: `public-q&a, GenAI Stack Exchange, openai, codex`
@@ -12,7 +12,7 @@ Source: https://genai.stackexchange.com/questions/2983/codex-computer-use-isn-t-
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 0; answer score: 0.
 - The answer was accepted by the question author.
-- Viewed 24 times on the source site.
+- Viewed 27 times on the source site.
 
 ## Question
 

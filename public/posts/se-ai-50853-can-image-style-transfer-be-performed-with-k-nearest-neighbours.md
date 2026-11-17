@@ -1,6 +1,6 @@
 # Can image style transfer be performed with k-nearest neighbours?
 
-Curated at: `2026-11-16T06:29:08.604910+00:00`
+Curated at: `2026-11-17T07:54:57.524673+00:00`
 Model: `Public Q&A`
 Author: `chessprogrammer`
 Tags: `public-q&a, AI Stack Exchange, style-transfer, k-nearest-neighbors`
@@ -10,9 +10,9 @@ Source: https://ai.stackexchange.com/questions/50853/can-image-style-transfer-be
 ## Why It Is Good
 
 - Public Q&A from AI Stack Exchange.
-- Question score: 1; answer score: 0.
+- Question score: 1; answer score: 1.
 - The answer was accepted by the question author.
-- Viewed 16 times on the source site.
+- Viewed 32 times on the source site.
 
 ## Question
 

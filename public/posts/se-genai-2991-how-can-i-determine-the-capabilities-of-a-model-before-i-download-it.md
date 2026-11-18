@@ -1,6 +1,6 @@
 # How can I determine the capabilities of a model before I download it?
 
-Curated at: `2026-11-17T07:54:56.799663+00:00`
+Curated at: `2026-11-18T07:28:37.529587+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, llm, ollama, agent, tool-calling`
@@ -11,7 +11,7 @@ Source: https://genai.stackexchange.com/questions/2991/how-can-i-determine-the-c
 
 - Public Q&A from GenAI Stack Exchange.
 - Question score: 3; answer score: 3.
-- Viewed 470 times on the source site.
+- Viewed 475 times on the source site.
 
 ## Question
 

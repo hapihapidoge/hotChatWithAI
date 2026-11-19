@@ -3,43 +3,43 @@
     "id": "se-ai-50854-are-prngs-used-for-weight-initialization-during-model-training",
     "title": "Are PRNGs used for weight initialization during model training?",
     "path": "posts/se-ai-50854-are-prngs-used-for-weight-initialization-during-model-training.md",
-    "curated_at": "2026-11-18T07:28:38.400697+00:00"
+    "curated_at": "2026-11-19T07:25:12.157361+00:00"
   },
   {
     "id": "se-ai-50853-can-image-style-transfer-be-performed-with-k-nearest-neighbours",
     "title": "Can image style transfer be performed with k-nearest neighbours?",
     "path": "posts/se-ai-50853-can-image-style-transfer-be-performed-with-k-nearest-neighbours.md",
-    "curated_at": "2026-11-18T07:28:38.214747+00:00"
+    "curated_at": "2026-11-19T07:25:12.081433+00:00"
   },
   {
     "id": "se-ai-50834-how-to-improve-typeface-rendering-in-image-generators-without-needing-fo",
     "title": "How to improve typeface rendering in image generators, without needing font files?",
     "path": "posts/se-ai-50834-how-to-improve-typeface-rendering-in-image-generators-without-needing-fo.md",
-    "curated_at": "2026-11-18T07:28:38.100952+00:00"
+    "curated_at": "2026-11-19T07:25:12.011916+00:00"
   },
   {
     "id": "se-ai-50845-is-there-a-rag-architecture-for-speech-synthesis",
     "title": "Is there a RAG architecture for speech synthesis?",
     "path": "posts/se-ai-50845-is-there-a-rag-architecture-for-speech-synthesis.md",
-    "curated_at": "2026-11-18T07:28:37.960820+00:00"
+    "curated_at": "2026-11-19T07:25:11.886644+00:00"
   },
   {
     "id": "se-ai-50857-does-training-on-a-large-amount-of-ai-generated-material-cause-model-col",
     "title": "Does training on a large amount of AI-generated material cause \"model collapse\"?",
     "path": "posts/se-ai-50857-does-training-on-a-large-amount-of-ai-generated-material-cause-model-col.md",
-    "curated_at": "2026-11-18T07:28:37.828423+00:00"
+    "curated_at": "2026-11-19T07:25:11.808755+00:00"
   },
   {
     "id": "se-genai-2991-how-can-i-determine-the-capabilities-of-a-model-before-i-download-it",
     "title": "How can I determine the capabilities of a model before I download it?",
     "path": "posts/se-genai-2991-how-can-i-determine-the-capabilities-of-a-model-before-i-download-it.md",
-    "curated_at": "2026-11-18T07:28:37.529587+00:00"
+    "curated_at": "2026-11-19T07:25:11.452530+00:00"
   },
   {
     "id": "se-genai-2989-can-ai-image-generators-generate-fake-screenshots-of-real-video-games",
     "title": "Can AI image generators generate \"fake screenshots\" of real video games?",
     "path": "posts/se-genai-2989-can-ai-image-generators-generate-fake-screenshots-of-real-video-games.md",
-    "curated_at": "2026-11-18T07:28:37.389926+00:00"
+    "curated_at": "2026-11-19T07:25:11.308068+00:00"
   },
   {
     "id": "se-genai-2985-can-codex-use-a-banked-reset-on-my-behalf-after-my-usage-reaches-0",

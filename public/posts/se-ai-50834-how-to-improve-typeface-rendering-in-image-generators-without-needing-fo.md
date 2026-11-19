@@ -1,6 +1,6 @@
 # How to improve typeface rendering in image generators, without needing font files?
 
-Curated at: `2026-11-18T07:28:38.100952+00:00`
+Curated at: `2026-11-19T07:25:12.011916+00:00`
 Model: `Public Q&A`
 Author: `chessprogrammer`
 Tags: `public-q&a, AI Stack Exchange, training, image-generation`

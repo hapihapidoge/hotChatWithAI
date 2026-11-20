@@ -1,6 +1,6 @@
 # Is there a RAG architecture for speech synthesis?
 
-Curated at: `2026-11-19T07:25:11.886644+00:00`
+Curated at: `2026-11-20T07:15:32.021540+00:00`
 Model: `Public Q&A`
 Author: `chessprogrammer`
 Tags: `public-q&a, AI Stack Exchange, speech-synthesis, retrieval-augmented-generation`

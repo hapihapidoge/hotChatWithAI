@@ -1,6 +1,6 @@
 # How can I determine the capabilities of a model before I download it?
 
-Curated at: `2026-11-20T07:15:31.572526+00:00`
+Curated at: `2026-11-21T07:07:20.459964+00:00`
 Model: `Public Q&A`
 Author: `ReflectYourCharacter`
 Tags: `public-q&a, GenAI Stack Exchange, llm, ollama, agent, tool-calling`

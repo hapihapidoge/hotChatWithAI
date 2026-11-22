@@ -1,6 +1,6 @@
 # Can AI image generators generate "fake screenshots" of real video games?
 
-Curated at: `2026-11-21T07:07:20.364450+00:00`
+Curated at: `2026-11-22T06:47:21.801842+00:00`
 Model: `Public Q&A`
 Author: `Franck Dernoncourt`
 Tags: `public-q&a, GenAI Stack Exchange, image-generation`
@@ -10,9 +10,9 @@ Source: https://genai.stackexchange.com/questions/2989/can-ai-image-generators-g
 ## Why It Is Good
 
 - Public Q&A from GenAI Stack Exchange.
-- Question score: 4; answer score: 8.
+- Question score: 4; answer score: 7.
 - The answer was accepted by the question author.
-- Viewed 2249 times on the source site.
+- Viewed 2262 times on the source site.
 
 ## Question
 

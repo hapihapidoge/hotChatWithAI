@@ -1,6 +1,6 @@
 # Does training on a large amount of AI-generated material cause "model collapse"?
 
-Curated at: `2026-11-21T07:07:20.819122+00:00`
+Curated at: `2026-11-22T06:47:22.444427+00:00`
 Model: `Public Q&A`
 Author: `chessprogrammer`
 Tags: `public-q&a, AI Stack Exchange, training, datasets`
@@ -12,7 +12,7 @@ Source: https://ai.stackexchange.com/questions/50857/does-training-on-a-large-am
 - Public Q&A from AI Stack Exchange.
 - Question score: 9; answer score: 9.
 - The answer was accepted by the question author.
-- Viewed 1547 times on the source site.
+- Viewed 1555 times on the source site.
 
 ## Question
 

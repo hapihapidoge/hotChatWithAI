@@ -1,6 +1,6 @@
 # Are PRNGs used for weight initialization during model training?
 
-Curated at: `2026-11-25T08:33:53.429695+00:00`
+Curated at: `2026-11-26T08:17:35.578235+00:00`
 Model: `Public Q&A`
 Author: `Poly Trendy`
 Tags: `public-q&a, AI Stack Exchange, training`

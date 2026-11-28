@@ -3,19 +3,19 @@
     "id": "se-ai-50854-are-prngs-used-for-weight-initialization-during-model-training",
     "title": "Are PRNGs used for weight initialization during model training?",
     "path": "posts/se-ai-50854-are-prngs-used-for-weight-initialization-during-model-training.md",
-    "curated_at": "2026-11-27T08:33:05.706894+00:00"
+    "curated_at": "2026-11-28T07:48:47.066643+00:00"
+  },
+  {
+    "id": "se-ai-50857-does-training-on-a-large-amount-of-ai-generated-material-cause-model-col",
+    "title": "Does training on a large amount of AI-generated material cause \"model collapse\"?",
+    "path": "posts/se-ai-50857-does-training-on-a-large-amount-of-ai-generated-material-cause-model-col.md",
+    "curated_at": "2026-11-28T07:48:46.957112+00:00"
   },
   {
     "id": "se-ai-50853-can-image-style-transfer-be-performed-with-k-nearest-neighbours",
     "title": "Can image style transfer be performed with k-nearest neighbours?",
     "path": "posts/se-ai-50853-can-image-style-transfer-be-performed-with-k-nearest-neighbours.md",
     "curated_at": "2026-11-27T08:33:05.608370+00:00"
-  },
-  {
-    "id": "se-ai-50857-does-training-on-a-large-amount-of-ai-generated-material-cause-model-col",
-    "title": "Does training on a large amount of AI-generated material cause \"model collapse\"?",
-    "path": "posts/se-ai-50857-does-training-on-a-large-amount-of-ai-generated-material-cause-model-col.md",
-    "curated_at": "2026-11-27T08:33:05.520882+00:00"
   },
   {
     "id": "se-ai-50845-is-there-a-rag-architecture-for-speech-synthesis",

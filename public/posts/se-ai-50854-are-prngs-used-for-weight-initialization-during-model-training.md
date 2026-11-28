@@ -1,6 +1,6 @@
 # Are PRNGs used for weight initialization during model training?
 
-Curated at: `2026-11-27T08:33:05.706894+00:00`
+Curated at: `2026-11-28T07:48:47.066643+00:00`
 Model: `Public Q&A`
 Author: `Poly Trendy`
 Tags: `public-q&a, AI Stack Exchange, training`
@@ -12,7 +12,7 @@ Source: https://ai.stackexchange.com/questions/50854/are-prngs-used-for-weight-i
 - Public Q&A from AI Stack Exchange.
 - Question score: 1; answer score: 1.
 - The answer was accepted by the question author.
-- Viewed 60 times on the source site.
+- Viewed 61 times on the source site.
 
 ## Question
 
